@@ -34,3 +34,11 @@ link to example goes here
 
 Put help here
 
+## Privacy Policy
+
+HouseCurve does not collect, use, store or transfer personal data.  Apple does collect app analytics to help developer improve their apps.  For more information, see [Apple Privacy Policy](https://www.apple.com/privacy/).
+
+## EULA
+
+[Apple Standard License Agreement](https://www.apple.com/legal/internet-services/itunes/dev/stdeula)
+
