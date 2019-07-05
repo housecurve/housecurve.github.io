@@ -1,0 +1,6 @@
+This is an example reference curve file for HouseCurve
+Hz	dB
+20	2.0
+200	1.0
+2000	0.0
+20000	-4.0
