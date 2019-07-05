@@ -30,10 +30,9 @@ For custom reference curves and microphone calibration, HouseCurve supports the 
 
 [Example Reference Curve](/examples/curve.txt)
 
-
 ## How To Use
 
-Put help here
+[How To Use](/HELP.md)
 
 ## Privacy Policy
 
