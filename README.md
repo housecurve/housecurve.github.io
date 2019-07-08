@@ -49,5 +49,4 @@ HouseCurve does not collect, use, store or transfer personal data.  With your pe
 
 
 
-Copyright &copy; 2019 Greg Wilding
-
+<small>Copyright &copy; 2019 Greg Wilding</small>
