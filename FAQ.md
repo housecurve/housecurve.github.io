@@ -10,5 +10,3 @@ Upon further research, it appears that most listeners prefer highs to be rolled 
 
 
 
-
-<small>Copyright &copy; 2019 Greg Wilding</small>
