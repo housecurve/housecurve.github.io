@@ -1,0 +1,4 @@
+This is a flat reference curve file for HouseCurve (not recommended)
+Hz	dB
+20	0.0
+20000	0.0
