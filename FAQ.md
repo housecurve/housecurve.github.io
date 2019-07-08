@@ -7,5 +7,5 @@ I installed some ceiling speakers in my kitchen and couldn’t get them to sound
 I found that a “flat” in-room frequency response sounded way too “bright”.  I was initially shocked by these results, but it turns out that most [listeners prefer highs to be rolled off](https://www.bksv.com/media/doc/17-197.pdf).  I recommend trying it for yourself: [Flat Reference Curve](/examples/flat.txt).
 
 <footer>
-  <<p>Copyright &copy; 2019 Greg Wilding</p>
+  <p>Copyright &copy; 2019 Greg Wilding</p>
 </footer>
