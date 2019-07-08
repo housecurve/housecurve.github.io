@@ -26,7 +26,5 @@ HouseCurve measurements may be affected by iPhone/iPad cases.
 
 
 
-<footer>
-  <<p>Copyright &copy; 2019 Greg Wilding</p>
-</footer>
+Copyright &copy; 2019 Greg Wilding
 
