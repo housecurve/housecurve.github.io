@@ -19,6 +19,8 @@
         {% endif %}
 
         <h1>{{ site.title | default: site.github.repository_name }}</h1>
+
+        <p>{{ site.description | default: site.github.project_tagline }}</p>
         
         <a href="https://apps.apple.com/ca/app/housecurve/id1470695018"><img src="/assets/img/appstore.svg"/></a>
       </header>
