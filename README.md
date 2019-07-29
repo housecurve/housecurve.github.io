@@ -4,6 +4,8 @@ HouseCurve is a tool for tuning an audio system.  It provides a way to visually 
 
 ![](/assets/img/iPhoneScreen.png)
 
+
+### How does it work?
 The space in which an audio system is used has a significant impact on the sound heard by the listener.  Tuning is required to compensate for the effects of the space such as changing equalizer settings, moving speakers, or installing room treatments.
 
 The traditional way to tune an audio system is to play well known material and adjust the system until it “sounds good”.  This is hard to do in practice.  A common pitfall is the tendency to remaster the material rather than tune the system.  The result is a system that only sounds good when playing the material used for tuning.
