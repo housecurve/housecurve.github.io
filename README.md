@@ -1,6 +1,8 @@
 ## What Does HouseCurve Do?
 
-Tune your audio system with your iPhone / iPad.
+HouseCurve is a tool for tuning an audio system.  It provides a way to visually compare the sound of an audio system sound to a reference curve.  
+
+![](/assets/img/iPhoneScreen.png)
 
 The space in which an audio system is used has a significant impact on the sound heard by the listener.  Tuning is required to compensate for the effects of the space such as changing equalizer settings, moving speakers, or installing room treatments.
 
