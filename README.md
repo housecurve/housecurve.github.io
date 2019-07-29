@@ -1,6 +1,6 @@
 ## What Does HouseCurve Do?
 
-HouseCurve is a tool for tuning an audio system.  It provides a way to visually compare the sound of an audio system to a reference curve.  
+HouseCurve is a tool for audio system tuning.  It provides a way to visually compare the sound of an audio system to a reference curve.  
 
 ![](/assets/img/iPhoneScreen.png)
 
