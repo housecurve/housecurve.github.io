@@ -13,5 +13,5 @@ I found the following quite useful for understanding house curves:
 * [House Curve: What it is, why you need it, how to do it](https://www.hometheatershack.com/forums/rew-forum/96-house-curve-what-why-you-need-how-do.html)
 
 ### I have a question and/or feedback, where do I send it?
-Feedback and questions are welcome, please send to [housecurve support](mailto://support@housecurve.com).
+Feedback and questions are welcome, please send to [housecurve support](mailto:support@housecurve.com).
 
