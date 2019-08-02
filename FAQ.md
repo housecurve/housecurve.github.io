@@ -10,4 +10,8 @@ I found the following quite useful for understanding house curves:
 * [Relevant loudspeaker tests, in studios, in Hi-Fi dealers' demo rooms, in the home etc](https://www.bksv.com/media/doc/17-197.pdf)
 * [The Measurement and Calibration of Sound Reproducing Systems](http://www.aes.org/e-lib/browse.cfm?elib=17839)
 * [The Subjective and Objective Evaluation of Room Correction Products](https://seanolive.blogspot.com/2009/11/subjective-and-objective-evaluation-of.html)
+* [House Curve: What it is, why you need it, how to do it](https://www.hometheatershack.com/forums/rew-forum/96-house-curve-what-why-you-need-how-do.html)
+
+### I have a question and/or feedback, where do I send it?
+Feedback and questions are welcome, please send to [housecurve support](mailto://support@housecurve.com).
 
