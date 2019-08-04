@@ -19,7 +19,7 @@ I found the following quite useful for understanding house curves:
 * [House Curve: What it is, why you need it, how to do it](https://www.hometheatershack.com/forums/rew-forum/96-house-curve-what-why-you-need-how-do.html)
 
 ### Want to be a tester for HouseCurve?
-Are you an audio geek and willing to provide feedback on HouseCurve?  I can provide access for free via Apple’s TestFlight app.  To sign up, send an email to [HouseCurve support](mailto:support@housecurve.com).  Testers need to have some experience with audio systems and tuning.  I will ask a skill testing question prior to providing access.
+Are you an audio geek and willing to provide feedback on HouseCurve?  I can provide access for free via Apple’s TestFlight app.  To sign up, send an email to [HouseCurve support](mailto:support@housecurve.com).
 
 ### I have a question and/or feedback, where do I send it?
 Feedback and questions are welcome, please send to [HouseCurve support](mailto:support@housecurve.com).
