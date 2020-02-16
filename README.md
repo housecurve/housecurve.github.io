@@ -28,7 +28,7 @@ For custom reference curves and microphone calibration, HouseCurve supports the 
 
 ## How To Use
 
-[How To Use](/HELP.md)
+[Help](/HELP.md)
 
 ## FAQ
 
