@@ -26,11 +26,7 @@ For custom reference curves and microphone calibration, HouseCurve supports the 
 
 [Example Reference Curve](/examples/curve.txt)
 
-## How To Use
-
 [Help](/HELP.md)
-
-## FAQ
 
 [FAQ](/FAQ.md)
 

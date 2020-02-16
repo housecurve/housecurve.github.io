@@ -18,11 +18,7 @@ Here are some resources for understanding house curves:
 ### I have a question and/or feedback, where do I send it?
 Feedback and questions are welcome, please send to [HouseCurve support](mailto:support@housecurve.com).
 
-## Main
-
 [Main](/README.md)
-
-## Help
 
 [Help](/HELP.md)
 
