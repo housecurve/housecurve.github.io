@@ -26,10 +26,6 @@ For custom reference curves and microphone calibration, HouseCurve supports the 
 
 [Example Reference Curve](/examples/curve.txt)
 
-[Help](/HELP.md)
-
-[FAQ](/FAQ.md)
-
 ## Privacy Policy
 
 HouseCurve does not collect, use, store or transfer personal data.  With your permission, Apple collects app analytics to help developers improve their apps.  For more information, see [Apple Privacy Policy](https://www.apple.com/privacy/).

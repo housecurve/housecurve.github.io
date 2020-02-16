@@ -25,7 +25,3 @@ Plot smoothing and frequency scale can be changed at any time by going to **Setu
 
 HouseCurve measurements may be affected by iPhone/iPad cases.
 
-[Main](/README.md)
-
-[FAQ](/FAQ.md)
-
