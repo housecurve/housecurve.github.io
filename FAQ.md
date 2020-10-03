@@ -1,7 +1,16 @@
 ## FAQ
 
 ### Where can I use HouseCurve?
-HouseCurve supports two channel audio systems.  If you can connect your iOS device to the audio system, HouseCurve will work.  It has been used for tuning home stereos, televisions and cars. 
+If you can connect your iOS device to the audio system, HouseCurve will work.  It has been used for tuning home stereos, televisions and cars. 
+
+### How do I connect HouseCurve to my audio system?
+HouseCurve sends a test sound to your audio system and measures the result using a microphone.  The simplest way to connect HouseCurve to your audio system is to use a [Lightning to 3.5mm headphone jack adapter](https://www.apple.com/ca/shop/product/MMX62AM/A/lightning-to-35mm-headphone-jack-adapter).
+
+HouseCurve can also send test sounds to your audio system via AirPlay and Bluetooth.  Press the AirPlay symbol at the bottom of the screen to see a list of valid connections.
+
+HouseCurve will default to using the built in microphone of your iPhone/iPad.  HouseCurve will automatically use an external microphone if one is connected to your iPhone/iPad.
+
+At the bottom of the screen, HouseCurve displays where it is sending audio and what microphone is in use.
 
 ### HouseCurve shows me how my audio system sounds, but how do I tune it?
 It depends on your audio system and where it is located.  Here are some basics: The most direct way to tune your system is to adjust the equalizer or bass/treble knobs.  If you have a subwoofer, then you can also adjust the volume, phase and lowpass frequency.  Move your speakers closer to a wall to increase low frequencies.  Drapes and bookshelves (with books on them) can reduce high frequencies through absorption / diffusion.  Make one small adjustment at a time and use HouseCurve to see the effect.  Over time, you’ll learn what works for your system.
