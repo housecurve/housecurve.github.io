@@ -1,6 +1,6 @@
 ## How To Use HouseCurve
 
-1. Connect iPhone/iPad to the audio system using AirPlay, Bluetooth or line out (headphone connector).
+1. Connect iPhone/iPad to the audio system using AirPlay, Bluetooth or line out (headphone connector).  See [FAQ](#FAQ) for more information.
 2. Set initial volume to a low setting using the Volume Up / Down buttons on the side of the iPhone/iPad.
 3. Press the **Measure** button.  HouseCurve will play pink noise through the audio system and measure the frequency response.  This process will take a few seconds.
 4. Adjust volume as needed to obtain successful measurements.  Ideally, measurements should be taken at a normal listening level.  Excessive volume levels may degrade accuracy and may increase risk of damage to hearing and/or equipment.
