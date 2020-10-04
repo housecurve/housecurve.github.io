@@ -5,7 +5,7 @@ If you can connect your iOS device to the audio system, HouseCurve will work.  I
 
 ### How do I connect HouseCurve to my audio system?
 
-[](./assets/img/Connections.png)
+![](./assets/img/Connections.png)
 
 HouseCurve sends a test sound to your audio system and measures the result using a microphone.  The simplest way to connect HouseCurve to your audio system is to use a Lightning to 3.5mm headphone jack [adapter](https://www.apple.com/ca/shop/product/MMX62AM/A/lightning-to-35mm-headphone-jack-adapter).
 
