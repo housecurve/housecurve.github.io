@@ -13,10 +13,10 @@ HouseCurve will default to using the built in microphone of your iPhone/iPad.  H
 At the bottom of the screen, HouseCurve displays where it is sending audio and what microphone is in use.
 
 ### HouseCurve shows me how my audio system sounds, but how do I tune it?
-It depends on your audio system and where it is located.  Here are some basics: The most direct way to tune your system is to adjust the equalizer or bass/treble knobs.  If you have a subwoofer, then you can also adjust the volume, phase and lowpass frequency.  Move your speakers closer to a wall to increase low frequencies.  Drapes and bookshelves (with books on them) can reduce high frequencies through absorption / diffusion.  Make one small adjustment at a time and use HouseCurve to see the effect.  Over time, you’ll learn what works for your system.
+It depends on your audio system and where it is located.  Here are some basics: The most direct way to tune your system is to adjust the equalizer or bass/treble knobs.  If you have a subwoofer, then you can also adjust the volume, phase, polarity and crossover frequency.  Move your speakers closer to a wall to increase low frequencies.  Drapes and bookshelves (with books on them) can reduce high frequencies through absorption / diffusion.  Make one small adjustment at a time and use HouseCurve to see the effect.  Over time, you’ll learn what works for your system.
 
 ### Why isn’t a flat reference curve included?
-When listening to music, most listeners prefer in room frequency responses with roughly a 3 db/decade downward slope.  A flat response tends to sound overly “bright”.  However, HouseCurve can import custom curves, so try it for yourself: [Flat Reference Curve](/examples/flat.txt).
+When listening to music, most listeners prefer in-room frequency responses with roughly a 3 db/decade downward slope.  A flat response tends to sound overly “bright”.  However, HouseCurve can import custom curves, so try it for yourself: [Flat Reference Curve](/examples/flat.txt).
 
 Here are some resources for understanding house curves:
 * [Relevant loudspeaker tests, in studios, in Hi-Fi dealers' demo rooms, in the home etc](https://www.bksv.com/media/doc/17-197.pdf)
