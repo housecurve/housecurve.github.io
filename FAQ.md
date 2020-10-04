@@ -14,7 +14,9 @@ At the bottom of the screen, HouseCurve displays where it is sending audio and w
 
 ### HouseCurve shows me how my audio system sounds, but how do I tune it?
 It depends on your audio system and where it is located.  It is best to make small adjustments and use HouseCurve to see the effect.  Over time, you’ll learn what works for your system.
+
 The most direct way to tune your system is to adjust the equalizer or bass/treble knobs.  If you have a subwoofer, then you can also adjust the volume, phase, polarity and crossover frequency.
+
 The room also has a significant impact on what you hear.  Move your speakers closer to a wall to increase low frequencies.  Drapes and furniture can reduce high frequencies through absorption or diffusion of reflected sound.
 
 ### Why isn’t a flat reference curve included?
