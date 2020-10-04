@@ -17,7 +17,7 @@ It depends on your audio system and where it is located.  It is best to make sma
 
 The most direct way to tune your system is to adjust the equalizer or bass/treble knobs.  If you have a subwoofer, then you can also adjust the volume, phase, polarity and crossover frequency.
 
-The room also has a significant impact on what you hear.  Move your speakers closer to a wall to increase low frequencies.  Drapes and furniture can reduce high frequencies through absorption or diffusion of reflected sound.
+The room also has a significant impact on what you hear.  Move your speakers closer to a wall to increase low frequencies.  Drapes and furniture can reduce high frequencies because they change how sound reflects in the room (absorbing or diffusing the sound).
 
 ### Why isn’t a flat reference curve included?
 When listening to music, most listeners prefer in-room frequency responses with roughly a 3 db/decade downward slope.  A flat response tends to sound overly “bright”.  However, HouseCurve can import custom curves, so try it for yourself: [Flat Reference Curve](/examples/flat.txt).
