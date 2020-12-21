@@ -6,19 +6,20 @@ HouseCurve is a tool for visually comparing the sound of your audio system to a 
 
 ### Features:
 
-* Works with AirPlay, Bluetooth or line-out
-* Rapid collection and averaging of measurements
+* Rapid collection of sine sweep or pink noise measurements
+* Average and historical measurement display modes
 * Automatic measurement validation (sound level and interference)
 * Three common reference curves are included
 * Supports custom reference curves
 * Adjustable fractional octave smoothing
 * Decade or octave frequency scales
-* Supports external microphones and calibration files
+* Works with AirPlay, Bluetooth or line-out
+* Supports external microphones
 
 ### How does it work?
 HouseCurve was designed for tuning audio systems.  For example, manually adjusting an equalizer in a home or car stereo.
 
-HouseCurve works by playing a few seconds of pink noise through your audio system and measuring the in-room frequency response.  Multiple measurements are averaged to fully capture how the system sounds in the listening area.  Measurements are displayed on top of the reference curve, making it easy to determine how to adjust your system.  By making small adjustments and repeating measurements, you can tune your system to the reference curve.
+HouseCurve works by playing a log sine sweep through your audio system and measuring the in-room frequency response.  Multiple measurements may be averaged to fully capture how the system sounds in the listening area.  Measurements are displayed on top of the reference curve, making it easy to determine how to adjust your system.  By making small adjustments and repeating measurements, you can tune your system to the reference curve.
 
 HouseCurve was designed to produce acceptable results with the iPhone / iPad microphone.   For users wanting higher accuracy, HouseCurve also supports calibrated external microphones.
 
