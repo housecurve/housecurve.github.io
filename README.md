@@ -2,7 +2,7 @@
 
 HouseCurve is a tool for visually comparing the sound of your audio system to a reference curve.
 
-![](/assets/img/iPhoneScreen.png)
+![](/assets/img/iPhoneAverage.png)
 
 ### Features:
 
