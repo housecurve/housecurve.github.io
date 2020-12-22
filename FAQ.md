@@ -33,6 +33,16 @@ Here are some resources for understanding house curves:
 * [The Subjective and Objective Evaluation of Room Correction Products](https://seanolive.blogspot.com/2009/11/subjective-and-objective-evaluation-of.html)
 * [House Curve: What it is, why you need it, how to do it](https://www.hometheatershack.com/forums/rew-forum/96-house-curve-what-why-you-need-how-do.html)
 
+### When to use log sine versus pink noise?
+
+The log sine sweep will generally do a better job of capturing the sound of a typical household room.  Pink noise stimulus is what HouseCurve originally used by default.  HouseCurve is less sensitive to interference when using pink noise, if measurements are failing due to "interference detected", try using pink noise.
+
+### I keep getting "interference detected", what's wrong?
+
+In a noisy environment (ex: people talking louder than test signal), HouseCurve will reject measurements.  If this is the case, reduce the noise or increase the volume.
+
+This can also happen when one speaker is playing much louder than the rest of the audio system (ex: subwoofer that's too loud).  Try changing the stimulus to pink noise by going to **Setup**.  Pink noise measurements are more likely to succeed and can be used to diagnose if this is the issue (look for large swings in measurement).
+
 ### I have a question and/or feedback, where do I send it?
-Feedback and questions are welcome, please send to [HouseCurve support](mailto:support@housecurve.com).
+Suggestions and questions are welcome, please send to [HouseCurve support](mailto:support@housecurve.com).
 
