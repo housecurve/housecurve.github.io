@@ -28,10 +28,10 @@ The room also has a significant impact on what you hear.  Move your speakers clo
 When listening to music, most listeners prefer in-room frequency responses with roughly a 3 db/decade downward slope.  A flat response tends to sound overly “bright”.  However, HouseCurve can import custom curves, so try it for yourself: [Flat Reference Curve](/examples/flat.txt).
 
 Here are some resources for understanding house curves:
+* [Advice on better house curve?](https://www.minidsp.com/forum/dirac-series-support/17523-advice-on-better-house-curve)
+* [House Curve: What it is, why you need it, how to do it](https://www.hometheatershack.com/forums/rew-forum/96-house-curve-what-why-you-need-how-do.html)
 * [Relevant loudspeaker tests, in studios, in Hi-Fi dealers' demo rooms, in the home etc](https://www.bksv.com/media/doc/17-197.pdf)
 * [The Measurement and Calibration of Sound Reproducing Systems](http://www.aes.org/e-lib/browse.cfm?elib=17839)
-* [The Subjective and Objective Evaluation of Room Correction Products](https://seanolive.blogspot.com/2009/11/subjective-and-objective-evaluation-of.html)
-* [House Curve: What it is, why you need it, how to do it](https://www.hometheatershack.com/forums/rew-forum/96-house-curve-what-why-you-need-how-do.html)
 
 ### When to use log sine versus pink noise?
 
