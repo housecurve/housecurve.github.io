@@ -6,7 +6,7 @@
 4. Adjust volume as needed to obtain successful measurements.  Ideally, measurements should be taken at a normal listening level.  Excessive volume levels may degrade accuracy and may increase risk of damage to hearing and/or equipment.
 5. HouseCurve displays measurements in green.  Individual measurements are faint green, the average is bold green.
 6. The reference curve is displayed in yellow with a +/- 3 dB band.  When tuning the audio system, the goal is to get the average measurement within the reference band.
-7. Collect additional measurements by tappinging **Measure** again.  Each new measurement will be included in the average.
+7. Collect additional measurements by tapping **Measure** again.  Each new measurement will be included in the average.
 8. To clear the measurements, tap **Reset** once.  The average will remain on the plot in purple so that it can be compared to new measurements.  Tap **Reset** again to clear it.
 
 ### Recommendations
