@@ -43,6 +43,6 @@ In a noisy environment (ex: people talking louder than test signal), HouseCurve 
 
 This can also happen when one speaker is playing much louder than the rest of the audio system (ex: subwoofer that's too loud).  Try changing the stimulus to pink noise by going to **Setup**.  Pink noise measurements are more likely to succeed and can be used to diagnose if this is the issue (look for large swings in measurement).
 
-### I have a question and/or feedback, where do I send it?
-Suggestions and questions are welcome, please send to [HouseCurve support](mailto:support@housecurve.com).
+### Where do I send questions or suggestions?
+Please send to [HouseCurve support](mailto:support@housecurve.com).
 
