@@ -11,7 +11,7 @@ HouseCurve sends a test sound to your audio system and measures the result using
 
 The simplest way to connect HouseCurve to your audio system is to use a Lightning to 3.5mm headphone jack [adapter](https://www.apple.com/ca/shop/product/MMX62AM/A/lightning-to-35mm-headphone-jack-adapter).
 
-HouseCurve can also send test sounds to your audio system via AirPlay and Bluetooth.  Press the AirPlay symbol at the bottom of the screen to see a list of valid connections.
+HouseCurve can also send test sounds to your audio system via AirPlay and Bluetooth.  Tap the AirPlay symbol at the bottom of the screen to see a list of valid connections.
 
 HouseCurve will default to using the built in microphone of your iPhone/iPad.  HouseCurve will automatically use an external microphone if one is connected to your iPhone/iPad.
 

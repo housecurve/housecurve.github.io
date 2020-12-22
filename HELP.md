@@ -2,12 +2,12 @@
 
 1. Connect iPhone/iPad to the audio system using AirPlay, Bluetooth or line out (headphone connector).  See [FAQ](/FAQ.md) for more information.
 2. Set initial volume to a low setting using the Volume Up / Down buttons on the side of the iPhone/iPad.
-3. Press the **Measure** button.  HouseCurve will play pink noise through the audio system and measure the frequency response.  This process will take a few seconds.
+3. Tap **Measure** to start measurement process.  HouseCurve will play pink noise through the audio system and measure the frequency response.  This process will take a few seconds.
 4. Adjust volume as needed to obtain successful measurements.  Ideally, measurements should be taken at a normal listening level.  Excessive volume levels may degrade accuracy and may increase risk of damage to hearing and/or equipment.
 5. HouseCurve displays measurements in green.  Individual measurements are faint green, the average is bold green.
 6. The reference curve is displayed in yellow with a +/- 3 dB band.  When tuning the audio system, the goal is to get the average measurement within the reference band.
-7. Collect additional measurements by pressing the **Measure** button again.  Each new measurement will be included in the average.
-8. To clear the measurements, press **Reset** once.  The average will remain on the plot in purple so that it can be compared to new measurements.  Press **Reset** again to clear it.
+7. Collect additional measurements by tappinging **Measure** again.  Each new measurement will be included in the average.
+8. To clear the measurements, tap **Reset** once.  The average will remain on the plot in purple so that it can be compared to new measurements.  Tap **Reset** again to clear it.
 
 ### Recommendations
 
