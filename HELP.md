@@ -39,3 +39,7 @@ Tune the audio system in small steps, collecting the same measurements after eac
 When using HouseCurve with compensation turned on, the built in iPhone/iPad microphone is accurate enough to get within a few dB of the reference curve.  HouseCurve supports calibrated external microphones for users seeking higher accuracy.  Go to **Setup** to select or load external microphone calibrations.
 
 HouseCurve provides some common reference curves or “house curves”.  The selection of curve is subject to individual taste.  Custom curves may also be imported by going to **Setup**.  When in doubt go with the default curve.  For more information, see [FAQ](/FAQ.md) for more information.
+
+For custom reference curves and microphone calibration, HouseCurve supports the following (de facto) standard:  A space or tab delimited text file with a frequency (Hz) followed by a gain (dB) on each line.  A third phase value may be included but is ignored.  Lines starting with non-numeric characters are ignored.  Frequencies must be listed in increasing order.  HouseCurve will interpolate a curve from 20-20000 Hz using the values provided.  The file extension may be _txt_ or _frd_.
+
+[Example Reference Curve](/examples/curve.txt)
