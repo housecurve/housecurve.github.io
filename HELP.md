@@ -20,7 +20,7 @@ HouseCurve can display measurements to suit a given task.  To change the display
 * The reference curve is fitted to the average.
 * To clear the measurements and reset the average, tap **Reset** once. The average will remain on the plot in purple so that it can be compared to new measurements. Tap **Reset** again to clear it.
 
-**History** mode is used to see the effects of an adjustment from a single microphone location.  Use this mode for initial system setups, such as adjusting subwoofer phase or speaker position.
+**History** mode is used to see the effect of an adjustment from a single microphone location.  Use this mode for initial system setups, such as adjusting subwoofer phase or speaker position.
 * The most recent measurement is displayed in bold green, previous measurements are faded according to age.
 * The reference curve is fitted to the most recent measurement.
 
@@ -28,7 +28,7 @@ HouseCurve can display measurements to suit a given task.  To change the display
 
 Try to reduce background noise as this will improve accuracy.
 
-HouseCurve measurements may be affected by iPhone/iPad cases.
+Measurements may be affected by iPhone/iPad cases when using the built in microphone.
 
 Take many measurements.  Try to cover all the places a listener might be in the listening area.  Try to hold the microphone where a listener’s ears would be located.  The average measurement will cancel out small variances allowing a best-fit tune for the whole listening area.
 
