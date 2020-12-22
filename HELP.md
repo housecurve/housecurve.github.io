@@ -10,7 +10,9 @@
 
 ### Display Modes
 
-To change the display modes, go to **Setup**.
+HouseCurve can display measurements to suit a given task.  To change the display modes, go to **Setup**.
+
+![](/assets/img/iPhonePlotMarkup.png)
 
 **Average** mode (default) is used to capture how an audio system sounds in a listening area.  Use this mode when tuning the audio system to match a reference curve.  
 * Measurements are included in an average as they are collected.
