@@ -5,7 +5,7 @@ If you can connect your iOS device to the audio system, HouseCurve will work.  I
 
 ### How do I connect HouseCurve to my audio system?
 
-HouseCurve sends a test sound to your audio system and measures the result using a microphone.
+HouseCurve sends a test sound to your audio system and measures the result using a microphone.  This is shown in the diagram below.
 
 ![](/assets/img/Connections.png)
 
@@ -44,5 +44,5 @@ In a noisy environment (ex: people talking louder than test signal), HouseCurve 
 This can also happen when one speaker is playing much louder than the rest of the audio system (ex: subwoofer that's too loud).  Try changing the stimulus to pink noise by going to **Setup**.  Pink noise measurements are more likely to succeed and can be used to diagnose if this is the issue (look for large swings in measurement).
 
 ### Where do I send questions or suggestions?
-Please send to [HouseCurve support](mailto:support@housecurve.com).
+Please send an email to [HouseCurve support](mailto:support@housecurve.com).
 
