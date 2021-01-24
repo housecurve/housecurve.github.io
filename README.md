@@ -7,7 +7,7 @@ HouseCurve is a tool for visually comparing the sound of your audio system to a 
 ### Features:
 
 * Rapid collection of sine sweep or pink noise measurements
-* Average and historical measurement display modes
+* Spatial average and historical measurement display modes
 * Automatic measurement validation (sound level and interference)
 * Three common reference curves are included
 * Supports custom reference curves
