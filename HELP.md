@@ -5,7 +5,7 @@
 1. Tap **Measure** to start measurement process.  HouseCurve will play a test signal through the audio system and measure the frequency response.  This process will take a few seconds.
 1. Adjust volume as needed to obtain successful measurements.  Ideally, measurements should be taken at a normal listening level.  Excessive volume levels may degrade accuracy and may increase risk of damage to hearing and/or equipment.
 1. Measurements are displayed in green, the reference curve is displayed in yellow with a +/- 3 dB band. When tuning the audio system, the goal is to get the average measurement within the reference band.
-1. Tap plot to show cursor, move with finger, tap again to hide.  Plot cursor shows adjustment needed to hit reference curve at selected frequency.
+1. Tap plot to show cursor, move with finger, tap again to hide.  The cursor shows adjustment needed to match reference curve at selected frequency.
 1. Collect additional measurements by tapping **Measure** again.
 1. To clear the measurements, tap **Reset**.
 
