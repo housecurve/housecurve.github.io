@@ -11,6 +11,7 @@ HouseCurve is a tool for visually comparing the sound of your audio system to a 
 * Automatic measurement validation (sound level and interference)
 * Three common reference curves are included
 * Supports custom reference curves
+* Plot cursor shows adjustment required to match reference curve
 * Adjustable fractional octave smoothing
 * Decade or octave frequency scales
 * Works with AirPlay, Bluetooth or line-out
