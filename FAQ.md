@@ -4,7 +4,6 @@
 If you can connect your iOS device to the audio system, HouseCurve will work.  It has been used for tuning home stereos, televisions and cars. 
 
 ### How do I connect HouseCurve to my audio system?
-
 HouseCurve sends a test sound to your audio system and measures the result using a microphone.  This is shown in the diagram below.
 
 ![](/assets/img/Connections.png)
@@ -42,6 +41,9 @@ The log sine sweep will generally do a better job of capturing the sound of a ty
 In a noisy environment (ex: people talking louder than test signal), HouseCurve will reject measurements.  If this is the case, reduce the noise or increase the volume.
 
 This can also happen when one speaker is playing much louder than the rest of the audio system (ex: subwoofer that's too loud).  Try changing the stimulus to pink noise by going to **Setup**.  Pink noise measurements are more likely to succeed and can be used to diagnose if this is the issue (look for large swings in measurement).
+
+### So, when is HouseCurve-2.0 coming out?
+Very soon, it will add tools for speaker time alignment, such as phase and group delay plots and the ability to measure subwoofers.
 
 ### Where do I send questions or suggestions?
 Please send an email to [HouseCurve support](mailto:support@housecurve.com).
