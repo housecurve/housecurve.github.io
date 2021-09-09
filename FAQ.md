@@ -43,7 +43,7 @@ In a noisy environment (ex: people talking louder than test signal), HouseCurve 
 This can also happen when one speaker is playing much louder than the rest of the audio system (ex: subwoofer that's too loud).  Try changing the stimulus to pink noise by going to **Setup**.  Pink noise measurements are more likely to succeed and can be used to diagnose if this is the issue (look for large swings in measurement).
 
 ### So, when is HouseCurve-2.0 coming out?
-Very soon, it will add tools for speaker time alignment, such as phase and group delay plots and the ability to measure subwoofers.
+Very soon, it will add tools for speaker time alignment, such as phase and group delay plots and the ability to measure subwoofers.  It also adds measurement undo, plot zooming and coherence blanking.
 
 ### Where do I send questions or suggestions?
 Please send an email to [HouseCurve support](mailto:support@housecurve.com).
