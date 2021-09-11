@@ -1,4 +1,5 @@
-* Placeholder for Table of Content (Must not be removed) <newline> {:toc}
+* TOC
+{:toc}
 
 # HouseCurve Manual
 
