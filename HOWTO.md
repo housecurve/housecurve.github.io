@@ -5,7 +5,7 @@ HouseCurve sends test sounds to your audio system and measures the result using 
 
 ![](/assets/img/Connecting.png)
 
-HouseCurve can connect to the audio system using AirPlay or Bluetooth. Tap the AirPlay button at the bottom of the screen to see a list of outputs.
+HouseCurve can connect wireless to the audio system using AirPlay or Bluetooth. Tap the AirPlay button at the bottom of the screen to see a list of outputs.
 
 Alternatively, the headphone connector can be used to create a wired connection to the audio system.  Use a Lightning to 3.5mm adapter.
 
