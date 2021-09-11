@@ -28,9 +28,13 @@ HouseCurve will produce acceptable results with the built in iPhone/iPad microph
 ### How do I use HouseCurve?
 
 [Quick Start](/HELP.md)
+
 [Manual](/MANUAL.md)
+
 [How to use HouseCurve](/HOWTO.md)
+
 [How to tune an audio system](/TUNING.md)
+
 
 ## Privacy Policy
 
