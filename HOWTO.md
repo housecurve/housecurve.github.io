@@ -4,7 +4,7 @@
 
 ### Listening area
 
-### Measurement proceess
+### Measurement process
 
 ### Measurement quality
 
