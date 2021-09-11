@@ -39,7 +39,7 @@ The phase and group delay plots always have a reference of zero.
 #### Selected Overlay
 The selected [Overlay](#Overlay) is displayed in grey.  The name of the overlay is displayed in Setup Status.
 
-#### Current Measurements
+#### Measurements
 Measurements are displayed on the plot in green.
 
 #### Cursor
