@@ -10,7 +10,7 @@ HouseCurve displays measurements on [power, phase and group delay plots](/HOWTO.
 Tap for Help screen
 
 #### Setup
-Tap for [Setup Screen](#setup) screen
+Tap for [Setup Screen](#setup-screen) screen
 
 #### Measure
 Tap the Measure button to start [measurement process](/HOWTO.md#measurement-process).  Tap again to to stop.  This button is disabled when not connected to an audio system.
