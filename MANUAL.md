@@ -32,7 +32,7 @@ Tap to create an overlay from a measurement [Overlay](#Overlay).  This button is
 ![](/assets/img/PlotArea.png)
 
 #### Selected Reference Curve
-The selected [reference curve](#reference-curve) is displayed on the power plot in yellow with +/- 3 dB bands.
+The selected [Reference Curve](#reference-curve) is displayed on the power plot in yellow with +/- 3 dB bands.
 
 The phase and group delay plots always have a reference of zero.
 
