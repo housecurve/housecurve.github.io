@@ -1,9 +1,9 @@
-# HouseCurve Manual
+## HouseCurve Manual
 
-## Main screen
+### Main screen
 
-## Plot area
+### Plot area
 
-## Setup
+### Setup
 
 

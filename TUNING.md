@@ -1,15 +1,15 @@
-# How to tune an audio system
+## How to tune an audio system
 
-## Tuning an audio system
+### Tuning an audio system
 
-## Select reference curve
+### Select reference curve
 
-## Apply equalization
+### Apply equalization
 
-## Match speaker levels
+### Match speaker levels
 
-## Choose crossover frequencies
+### Choose crossover frequencies
 
-## Time align speakers
+### Time align speakers
 
 

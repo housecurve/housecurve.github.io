@@ -1,17 +1,17 @@
-# How to use HouseCurve
+## How to use HouseCurve
 
-## Connecting to an audio system
+### Connecting to an audio system
 
-## Listening area
+### Listening area
 
-## Measurement proceess
+### Measurement proceess
 
-## Measurement quality
+### Measurement quality
 
-## Plots
+### Plots
 
-## Subwoofer measurements
+### Subwoofer measurements
 
-## Curve file format
+### Curve file format
 
 
