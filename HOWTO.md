@@ -54,11 +54,11 @@ HouseCurve will abort the measurement process for the following reasons:
 
 * Ensure the audio system or iPhone/iPad volume is set to a normal listening level.  You should be able to clearly hear the sweep, but it does not need to be loud.
 * Take steps to reduce background noise.  HouseCurve works best when measurements are taken from a quiet listening area.
-* Lower the [Coherence Blanking](/Manual.md#coherence-blanking) threshold.
+* Lower the [Coherence Blanking](/MANUAL.md#coherence-blanking) threshold.
 
 
 ### Measurement quality
-When [Coherence Blanking](/Manual.md#coherence-blanking) is enabled, only portions of the measurement that are above the selected signal to noise ratio will be displayed.  This is a helpful indicator of measurement quality.  
+When [Coherence Blanking](/MANUAL.md#coherence-blanking) is enabled, only portions of the measurement that are above the selected signal to noise ratio will be displayed.  This is a helpful indicator of measurement quality.  
 
 For example, the measurement below was taken in the presence of external noise (someone talking).  This significantly contaminated the measurement and unusable sections have been blanked.  This measurement should probably be discarded.
 
@@ -96,7 +96,7 @@ For a typical 2.1 audio system, this can be accomplished by disabling (or discon
 
 ![](/assets/img/SubwooferSweep.png)
 
-Use [Coherence Blanking](/Manual.md#coherence-blanking) to ensure the plots only show portions of the measurement that are actually from the subwoofer and not simply noise.  The plot below shows a subwoofer measurement with Coherence Blanking turned off.  As can be seen, the plot shows a peak where the subwoofer is actually able to produce sound.  The rest of the measurement is the noise floor of the audio system and room.
+Use [Coherence Blanking](/MANUAL.md#coherence-blanking) to ensure the plots only show portions of the measurement that are actually from the subwoofer and not simply noise.  The plot below shows a subwoofer measurement with Coherence Blanking turned off.  As can be seen, the plot shows a peak where the subwoofer is actually able to produce sound.  The rest of the measurement is the noise floor of the audio system and room.
 
 ![](/assets/img/SubNoBlanking.png)
 
