@@ -9,7 +9,7 @@
 1. Pinch to zoom, two fingers to scroll the plot left/right
 1. Press <img src="/assets/img/pageleft.png" alt="Page Left" width="15"> or <img src="/assets/img/pageright.png" alt="Page Right" width="15"> or swipe left/right from screen edge to change between power, phase and group delay plots.
 1. Collect additional measurements by tapping <img src="/assets/img/measure.png" alt="Measure" width="15"> again.
-1. To remove the most recent measurement by tap  <img src="/assets/img/undo.png" alt="Undo" width="15">
+1. To remove the most recent measurement by tapping  <img src="/assets/img/undo.png" alt="Undo" width="15">
 1. To clear all measurements tap Reset <img src="/assets/img/reset.png" alt="Reset" width="15">
 
 ## Documentation
