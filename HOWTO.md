@@ -7,7 +7,7 @@ HouseCurve sends test sounds to your audio system and measures the result using 
 
 HouseCurve can connect wireless to the audio system using AirPlay or Bluetooth. Tap the AirPlay button at the bottom of the screen to see a list of outputs.
 
-Alternatively, the headphone connector can be used to create a wired connection to the audio system.  Use a Lightning to 3.5mm adapter.
+Alternatively, the headphone connector can be used to create a wired connection to the audio system.  Use a [Lightning to 3.5mm adapter](https://www.apple.com/shop/product/MMX62AM/A/lightning-to-35mm-headphone-jack-adapter).
 
 HouseCurve will default to using the built in microphone of your iPhone/iPad.  These microphones are quite accurate and are suitable for most tuning tasks.
 
@@ -20,6 +20,7 @@ HouseCurve has been tested with the following external calibrated microphones:
 
 When CarPlay is used to connect to an automobile audio system, be aware that the selected microphone will be the automobile (head unit) microphone, not the iPhone/iPad microphone.  It may be possible to override this by connecting an external microphone to the automobile.  Alternatively, connect using Bluetooth or the headphone connector.
 
+If you are getting strange measurements, try another microphone.  A common microphone for sanity checks is the [iPhone EarPods with Lighning Connector](https://www.apple.com/shop/product/MMTN2AM/A/earpods-with-lightning-connector).
 
 ### Listening area
 When listening to an audio system, we hear the combination of the audio system and its surroundings.  In classic audio speak, the surroundings are referred to as “the room” regardless of what they actually are (ex: living room, office, automobile, outdoor patio).
