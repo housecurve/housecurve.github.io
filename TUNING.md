@@ -1,0 +1,158 @@
+## How to tune an audio system
+
+### Tuning overview
+The process for tuning an audio system will generally involve the tasks described below:
+
+[Select reference curve](#select-reference-curve).  The reference curve defines how the audio system will sound.  The choice of curve is subject to personal taste.
+
+[Apply equalization](#apply-equalization).  Equalization means adjusting the volume level at different frequencies to match the reference curve.
+
+For audio systems with separately adjustable speakers, such as a 2.1 system (main speakers and a subwoofer), the following steps should be performed before equalization:
+
+[Match speaker levels](#match-speaker-levels).  The speakers of the audio system should be playing at roughly the same volume level in the listening area.  This is done to ensure measurements will reflect the whole audio system and also to avoid using equalization to correct level differences.
+
+[Choose crossover frequencies](#choose-crossover-frequencies).  Crossover frequencies are used to define regions of responsibility for speakers.  This is important when using speakers that have a limited frequency range, such as a subwoofer.
+
+[Time align speakers](#time-align-speakers)  When two speakers produce the same sound, time alignment ensures the sound arrives at the listening area at the same time.  When speakers are not time aligned, they will interfere with each other in ways that cannot be corrected by equalization.
+
+It may be necessary to iterate over these tasks a few times to get things right.  Experimentation is encouraged to find what works for a given audio system.
+
+
+### Select reference curve
+A Reference Curve, or “house curve” is a target power measurement (aka “frequency response”) for an audio system in a room.
+
+The idea is to adjust the audio system such that the power measurement matches the Reference Curve.  HouseCurve will display the selected Reference Curve on the power plot when there are measurements.
+
+![](/assets/img/ReferenceCurve.png)
+
+The choice of Reference Curve is subject to individual taste.  Generally speaking, most listeners prefer a curve with a 1 dB/octave downward slope (-3 dB/decade).  Put simply, listeners prefer it when low frequencies are louder than high frequencies.  HouseCurve provides some common reference curves, all of which have the same overall downward slope.
+
+In the audiophile world, a “flat” response is often seen as the ultimate goal.  However, for everyday listening, a flat response tends to sound overly “bright” and unpleasant.  HouseCurve can [import custom curves](/MANUAL.md#reference-curve), so by all means, try it for yourself: Flat Reference Curve.
+
+The curves that ship with HouseCurve are intended for home audio.  In an automobile, it is very common for the Reference Curve to have a more pronounced low frequency hump.  This is done to overcome motor and road noise.  Due to the custom nature of these curves, a “car” curve is not provided.  However, a custom curve can be easily created using a simple text editor and then loaded into HouseCurve.  See [curve file format](/HOWTO.md#curve-file-format) for more information.
+
+Below are some resources for understanding what reference curves do and how to choose them:
+* [Advice on better house curve?](https://www.minidsp.com/forum/dirac-series-support/17523-advice-on-better-house-curve)
+* [House Curve: What it is, why you need it, how to do it](https://www.hometheatershack.com/forums/rew-forum/96-house-curve-what-why-you-need-how-do.html)
+* [Relevant loudspeaker tests, in studios, in Hi-Fi dealers' demo rooms, in the home etc](https://www.bksv.com/media/doc/17-197.pdf)
+* [The Measurement and Calibration of Sound Reproducing Systems](http://www.aes.org/e-lib/browse.cfm?elib=17839)
+
+
+### Apply equalization
+
+If the audio system has separately adjustable speakers, such as a subwoofer, ensure that levels have been [matched](#match-speaker-levels), crossovers are [selected](#choose-crossover-frequencies) and speakers are [time aligned](#time-align-speakers).
+
+Equalization in general means changing the volume level at different frequencies.  There are many ways an audio system can be changed to make this happen.  What can be changed depends on the audio system:
+
+* Change speaker position in room
+* Adjust the bass or treble controls
+* Change relative levels of speakers (ex: subwoofer level)
+* Adjust the graphic or parametric equalizer settings
+* Change the room (ex: sound dampening, adjust furniture)
+
+When equalizing, the goal is to adjust the audio system such that the average power measurement ends up within the +/- 3 dB band that surrounds the Reference Curve.
+
+![](/assets/img/EqualizerStart.png)
+
+Adjust the audio system in small steps, collecting the same measurements after each change.  [Overlays](/MANUAL.md#overlay) are helpful for seeing the effect of an adjustment as can be seen below:
+
+![](/assets/img/EqualizerChanged.png)
+
+When most of the average power measurement is within the reference band, the audio system is sufficiently equalized.  Further adjustments may not be perceptible.
+
+Avoid adjustments that are beyond the capability of the audio system.  Doing so will lead to distortion and possibly audio system damage.  Keep in mind that a +10 dB adjustment means the audio system has to output 10 times more signal power.  A change of +20 dB is 100 times more signal power!
+
+
+### Match speaker levels
+For systems with separately adjustable speakers, the relative levels need to be matched.  The goal is to set the speaker levels such that measurements in the listening area are roughly close to the reference curve on the power plot.
+
+Make sure all speakers are active and set the overall audio system volume to a normal listening level.  It can be helpful to set HouseCurve’s [Display Mode](/MANUAL.md#display-mode) to History.
+
+Take a measurement from the middle of the listening area.  On the power plot, observe how the measurement lines up with the Reference Curve.  Adjust individual speaker levels and repeat the measurement as needed to get close to the Reference Curve.
+
+The example below shows an audio system consisting of main speakers and a subwoofer.  The subwoofer level was initially too low.  It was adjusted a few times to get close enough to the Reference Curve.
+
+![](/assets/img/SubLevel.png)
+
+
+### Choose crossover frequencies
+
+For audio systems that incorporate limited range speakers, the crossover frequencies need to be selected.
+
+The classic approach is to select crossover frequencies based on speaker specifications, but these may not reflect how the speakers perform in the room.  HouseCurve’s overlay feature makes it possible to compare separate speaker measurements to select a crossover frequency.
+
+The screenshot below shows a 2.1 desktop audio system consisting of main speakers and a subwoofer.  The speakers were measured separately with crossovers disabled and no equalization.  The [sub was measured](/HOWTO.md#subwoofer-measurements) first and saved as an overlay (grey), then the main speakers were measured (green).
+
+![](/assets/img/Crossover.png)
+
+The published frequency range for the main speakers is 80-20000 Hz and 35-165 Hz for the subwoofer.  Based on the specs, the overlap of these speakers is 80 - 165 Hz and the crossover frequency should be somewhere in that range.
+
+In the power plot, we can see the main speaker drops off quickly below ~120 Hz.  For this system the crossover frequency should be somewhere in the 100-120 Hz range.  The subwoofer is more than capable of filling in below 100 Hz.
+
+
+### Time align speakers
+
+When an audio system contains limited range speakers (subwoofers, bi-amped speakers, etc) time alignment becomes an important adjustment.
+
+At the crossover frequencies of an audio system, sound transitions from one speaker to another.  In this region, speakers on either side of the crossover are active.  If sound leaves the speakers at different times, destructive interference (or “cancellation”) can occur leading to audible dips in the sound level at the crossover frequency.  These dips cannot be fixed by equalization.
+
+The degree of time alignment needed is dependent on the wavelength of the crossover frequency (wavelength = 1 / frequency).  Destructive interference reaches a maximum when there is a half wavelength of delay between speakers.  For example, a subwoofer and a main speaker are separated by a crossover at 100 Hz.  The wavelength at 100 Hz is 0.01 seconds or 10 milliseconds (ms).  If the subwoofer is delayed by half a wavelength, or 5 ms, then peak destructive interference will occur.  The effect will subside for smaller or larger delays, ex: 0-2 ms or 8-10 ms.  
+
+Since sound is a wave, the pattern of destructive interference will repeat at multiples of the crossover wavelength.  In the example above, peak destructive interference will happen for delays of 5 ms, 15 ms, 25 ms and so on.  This makes time alignment tricky as it’s possible to align on the wrong cycle and have more delay than needed.
+
+The adjustments available for time alignment depend on the audio system.  For subwoofers, there may be a polarity switch (often labelled “phase”) or a dial that permits adjusting phase from 0 to 180 degrees.  Modern amplifiers/receivers typically have delay or distance settings that can be used for time alignment.  Many audio systems will have a combination of these adjustments and experimentation will be required to figure out what works best.
+
+HouseCurve supports two methods of time aligning speakers: alignment using power and alignment using phase.  The power method is simpler, the phase method can be more accurate.
+
+
+#### Time align using power
+Destructive interference will cause a dip in the power measurement at the crossover frequency.  We can use this effect to figure out what adjustments increase or decrease the dip (polarity, phase, delay, distance, whatever you have).  The speakers are time aligned for the adjustment with the smallest dip.
+
+When using this method it’s important to avoid changing audio system levels (volume, bass/treble, equalizer, etc).
+
+Ensure speakers on either side of the crossover are enabled.  Set HouseCurve’s Display Mode to History [link to display mode].  Zoom into the region around the crossover frequency [link to zoom].  It is also best to set the Reference Curve Fit to manual and select an appropriate level [link to reference curve fit] as this will prevent the reference curve from moving as adjustments are made.
+
+Take a measurement from the middle of the listening area.  On the power plot, place the cursor at the crossover frequency and observe the power value.  Adjust the audio system.  Repeat the the measurement and observe the new power value.  Continue to make adjustments until the maximum power level is achieved and the dip is the smallest.  The plot below shows a system being adjusted from the worst alignment to the best (smallest dip).
+
+![](/assets/img/PowerAlign.png)
+
+The same technique can be applied by averaging measurements in the listening area and saving [overlays](/MANUAL.md#overlay).
+
+The downfall of this approach is that maximum power can be achieved at multiples of the crossover wavelength.  This can lead to tuning the system with more delay than necessary.  The group delay plot can be used to check this for subwoofers.  If there is a significant lift in delays before or after the crossover, this could mean more delay than necessary.  This can be seen in the group delay plot below.
+
+![](/assets/img/DelayAlign.png)
+
+
+#### Time align using phase
+
+When two speakers are time aligned, they will have the same phase at the crossover frequency and their phase plots will have the same slope in the crossover region.
+
+Time alignment using phase requires separate measurements of the speakers on either side of the crossover.  To do this with HouseCurve, measurements of the first speaker are compared to the second using an [overlay](/MANUAL.md#overlay).  The second speaker is adjusted until a good time alignment is found on the phase plot.
+
+Phase measurements are very sensitive to changes in the distance between speaker and microphone.  For best results, take measurements from the middle of the listening area, keeping the microphone in the same location for each measurement.  For lower frequency crossovers (~100 Hz), it is possible to average phase measurements in the listening area, but this will quickly break down for large areas.  Keep in mind that sound takes about 3 ms to travel 1 meter.
+
+Phase measurements must share the same time reference to be compared.  To achieve this with HouseCurve, the chirp sound must come from the same speaker (for more information, see [measurement process](/HOWTO.md#measurement-process).
+
+For a typical 2.1 audio system, use **either** the left or right main speaker as the “chirp” speaker.  Use the same chirp speaker for both [subwoofer](/HOWTO.md#subwoofer-measurements) and main speaker measurements.  Measure the main speakers first, allowing the sweep to play from both left and right speakers.  This provides an average phase for them main speakers.  Measure the subwoofer second and adjust the audio system as needed to obtain alignment (adjust main speakers or subwoofer).
+
+The phase plot below shows a 2.1 audio system with good time alignment.  The subwoofer measurement (green) is compared to an overlay of the main speakers (grey).  The crossover frequency is 100 Hz.  The main speakers and subwoofer have nearly the same phase at the crossover frequency, and the phase slopes are roughly the same.
+
+![](/assets/img/PhaseAlign.png)
+
+The plot below shows the same audio system in various states of alignment.  As delay is changed, the phase of the subwoofer moves up or down at the crossover frequency.  The slope of the phase will also slowly change with delay.
+
+![](/assets/img/PhaseNotAligned.png)
+
+Counterintuitively, the subwoofer phase measurements above (green) were generated by delaying the main speakers (grey).  This works because delaying the main speakers also delays the chirp sound which is the reference for the subwoofer phase.  Subwoofers tend to have more delay to begin with, so delaying the main speakers to match is often the correct adjustment.
+
+Finally, in the plot below, the audio system is aligned with too much delay.  While the main speakers and subwoofer have the nearly same phase at the crossover frequency, the phase slopes are different.  This situation is sometimes described as “phase aligned but not time aligned”.  In this situation, try adding or subtracting delay equivalent to the crossover wavelength.
+
+![](/assets/img/PhaseNotTime.png)
+
+As with the [power method](#time-align-using-power) of time alignment, the group delay plot can be consulted to double check the alignment.  This requires taking a new measurement with both speakers active.
+
+In the example plots above, the crossovers were disabled to ensure the measurements had enough signal on either side of the crossover to see the phase slope.  Use caution when measuring with crossovers disabled as this could lead to audio system damage.  An alternative approach is to disable [Coherence Blanking](/MANUAL.md#coherence-blanking).
+
+The degree of success one will have with this method depends a lot on the audio system and the room.  Sometimes it is better to try getting close using the power method, then fine tuning using the phase method.
+
+
