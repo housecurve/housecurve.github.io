@@ -88,8 +88,32 @@ The **group delay plot** shows “when” the sound at a given frequency arrives
 
 
 ### Subwoofer measurements
+A subwoofer (or woofer) lacks the frequency range to play the chirp sound of the test signal (see [measurement process](#measurement-process)).  To measure a subwoofer with HouseCurve, another full range speaker is needed to produce the chirp and serve as the timing reference.
+
+HouseCurve can be configured to play the chirp and sweep sounds on [different audio channels](/MANUAL.md#chirp-channel).  This makes it possible to route the sweep to the subwoofer and the chirp to another speaker (typically a main or center speaker).  Not all audio systems will support this.
+
+For a typical 2.1 audio system, this can be accomplished by disabling (or disconnecting) a main speaker, ex: the right speaker.  HouseCurve is then configured to play the sweep through the right channel and the chirp through the left channel.  The subwoofer will receive the right channel via the “subwoofer out” of the audio system.  This is pictured below:
+
+![](/assets/img/SubwooferSweep.png)
+
+Use [Coherence Blanking](/Manual.md#coherence-blanking) to ensure the plots only show portions of the measurement that are actually from the subwoofer and not simply noise.  The plot below shows a subwoofer measurement with Coherence Blanking turned off.  As can be seen, the plot shows a peak where the subwoofer is actually able to produce sound.  The rest of the measurement is the noise floor of the audio system and room.
+
+![](/assets/img/SubNoBlanking.png)
+
+Below the same measurement is shown with Coherence Blanking set to 50%.  Now only the useful portion of the measurement is shown.
+
+![](/assets/img/SubBlanking.png)
+
+When separately adjusting main and subwoofer speakers to the same Reference Curve, it is recommended that the [Reference Curve Fit](/MANUAL.md#reference-curve-fit) setting be switched to manual and a suitable level entered.  The Reference Curve will then appear at the same level for all measurements.  In the examples above, the Reference Curve was fixed at 24.5 dB @ 100 Hz.
 
 
 ### Curve file format
 
+HouseCurve supports the following file format for reference curves and microphone calibrations: 
+
+A space or tab delimited text file with a frequency (Hz) followed by a gain (dB) on each line. A third phase value may be included but is ignored. Lines starting with non-numeric characters are ignored. Frequencies must be listed in increasing order. HouseCurve will interpolate a curve from 20-20000 Hz using the values provided. The file extension may be txt or frd.
+
+[Example Reference Curve](/examples/curve.txt)
+
+HouseCurve is able to load files from iPhone/iPad local storage and iCloud.  To load a curve file from a website, save it to the iPhone/iPad storage and then select from within HouseCurve.
 
