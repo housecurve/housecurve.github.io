@@ -77,8 +77,82 @@ The example below shows an audio system consisting of main speakers and a subwoo
 
 ### Choose crossover frequencies
 
+For audio systems that incorporate limited range speakers, the crossover frequencies need to be selected.
+
+The classic approach is to select crossover frequencies based on speaker specifications, but these may not reflect how the speakers perform in the room.  HouseCurve’s overlay feature makes it possible to compare separate speaker measurements to select a crossover frequency.
+
+The screenshot below shows a 2.1 desktop audio system consisting of main speakers and a subwoofer.  The speakers were measured separately with crossovers disabled and no equalization.  The [sub was measured](/HOWTO.md#subwoofer-measurements) first and saved as an overlay (grey), then the main speakers were measured (green).
+
+![](/assets/img/Crossover.png)
+
+The published frequency range for the main speakers is 80-20000 Hz and 35-165 Hz for the subwoofer.  Based on the specs, the overlap of these speakers is 80 - 165 Hz and the crossover frequency should be somewhere in that range.
+
+In the power plot, we can see the main speaker drops off quickly below ~120 Hz.  For this system the crossover frequency should be somewhere in the 100-120 Hz range.  The subwoofer is more than capable of filling in below 100 Hz.
 
 
 ### Time align speakers
+
+When an audio system contains limited range speakers (subwoofers, bi-amped speakers, etc) time alignment becomes an important adjustment.
+
+At the crossover frequencies of an audio system, sound transitions from one speaker to another.  In this region, speakers on either side of the crossover are active.  If sound leaves the speakers at different times, destructive interference (or “cancellation”) can occur leading to audible dips in the sound level at the crossover frequency.  These dips cannot be fixed by equalization.
+
+The degree of time alignment needed is dependent on the wavelength of the crossover frequency (wavelength = 1 / frequency).  Destructive interference reaches a maximum when there is a half wavelength of delay between speakers.  For example, a subwoofer and a main speaker are separated by a crossover at 100 Hz.  The wavelength at 100 Hz is 0.01 seconds or 10 milliseconds (ms).  If the subwoofer is delayed by half a wavelength, or 5 ms, then peak destructive interference will occur.  The effect will subside for smaller or larger delays, ex: 0-2 ms or 8-10 ms.  
+
+Since sound is a wave, the pattern of destructive interference will repeat at multiples of the crossover wavelength.  In the example above, peak destructive interference will happen for delays of 5 ms, 15 ms, 25 ms and so on.  This makes time alignment tricky as it’s possible to align on the wrong cycle and have more delay than needed.
+
+The adjustments available for time alignment depend on the audio system.  For subwoofers, there may be a polarity switch (often labelled “phase”) or a dial that permits adjusting phase from 0 to 180 degrees.  Modern amplifiers/receivers typically have delay or distance settings that can be used for time alignment.  Many audio systems will have a combination of these adjustments and experimentation will be required to figure out what works best.
+
+HouseCurve supports two methods of time aligning speakers: alignment using power and alignment using phase.  The power method is simpler, the phase method can be more accurate.
+
+
+#### Time align using power
+Destructive interference will cause a dip in the power measurement at the crossover frequency.  We can use this effect to figure out what adjustments increase or decrease the dip (polarity, phase, delay, distance, whatever you have).  The speakers are time aligned for the adjustment with the smallest dip.
+
+When using this method it’s important to avoid changing audio system levels (volume, bass/treble, equalizer, etc).
+
+Ensure speakers on either side of the crossover are enabled.  Set HouseCurve’s Display Mode to History [link to display mode].  Zoom into the region around the crossover frequency [link to zoom].  It is also best to set the Reference Curve Fit to manual and select an appropriate level [link to reference curve fit] as this will prevent the reference curve from moving as adjustments are made.
+
+Take a measurement from the middle of the listening area.  On the power plot, place the cursor at the crossover frequency and observe the power value.  Adjust the audio system.  Repeat the the measurement and observe the new power value.  Continue to make adjustments until the maximum power level is achieved and the dip is the smallest.  The plot below shows a system being adjusted from the worst alignment to the best (smallest dip).
+
+![](/assets/img/PowerAlign.png)
+
+The same technique can be applied by averaging measurements in the listening area and saving [overlays](/MANUAL.md#overlay).
+
+The downfall of this approach is that maximum power can be achieved at multiples of the crossover wavelength.  This can lead to tuning the system with more delay than necessary.  The group delay plot can be used to check this for subwoofers.  If there is a significant lift in delays before or after the crossover, this could mean more delay than necessary.  This can be seen in the group delay plot below.
+
+![](/assets/img/DelayAlign.png)
+
+
+#### Time align using phase
+
+When two speakers are time aligned, they will have the same phase at the crossover frequency and their phase plots will have the same slope in the crossover region.
+
+Time alignment using phase requires separate measurements of the speakers on either side of the crossover.  To do this with HouseCurve, measurements of the first speaker are compared to the second using an [overlay](/MANUAL.md#overlay).  The second speaker is adjusted until a good time alignment is found on the phase plot.
+
+Phase measurements are very sensitive to changes in the distance between speaker and microphone.  For best results, take measurements from the middle of the listening area, keeping the microphone in the same location for each measurement.  For lower frequency crossovers (~100 Hz), it is possible to average phase measurements in the listening area, but this will quickly break down for large areas.  Keep in mind that sound takes about 3 ms to travel 1 meter.
+
+Phase measurements must share the same time reference to be compared.  To achieve this with HouseCurve, the chirp sound must come from the same speaker (for more information, see [measurement process](/HOWTO.md#measurement-process).
+
+For a typical 2.1 audio system, use **either** the left or right main speaker as the “chirp” speaker.  Use the same chirp speaker for both [subwoofer](/HOWTO.md#subwoofer-measurements) and main speaker measurements.  Measure the main speakers first, allowing the sweep to play from both left and right speakers.  This provides an average phase for them main speakers.  Measure the subwoofer second and adjust the audio system as needed to obtain alignment (adjust main speakers or subwoofer).
+
+The phase plot below shows a 2.1 audio system with good time alignment.  The subwoofer measurement (green) is compared to an overlay of the main speakers (grey).  The crossover frequency is 100 Hz.  The main speakers and subwoofer have nearly the same phase at the crossover frequency, and the phase slopes are roughly the same.
+
+![](/assets/img/PhaseAlign.png)
+
+The plot below shows the same audio system in various states of alignment.  As delay is changed, the phase of the subwoofer moves up or down at the crossover frequency.  The slope of the phase will also slowly change with delay.
+
+![](/assets/img/PhaseNotAligned.png)
+
+Counterintuitively, the subwoofer phase measurements above (green) were generated by delaying the main speakers (grey).  This works because delaying the main speakers also delays the chirp sound which is the reference for the subwoofer phase.  Subwoofers tend to have more delay to begin with, so delaying the main speakers to match is often the correct adjustment.
+
+Finally, in the plot below, the audio system is aligned with too much delay.  While the main speakers and subwoofer have the nearly same phase at the crossover frequency, the phase slopes are different.  This situation is sometimes described as “phase aligned but not time aligned”.  In this situation, try adding or subtracting delay equivalent to the crossover wavelength.
+
+![](/assets/img/PhaseNotTime.png)
+
+As with the [power method](#time-align-using-power) of time alignment, the group delay plot can be consulted to double check the alignment.  This requires taking a new measurement with both speakers active.
+
+In the example plots above, the crossovers were disabled to ensure the measurements had enough signal on either side of the crossover to see the phase slope.  Use caution when measuring with crossovers disabled as this could lead to audio system damage.  An alternative approach is to disable [Coherence Blanking](/MANUAL.md#coherence-blanking).
+
+The degree of success one will have with this method depends a lot on the audio system and the room.  Sometimes it is better to try getting close using the power method, then fine tuning using the phase method.
 
 
