@@ -56,11 +56,39 @@ HouseCurve will abort the measurement process for the following reasons:
 * Take steps to reduce background noise.  HouseCurve works best when measurements are taken from a quiet listening area.
 * Lower the [Coherence Blanking](/Manual.md#coherence-blanking) threshold.
 
+
 ### Measurement quality
+When [Coherence Blanking](/Manual.md#coherence-blanking) is enabled, only portions of the measurement that are above the selected signal to noise ratio will be displayed.  This is a helpful indicator of measurement quality.  
+
+For example, the measurement below was taken in the presence of external noise (someone talking).  This significantly contaminated the measurement and unusable sections have been blanked.  This measurement should probably be discarded.
+
+![](/assets/img/LowCoherence.png)
+
+Signal to noise issues are typically resolved by removing sources of noise or increasing the volume of the audio system.  In rare situations the microphone may be faulty.
+
 
 ### Plots
+HouseCurve displays successful measurements on the power, phase and group delay plots.  Use the Page Control to switch between plot types, or swipe from the left/right edge of the screen.
+
+The **power plot** is the most important plot for tuning.  The overall level of the power measurement is the “volume” of the audio system.  The level differences between frequencies is what we want to change when tuning an audio system [link to equalization].
+
+![](/assets/img/Power.png)
+
+The power plot is commonly referred to as the “frequency response” of the audio system.  It may also be referred to as the “magnitude” plot, which is identical to the power plot as long as they are both displayed in decibels.
+
+The **phase plot** shows the phase of the measurement versus frequency.  Phase plots are used for time aligning speakers [link to alignment via phase].
+
+![](/assets/img/Phase.png)
+
+This style of phase plot is traditionally referred to as a “wrapped phase” plot.  The vertical green lines on the plot are referred to as “wraps”.  A wrap is a frequency where the phase exceeds the range of the plot and “wraps” around to the other vertical extreme of the plot.  A wrap is an artifact of the plot and not and indication that the phase is suddenly changing by 360 degrees.
+
+The **group delay plot** shows “when” the sound at a given frequency arrives at the microphone.  The group delay plot can be used to double check [speaker time alignment](/TUNING.md#time-align-speakers).  Extreme peaks in the group delay may indicate regions that can’t be fixed by equalization, such as poor time alignment or problematic room interactions.
+
+![](/assets/img/Delay.png)
+
 
 ### Subwoofer measurements
+
 
 ### Curve file format
 
