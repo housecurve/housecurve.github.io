@@ -1,6 +1,6 @@
 ## How to tune an audio system
 
-### Tuning an audio system
+### Tuning overview
 The process for tuning an audio system will generally involve the tasks described below:
 
 [Select reference curve](#select-reference-curve).  The reference curve defines how the audio system will sound.  The choice of curve is subject to personal taste.
