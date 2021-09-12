@@ -40,9 +40,44 @@ Below are some resources for understanding what reference curves do and how to c
 
 ### Apply equalization
 
+If the audio system has separately adjustable speakers, such as a subwoofer, ensure that levels have been [matched](#match-speaker-levels), crossovers are [selected](#choose-crossover-frequencies) and speakers are [time aligned](#time-align-speakers).
+
+Equalization in general means changing the volume level at different frequencies.  There are many ways an audio system can be changed to make this happen.  What can be changed depends on the audio system:
+
+* Change speaker position in room
+* Adjust the bass or treble controls
+* Change relative levels of speakers (ex: subwoofer level)
+* Adjust the graphic or parametric equalizer settings
+* Change the room (ex: sound dampening, adjust furniture)
+
+When equalizing, the goal is to adjust the audio system such that the average power measurement ends up within the +/- 3 dB band that surrounds the Reference Curve.
+
+![](/assets/img/EqualizerStart.png)
+
+Adjust the audio system in small steps, collecting the same measurements after each change.  [Overlays](/MANUAL.md#overlay) are helpful for seeing the effect of an adjustment as can be seen below:
+
+![](/assets/img/EqualizerChanged.png)
+
+When most of the average power measurement is within the reference band, the audio system is sufficiently equalized.  Further adjustments may not be perceptible.
+
+Avoid adjustments that are beyond the capability of the audio system.  Doing so will lead to distortion and possibly audio system damage.  Keep in mind that a +10 dB adjustment means the audio system has to output 10 times more signal power.  A change of +20 dB is 100 times more signal power!
+
+
 ### Match speaker levels
+For systems with separately adjustable speakers, the relative levels need to be matched.  The goal is to set the speaker levels such that measurements in the listening area are roughly close to the reference curve on the power plot.
+
+Make sure all speakers are active and set the overall audio system volume to a normal listening level.  It can be helpful to set HouseCurve’s [Display Mode](/MANUAL.md#display-mode) to History.
+
+Take a measurement from the middle of the listening area.  On the power plot, observe how the measurement lines up with the Reference Curve.  Adjust individual speaker levels and repeat the measurement as needed to get close to the Reference Curve.
+
+The example below shows an audio system consisting of main speakers and a subwoofer.  The subwoofer level was initially too low.  It was adjusted a few times to get close enough to the Reference Curve.
+
+![](/assets/img/SubLevel.png)
+
 
 ### Choose crossover frequencies
+
+
 
 ### Time align speakers
 
