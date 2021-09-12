@@ -25,7 +25,7 @@ Tap the AirPlay button to select from available AirPlay and Bluetooth audio outp
 Tap to discard all measurements.
 
 #### Save overlay
-Tap to create an overlay from a measurement [Overlay](#Overlay).  This button is disabled when there are no measurements on the plot.
+Tap to create an overlay from a measurement [Overlay](#overlay).  This button is disabled when there are no measurements on the plot.
 
 
 ### Plot area
@@ -37,7 +37,7 @@ The selected [Reference Curve](#reference-curve) is displayed on the power plot 
 The phase and group delay plots always have a reference of zero.
 
 #### Selected Overlay
-The selected [Overlay](#Overlay) is displayed in grey.  The name of the overlay is displayed in Setup Status.
+The selected [Overlay](#overlay) is displayed in grey.  The name of the overlay is displayed in Setup Status.
 
 #### Measurements
 Measurements are displayed on the plot in green.
@@ -96,7 +96,7 @@ Overlays are created from available measurements based on the [Display Mode](#di
 When an overlay is created, it will appear underneath the measurement it is based on.  The overlay will remain on the plot for all subsequent measurements.
 
 #### Reference Curve
-A [Reference Curve](/HOWTO.md#select-reference-curve) is displayed on the power plot to serve as a guide for [tuning an audio system](/TUNING.md).  
+A [Reference Curve](/TUNING.md#select-reference-curve) is displayed on the power plot to serve as a guide for [tuning an audio system](/TUNING.md).  
 
 The curve is positioned on the power plot based on the Reference Curve Fit setting.
 
@@ -109,11 +109,8 @@ By default, the selected Reference Curve is automatically fitted to measurements
 
 When automatic fitting is disabled, the curve can be manually positioned by setting a desired dB level at 100 Hz.  This is useful when separately adjusting speakers to a common reference level, such as main speakers and a subwoofer.
 
-#### Chirp Channel
-Select the channel for the test signal "chirp" sound.  This is used for higher accuracy phase measurements and [subwoofer measurements](/HOWTO.md#subwoofer-measurements).
-
-#### Sweep Channel
-Select the channel for the test signal "sweep" sound.  This is used for [subwoofer measurements](/HOWTO.md#subwoofer-measurements)
+#### Chirp and Sweep Channel
+The "chirp" and "sweep" sounds of the test signal can be played on different channels (see [measurement process](/HOWTO.md#measurement-process)).  This is mainly used for [subwoofer measurements](/HOWTO.md#subwoofer-measurements).
 
 #### Internal Mic Compensation
 The built in iPhone/iPad microphones have a reasonably flat response and are quite acceptable for tuning an audio system.  However, when compared to an external calibrated microphone, they do show some roll off at the extreme ends of the frequency spectrum.  
