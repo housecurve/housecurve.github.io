@@ -23,7 +23,7 @@ A Reference Curve, or “house curve” is a target power measurement (aka “fr
 
 The idea is to adjust the audio system such that the power measurement matches the Reference Curve.  HouseCurve will display the selected Reference Curve on the power plot when there are measurements.
 
-![](/assets/img/NoEqualizer.png)
+![](/assets/img/ReferenceCurve.png)
 
 The choice of Reference Curve is subject to individual taste.  Generally speaking, most listeners prefer a curve with a 1 dB/octave downward slope (-3 dB/decade).  Put simply, listeners prefer it when low frequencies are louder than high frequencies.  HouseCurve provides some common reference curves, all of which have the same overall downward slope.
 
