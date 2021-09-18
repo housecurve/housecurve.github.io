@@ -94,6 +94,10 @@ In the power plot, we can see the main speaker drops off quickly below ~120 Hz. 
 
 When an audio system contains limited range speakers (subwoofers, bi-amped speakers, etc) time alignment becomes an important adjustment.
 
+HouseCurve supports two methods of time aligning speakers.  The [power method](#time-align-using-power) and the [phase method](#time-align-using-phase).  The power method is simpler, the phase method can be more accurate.
+
+#### What is time alignment ####
+
 At the crossover frequencies of an audio system, sound transitions from one speaker to another.  In this region, speakers on either side of the crossover are active.  If sound leaves the speakers at different times, [destructive interference](https://www.phys.uconn.edu/~gibson/Notes/Section5_2/Sec5_2.htm) (or “cancellation”) can occur leading to audible dips in the sound level at the crossover frequency.  These dips cannot be fixed by equalization.
 
 The degree of time alignment needed is dependent on the wavelength of the crossover frequency (wavelength = 1 / frequency).  Destructive interference reaches a maximum when there is a half wavelength of delay between speakers.  For example, a subwoofer and a main speaker are separated by a crossover at 100 Hz.  The wavelength at 100 Hz is 0.01 seconds or 10 milliseconds (ms).  If the subwoofer is delayed by half a wavelength, or 5 ms, then peak destructive interference will occur.  The effect will subside for smaller or larger delays, ex: 0-2 ms or 8-10 ms.  
@@ -101,8 +105,6 @@ The degree of time alignment needed is dependent on the wavelength of the crosso
 Since sound is a wave, the pattern of destructive interference will repeat at multiples of the crossover wavelength.  In the example above, peak destructive interference will happen for delays of 5 ms, 15 ms, 25 ms and so on.  This makes time alignment tricky as it’s possible to align on the wrong cycle and have more delay than needed.
 
 The adjustments available for time alignment depend on the audio system.  For subwoofers, there may be a polarity switch (often labelled “phase”) or a dial that permits adjusting phase from 0 to 180 degrees.  Modern amplifiers/receivers typically have delay or distance settings that can be used for time alignment.  Many audio systems will have a combination of these adjustments and experimentation will be required to figure out what works best.
-
-HouseCurve supports two methods of time aligning speakers: alignment using power and alignment using phase.  The power method is simpler, the phase method can be more accurate.
 
 
 #### Time align using power
@@ -125,7 +127,7 @@ The downfall of this approach is that maximum power can be achieved at multiples
 
 #### Time align using phase
 
-When two speakers are time aligned, they will have the same phase at the crossover frequency and their phase plots will have the same slope in the crossover region.
+When two speakers are time aligned, they will have the same phase at the crossover frequency and their phase plots will have the same slope in the crossover region.  HouseCurve supports two methods
 
 Time alignment using phase requires separate measurements of the speakers on either side of the crossover.  To do this with HouseCurve, measurements of the first speaker are compared to the second using an [overlay](/MANUAL.md#overlay).  The second speaker is adjusted until a good time alignment is found on the phase plot.
 
