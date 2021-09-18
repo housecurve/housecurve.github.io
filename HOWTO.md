@@ -85,7 +85,7 @@ This style of phase plot is traditionally referred to as a “wrapped phase” p
 
 The **group delay plot** shows “when” the sound at a given frequency arrives at the microphone.  The group delay plot can be used to double check [speaker time alignment](/TUNING.md#time-align-speakers).  Extreme peaks in the group delay may indicate regions that can’t be fixed by equalization, such as poor time alignment or problematic room interactions.
 
-![](/assets/img/group_delay_plot.png)
+![](/assets/img/housecurve_group_delay_plot.png)
 
 
 ### Subwoofer measurements
