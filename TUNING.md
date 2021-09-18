@@ -96,7 +96,7 @@ When an audio system contains limited range speakers (subwoofers, bi-amped speak
 
 HouseCurve supports two methods of time aligning speakers.  The [power method](#time-align-using-power) and the [phase method](#time-align-using-phase).  The power method is simpler, the phase method can be more accurate.
 
-#### What is time alignment ####
+#### What is time alignment? ####
 
 At the crossover frequencies of an audio system, sound transitions from one speaker to another.  In this region, speakers on either side of the crossover are active.  If sound leaves the speakers at different times, [destructive interference](https://www.phys.uconn.edu/~gibson/Notes/Section5_2/Sec5_2.htm) (or “cancellation”) can occur leading to audible dips in the sound level at the crossover frequency.  These dips cannot be fixed by equalization.
 
