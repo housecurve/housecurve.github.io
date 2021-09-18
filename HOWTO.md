@@ -71,13 +71,13 @@ Signal to noise issues are typically resolved by removing sources of noise or in
 ### Plots
 HouseCurve displays successful measurements on the power, phase and group delay plots.  Use the Page Control to switch between plot types, or swipe from the left/right edge of the screen.
 
-The **power plot** is the most important plot for tuning.  The overall level of the power measurement is the “volume” of the audio system.  The level differences between frequencies is what we want to change when tuning an audio system [link to equalization].
+The **power plot** is the most important plot for tuning.  The overall level of the power measurement is the “volume” of the audio system.  The level differences between frequencies is what we want to change when [adjusting an equalizer](/TUNING.md#apply-equalization).
 
 ![](/assets/img/Power.png)
 
 The power plot is commonly referred to as the “frequency response” of the audio system.  It may also be referred to as the “magnitude” plot, which is identical to the power plot as long as they are both displayed in decibels.
 
-The **phase plot** shows the phase of the measurement versus frequency.  Phase plots are used for time aligning speakers [link to alignment via phase].
+The **phase plot** shows the phase of the measurement versus frequency.  Phase plots can be used for [time aligning speakers](/TUNING.md#time-align-using-phase).
 
 ![](/assets/img/Phase.png)
 
