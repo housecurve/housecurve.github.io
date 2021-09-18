@@ -7,7 +7,7 @@ HouseCurve sends test sounds to your audio system and measures the result using 
 
 HouseCurve can connect wireless to the audio system using AirPlay or Bluetooth. Tap the AirPlay button at the bottom of the screen to see a list of outputs.
 
-Alternatively, the headphone connector can be used to create a wired connection to the audio system.  Use a Lightning to 3.5mm adapter.
+Alternatively, the headphone connector can be used to create a wired connection to the audio system.  Use a [Lightning to 3.5mm adapter](https://www.apple.com/shop/product/MMX62AM/A/lightning-to-35mm-headphone-jack-adapter).
 
 HouseCurve will default to using the built in microphone of your iPhone/iPad.  These microphones are quite accurate and are suitable for most tuning tasks.
 
@@ -15,11 +15,12 @@ For additional accuracy, HouseCurve can use external microphones.  It will autom
 
 HouseCurve has been tested with the following external calibrated microphones:
 
-* https://www.minidsp.com/products/acoustic-measurement/umik-1
-* https://www.daytonaudio.com/product/1117/imm-6-idevice-calibrated-measurement-microphone
+* [miniDSP UMIK-1](https://www.minidsp.com/products/acoustic-measurement/umik-1)
+* [Dayton Audio iMM-6](https://www.daytonaudio.com/product/1117/imm-6-idevice-calibrated-measurement-microphone)
 
 When CarPlay is used to connect to an automobile audio system, be aware that the selected microphone will be the automobile (head unit) microphone, not the iPhone/iPad microphone.  It may be possible to override this by connecting an external microphone to the automobile.  Alternatively, connect using Bluetooth or the headphone connector.
 
+If you are getting strange measurements, try another microphone.  A common microphone for sanity checks is the [iPhone EarPods with Lighning Connector](https://www.apple.com/shop/product/MMTN2AM/A/earpods-with-lightning-connector).
 
 ### Listening area
 When listening to an audio system, we hear the combination of the audio system and its surroundings.  In classic audio speak, the surroundings are referred to as “the room” regardless of what they actually are (ex: living room, office, automobile, outdoor patio).
@@ -30,11 +31,11 @@ The first step in tuning an audio system is to establish a listening area.  Wher
 
 
 ### Measurement process
-A single measurement represents how the audio system sounds at a single location.  To get a realistic picture of how the listening area sounds, it is important to **take measurements from several locations**.  These measurements can be averaged so that small variances cancel out making it possible to find a “best fit” tune for a given listening area.
+A single measurement represents how the audio system sounds at a single location.  To get a realistic measurement of the listening area, it is important to **take measurements from several locations**.  For a desk (near field), try 2-3 locations.  For a living room, try 3-5 locations.  Aim the microphone towards the audio system.  These measurements can be averaged so that small variances cancel out making it possible to find a “best fit” tune for a given listening area.
 
 The measurement process starts when the [Measure](/MANUAL.md#measure) button is pressed.  HouseCurve will play a test signal through the audio system.  This signal consists of a “chirp” sound followed by the the stimulus “sweep” sound.  The chirp is a timing reference that tells HouseCurve when to expect the sweep sound.  The sweep sound is used to measure the audio system.
 
-The stages of the measurement process are displayed in the Measurement Status area at the top of the screen.
+The stages of the measurement process are displayed in the [Measurement Status](/MANUAL.md#measurement-status) area at the top of the screen.
 
 ![](/assets/img/Listening.png)
 
@@ -90,7 +91,7 @@ The **group delay plot** shows “when” the sound at a given frequency arrives
 ### Subwoofer measurements
 A subwoofer (or woofer) lacks the frequency range to play the chirp sound of the test signal (see [measurement process](#measurement-process)).  To measure a subwoofer with HouseCurve, another full range speaker is needed to produce the chirp and serve as the timing reference.
 
-HouseCurve can be configured to play the chirp and sweep sounds on [different audio channels](/MANUAL.md#chirp-channel).  This makes it possible to route the sweep to the subwoofer and the chirp to another speaker (typically a main or center speaker).  Not all audio systems will support this.
+HouseCurve can be configured to play the chirp and sweep sounds on [different audio channels](/MANUAL.md#chirp-and-sweep-channel).  This makes it possible to route the sweep to the subwoofer and the chirp to another speaker (typically a main or center speaker).  Not all audio systems will support this.
 
 For a typical 2.1 audio system, this can be accomplished by disabling (or disconnecting) a main speaker, ex: the right speaker.  HouseCurve is then configured to play the sweep through the right channel and the chirp through the left channel.  The subwoofer will receive the right channel via the “subwoofer out” of the audio system.  This is pictured below:
 
