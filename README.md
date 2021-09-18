@@ -21,7 +21,7 @@ HouseCurve plays a log sine sweep through your audio system and measures the res
 
 HouseCurve was designed to enable experimentation.  Measurements can be compared to previous measurements using overlays.  Small changes and repeat measurements make it easy to see how an adjustment effects sound in the listening area.  HouseCurve can help with most audio system adjustments, from speaker placement and equalizer settings to room treatments.
 
-Power measurements are displayed on top of a reference curve, making it easy to determine how to [adjust the audio system](/TUNING.md#apply-equalization).  Phase and group delay measurements are provided to assist with [speaker time alignment](/TUNING.md#time-align-speakers).
+Power measurements are displayed on top of a reference curve, making it easy to determine how to [adjust an equalizer](/TUNING.md#apply-equalization).  Phase and group delay measurements are provided to assist with [subwoofer time alignment](/TUNING.md#time-align-speakers).
 
 HouseCurve will produce acceptable results with the built in iPhone/iPad microphone. Using calibrated external microphones will provide higher accuracy.
 
