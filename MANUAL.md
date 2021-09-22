@@ -85,7 +85,7 @@ Coherence blanking hides regions of the measurement, or overlay, that are [low q
 
 Blanking occurs wherever the measurement falls below the selected signal to noise ratio (blanking threshold).  To disable blanking, select Off.
 
-This setting also controls the threshold at which HouseCurve will automatically discard measurements.
+This setting also controls the threshold at which HouseCurve will [automatically discard measurements](/HOWTO.md/measurement-process).
 
 #### Frequency Scale
 The frequency axis can have an Octave or Decade scale.  This setting applies to all plots.
