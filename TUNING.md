@@ -137,7 +137,7 @@ Time alignment using phase requires separate measurements of the speakers on eit
 
 Phase measurements are very sensitive to changes in the distance between speaker and microphone.  For best results, take measurements from the middle of the listening area, keeping the microphone in the same location for each measurement.  For lower frequency crossovers (~100 Hz), it is possible to average phase measurements in the listening area, but this will quickly break down for large areas.  Keep in mind that sound takes about 3 ms to travel 1 meter.
 
-Phase measurements must share the same time reference to be compared.  To achieve this with HouseCurve, the chirp sound must come from the same speaker (for more information, see [measurement process](/HOWTO.md#measurement-process).
+Phase measurements must share the same time reference to be compared.  To achieve this with HouseCurve, the chirp sound must come from the same speaker (for more information, see [measurement process](/HOWTO.md#measurement-process)).
 
 For a typical 2.1 audio system, use **either** the left or right main speaker as the “chirp” speaker.  Use the same chirp speaker for both [subwoofer](/HOWTO.md#subwoofer-measurements) and main speaker measurements.  Measure the main speakers first, allowing the sweep to play from both left and right speakers.  This provides an average phase for them main speakers.  Measure the subwoofer second and adjust the audio system as needed to obtain alignment (adjust main speakers or subwoofer).
 
