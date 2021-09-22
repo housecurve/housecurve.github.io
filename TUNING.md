@@ -108,7 +108,13 @@ The degree of time alignment needed is dependent on the wavelength of the crosso
 
 Since sound is a wave, the pattern of destructive interference will repeat at multiples of the crossover wavelength.  In the example above, peak destructive interference will happen for delays of 5 ms, 15 ms, 25 ms and so on.  This makes time alignment tricky as it’s possible to align on the wrong cycle and have more delay than needed.
 
-The adjustments available for time alignment depend on the audio system.  For subwoofers, there may be a polarity switch (often labelled “phase”) or a dial that permits adjusting phase from 0 to 180 degrees.  Modern amplifiers/receivers typically have delay or distance settings that can be used for time alignment.  Many audio systems will have a combination of these adjustments and experimentation will be required to figure out what works best.
+The adjustments available for time alignment depend on the audio system:  
+
+* For subwoofers, there may be a polarity switch (often labelled “phase”) or a dial that permits adjusting phase from 0 to 180 degrees.
+* Amplifiers/receivers typically have delay or distance settings.
+* Active crossovers and parametric equalizers usually have delay settings too (a [MiniDSP 2x4 HD](https://www.minidsp.com/products/minidsp-in-a-box/minidsp-2x4-hd) was used for many of the measurements in this document).
+
+Many audio systems will have a combination of these adjustments and **experimentation will be required** to figure out what works best.
 
 
 #### Time align using power
