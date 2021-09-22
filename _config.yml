@@ -8,5 +8,5 @@ logo: /assets/img/small.png
 google_analytics: UA-144126322-1
 
 kramdown:
-	toc_levels: 2..2
+   toc_levels: 2..3
 
