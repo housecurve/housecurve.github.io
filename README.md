@@ -45,3 +45,4 @@ HouseCurve does not collect, use, store or transfer personal data.  With your pe
 [Apple Standard License Agreement](https://www.apple.com/legal/internet-services/itunes/dev/stdeula)
 
 
+
