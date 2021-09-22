@@ -32,7 +32,7 @@ Tap to discard all measurements.
 Tap to create an overlay from a measurement [Overlay](#overlay).  This button is disabled when there are no measurements on the plot.
 
 
-### Plot area
+### Plot Area
 ![housecurve plot area](/assets/img/housecurve_plot_area.png "housecurve plot area")
 
 #### Selected Reference Curve
