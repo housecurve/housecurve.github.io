@@ -126,7 +126,7 @@ HouseCurve supports calibrated external microphones.  Available calibrations wil
 
 Microphone calibrations can be loaded tapping + at the top of the External Mic Calibration screen.  Calibrations can be removed by tapping Edit.
 
-[Curve file format](/HOWTO.md#curve-file-format)
+HouseCurve supports the following [Curve file format](/HOWTO.md#curve-file-format).
 
 #### Stimulus Type
 Stimulus Type controls the “sweep” sound used to measure an audio system.
