@@ -139,7 +139,7 @@ Phase measurements are very sensitive to changes in the distance between speaker
 
 Phase measurements must share the same time reference to be compared.  To achieve this with HouseCurve, the chirp sound must come from the same speaker (for more information, see [measurement process](/HOWTO.md#measurement-process)).
 
-For a typical 2.1 audio system, use **either** the left or right main speaker as the “chirp” speaker.  Use the same chirp speaker for both subwoofer and main speaker measurements.  Measure the main speakers first, allowing the sweep to play from both left and right speakers.  This provides an average phase for the main speakers.  [Measure the subwoofer](/HOWTO.md#subwoofer-measurements) second and adjust the audio system as needed to obtain alignment (adjust main speakers or subwoofer).
+For a typical 2.1 audio system, use **either** the left or right main speaker as the “chirp” speaker.  Use the same chirp speaker for both subwoofer and main speaker measurements.  Measure the main speakers first, allowing the sweep to play from both left and right speakers to get an average phase.  Save this measurement as an overlay.  [Measure the subwoofer](/HOWTO.md#subwoofer-measurements) second and compare to the overlay.  Adjust the audio system as needed to obtain alignment (adjust main speakers or subwoofer).
 
 The phase plot below shows a 2.1 audio system with good time alignment.  The subwoofer measurement (green) is compared to an overlay of the main speakers (grey).  The crossover frequency is 100 Hz.  The main speakers and subwoofer have nearly the same phase at the crossover frequency, and the phase slopes are roughly the same.
 
