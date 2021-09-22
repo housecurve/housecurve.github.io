@@ -27,7 +27,7 @@ A Reference Curve, or “house curve” is a target power measurement (aka “fr
 
 The idea is to adjust the audio system such that the power measurement matches the Reference Curve.  HouseCurve will display the selected Reference Curve on the power plot when there are measurements.
 
-![](/assets/img/reference_curve.png)
+![reference curve](/assets/img/reference_curve.png "Measurement compared to B&K reference curve (yellow)")
 
 The choice of Reference Curve is subject to individual taste.  Generally speaking, most listeners prefer a curve with a 1 dB/octave downward slope (-3 dB/decade).  Put simply, listeners prefer it when low frequencies are louder than high frequencies.  HouseCurve provides some common reference curves, all of which have the same overall downward slope.
 
@@ -56,11 +56,11 @@ Equalization in general means changing the volume level at different frequencies
 
 When equalizing, the goal is to adjust the audio system such that the average power measurement ends up within the +/- 3 dB band that surrounds the Reference Curve.
 
-![](/assets/img/equalizer_start.png)
+![equalization start](/assets/img/equalizer_start.png "Adjust until measurement within reference curve band")
 
 Adjust the audio system in small steps, collecting the same measurements after each change.  [Overlays](/MANUAL.md#overlay) are helpful for seeing the effect of an adjustment as can be seen below:
 
-![](/assets/img/equalizer_changed.png)
+![equalization changed](/assets/img/equalizer_changed.png "Use overlays to see what adjustment did")
 
 When most of the average power measurement is within the reference band, the audio system is sufficiently equalized.  Further adjustments may not be perceptible.
 
@@ -76,7 +76,7 @@ Take a measurement from the middle of the listening area.  On the power plot, ob
 
 The example below shows an audio system consisting of main speakers and a subwoofer.  The subwoofer level was initially too low.  It was adjusted a few times to get close enough to the Reference Curve.
 
-![](/assets/img/subwoofer_level_change.png)
+![subwoofer level change](/assets/img/subwoofer_level_change.png "Matching subwoofer level to main speakers")
 
 
 ### Choose crossover frequencies
@@ -87,7 +87,7 @@ The classic approach is to select crossover frequencies based on speaker specifi
 
 The screenshot below shows a 2.1 desktop audio system consisting of main speakers and a subwoofer.  The speakers were measured separately with crossovers disabled and no equalization.  The [subwoofer was measured](/HOWTO.md#subwoofer-measurements) first and saved as an overlay (grey), then the main speakers were measured (green).
 
-![](/assets/img/finding_crossover_frequency_kanto_yu2.png)
+![finding crossover frequency](/assets/img/finding_crossover_frequency_kanto_yu2.png "Use overlays to find best crossover frequency")
 
 The published frequency range for the main speakers is 80-20000 Hz and 35-165 Hz for the subwoofer.  Based on the specs, the overlap of these speakers is 80 - 165 Hz and the crossover frequency should be somewhere in that range.
 
@@ -120,13 +120,13 @@ Ensure speakers on either side of the crossover are enabled.  Set HouseCurve’s
 
 Take a measurement from the middle of the listening area.  On the power plot, place the cursor at the crossover frequency and observe the power value.  Adjust the audio system.  Repeat the the measurement and observe the new power value.  Continue to make adjustments until the maximum power level is achieved and the dip is the smallest.  The plot below shows a system being adjusted from the worst alignment (largest dip) to the best (smallest dip).
 
-![](/assets/img/subwoofer_align_power.png)
+![subwoofer align power](/assets/img/subwoofer_align_power.png "Adjust until the smallest dip is found")
 
 The same technique can be applied by averaging measurements in the listening area and saving [overlays](/MANUAL.md#overlay).
 
 The downfall of this approach is that maximum power can be achieved at multiples of the crossover wavelength.  This can lead to tuning the system with more delay than necessary.  The group delay plot can be used to check this for subwoofers.  If there is a significant lift in delays before or after the crossover, this could mean more delay than necessary.  This can be seen in the group delay plot below.
 
-![](/assets/img/subwoofer_align_group_delay.png)
+![subwoofer align groupdelay](/assets/img/subwoofer_align_group_delay.png "Check subwoofer alignment with group delay")
 
 
 #### Time align using phase
@@ -143,17 +143,17 @@ For a typical 2.1 audio system, use **either** the left or right main speaker as
 
 The phase plot below shows a 2.1 audio system with good time alignment.  The subwoofer measurement (green) is compared to an overlay of the main speakers (grey).  The crossover frequency is 100 Hz.  The main speakers and subwoofer have nearly the same phase at the crossover frequency, and the phase slopes are roughly the same.
 
-![](/assets/img/subwoofer_align_phase.png)
+![subwoofer align phase](/assets/img/subwoofer_align_phase.png "Phase plot showing subwoofer aligned with main speakers")
 
 The plot below shows the same audio system in various states of alignment.  As delay is changed, the phase of the subwoofer moves up or down at the crossover frequency.  The slope of the phase will also slowly change with delay.
 
-![](/assets/img/subwoofer_align_phase_change.png)
+![subwoofer phase change](/assets/img/subwoofer_align_phase_change.png "Phase plot showing different delay adjustments")
 
 Counterintuitively, the subwoofer phase measurements above (green) were generated by delaying the main speakers (grey).  This works because delaying the main speakers also delays the chirp sound which is the reference for the subwoofer phase.  Subwoofers tend to have more delay to begin with, so delaying the main speakers to match is often the correct adjustment.
 
 Finally, in the plot below, the audio system is aligned with too much delay.  While the main speakers and subwoofer have the nearly same phase at the crossover frequency, the phase slopes are different.  This situation is sometimes described as “phase aligned but not time aligned”.  In this situation, try adding or subtracting delay equivalent to the crossover wavelength.
 
-![](/assets/img/subwoofer_align_phase_not_time.png)
+![subwoofer phase not time](/assets/img/subwoofer_align_phase_not_time.png "Phase aligned but not time aligned")
 
 As with the [power method](#time-align-using-power) of time alignment, the group delay plot can be consulted to double check the alignment.  This requires taking a new measurement with both speakers active.
 
