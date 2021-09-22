@@ -29,7 +29,7 @@ Tap the AirPlay button to select from available AirPlay and Bluetooth audio outp
 Tap to discard all measurements.
 
 #### Save overlay
-Tap to create an overlay from a measurement [Overlay](#overlay).  This button is disabled when there are no measurements on the plot.
+Tap to create an [overlay](#overlay) from a measurement.  This button is disabled when there are no measurements on the plot.
 
 
 ### Plot Area
