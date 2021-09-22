@@ -78,7 +78,7 @@ HouseCurve can display measurements to suit a given task.
 * Older measurements appear in green and are faded according to age.
 
 #### Smoothing
-Smoothing can be applied to measurements to make it easier to see trends in the measurement.  The selection is applied to all measurements and the selected overlay.  To remove smoothing, select None.
+Smoothing can be applied to measurements to make it easier to see trends.  The selection is applied to all measurements and the selected overlay.  To remove smoothing, select None.
 
 #### Coherence Blanking
 Coherence blanking hides regions of the measurement, or overlay, that are [low quality](/HOWTO.md#measurement-quality) and should not be used for tuning.  
