@@ -133,7 +133,7 @@ The downfall of this approach is that maximum power can be achieved at multiples
 
 When two speakers are time aligned, they will have the same phase at the crossover frequency and their phase plots will have the same slope in the crossover region.
 
-Time alignment using phase requires separate measurements of the speakers on either side of the crossover.  To do this with HouseCurve, measurements of the first speaker are compared to the second using an [overlay](/MANUAL.md#overlay).  The second speaker is adjusted until a good time alignment is found on the phase plot.
+Time alignment using phase requires **separate measurement** of the speakers on either side of the crossover.  To do this with HouseCurve, measurements of the first speaker are compared to the second using an [overlay](/MANUAL.md#overlay).  The second speaker is adjusted until a good time alignment is found on the phase plot.
 
 Phase measurements are very sensitive to changes in the distance between speaker and microphone.  For best results, take measurements from the middle of the listening area, keeping the microphone in the same location for each measurement.  For lower frequency crossovers (~100 Hz), it is possible to average phase measurements in the listening area, but this will quickly break down for large areas.  Keep in mind that sound takes about 3 ms to travel 1 meter.
 
