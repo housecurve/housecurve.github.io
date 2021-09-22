@@ -1,4 +1,8 @@
 ## How to tune an audio system
+{:.no_toc}
+
+1. table of contents inserted here
+{:toc}
 
 ### Tuning overview
 The process for tuning an audio system will generally involve the tasks described below:
