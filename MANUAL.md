@@ -5,7 +5,7 @@
 {:toc}
 
 ### Main Screen
-![housecurve main screen controls](/assets/img/housecurve_buttons.png)
+![housecurve main screen controls](/assets/img/housecurve_buttons.png "housecurve main screen controls")
 
 #### Page Control
 HouseCurve displays measurements on [power, phase and group delay plots](/HOWTO.md#plots).  Tap the page buttons to move between plots.  Alternatively, swipe from the left or right edge of the screen to change plots.
@@ -33,7 +33,7 @@ Tap to create an overlay from a measurement [Overlay](#overlay).  This button is
 
 
 ### Plot area
-![housecurve plot area](/assets/img/housecurve_plot_area.png)
+![housecurve plot area](/assets/img/housecurve_plot_area.png "housecurve plot area")
 
 #### Selected Reference Curve
 The selected [Reference Curve](#reference-curve) is displayed on the power plot in yellow with +/- 3 dB bands.
