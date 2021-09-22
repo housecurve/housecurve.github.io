@@ -7,7 +7,7 @@
 ### Connecting to an audio system
 HouseCurve sends test sounds to your audio system and measures the result using a microphone. This is shown in the diagram below.
 
-![](/assets/img/connecting_housecurve.png)
+![connecting housecurve](/assets/img/connecting_housecurve.png "Connecting HouseCurve to audio system")
 
 HouseCurve can connect wireless to the audio system using AirPlay or Bluetooth. Tap the AirPlay button at the bottom of the screen to see a list of outputs.
 
@@ -26,6 +26,7 @@ When CarPlay is used to connect to an automobile audio system, be aware that the
 
 If you are getting strange measurements, try another microphone.  A common microphone for sanity checks is the [iPhone EarPods with Lighning Connector](https://www.apple.com/shop/product/MMTN2AM/A/earpods-with-lightning-connector).
 
+
 ### Listening area
 When listening to an audio system, we hear the combination of the audio system and its surroundings.  In classic audio speak, the surroundings are referred to as “the room” regardless of what they actually are (ex: living room, office, automobile, outdoor patio).
 
@@ -41,11 +42,11 @@ The measurement process starts when the [Measure](/MANUAL.md#measure) button is 
 
 The stages of the measurement process are displayed in the [Measurement Status](/MANUAL.md#measurement-status) area at the top of the screen.
 
-![](/assets/img/housecurve_listening.png)
+![housecurve listening](/assets/img/housecurve_listening.png "Press measure to start measurement process")
 
 When a measurement succeeds it will be displayed on the plots as shown below. 
 
-![](/assets/img/housecurve_success.png)
+![housecurve success](/assets/img/housecurve_success.png "When measurement succeeds, it is displayed on plot")
 
 HouseCurve will abort the measurement process for the following reasons:
 
@@ -67,7 +68,7 @@ When [Coherence Blanking](/MANUAL.md#coherence-blanking) is enabled, only portio
 
 For example, the measurement below was taken in the presence of external noise (someone talking).  This significantly contaminated the measurement and unusable sections have been blanked.  This measurement should probably be discarded.
 
-![](/assets/img/housecurve_low_coherence.png)
+![housecurve low coherence](/assets/img/housecurve_low_coherence.png "Low coherence parts of measurement are blanked")
 
 Signal to noise issues are typically resolved by removing sources of noise or increasing the volume of the audio system.  In rare situations the microphone may be faulty.
 
@@ -77,19 +78,19 @@ HouseCurve displays successful measurements on the power, phase and group delay 
 
 The **power plot** is the most important plot for tuning.  The overall level of the power measurement is the “volume” of the audio system.  The level differences between frequencies is what we want to change when [adjusting an equalizer](/TUNING.md#apply-equalization).
 
-![](/assets/img/housecurve_power_plot.png)
+![power plot](/assets/img/housecurve_power_plot.png "Power plot")
 
 The power plot is commonly referred to as the “frequency response” of the audio system.  It may also be referred to as the “magnitude” plot, which is identical to the power plot as long as they are both displayed in decibels.
 
 The **phase plot** shows the phase of the measurement versus frequency.  Phase plots can be used for [time aligning speakers](/TUNING.md#time-align-using-phase).
 
-![](/assets/img/housecurve_phase_plot.png)
+![phase plot](/assets/img/housecurve_phase_plot.png "Phase plot")
 
 This style of phase plot is traditionally referred to as a “wrapped phase” plot.  The vertical green lines on the plot are referred to as “wraps”.  A wrap is a frequency where the phase exceeds the range of the plot and “wraps” around to the other vertical extreme of the plot.  A wrap is an artifact of the plot and not and indication that the phase is suddenly changing by 360 degrees.
 
 The **group delay plot** shows “when” the sound at a given frequency arrives at the microphone.  The group delay plot can be used to double check [speaker time alignment](/TUNING.md#time-align-speakers).  Extreme peaks in the group delay may indicate regions that can’t be fixed by equalization, such as poor time alignment or problematic room interactions.
 
-![](/assets/img/housecurve_group_delay_plot.png)
+![group delay](/assets/img/housecurve_group_delay_plot.png "Group delay plot")
 
 
 ### Subwoofer measurements
@@ -99,15 +100,15 @@ HouseCurve can be configured to play the chirp and sweep sounds on [different au
 
 For a typical 2.1 audio system, this can be accomplished by disabling (or disconnecting) a main speaker, ex: the right speaker.  HouseCurve is then configured to play the sweep through the right channel and the chirp through the left channel.  The subwoofer will receive the right channel via the “subwoofer out” of the audio system.  This is pictured below:
 
-![](/assets/img/subwoofer_measurement_sweep.png)
+![subwoofer measurement connections](/assets/img/subwoofer_measurement_sweep.png "Signal paths for subwoofer measurement")
 
 Use [Coherence Blanking](/MANUAL.md#coherence-blanking) to ensure the plots only show portions of the measurement that are actually from the subwoofer and not simply noise.  The plot below shows a subwoofer measurement with Coherence Blanking turned off.  As can be seen, the plot shows a peak where the subwoofer is actually able to produce sound.  The rest of the measurement is the noise floor of the audio system and room.
 
-![](/assets/img/subwoofer_no_coherence_blanking.png)
+![subwoofer no blanking](/assets/img/subwoofer_no_coherence_blanking.png "Subwoofer measurement without coherence blanking")
 
 Below the same measurement is shown with Coherence Blanking set to 50%.  Now only the useful portion of the measurement is shown.
 
-![](/assets/img/subwoofer_coherence_blanking.png)
+![subwoofer coherence blanking](/assets/img/subwoofer_coherence_blanking.png "Subwoofer measurement with coherence blanking")
 
 When separately adjusting main and subwoofer speakers to the same Reference Curve, it is recommended that the [Reference Curve Fit](/MANUAL.md#reference-curve-fit) setting be switched to manual and a suitable level entered.  The Reference Curve will then appear at the same level for all measurements.  In the examples above, the Reference Curve was fixed at 24.5 dB @ 100 Hz.
 
