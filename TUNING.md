@@ -159,6 +159,6 @@ As with the [power method](#time-align-using-power) of time alignment, the group
 
 In the example plots above, the crossovers were disabled to ensure the measurements had enough signal on either side of the crossover to see the phase slope.  Use caution when measuring with crossovers disabled as this could lead to audio system damage.  An alternative approach is to disable [Coherence Blanking](/MANUAL.md#coherence-blanking).
 
-The degree of success one will have with this method depends a lot on the audio system and the room.  Sometimes it is better to try getting close using the power method, then fine tuning using the phase method.
+The degree of success one will have with this method depends a lot on the audio system and the room.  Sometimes it is better to start with the power method, then fine tuning using the phase method.
 
 
