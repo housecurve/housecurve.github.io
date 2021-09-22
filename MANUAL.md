@@ -1,4 +1,8 @@
 ## HouseCurve Manual
+{:.no_toc}
+
+1. table of contents inserted here
+{:toc}
 
 ### Main Screen
 ![](/assets/img/housecurve_buttons.png)
