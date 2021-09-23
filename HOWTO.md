@@ -76,7 +76,7 @@ Signal to noise issues are typically resolved by removing sources of noise or in
 ### Plots
 HouseCurve displays successful measurements on the power, phase and group delay plots.  Use the Page Control to switch between plot types, or swipe from the left/right edge of the screen.
 
-The **power plot** is the most important plot for tuning.  The overall level of the power measurement is the “volume” of the audio system.  The level differences between frequencies are what we want to change when [adjusting an equalizer](/TUNING.md#apply-equalization).
+The **power plot** is the most important plot for tuning.  The overall level of the power measurement is the “volume” of the audio system.  The level differences between frequencies are what we want to change when [applying equalization](/TUNING.md#apply-equalization).
 
 ![power plot](/assets/img/housecurve_power_plot.png "Power plot")
 
