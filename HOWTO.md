@@ -36,7 +36,7 @@ The first step in tuning an audio system is to establish a listening area.  Wher
 
 
 ### Measurement process
-A single measurement represents how the audio system sounds at a single location.  To get a realistic measurement of the listening area, it is important to **take measurements from several locations**.  For a desk (near field), try 2-3 locations.  For a living room, try 3-5 locations.  Aim the microphone towards the audio system.  These measurements can be averaged so that small variances cancel out making it possible to find a “best fit” tune for a given listening area.
+A single measurement represents how the audio system sounds at a single location.  To get a realistic measurement of the listening area, it is important to **average measurements from several locations**.  Averaging will cancel small variances making it possible to find a “best fit” tune for a given listening area.  For a desk (near field), try measuring from 2-3 locations.  For a living room, try 3-5 locations.
 
 The measurement process starts when the [Measure](/MANUAL.md#measure) button is pressed.  HouseCurve will play a test signal through the audio system.  This signal consists of a “chirp” sound followed by the the stimulus “sweep” sound.  The chirp is a timing reference that tells HouseCurve when to expect the sweep sound.  The sweep sound is used to measure the audio system.
 
