@@ -89,7 +89,7 @@ The screenshot below shows a 2.1 desktop audio system consisting of [main speake
 
 ![finding crossover frequency](/assets/img/finding_crossover_frequency_kanto_yu2.png "Use overlays to find best crossover frequency")
 
-The published frequency range for the main speakers is 80-20000 Hz and 35-165 Hz for the subwoofer.  Based on the specs, the overlap of these speakers is 80 - 165 Hz and the crossover frequency should be somewhere in that range.
+The published frequency range for the main speakers is 80-20000 Hz and the subwoofer is 35-165 Hz.  Based on the specs, the overlap of these speakers is 80 - 165 Hz and the crossover frequency should be somewhere in that range.
 
 In the power plot, we can see the main speaker drops off quickly below ~120 Hz.  For this system the crossover frequency should be somewhere in the 100-120 Hz range.  The subwoofer is more than capable of filling in below 100 Hz.
 
