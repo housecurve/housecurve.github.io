@@ -128,8 +128,6 @@ Take a measurement from the middle of the listening area.  On the power plot, pl
 
 ![subwoofer align power](/assets/img/subwoofer_align_power.png "Adjust until the smallest dip is found")
 
-The same technique can be applied by averaging measurements in the listening area and saving [overlays](/MANUAL.md#overlay).
-
 The downfall of this approach is that maximum power can be achieved at multiples of the crossover wavelength.  This can lead to tuning the system with more delay than necessary.  The group delay plot can be used to check this for subwoofers.  If there is a significant lift in delays before or after the crossover, this could mean more delay than necessary.  This can be seen in the group delay plot below.
 
 ![subwoofer align groupdelay](/assets/img/subwoofer_align_group_delay.png "Check subwoofer alignment with group delay")
