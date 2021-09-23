@@ -31,7 +31,7 @@ The idea is to adjust the audio system such that the power measurement matches t
 
 The choice of Reference Curve is subject to individual taste.  Generally speaking, most listeners prefer a curve with a 1 dB/octave downward slope (-3 dB/decade).  Put simply, listeners prefer it when low frequencies are louder than high frequencies.  HouseCurve provides some common reference curves, all of which have the same overall downward slope.
 
-In the audiophile world, a “flat” response is often seen as the ultimate goal.  However, for everyday listening, a flat response tends to sound overly “bright” and unpleasant.  HouseCurve can [import custom curves](/MANUAL.md#reference-curve), so by all means, try it for yourself: Flat Reference Curve.
+In the audiophile world, a “flat” response is often seen as the ultimate goal.  However, for everyday listening, a flat response tends to sound overly “bright” and unpleasant.  HouseCurve can [import custom curves](/MANUAL.md#reference-curve), so by all means, try it for yourself: [Flat Reference Curve](/examples/flat.txt).
 
 The curves that ship with HouseCurve are intended for home audio.  In an automobile, it is very common for the Reference Curve to have a more pronounced low frequency hump.  This is done to overcome motor and road noise.  Due to the custom nature of these curves, a “car” curve is not provided.  However, a custom curve can be easily created using a simple text editor and then loaded into HouseCurve.  See [curve file format](/HOWTO.md#curve-file-format) for more information.
 
