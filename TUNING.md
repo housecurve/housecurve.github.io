@@ -23,15 +23,15 @@ It may be necessary to iterate over these tasks a few times to get things right.
 
 
 ### Select reference curve
-A Reference Curve, or “house curve” is a target power measurement (aka “frequency response”) for an audio system in a room.
+A Reference Curve, or “house curve”, is a target power measurement for an audio system.  The idea is to adjust the audio system such that the power measurement roughly matches the Reference Curve.
 
-The idea is to adjust the audio system such that the power measurement matches the Reference Curve.  HouseCurve will display the selected Reference Curve on the power plot when there are measurements.
+HouseCurve provides some common reference curves to experiment with.  These can be selected by going to [Setup](MANUAL.md/setup-screen).  The "House" curves are intended for home listening.  The "Car" curves have a more pronounced low frequency hump which is typical of automobile sound systems.  HouseCurve will display the selected Reference Curve on the power plot when there are measurements.
 
 ![reference curve](/assets/img/reference_curve.png "Measurement compared to B&K reference curve (yellow)")
 
-The choice of Reference Curve is subject to individual taste.  Generally speaking, most listeners prefer a curve with a 1 dB/octave downward slope (-3 dB/decade).  Put simply, listeners prefer it when low frequencies are louder than high frequencies.
+The choice of Reference Curve is subject to individual taste, but generally, listeners prefer it when low frequencies are louder than high frequencies.  A  downward slope of 1 dB/octave is quite typical.  There is no "correct" curve.  Let your ears tell you what is best.
 
-HouseCurve provides some common reference curves to experiment with, these can be selected by going to [Setup](MANUAL.md/setup-screen).  The "House" curves are intended for home listening.  The "Car" curves have a more pronounced low frequency hump.  Custom curves can be created with a text editor and [imported](/MANUAL.md#reference-curve) into HouseCurve.  See [curve file format](/HOWTO.md#curve-file-format) for more information.  The curves provided by HouseCurve can be used as a starting point for your custom curve:
+Custom curves can be created with a text editor and [imported](/MANUAL.md#reference-curve) into HouseCurve.  See [curve file format](/HOWTO.md#curve-file-format) for more information.  The curves provided by HouseCurve can be used as a starting point for your custom curve:
 
 * [House A](/examples/House%20A.txt)
 * [House B](/examples/House%20B.txt)
@@ -48,6 +48,7 @@ Below are some resources for understanding what reference curves do and how to c
 * [Relevant loudspeaker tests, in studios, in Hi-Fi dealers' demo rooms, in the home etc](https://www.bksv.com/media/doc/17-197.pdf)
 * [The Measurement and Calibration of Sound Reproducing Systems](http://www.aes.org/e-lib/browse.cfm?elib=17839)
 
+The curve that works best with your audio system will depend somewhat on the measurement technique and microphone type.  For adjusting one system this doesn't really matter - the reference curve is just a guide.  However, if you are applying the same curve to multiple audio systems, be aware that the same measurement technique needs to be applied for consistent results.
 
 ### Apply equalization
 
