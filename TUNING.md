@@ -33,14 +33,14 @@ The choice of Reference Curve is subject to individual taste.  Typically, listen
 
 Custom curves can be created with a text editor and [imported](/MANUAL.md#reference-curve) into HouseCurve.  See [curve file format](/HOWTO.md#curve-file-format) for more information.  The curves provided by HouseCurve can be used as a starting point for your custom curve:
 
-* [House A](/examples/House%20A.txt)
-* [House B](/examples/House%20B.txt)
-* [House C](/examples/House%20C.txt)
-* [Car A](/examples/Car%20A.txt)
-* [Car B](/examples/Car%20B.txt)
-* [Car C](/examples/Car%20C.txt)
+* [House A](/curves/House%20A.txt)
+* [House B](/curves/House%20B.txt)
+* [House C](/curves/House%20C.txt)
+* [Car A](/curves/Car%20A.txt)
+* [Car B](/curves/Car%20B.txt)
+* [Car C](/curves/Car%20C.txt)
 
-In the audiophile world, a “flat” response is often seen as the ultimate goal.  However, for everyday listening, a flat response tends to sound overly “bright” and unpleasant.  Try it for yourself: [Flat Reference Curve](/examples/flat.txt).
+In the audiophile world, a “flat” response is often seen as the ultimate goal.  However, for everyday listening, a flat response tends to sound overly “bright” and unpleasant.  Try it for yourself: [Flat Reference Curve](/curves/flat.txt).
 
 Below are some resources for understanding what reference curves do and how to choose them:
 * [Advice on better house curve?](https://www.minidsp.com/forum/dirac-series-support/17523-advice-on-better-house-curve)
