@@ -29,11 +29,18 @@ The idea is to adjust the audio system such that the power measurement matches t
 
 ![reference curve](/assets/img/reference_curve.png "Measurement compared to B&K reference curve (yellow)")
 
-The choice of Reference Curve is subject to individual taste.  Generally speaking, most listeners prefer a curve with a 1 dB/octave downward slope (-3 dB/decade).  Put simply, listeners prefer it when low frequencies are louder than high frequencies.  HouseCurve provides some common reference curves, all of which have the same overall downward slope.
+The choice of Reference Curve is subject to individual taste.  Generally speaking, most listeners prefer a curve with a 1 dB/octave downward slope (-3 dB/decade).  Put simply, listeners prefer it when low frequencies are louder than high frequencies.
 
-In the audiophile world, a “flat” response is often seen as the ultimate goal.  However, for everyday listening, a flat response tends to sound overly “bright” and unpleasant.  HouseCurve can [import custom curves](/MANUAL.md#reference-curve), so by all means, try it for yourself: [Flat Reference Curve](/examples/flat.txt).
+HouseCurve provides some common reference curves to experiment with, these can be selected by going to [Setup](MANUAL.md/setup-screen).  The "House" curves are intended for home listening.  The "Car" curves have a more pronounced low frequency hump.  Custom curves can be created with a text editor and [imported](/MANUAL.md#reference-curve) into HouseCurve.  See [curve file format](/HOWTO.md#curve-file-format) for more information.  The curves provided by HouseCurve can be used as a starting point for your custom curve:
 
-The curves that ship with HouseCurve are intended for home audio.  In an automobile, it is very common for the Reference Curve to have a more pronounced low frequency hump.  This is done to overcome motor and road noise.  Due to the custom nature of these curves, a “car” curve is not provided.  However, a custom curve can be easily created using a simple text editor and then loaded into HouseCurve.  See [curve file format](/HOWTO.md#curve-file-format) for more information.
+* [House A](/examples/House%20A.txt)
+* [House B](/examples/House%20B.txt)
+* [House C](/examples/House%20C.txt)
+* [Car A](/examples/Car%20A.txt)
+* [Car B](/examples/Car%20B.txt)
+* [Car C](/examples/Car%20C.txt)
+
+In the audiophile world, a “flat” response is often seen as the ultimate goal.  However, for everyday listening, a flat response tends to sound overly “bright” and unpleasant.  Try it for yourself: [Flat Reference Curve](/examples/flat.txt).
 
 Below are some resources for understanding what reference curves do and how to choose them:
 * [Advice on better house curve?](https://www.minidsp.com/forum/dirac-series-support/17523-advice-on-better-house-curve)
