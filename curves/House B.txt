@@ -1,0 +1,5 @@
+Based on European Broadcasting Union tech note: https://tech.ebu.ch/docs/tech/tech3276.pdf
+Hz		Offset 
+10.0     0.0
+2000.0	0.0
+20000.0  -6.0

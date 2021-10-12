@@ -1,0 +1,8 @@
+Based on a "Crutchfield" curve
+Hz	Offset 
+20	6.0
+125	6.0
+200	0.0
+12500	0.0
+16000	-3.0
+20000	-9.0

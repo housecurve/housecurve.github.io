@@ -1,0 +1,7 @@
+Based on JBL curve
+Hz	Offset 
+20	9.0
+60	9.0
+160	0.0
+3000	0.0
+20000	-6.0
