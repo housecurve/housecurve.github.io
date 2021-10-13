@@ -23,9 +23,9 @@ It may be necessary to iterate over these tasks a few times to get things right.
 
 
 ### Select reference curve
-A Reference Curve, or “house curve”, is a target power measurement for an audio system.  It serves as a visual guide to ensure you tune the system in the right direction.  The idea is to adjust the audio system until the average power measurement matches the Reference Curve.
+A Reference Curve, or “house curve”, is visual guide to ensure you tune your audio system in the right direction.  The system is "tuned" when the average power measurement matches the Reference Curve.
 
-HouseCurve provides some common Reference Curves to experiment with.  These can be selected by going to [Setup](MANUAL.md/setup-screen).  The "House" curves are intended for home listening.  The "Car" curves have a more pronounced low frequency hump which is typical of automobile sound systems.  HouseCurve will display the selected Reference Curve on the power plot when there are measurements.
+HouseCurve provides some common curves to experiment with.  These can be selected by going to [Setup](MANUAL.md/setup-screen).  The "House" curves are intended for home listening.  The "Car" curves have a low frequency hump which is typical of automobile sound systems.  HouseCurve will display the selected curve on the power plot when there are measurements.
 
 ![reference curve](/assets/img/reference_curve.png "Measurement compared to B&K reference curve (yellow)")
 
@@ -48,7 +48,7 @@ Below are some resources for understanding what reference curves do and how to c
 * [Relevant loudspeaker tests, in studios, in Hi-Fi dealers' demo rooms, in the home etc](https://www.bksv.com/media/doc/17-197.pdf)
 * [The Measurement and Calibration of Sound Reproducing Systems](http://www.aes.org/e-lib/browse.cfm?elib=17839)
 
-The curve that works best with your audio system will somewhat depend on how the system is measured (mic type, mic placement, mic direction, etc).  When adjusting a single system this doesn't really matter so long as you perform measurements consistently - the reference curve is just a guide.  However, if you are applying the same curve to multiple audio systems, be aware that the same measurement technique needs to be applied for consistent results.
+The curve that works best with your audio system will somewhat depend on how the system is measured (mic type, mic placement, mic direction, etc).  When adjusting a single system this doesn't really matter so long as you perform measurements consistently - the curve is just a guide.  However, if you are applying the same curve to multiple audio systems, be aware that the same measurement technique needs to be applied for consistent results.
 
 ### Apply equalization
 
