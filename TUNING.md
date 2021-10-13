@@ -31,7 +31,7 @@ HouseCurve provides some common curves to experiment with.  These can be selecte
 
 The choice of Reference Curve is subject to individual taste.  Typically, listeners prefer it when low frequencies are louder than high frequencies.  A  downward slope of 1 dB/octave is quite common.  Ultimately, your ears will tell you what one is best.
 
-Custom curves can be created with a text editor and [imported](/MANUAL.md#reference-curve) into HouseCurve.  See [curve file format](/HOWTO.md#curve-file-format) for more information.  The curves provided by HouseCurve can be used as a starting point for your custom curve:
+Custom curves can be created with a text editor and [imported](/MANUAL.md#reference-curve) into HouseCurve.  See [curve file format](/HOWTO.md#curve-file-format) for more information.  The curves provided by HouseCurve are a great starting point for making your own:
 
 * [House A](/curves/House%20A.txt)
 * [House B](/curves/House%20B.txt)
