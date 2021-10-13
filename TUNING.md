@@ -25,7 +25,7 @@ It may be necessary to iterate over these tasks a few times to get things right.
 ### Select reference curve
 A Reference Curve, or “house curve”, is visual guide to ensure you tune your audio system in the right direction.  The system is "tuned" when the average power measurement matches the Reference Curve.
 
-HouseCurve provides some common curves to experiment with.  These can be selected by going to [Setup](MANUAL.md/setup-screen).  The "House" curves are intended for home listening.  The "Car" curves have a low frequency hump which is typical of automobile sound systems.  HouseCurve will display the selected curve on the power plot when there are measurements.
+HouseCurve provides some common curves to experiment with.  These can be selected by going to [Setup](MANUAL.md/setup-screen).  The "House" curves are flatter and intended for home listening.  The "Car" curves have significantly more bass which is common for automobile listing.  HouseCurve will display the selected curve on the power plot when there are measurements.
 
 ![reference curve](/assets/img/reference_curve.png "Measurement compared to B&K reference curve (yellow)")
 
