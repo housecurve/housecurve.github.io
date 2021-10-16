@@ -1,0 +1,10 @@
+---
+layout: none
+permalink: .well-known/apple-app-site-association
+---
+
+{
+   "appclips": {
+      "apps": ["A5QC8UFTH5.Greg.HouseCurve.Clip"]
+   }
+}
