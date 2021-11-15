@@ -131,9 +131,9 @@ HouseCurve supports the following [Curve file format](/HOWTO.md#curve-file-forma
 #### Stimulus Type
 Stimulus Type controls the “sweep” sound used to measure an audio system.
 
-In most cases, the Log Sine Sweep (default) should be used as it will produce measurements with a higher signal to noise ratio.
+In most cases, the Sine Sweep (default) should be used as it will produce measurements with a higher signal to noise ratio.
 
 Pink Noise is provided for interest sake.  Measurements based on pink noise will have a lower signal to noise ratio.
 
-HouseCurve uses coherent averaging.  This has an interesting effect on Pink Noise measurements.  In a sonically treated room, such as one with sound absorbing panels on the walls, Pink Noise noise measurements will closely match Log Sine Sweep measurements.  In a more typical “reflective” room, Pink Noise power measurements tend to be lower above ~2 KHz.  The degree to which the Pink Noise and Log Sine Sweep measurements match is an indication of how “dead” the room is.
+HouseCurve uses coherent averaging.  This has an interesting effect on Pink Noise measurements.  In a sonically treated room, such as one with sound absorbing panels on the walls, Pink Noise noise measurements will closely match Sine Sweep measurements.  In a more typical “reflective” room, Pink Noise power measurements tend to be lower above ~2 KHz.  The degree to which the Pink Noise and Sine Sweep measurements match is an indication of how “dead” the room is.
 

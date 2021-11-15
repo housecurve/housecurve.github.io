@@ -19,7 +19,7 @@ HouseCurve is an iOS app for tuning home and car audio systems.  Use it to adjus
 
 ### How does HouseCurve work?
 
-HouseCurve works by playing a log sine sweep through your audio system and measuring the in-room frequency response.  Multiple measurements are averaged to fully capture how the system sounds in the listening area.  Measurements are displayed on top of the reference curve, making it easy to see where your system needs adjustment.  With small changes and repeat measurements, you can tune your system to the reference curve.
+HouseCurve works by playing a sine sweep through your audio system and measuring the in-room frequency response.  Multiple measurements are averaged to fully capture how the system sounds in the listening area.  Measurements are displayed on top of the reference curve, making it easy to see where your system needs adjustment.  With small changes and repeat measurements, you can tune your system to the reference curve.
 
 HouseCurve can help with home and car [audio system tuning](/TUNING.md), from speaker placement and [equalizer settings](/TUNING.md#apply-equalization) to [subwoofer time alignment](/TUNING.md#time-align-speakers) and room treatments.
 
