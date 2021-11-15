@@ -132,7 +132,7 @@ When using this method it’s important to avoid changing audio system levels (v
 
 Ensure speakers on either side of the crossover are enabled.  Set HouseCurve’s Display Mode to [History](/MANUAL.md#display-mode).  Zoom into the region around the crossover frequency.  It is also best to set the [Reference Curve Fit](/MANUAL.md#reference-curve-fit) to manual and select an appropriate level as this will prevent the reference curve from moving as adjustments are made.
 
-Take a measurement from the middle of the listening area.  On the power plot, place the cursor at the crossover frequency and observe the power value.  Adjust the audio system.  Repeat the the measurement and observe the new power value.  Continue to make adjustments until the maximum power level is achieved and the dip is the smallest.  The plot below shows a system being adjusted from the worst alignment (largest dip) to the best (smallest dip).
+Take a measurement from the middle of the listening area.  On the power plot, place the cursor at the crossover frequency and observe the power value.  Adjust the audio system.  Repeat the measurement and observe the new power value.  Continue to make adjustments until the maximum power level is achieved and the dip is the smallest.  The plot below shows a system being adjusted from the worst alignment (largest dip) to the best (smallest dip).
 
 ![subwoofer align power](/assets/img/subwoofer_align_power.png "Adjust until the smallest dip is found")
 
