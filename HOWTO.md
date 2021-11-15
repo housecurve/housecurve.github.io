@@ -18,9 +18,7 @@ When connection to the audio system is undesirable or impossible, HouseCurve can
 ### Microphones
 HouseCurve will default to using the built in microphone of your iPhone/iPad.  These microphones are quite accurate and are suitable for most tuning tasks.
 
-For additional accuracy, HouseCurve can use external microphones.  It will automatically use an external microphone if one is connected to your iPhone/iPad.
-
-HouseCurve has been tested with the following external calibrated microphones:
+For additional accuracy, HouseCurve can use external microphones.  It will automatically use an external microphone if one is connected to your iPhone/iPad.  HouseCurve has been tested with the following external microphones:
 
 * [miniDSP UMIK-1](https://www.minidsp.com/products/acoustic-measurement/umik-1)
 * [Dayton Audio iMM-6](https://www.daytonaudio.com/product/1117/imm-6-idevice-calibrated-measurement-microphone)
