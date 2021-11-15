@@ -5,7 +5,7 @@
 {:toc}
 
 ### Connecting to an audio system
-HouseCurve sends test sounds to your audio system and measures the result using a microphone. This is shown in the diagram below.
+By default, HouseCurve sends test sounds to your audio system and measures the result using a microphone. This is shown in the diagram below.
 
 ![connecting housecurve](/assets/img/connecting_housecurve.png "Connecting HouseCurve to audio system")
 
@@ -13,6 +13,9 @@ HouseCurve can connect to the audio system wirelessly using AirPlay or Bluetooth
 
 Alternatively, the headphone connector can be used to create a wired connection to the audio system.  Use a [Lightning to 3.5mm adapter](https://www.apple.com/shop/product/MMX62AM/A/lightning-to-35mm-headphone-jack-adapter).
 
+When connection to the audio system is undesirable or impossible, HouseCurve can use external stimulus.  The audio system becomes responsible for playing the test signal and HouseCurve listens for it.  The test signal must be manually transferred to the audio system (ex: using an SD card).  For more information see [Stimulus Type](/MANUAL.md#stimulus-type).
+
+### Microphones
 HouseCurve will default to using the built in microphone of your iPhone/iPad.  These microphones are quite accurate and are suitable for most tuning tasks.
 
 For additional accuracy, HouseCurve can use external microphones.  It will automatically use an external microphone if one is connected to your iPhone/iPad.
