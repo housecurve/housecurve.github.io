@@ -12,7 +12,6 @@ HouseCurve is an iOS app for tuning home and car audio systems.  Use it to adjus
 * Average and history display modes
 * Overlays to compare past measurements
 * Automatic measurement validation
-* Coherence blanking
 * Measurement undo
 * Use with built-in or external microphones
 * Connect with AirPlay, Bluetooth, headphone jack (analog) or use externally played sweep
