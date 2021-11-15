@@ -131,11 +131,11 @@ HouseCurve supports the following [Curve file format](/HOWTO.md#curve-file-forma
 #### Stimulus Type
 Stimulus Type controls the test signal used to measure the audio system.
 
-In most cases, the Sine Sweep should be used as it will produce measurements with a higher signal to noise ratio.  In this mode, HouseCurve requires a connection to the audio system in order to play the test signal.
+In most cases, the **Sine Sweep** should be used as it will produce measurements with a higher signal to noise ratio.  In this mode, HouseCurve requires a connection to the audio system in order to play the test signal.
 
-External Sine Sweep mode does not require a connection to the audio system.  Instead, the test signal must be manually transferred (ex: using a CD).  The audio system is responsible for playing the test signal and HouseCurve listens for it during the measurement process.  The test signal can be exported when this mode is selected.  Note - chirp and sweep channel setting will be used to produce the test signal file.
+**External Sine Sweep** mode does not require a connection to the audio system.  Instead, the test signal must be manually transferred (ex: using a CD).  The audio system is responsible for playing the test signal and HouseCurve listens for it during the measurement process.  The test signal can be exported when this mode is selected.  Note - chirp and sweep channel setting will be used to produce the test signal file.
 
-Pink Noise is provided for interest sake.  Measurements based on pink noise will have a lower signal to noise ratio.
+**Pink Noise** is provided for interest sake.  Measurements based on pink noise will have a lower signal to noise ratio.
 
 HouseCurve uses coherent averaging.  This has an interesting effect on Pink Noise measurements.  In a sonically treated room, such as one with sound absorbing panels on the walls, Pink Noise noise measurements will closely match Sine Sweep measurements.  In a more typical “reflective” room, Pink Noise power measurements tend to be lower above ~2 KHz.  The degree to which the Pink Noise and Sine Sweep measurements match is an indication of how “dead” the room is.
 
