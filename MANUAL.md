@@ -81,7 +81,7 @@ HouseCurve can display measurements to suit a given task.
 Smoothing can be applied to measurements to make it easier to see trends.  The selection is applied to all measurements and the selected overlay.  To remove smoothing, select None.
 
 #### Coherence Blanking
-Coherence blanking hides regions of the measurement, or overlay, that are [low quality](/HOWTO.md#measurement-quality) and should not be used for tuning.  
+Coherence blanking hides portions of the measurement that are [low quality](/HOWTO.md#measurement-quality) and should not be used for tuning.  
 
 Blanking occurs wherever the measurement falls below the selected signal to noise ratio (blanking threshold).  To disable blanking, select Off.
 
