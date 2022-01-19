@@ -24,7 +24,9 @@ HouseCurve can help with home and car [audio system tuning](/TUNING.md), from sp
 
 HouseCurve will produce acceptable results with the built in iPhone/iPad microphone. Using calibrated external microphones will provide higher accuracy.
 
-To try HouseCurve for free, visit [this page](https://housecurve.com/appclip.html) with an iOS Safari browser and launch the app clip.
+### Free Trial
+
+Not sure if HouseCurve will work for you?  Try the app clip for free by visiting [this page](https://housecurve.com/appclip.html) with an iPhone or iPad (Safari browsers only).
 
 ### How do I use HouseCurve?
 
