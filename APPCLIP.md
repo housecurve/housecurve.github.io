@@ -1,5 +1,5 @@
 ---
-layout: alternate
+layout: appclip
 ---
 
 ## Free Trial
