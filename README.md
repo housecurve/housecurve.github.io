@@ -1,9 +1,4 @@
----
-layout: appbanner
----
-
 ## Simple Audio System Tuning
-
 HouseCurve is an iOS app for tuning home and car audio systems.  Use it to adjust equalizers, set subwoofer phase, choose crossover frequencies and match levels.
 
 ![housecurve main](/assets/img/housecurve_main_page.png "HouseCurve showing main speaker measurement with subwoofer overlay")
