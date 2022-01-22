@@ -11,7 +11,7 @@ The process for tuning an audio system will generally involve the tasks describe
 
 [Apply equalization](#apply-equalization).  Equalization means adjusting the volume level at different frequencies to match the reference curve.
 
-For audio systems with separately adjustable speakers, such as a 2.1 system (main speakers and a subwoofer), the following steps should be performed before equalization:
+For audio systems with separately adjustable speakers, such as a 2.1 system (main speakers and a subwoofer), the following steps should be performed **before equalization**:
 
 [Match speaker levels](#match-speaker-levels).  The speakers of the audio system should be playing at roughly the same volume level in the listening area.  This is done to ensure measurements will reflect the whole audio system and also to avoid using equalization to correct level differences.
 
