@@ -34,7 +34,7 @@ Not sure if HouseCurve will work for you?  Try the app clip for free by visiting
 
 [Manual](/MANUAL.md)
 
-[How to use HouseCurve](/HOWTO.md)
+[How to use HouseCurve](/USAGE.md)
 
 [How to tune an audio system](/TUNING.md)
 

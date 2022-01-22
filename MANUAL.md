@@ -8,7 +8,7 @@
 ![housecurve main screen controls](/assets/img/housecurve_buttons.png "housecurve main screen controls")
 
 #### Page Control
-HouseCurve displays measurements on [power, phase and group delay plots](/HOWTO.md#plots).  Tap the page buttons to move between plots.  Alternatively, swipe from the left or right edge of the screen to change plots.
+HouseCurve displays measurements on [power, phase and group delay plots](/USAGE.md#plots).  Tap the page buttons to move between plots.  Alternatively, swipe from the left or right edge of the screen to change plots.
 
 #### Help
 Tap for Help screen
@@ -17,13 +17,13 @@ Tap for Help screen
 Tap for [Setup Screen](#setup-screen) screen
 
 #### Measure
-Tap the Measure button to start [measurement process](/HOWTO.md#measurement-process).  Tap again to to stop.  This button is disabled when not connected to an audio system.
+Tap the Measure button to start [measurement process](/USAGE.md#measurement-process).  Tap again to to stop.  This button is disabled when not connected to an audio system.
 
 #### Undo
 Tap the Undo button to discard the most recent measurement.  This button is disabled when there are no measurements.
 
 #### Airplay
-Tap the AirPlay button to select from available AirPlay and Bluetooth audio outputs.  The analog (wired) output is automatically selected when something is plugged into the iPhone/iPad headphone connector.  See [connecting to an audio system](/HOWTO.md#connecting-to-an-audio-system).
+Tap the AirPlay button to select from available AirPlay and Bluetooth audio outputs.  The analog (wired) output is automatically selected when something is plugged into the iPhone/iPad headphone connector.  See [connecting to an audio system](/USAGE.md#connecting-to-an-audio-system).
 
 #### Reset
 Tap to discard all measurements.
@@ -50,7 +50,7 @@ Measurements are displayed on the plot in green.
 Tap plot area to show cursor, move with a single finger, tap again to hide.
 
 #### Measurement Status
-HouseCurve displays the status of the [measurement process](/HOWTO.md#measurement-process) in this area.  The status disappears after a few seconds.
+HouseCurve displays the status of the [measurement process](/USAGE.md#measurement-process) in this area.  The status disappears after a few seconds.
 
 #### Setup Status
 HouseCurve displays setup information in this area.  The status disappears after a few seconds.
@@ -81,11 +81,11 @@ HouseCurve can display measurements to suit a given task.
 Smoothing can be applied to measurements to make it easier to see trends.  The selection is applied to all measurements and the selected overlay.  To remove smoothing, select None.
 
 #### Coherence Blanking
-Coherence blanking hides portions of the measurement that are [low quality](/HOWTO.md#measurement-quality) and should not be used for tuning.  
+Coherence blanking hides portions of the measurement that are [low quality](/USAGE.md#measurement-quality) and should not be used for tuning.  
 
 Blanking occurs wherever the measurement falls below the selected signal to noise ratio (blanking threshold).  To disable blanking, select Off.
 
-This setting also controls the threshold at which HouseCurve will [automatically discard measurements](/HOWTO.md#measurement-process).
+This setting also controls the threshold at which HouseCurve will [automatically discard measurements](/USAGE.md#measurement-process).
 
 #### Frequency Scale
 The frequency axis can have an Octave or Decade scale.  This setting applies to all plots.
@@ -114,7 +114,7 @@ By default, the selected Reference Curve is automatically fitted to measurements
 When automatic fitting is disabled, the curve can be manually positioned by setting a desired dB level at 100 Hz.  This is useful when separately adjusting speakers to a common reference level, such as main speakers and a subwoofer.
 
 #### Chirp and Sweep Channel
-The "chirp" and "sweep" sounds of the test signal can be played on different channels (see [measurement process](/HOWTO.md#measurement-process)).  This is mainly used for [subwoofer measurements](/HOWTO.md#subwoofer-measurements).
+The "chirp" and "sweep" sounds of the test signal can be played on different channels (see [measurement process](/USAGE.md#measurement-process)).  This is mainly used for [subwoofer measurements](/USAGE.md#subwoofer-measurements).
 
 #### Internal Mic Compensation
 The built in iPhone/iPad microphones have a reasonably flat response and are quite acceptable for tuning an audio system.  However, when compared to an external calibrated microphone, they do show some roll off at the extreme ends of the frequency spectrum.  
@@ -126,7 +126,7 @@ HouseCurve supports calibrated external microphones.  Available calibrations wil
 
 Microphone calibrations can be loaded tapping + at the top of the External Mic Calibration screen.  Calibrations can be removed by tapping Edit.
 
-HouseCurve supports the following [Curve file format](/HOWTO.md#curve-file-format).
+HouseCurve supports the following [Curve file format](/USAGE.md#curve-file-format).
 
 #### Stimulus Type
 Stimulus Type controls the test signal used to measure the audio system.

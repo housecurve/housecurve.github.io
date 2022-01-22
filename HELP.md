@@ -1,6 +1,6 @@
 ## Quick Start
 
-1. Connect iPhone/iPad to the audio system using [AirPlay, Bluetooth or the headphone connector](/HOWTO.md#connecting-to-an-audio-system)
+1. Connect iPhone/iPad to the audio system using [AirPlay, Bluetooth or the headphone connector](/USAGE.md#connecting-to-an-audio-system)
 1. Set initial volume to a low setting using the volume buttons on the side of the iPhone/iPad.
 1. Tap <img src="/assets/img/measure.png" alt="Measure" width="15"> to start measurement process. HouseCurve will play a test signal through the audio system.
 1. Adjust volume as needed to obtain successful measurements. Measurements should be taken at a normal listening level. Excessive volume levels may degrade accuracy and may damage hearing and/or equipment.
@@ -16,7 +16,7 @@
 
 [Manual](/MANUAL.md)
 
-[How to use HouseCurve](/HOWTO.md)
+[How to use HouseCurve](/USAGE.md)
 
 [How to tune an audio system](/TUNING.md)
 
