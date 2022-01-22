@@ -1,50 +1,16 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <head>
+      {% head_common.html %}
 
-    <!-- added for apple app clip -->
-    <meta name="apple-itunes-app" content="app-id=1470695018, app-clip-bundle-id=Greg.HouseCurve.Clip, app-clip-display=card">
-    <link rel="apple-touch-icon" href="/assets/img/small.png">
-    <meta property="og:image" content="/assets/img/housecurve_main_page.png">
+      <!-- added for apple app clip -->
+      <meta name="apple-itunes-app" content="app-id=1470695018, app-clip-bundle-id=Greg.HouseCurve.Clip, app-clip-display=card">
+      <link rel="apple-touch-icon" href="/assets/img/small.png">
+      <meta property="og:image" content="/assets/img/housecurve_main_page.png">
+   </head>
 
-{% seo %}
-    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
-    {% include head-custom.html %}
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        {% if site.logo %}
-          <a href="{{ "/" | absolute_url }}"><img src="{{site.logo | relative_url}}" alt="Logo" /></a>
-        {% endif %}
+   <body>
+      {% body_common.html %}
+   </body>
 
-        <h1>{{ site.title | default: site.github.repository_name }}</h1>
-
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
-
-        {% include sidebar.html %}
-
-      </header>
-
-      <section>
-        {{ content }}
-      </section>
-
-      <footer>
-        <a href="https://apps.apple.com/ca/app/housecurve/id1470695018"><img src="/assets/img/appstore.svg"/></a>
-        <p></p>
-        <p><a href="mailto:support@housecurve.com">Email support</a></p>
-        <p><small>Copyright &copy; 2022 Greg Wilding</small></p>
-        <p><small>Made in Canada</small></p>
-      </footer>
-
-    </div>
-    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
-  </body>
 </html>
