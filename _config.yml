@@ -7,7 +7,7 @@ include: [".well-known"]
 title: HouseCurve
 description: Simple audio system tuning
 logo: /assets/img/small.png
-google_analytics: UA-144126322-1
+google_analytics: G-CLP8SY1HP1
 
 kramdown:
    toc_levels: 2..3
