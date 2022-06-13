@@ -15,6 +15,10 @@ Alternatively, the headphone connector can be used to create a wired connection 
 
 When connection to the audio system is undesirable or impossible, HouseCurve can use external stimulus.  The audio system becomes responsible for playing the test signal and HouseCurve listens for it.  The test signal must be manually transferred to the audio system (ex: using an SD card).  For more information see [Stimulus Type](/MANUAL.md#stimulus-type).
 
+#### AirPlay peculiarities
+To use HouseCurve with AirPlay, you must tap <img src="/assets/img/airplay.png" alt="AirPlay" width="15"> at the bottom of the screen.  Connections established using the iOS Control Center or Apple Music are not recognized by HouseCurve.
+
+
 ### Microphones
 HouseCurve will default to using the built in microphone of your iPhone/iPad.  These microphones are quite accurate and are suitable for most tuning tasks.
 
