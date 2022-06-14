@@ -28,9 +28,8 @@ Tap the AirPlay button to select from available AirPlay and Bluetooth audio outp
 #### Reset
 Tap to discard all measurements.
 
-#### Save overlay
-Tap to create an [overlay](#overlay) from a measurement.  This button is disabled when there are no measurements on the plot.
-
+#### Save measurement
+Tap to [save a measurement](#saved-measurement).  This button is disabled when there are no measurements on the plot.
 
 ### Plot Area
 ![housecurve plot area](/assets/img/housecurve_plot_area.png "housecurve plot area")
@@ -40,8 +39,8 @@ The [Target Curve](#target-curve) is displayed on the power plot in yellow with 
 
 The phase and group delay plots always have a target of zero.
 
-#### Selected Overlay
-The selected [Overlay](#overlay) is displayed in grey.  The name of the overlay is displayed in Setup Status.
+#### Saved Measurement
+The [saved measurement](#saved-measurement) is displayed in grey, if one is selected.  Only one saved measurement can be displayed at a time.  The name is displayed in Setup Status.
 
 #### Measurements
 Measurements are displayed on the plot in green.
@@ -78,7 +77,7 @@ HouseCurve can display measurements to suit a given task.
 * Older measurements appear in green and are faded according to age.
 
 #### Smoothing
-Smoothing can be applied to measurements to make it easier to see trends.  The selection is applied to all measurements and the selected overlay.  To remove smoothing, select None.
+Smoothing can be applied to measurements to make it easier to see trends.  To remove smoothing, select None.
 
 #### Coherence Blanking
 Coherence blanking hides portions of the measurement that are [low quality](/USAGE.md#measurement-quality) and should not be used for tuning.  
@@ -90,14 +89,10 @@ This setting also controls the threshold at which HouseCurve will [automatically
 #### Frequency Scale
 The frequency axis can have an Octave or Decade scale.  This setting applies to all plots.
 
-#### Overlay
-Overlays are used to display a previous measurement on the plot for comparison.  Available overlays will be displayed in the list.  Select None to disable overlays.
+#### Saved Measurement
+Saved Measurements can be displayed on the plot for comparison.  Saved measurements will be displayed in the list.  Select None to disable.  Measurements can be removed by tapping Edit.
 
-Overlays can be created from the main screen or by tapping + at the top of the Overlay screen.  If an overlay with the same name exists, it can be overwritten.  Overlays can be removed by tapping Edit.
-
-Overlays are created from available measurements based on the [Display Mode](#display-mode).  In Average mode, the average measurement is used.  In History mode, the most recent measurement is used.
-
-When an overlay is created, it will appear underneath the measurement it is based on.  The overlay will remain on the plot for all subsequent measurements.
+Save a measurement by tapping [save measurement](#save-measurement) on the Measure screen.  The [Display Mode](#display-mode) controls what is saved.  In Average mode, the average measurement is saved.  In History mode, the most recent measurement is saved.  If a measurement with the same name exists, it can be overwritten.  
 
 #### Target Curve
 A [Target Curve](/TUNING.md#target-curve) is displayed on the power plot to serve as a guide for [tuning an audio system](/TUNING.md).  
