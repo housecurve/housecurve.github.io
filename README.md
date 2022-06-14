@@ -7,7 +7,7 @@ HouseCurve is an iOS app for tuning home and car audio systems.  Use it to adjus
 
 * Quick and easy sine sweep measurements
 * Compare measurements to target curves
-* Power, phase and group delay plots
+* Magnitude, phase and group delay plots
 * Average and history display modes
 * Save measurements for comparison
 * Automatic measurement validation
