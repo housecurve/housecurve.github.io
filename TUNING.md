@@ -25,7 +25,7 @@ It may be necessary to iterate over these tasks a few times to get things right.
 ### Target curve
 A Target Curve, or “house curve”, is a visual guide to ensure you tune your audio system in the right direction.  The system is "tuned" when the average  measurement matches the Target Curve.
 
-HouseCurve provides some common curves to experiment with.  These can be selected by going to [Plot Setup](MANUAL.md/plot-setup).  The "House" curves are flatter and intended for home listening.  The "Car" curves have significantly more bass which is common for automobile listing.  HouseCurve will display the selected curve on the magnitude plot when there are measurements.
+HouseCurve provides some common curves to experiment with.  These can be selected by going to [Plot Setup](MANUAL.md#plot-setup).  The "House" curves are flatter and intended for home listening.  The "Car" curves have significantly more bass which is common for automobile listing.  HouseCurve will display the selected curve on the magnitude plot when there are measurements.
 
 ![target curve](/assets/img/target_curve.png "Measurement compared to B&K target curve (yellow)")
 
