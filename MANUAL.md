@@ -25,10 +25,10 @@ Tap <img src="/assets/img/measure.png" alt="Measure" width="15"> to start [measu
 Tap <img src="/assets/img/undo.png" alt="Undo" width="15"> to discard the most recent measurement.  This button is disabled when there are no measurements.
 
 #### Measure Setup
-Tap <img src="/assets/img/setup.png" alt="Setup" width="15"> to show the [Measure Setup](#measure-setup) screen
+Tap <img src="/assets/img/setup.png" alt="Setup" width="15"> to show the [Measure Setup Screen](#measure-setup-screen).
 
 #### Plot Setup
-Tap <img src="/assets/img/plot.png" alt="Plot" width="15"> to show the [Plot Setup](#measure-setup) screen
+Tap <img src="/assets/img/plot.png" alt="Plot" width="15"> to show the [Plot Setup Screen](#plot-setup-screen).
 
 #### Save Measurement
 Tap <img src="/assets/img/save.png" alt="Save" width="15"> to [save a measurement](#saved-measurement).  This button is disabled when there are no measurements on the plot.
@@ -38,7 +38,7 @@ Tap <img src="/assets/img/reset.png" alt="Reset" width="15"> to discard all meas
 
 
 ### Plot Area
-![housecurve plot area](/assets/img/plot_area.png "housecurve plot area")
+![housecurve plot area](/assets/img/plot_area.png "housecurve plot area").
 
 #### Target Curve
 The [Target Curve](#target-curve) is displayed on the magnitude plot in yellow with +/- 3 dB bands.
@@ -66,7 +66,7 @@ To zoom into a plot, pinch anywhere on the plot area.  The plot can be scrolled 
 Plot zoom and scroll only change the horizontal frequency axis.  HouseCurve automatically sets the vertical axis of the plots to show the measurement.
 
 
-### Plot Setup
+### Plot Setup Screen
 
 #### Saved Measurement
 Saved Measurements can be displayed on the plot for comparison.  Saved measurements will be displayed in the list.  Select None to disable.  Measurements can be removed by tapping Edit.
@@ -115,7 +115,7 @@ This setting also controls the threshold at which HouseCurve will [automatically
 The frequency axis can have an Octave or Decade scale.  This setting applies to all plots.
 
 
-### Measure Setup
+### Measure Setup Screen
 
 #### Chirp and Sweep Channel
 The "chirp" and "sweep" sounds of the test signal can be played on different channels (see [measurement process](/USAGE.md#measurement-process)).  This is mainly used for [subwoofer measurements](/USAGE.md#subwoofer-measurements).
