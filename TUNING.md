@@ -66,9 +66,9 @@ When equalizing, the goal is to adjust the audio system such that the average po
 
 ![equalization start](/assets/img/equalizer_start.png "Adjust until measurement within target curve band")
 
-Adjust the audio system in small steps, collecting the same measurements after each change.  [Overlays](/MANUAL.md#overlay) are helpful for seeing the effect of an adjustment as can be seen below:
+Adjust the audio system in small steps, collecting the same measurements after each change.  [Saved measurements](/MANUAL.md#saved-measurement) are helpful for seeing the effect of an adjustment as can be seen below:
 
-![equalization changed](/assets/img/equalizer_changed.png "Use overlays to see what adjustment did")
+![equalization changed](/assets/img/equalizer_changed.png "Save measurements to see what adjustment did")
 
 When most of the average power measurement is within the target band, the audio system is sufficiently equalized.  Further adjustments may not be perceptible.
 
