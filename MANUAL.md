@@ -8,7 +8,7 @@
 ![housecurve main screen controls](/assets/img/housecurve_buttons.png "housecurve main screen controls")
 
 #### Page Control
-HouseCurve displays measurements on [magnitude, phase and group delay plots](/USAGE.md#plots).  Tap the page buttons to move between plots.  Alternatively, swipe from the left or right edge of the screen to change plots.
+Each measurement is displayed on [magnitude, phase and group delay plots](/USAGE.md#plots).  Tap <img src="/assets/img/pageleft.png" alt="Page Left" width="15"> or <img src="/assets/img/pageright.png" alt="Page Right" width="15"> to move between plots.  Alternatively, swipe from the left or right edge of the screen to change plots.
 
 #### Help
 Tap for Help screen
@@ -17,19 +17,19 @@ Tap for Help screen
 Tap for [Setup Screen](#setup-screen) screen
 
 #### Measure
-Tap the Measure button to start [measurement process](/USAGE.md#measurement-process).  Tap again to to stop.  This button is disabled when not connected to an audio system.
+Tap <img src="/assets/img/measure.png" alt="Measure" width="15"> to start [measurement process](/USAGE.md#measurement-process).  Tap again to to stop.  This button is disabled when not connected to an audio system.
 
 #### Undo
-Tap the Undo button to discard the most recent measurement.  This button is disabled when there are no measurements.
+Tap <img src="/assets/img/undo.png" alt="Undo" width="15"> to discard the most recent measurement.  This button is disabled when there are no measurements.
 
 #### Airplay
-Tap the AirPlay button to select from available AirPlay and Bluetooth audio outputs.  The analog (wired) output is automatically selected when something is plugged into the iPhone/iPad headphone connector.  See [connecting to an audio system](/USAGE.md#connecting-to-an-audio-system).
+Tap <img src="/assets/img/airplay.png" alt="AirPlay" width="15"> to select from available AirPlay and Bluetooth audio outputs.  The analog (wired) output is automatically selected when something is plugged into the iPhone/iPad headphone connector.  See [connecting to an audio system](/USAGE.md#connecting-to-an-audio-system).
 
 #### Reset
-Tap to discard all measurements.
+Tap <img src="/assets/img/reset.png" alt="Reset" width="15"> to discard all measurements.
 
 #### Save measurement
-Tap to [save a measurement](#saved-measurement).  This button is disabled when there are no measurements on the plot.
+Tap <img src="/assets/img/save.png" alt="Save" width="15"> to [save a measurement](#saved-measurement).  This button is disabled when there are no measurements on the plot.
 
 ### Plot Area
 ![housecurve plot area](/assets/img/housecurve_plot_area.png "housecurve plot area")
@@ -92,7 +92,7 @@ The frequency axis can have an Octave or Decade scale.  This setting applies to 
 #### Saved Measurement
 Saved Measurements can be displayed on the plot for comparison.  Saved measurements will be displayed in the list.  Select None to disable.  Measurements can be removed by tapping Edit.
 
-Save a measurement by tapping [save measurement](#save-measurement) on the Measure screen.  The [Display Mode](#display-mode) controls what is saved.  In Average mode, the average measurement is saved.  In History mode, the most recent measurement is saved.  If a measurement with the same name exists, it can be overwritten.  
+Save a measurement by tapping [<img src="/assets/img/save.png" alt="Save" width="15">](#save-measurement) on the Measure screen.  The [Display Mode](#display-mode) controls what is saved.  In Average mode, the average measurement is saved.  In History mode, the most recent measurement is saved.  If a measurement with the same name exists, it can be overwritten.  
 
 #### Target Curve
 A [Target Curve](/TUNING.md#target-curve) is displayed on the magnitude plot to serve as a guide for [tuning an audio system](/TUNING.md).  
