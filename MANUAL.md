@@ -32,7 +32,7 @@ Tap <img src="/assets/img/reset.png" alt="Reset" width="15"> to discard all meas
 Tap <img src="/assets/img/save.png" alt="Save" width="15"> to [save a measurement](#saved-measurement).  This button is disabled when there are no measurements on the plot.
 
 ### Plot Area
-![housecurve plot area](/assets/img/housecurve_plot_area.png "housecurve plot area")
+![housecurve plot area](/assets/img/plot_area.png "housecurve plot area")
 
 #### Target Curve
 The [Target Curve](#target-curve) is displayed on the magnitude plot in yellow with +/- 3 dB bands.
