@@ -146,3 +146,17 @@ Microphone calibrations can be loaded tapping + at the top of the External Mic C
 HouseCurve supports the following [Curve file format](/USAGE.md#curve-file-format).
 
 
+### Equalize Screen
+The Equalize (automatic room correction) tool can be accessed from the [more menu](#more-menu).  The main interface is the Equalize Screen, which displays the filters used to correct a saved measurement to the target curve. The lower toolbar contains controls related to equalizing.
+
+image
+
+### Filter Detail
+
+### Filter Export
+
+### Equalize Setup
+
+
+
+
