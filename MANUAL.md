@@ -9,67 +9,47 @@ HouseCurve's main interface is the Measure Screen.  This is where measurements o
 
 ![measure screen](/assets/img/measure_screen.png "housecurve main screen controls")
 
-#### Page Control
-Tap <img src="/assets/img/pageleft.png" alt="Page Left" width="15"> or <img src="/assets/img/pageright.png" alt="Page Right" width="15"> to move between [magnitude, phase and group delay plots](/USAGE.md#plots) plots.  Alternatively, swipe from the left or right edge of the screen to change plots.
+- **Page Control** Tap to move between [magnitude, phase and group delay plots](/USAGE.md#plots) plots.  Alternatively, swipe from the left or right edge of the screen to change plots.
 
-#### Airplay
-Tap <img src="/assets/img/airplay.png" alt="AirPlay" width="15"> to select from available AirPlay and Bluetooth audio outputs.  The analog (wired) output is automatically selected when something is plugged into the iPhone/iPad headphone connector.  See [connecting to an audio system](/USAGE.md#connecting-to-an-audio-system).
+- **Airplay** Tap to select from available AirPlay and Bluetooth audio outputs.  The analog (wired) output is automatically selected when something is plugged into the iPhone/iPad headphone connector.  See [connecting to an audio system](/USAGE.md#connecting-to-an-audio-system).
 
-#### More Menu
-Tap <img src="/assets/img/more.png" alt="More" width="15"> to show additional tools and the help screen.
+- **More Menu** Tap to show additional tools and the help screen.
 
-#### Measure
-Tap <img src="/assets/img/measure.png" alt="Measure" width="15"> to start [measurement process](/USAGE.md#measurement-process).  Tap again to to stop.  This button is disabled when not connected to an audio system.
+- **Measure** Tap to start [measurement process](/USAGE.md#measurement-process).  Tap again to to stop.  This button is disabled when not connected to an audio system.
 
-#### Undo
-Tap <img src="/assets/img/undo.png" alt="Undo" width="15"> to discard the most recent measurement.  This button is disabled when there are no measurements.
+- **Undo** Tap to discard the most recent measurement.  This button is disabled when there are no measurements.
 
-#### Measure Setup
-Tap <img src="/assets/img/setup.png" alt="Setup" width="15"> to show the [Measure Setup Screen](#measure-setup-screen).
+- **Measure Setup** Tap to show the [Measure Setup Screen](#measure-setup-screen).
 
-#### Plot Setup
-Tap <img src="/assets/img/plot.png" alt="Plot" width="15"> to show the [Plot Setup Screen](#plot-setup-screen).
+- **Plot Setup** Tap to show the [Plot Setup Screen](#plot-setup-screen).
 
-#### Save Measurement
-Tap <img src="/assets/img/save.png" alt="Save" width="15"> to [save a measurement](#saved-measurement).  This button is disabled when there are no measurements on the plot.
+- **Save Measurement** Tap to [save a measurement](#saved-measurement).  This button is disabled when there are no measurements on the plot.
 
-#### Reset
-Tap <img src="/assets/img/reset.png" alt="Reset" width="15"> to discard all measurements.
+- **Reset** Tap to discard all measurements.
 
 
 ### Plot Area
-![housecurve plot area](/assets/img/plot_area.png "housecurve plot area").
+![housecurve plot area](/assets/img/plot_area.png "housecurve plot area")
 
-#### Target Curve
-The [Target Curve](#target-curve) is displayed on the magnitude plot in yellow with +/- 3 dB bands.
+- **Target Curve** The [Target Curve](#target-curve) is displayed on the magnitude plot in yellow with +/- 3 dB bands. The phase and group delay plots always have a target of zero.
 
-The phase and group delay plots always have a target of zero.
+- **Saved Measurement** The [saved measurement](#saved-measurement) is displayed in grey.  The name of the measurement is displayed in Setup Status.
 
-#### Saved Measurement
-The [saved measurement](#saved-measurement) is displayed in grey.  Only one saved measurement can be displayed at a time.  The name of the measurement is displayed in Setup Status.
+- **Measurements** Measurements are displayed on the plot in green.
 
-#### Measurements
-Measurements are displayed on the plot in green.
+- **Cursor** Tap plot area to show cursor, move with a single finger, tap again to hide.
 
-#### Cursor
-Tap plot area to show cursor, move with a single finger, tap again to hide.
+- **Measurement Status** HouseCurve displays the status of the [measurement process](/USAGE.md#measurement-process) in this area.  The status disappears after a few seconds.
 
-#### Measurement Status
-HouseCurve displays the status of the [measurement process](/USAGE.md#measurement-process) in this area.  The status disappears after a few seconds.
+- **Setup Status** HouseCurve displays setup information in this area.  The status disappears after a few seconds.
 
-#### Setup Status
-HouseCurve displays setup information in this area.  The status disappears after a few seconds.
-
-#### Plot zoom / scroll
-To zoom into a plot, pinch anywhere on the plot area.  The plot can be scrolled left or right with two fingers.
-
-Plot zoom and scroll only change the horizontal frequency axis.  HouseCurve automatically sets the vertical axis of the plots to show the measurement.
+- **Zoom / Scroll** To zoom into a plot, pinch anywhere on the plot area.  The plot can be scrolled left or right with two fingers.  Plot zoom and scroll only change the horizontal frequency axis.  HouseCurve automatically sets the vertical axis of the plots to show the measurement.
 
 
 ### Plot Setup Screen
 
 #### Saved Measurement
-Saved Measurements can be displayed on the plot for comparison.  Saved measurements will be displayed in the list.  Select None to disable.  Measurements can be removed by tapping Edit.
+Saved Measurements can be displayed on the plot for comparison.  Only one saved measurement can be selected at a time.  Select None to disable.  Measurements can be removed by tapping Edit.
 
 Save a measurement by tapping [<img src="/assets/img/save.png" alt="Save" width="15">](#save-measurement) on the Measure screen.  The [Display Mode](#display-mode) controls what is saved.  In Average mode, the average measurement is saved.  In History mode, the most recent measurement is saved.  If a measurement with the same name exists, it can be overwritten.  
 
