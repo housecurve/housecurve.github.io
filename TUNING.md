@@ -91,11 +91,11 @@ The example below shows an audio system consisting of main speakers and a subwoo
 
 For audio systems that incorporate limited range speakers, the crossover frequencies need to be selected.
 
-The classic approach is to select crossover frequencies based on speaker specifications, but these may not reflect how the speakers perform in the room.  HouseCurve’s overlay feature makes it possible to compare separate speaker measurements to select a crossover frequency.
+The classic approach is to select crossover frequencies based on speaker specifications, but these may not reflect how the speakers perform in the room.  It is better to measure the actual speaker performance. Use [saved measurements](/MANUAL.md#saved-measurments), to compare individual speaker measurements and select a crossover frequency.
 
-The screenshot below shows a 2.1 desktop audio system consisting of [main speakers](https://www.kantoaudio.com/powered-speakers/yu2) and a [subwoofer](https://www.kantoaudio.com/subwoofers/sub6).  The speakers were measured separately with crossovers disabled and no equalization.  The [subwoofer was measured](/USAGE.md#subwoofer-measurements) first and saved as an overlay (grey), then the main speakers were measured (green).
+The screenshot below shows a 2.1 desktop audio system consisting of [main speakers](https://www.kantoaudio.com/powered-speakers/yu2) and a [subwoofer](https://www.kantoaudio.com/subwoofers/sub6).  The speakers were measured separately with crossovers disabled and no equalization.  The [subwoofer was measured](/USAGE.md#subwoofer-measurements) first and saved (grey), then the main speakers were measured (green).
 
-![finding crossover frequency](/assets/img/finding_crossover_frequency_kanto_yu2.png "Use overlays to find best crossover frequency")
+![finding crossover frequency](/assets/img/finding_crossover_frequency_kanto_yu2.png "Measure speakers separately to find best crossover frequency")
 
 The published frequency range for the main speakers is 80-20000 Hz and the subwoofer is 35-165 Hz.  Based on the specs, the overlap of these speakers is 80 - 165 Hz and the crossover frequency should be somewhere in that range.
 
@@ -118,11 +118,12 @@ Since sound is a wave, the pattern of destructive interference will repeat at mu
 
 The adjustments available for time alignment depend on the audio system:  
 
-* For subwoofers, there may be a polarity switch (often labelled “phase”) or a dial that permits adjusting phase from 0 to 180 degrees.
+* Speaker location can be adjusted to add/remove delay (sound takes about 3 ms to travel 1 meter)
 * Amplifiers/receivers typically have delay or distance settings.
 * Active crossovers and parametric equalizers usually have delay settings too (a [MiniDSP 2x4 HD](https://www.minidsp.com/products/minidsp-in-a-box/minidsp-2x4-hd) was used for many of the measurements in this document).
+* Subwoofers may have a polarity switch (often labelled “phase”) or a dial that permits adjusting phase from 0 to 180 degrees.
 
-Many audio systems will have a combination of these adjustments and **experimentation will be required** to figure out what works best.
+Most audio systems will have a combination of these adjustments and **experimentation will be required** to figure out what works best.
 
 
 #### Time align using power
@@ -145,15 +146,15 @@ The downfall of this approach is that maximum power can be achieved at multiples
 
 When two speakers are time aligned, they will have the same phase at the crossover frequency and their phase plots will have the same slope in the crossover region.
 
-Time alignment using phase requires **separate measurement** of the speakers on either side of the crossover.  To do this with HouseCurve, measurements of the first speaker are compared to the second using an [overlay](/MANUAL.md#overlay).  The second speaker is adjusted until a good time alignment is found on the phase plot.
+Time alignment using phase requires **separate measurement** of the speakers on either side of the crossover.  To do this with HouseCurve, measurements of the first speaker are compared to the second using a [saved measurement](/MANUAL.md#saved-measurement).  The second speaker is adjusted until a good time alignment is found on the phase plot.
 
 Phase measurements are very sensitive to changes in the distance between speaker and microphone.  For best results, take measurements from the middle of the listening area, keeping the microphone in the same location for each measurement.  For lower frequency crossovers (~100 Hz), it is possible to average phase measurements in the listening area, but this will quickly break down for large areas.  Keep in mind that sound takes about 3 ms to travel 1 meter.
 
 Phase measurements must share the same time reference to be compared.  To achieve this with HouseCurve, the chirp sound must come from the same speaker (for more information, see [measurement process](/USAGE.md#measurement-process)).
 
-For a typical 2.1 audio system, use **either** the left or right main speaker as the “chirp” speaker.  Use the same chirp speaker for both subwoofer and main speaker measurements.  Measure the main speakers first, allowing the sweep to play from both left and right speakers to get an average phase.  Save this measurement as an overlay.  [Measure the subwoofer](/USAGE.md#subwoofer-measurements) second and compare to the overlay.  Adjust the audio system as needed to obtain alignment (adjust main speakers or subwoofer).
+For a typical 2.1 audio system, use **either** the left or right main speaker as the “chirp” speaker.  Use the same chirp speaker for both subwoofer and main speaker measurements.  Measure the main speakers first, allowing the sweep to play from both left and right speakers to get an average phase.  Save this measurement.  [Measure the subwoofer](/USAGE.md#subwoofer-measurements) second and compare to the saved main measurement.  Adjust the audio system as needed to obtain alignment (adjust main speakers or subwoofer).
 
-The phase plot below shows a 2.1 audio system with good time alignment.  The subwoofer measurement (green) is compared to an overlay of the main speakers (grey).  The crossover frequency is 100 Hz.  The main speakers and subwoofer have nearly the same phase at the crossover frequency, and the phase slopes are roughly the same.
+The phase plot below shows a 2.1 audio system with good time alignment.  The subwoofer measurement (green) is compared to a saved measurement of the main speakers (grey).  The crossover frequency is 100 Hz.  The main speakers and subwoofer have nearly the same phase at the crossover frequency, and the phase slopes are roughly the same.
 
 ![subwoofer align phase](/assets/img/subwoofer_align_phase.png "Phase plot showing subwoofer aligned with main speakers")
 
