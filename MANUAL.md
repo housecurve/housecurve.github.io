@@ -5,7 +5,7 @@
 {:toc}
 
 ### Main Screen
-![housecurve main screen controls](/assets/img/housecurve_buttons.png "housecurve main screen controls")
+![housecurve main screen controls](/assets/img/measure_screen.png "housecurve main screen controls")
 
 #### Page Control
 Each measurement is displayed on [magnitude, phase and group delay plots](/USAGE.md#plots).  Tap <img src="/assets/img/pageleft.png" alt="Page Left" width="15"> or <img src="/assets/img/pageright.png" alt="Page Right" width="15"> to move between plots.  Alternatively, swipe from the left or right edge of the screen to change plots.
