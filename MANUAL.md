@@ -35,10 +35,10 @@ Tap to create an [overlay](#overlay) from a measurement.  This button is disable
 ### Plot Area
 ![housecurve plot area](/assets/img/housecurve_plot_area.png "housecurve plot area")
 
-#### Selected Reference Curve
-The selected [Reference Curve](#reference-curve) is displayed on the power plot in yellow with +/- 3 dB bands.
+#### Target Curve
+The [Target Curve](#target-curve) is displayed on the power plot in yellow with +/- 3 dB bands.
 
-The phase and group delay plots always have a reference of zero.
+The phase and group delay plots always have a target of zero.
 
 #### Selected Overlay
 The selected [Overlay](#overlay) is displayed in grey.  The name of the overlay is displayed in Setup Status.
@@ -66,7 +66,7 @@ Plot zoom and scroll only change the horizontal frequency axis.  HouseCurve auto
 #### Display Mode
 HouseCurve can display measurements to suit a given task.
 
-**Average** mode (default) is used to capture how an audio system sounds in a listening area. Use this mode when tuning the audio system to match a reference curve.
+**Average** mode (default) is used to capture how an audio system sounds in a listening area. Use this mode when tuning the audio system to match a target curve.
 
 * Measurements are included in an average as they are collected.
 * The average measurement is displayed in bold green.
@@ -99,19 +99,19 @@ Overlays are created from available measurements based on the [Display Mode](#di
 
 When an overlay is created, it will appear underneath the measurement it is based on.  The overlay will remain on the plot for all subsequent measurements.
 
-#### Reference Curve
-A [Reference Curve](/TUNING.md#select-reference-curve) is displayed on the power plot to serve as a guide for [tuning an audio system](/TUNING.md).  
+#### Target Curve
+A [Target Curve](/TUNING.md#target-curve) is displayed on the power plot to serve as a guide for [tuning an audio system](/TUNING.md).  
 
-The curve is positioned on the power plot based on the Reference Curve Fit setting.
+The curve is positioned on the power plot based on the Target Curve Fit setting.
 
-HouseCurve ships with some common reference curves.  Additional reference curves can be loaded by tapping + at the top of the Reference Curve screen.  Reference curves can be removed by tapping Edit.
+HouseCurve ships with some common target curves.  Additional target curves can be loaded by tapping + at the top of the Target Curve screen.  Target curves can be removed by tapping Edit.
 
-#### Reference Curve Fit
-By default, the selected Reference Curve is automatically fitted to measurements based on the [Display Mode](#display-mode).  In Average mode, the average measurement is used.  In History mode, the most recent measurement is used.
+#### Target Curve Fit
+By default, the selected Target Curve is automatically fitted to measurements based on the [Display Mode](#display-mode).  In Average mode, the average measurement is used.  In History mode, the most recent measurement is used.
 
-[Coherence Blanking](#coherence-blanking) also affects how the Reference Curve is positioned.  Portions of the measurement below the blanking threshold are ignored for fitting.
+[Coherence Blanking](#coherence-blanking) also affects how the Target Curve is positioned.  Portions of the measurement below the blanking threshold are ignored for fitting.
 
-When automatic fitting is disabled, the curve can be manually positioned by setting a desired dB level at 100 Hz.  This is useful when separately adjusting speakers to a common reference level, such as main speakers and a subwoofer.
+When automatic fitting is disabled, the curve can be manually positioned by setting a desired dB level at 100 Hz.  This is useful when separately adjusting speakers to a common level, such as main speakers and a subwoofer.
 
 #### Chirp and Sweep Channel
 The "chirp" and "sweep" sounds of the test signal can be played on different channels (see [measurement process](/USAGE.md#measurement-process)).  This is mainly used for [subwoofer measurements](/USAGE.md#subwoofer-measurements).
