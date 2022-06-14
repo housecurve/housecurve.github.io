@@ -4,17 +4,19 @@
 1. table of contents inserted here
 {:toc}
 
-### Main Screen
-![housecurve main screen controls](/assets/img/measure_screen.png "housecurve main screen controls")
+### Measure Screen
+HouseCurve's main interface is the Measure Screen.  This is where measurements of an audio system are displayed.  Additional tools and the help screen can be accessed via the [more menu](#more-menu).  The lower toolbar contains controls related to measurement.
+
+![measure screen](/assets/img/measure_screen.png "housecurve main screen controls")
 
 #### Page Control
-Each measurement is displayed on [magnitude, phase and group delay plots](/USAGE.md#plots).  Tap <img src="/assets/img/pageleft.png" alt="Page Left" width="15"> or <img src="/assets/img/pageright.png" alt="Page Right" width="15"> to move between plots.  Alternatively, swipe from the left or right edge of the screen to change plots.
+Tap <img src="/assets/img/pageleft.png" alt="Page Left" width="15"> or <img src="/assets/img/pageright.png" alt="Page Right" width="15"> to move between [magnitude, phase and group delay plots](/USAGE.md#plots) plots.  Alternatively, swipe from the left or right edge of the screen to change plots.
 
-#### Help
-Tap for Help screen
+#### Airplay
+Tap <img src="/assets/img/airplay.png" alt="AirPlay" width="15"> to select from available AirPlay and Bluetooth audio outputs.  The analog (wired) output is automatically selected when something is plugged into the iPhone/iPad headphone connector.  See [connecting to an audio system](/USAGE.md#connecting-to-an-audio-system).
 
-#### Setup
-Tap for [Setup Screen](#setup-screen) screen
+#### More Menu
+Tap <img src="/assets/img/more.png" alt="More" width="15"> to show additional tools and the help screen.
 
 #### Measure
 Tap <img src="/assets/img/measure.png" alt="Measure" width="15"> to start [measurement process](/USAGE.md#measurement-process).  Tap again to to stop.  This button is disabled when not connected to an audio system.
@@ -22,14 +24,18 @@ Tap <img src="/assets/img/measure.png" alt="Measure" width="15"> to start [measu
 #### Undo
 Tap <img src="/assets/img/undo.png" alt="Undo" width="15"> to discard the most recent measurement.  This button is disabled when there are no measurements.
 
-#### Airplay
-Tap <img src="/assets/img/airplay.png" alt="AirPlay" width="15"> to select from available AirPlay and Bluetooth audio outputs.  The analog (wired) output is automatically selected when something is plugged into the iPhone/iPad headphone connector.  See [connecting to an audio system](/USAGE.md#connecting-to-an-audio-system).
+#### Measure Setup
+Tap <img src="/assets/img/setup.png" alt="Setup" width="15"> to show the [Measure Setup](#measure-setup) screen
+
+#### Plot Setup
+Tap <img src="/assets/img/plot.png" alt="Plot" width="15"> to show the [Plot Setup](#measure-setup) screen
+
+#### Save Measurement
+Tap <img src="/assets/img/save.png" alt="Save" width="15"> to [save a measurement](#saved-measurement).  This button is disabled when there are no measurements on the plot.
 
 #### Reset
 Tap <img src="/assets/img/reset.png" alt="Reset" width="15"> to discard all measurements.
 
-#### Save measurement
-Tap <img src="/assets/img/save.png" alt="Save" width="15"> to [save a measurement](#saved-measurement).  This button is disabled when there are no measurements on the plot.
 
 ### Plot Area
 ![housecurve plot area](/assets/img/plot_area.png "housecurve plot area")
@@ -40,7 +46,7 @@ The [Target Curve](#target-curve) is displayed on the magnitude plot in yellow w
 The phase and group delay plots always have a target of zero.
 
 #### Saved Measurement
-The [saved measurement](#saved-measurement) is displayed in grey, if one is selected.  Only one saved measurement can be displayed at a time.  The name is displayed in Setup Status.
+The [saved measurement](#saved-measurement) is displayed in grey.  Only one saved measurement can be displayed at a time.  The name of the measurement is displayed in Setup Status.
 
 #### Measurements
 Measurements are displayed on the plot in green.
@@ -60,7 +66,26 @@ To zoom into a plot, pinch anywhere on the plot area.  The plot can be scrolled 
 Plot zoom and scroll only change the horizontal frequency axis.  HouseCurve automatically sets the vertical axis of the plots to show the measurement.
 
 
-### Setup Screen
+### Plot Setup
+
+#### Saved Measurement
+Saved Measurements can be displayed on the plot for comparison.  Saved measurements will be displayed in the list.  Select None to disable.  Measurements can be removed by tapping Edit.
+
+Save a measurement by tapping [<img src="/assets/img/save.png" alt="Save" width="15">](#save-measurement) on the Measure screen.  The [Display Mode](#display-mode) controls what is saved.  In Average mode, the average measurement is saved.  In History mode, the most recent measurement is saved.  If a measurement with the same name exists, it can be overwritten.  
+
+#### Target Curve
+A [Target Curve](/TUNING.md#target-curve) is displayed on the magnitude plot to serve as a guide for [tuning an audio system](/TUNING.md).  
+
+The curve is positioned on the magnitude plot based on the Target Curve Fit setting.
+
+HouseCurve ships with some common target curves.  Additional target curves can be loaded by tapping + at the top of the Target Curve screen.  Target curves can be removed by tapping Edit.
+
+#### Target Curve Fit
+By default, the selected Target Curve is automatically fitted to measurements based on the [Display Mode](#display-mode).  In Average mode, the average measurement is used.  In History mode, the most recent measurement is used.
+
+[Coherence Blanking](#coherence-blanking) also affects how the Target Curve is positioned.  Portions of the measurement below the blanking threshold are ignored for fitting.
+
+When automatic fitting is disabled, the curve can be manually positioned by setting a desired dB level at 100 Hz.  This is useful when separately adjusting speakers to a common level, such as main speakers and a subwoofer.
 
 #### Display Mode
 HouseCurve can display measurements to suit a given task.
@@ -89,39 +114,11 @@ This setting also controls the threshold at which HouseCurve will [automatically
 #### Frequency Scale
 The frequency axis can have an Octave or Decade scale.  This setting applies to all plots.
 
-#### Saved Measurement
-Saved Measurements can be displayed on the plot for comparison.  Saved measurements will be displayed in the list.  Select None to disable.  Measurements can be removed by tapping Edit.
 
-Save a measurement by tapping [<img src="/assets/img/save.png" alt="Save" width="15">](#save-measurement) on the Measure screen.  The [Display Mode](#display-mode) controls what is saved.  In Average mode, the average measurement is saved.  In History mode, the most recent measurement is saved.  If a measurement with the same name exists, it can be overwritten.  
-
-#### Target Curve
-A [Target Curve](/TUNING.md#target-curve) is displayed on the magnitude plot to serve as a guide for [tuning an audio system](/TUNING.md).  
-
-The curve is positioned on the magnitude plot based on the Target Curve Fit setting.
-
-HouseCurve ships with some common target curves.  Additional target curves can be loaded by tapping + at the top of the Target Curve screen.  Target curves can be removed by tapping Edit.
-
-#### Target Curve Fit
-By default, the selected Target Curve is automatically fitted to measurements based on the [Display Mode](#display-mode).  In Average mode, the average measurement is used.  In History mode, the most recent measurement is used.
-
-[Coherence Blanking](#coherence-blanking) also affects how the Target Curve is positioned.  Portions of the measurement below the blanking threshold are ignored for fitting.
-
-When automatic fitting is disabled, the curve can be manually positioned by setting a desired dB level at 100 Hz.  This is useful when separately adjusting speakers to a common level, such as main speakers and a subwoofer.
+### Measure Setup
 
 #### Chirp and Sweep Channel
 The "chirp" and "sweep" sounds of the test signal can be played on different channels (see [measurement process](/USAGE.md#measurement-process)).  This is mainly used for [subwoofer measurements](/USAGE.md#subwoofer-measurements).
-
-#### Internal Mic Compensation
-The built in iPhone/iPad microphones have a reasonably flat response and are quite acceptable for tuning an audio system.  However, when compared to an external calibrated microphone, they do show some roll off at the extreme ends of the frequency spectrum.  
-
-Internal Mic Compensation applies a moderate boost below 60 Hz and above 16 KHz to measurements made with the built in iPhone/iPad microphone.
-
-#### External Mic Calibration
-HouseCurve supports calibrated external microphones.  Available calibrations will be displayed in the list.  Select None to disable calibration.
-
-Microphone calibrations can be loaded tapping + at the top of the External Mic Calibration screen.  Calibrations can be removed by tapping Edit.
-
-HouseCurve supports the following [Curve file format](/USAGE.md#curve-file-format).
 
 #### Stimulus Type
 Stimulus Type controls the test signal used to measure the audio system.
@@ -135,4 +132,17 @@ The test signal can be exported to a WAV file when this mode is selected.  Note 
 **Pink Noise** is provided for interest sake.  Measurements based on pink noise will have a lower signal to noise ratio.
 
 HouseCurve uses coherent averaging.  This has an interesting effect on Pink Noise measurements.  In a sonically treated room, such as one with sound absorbing panels on the walls, Pink Noise noise measurements will closely match Sine Sweep measurements.  In a more typical “reflective” room, Pink Noise magnitude measurements tend to be lower above ~2 KHz.  The degree to which the Pink Noise and Sine Sweep measurements match is an indication of how “dead” the room is.
+
+#### Internal Mic Compensation
+The built in iPhone/iPad microphones have a reasonably flat response and are quite acceptable for tuning an audio system.  However, when compared to an external calibrated microphone, they do show some roll off at the extreme ends of the frequency spectrum.  
+
+Internal Mic Compensation applies a moderate boost below 60 Hz and above 16 KHz to measurements made with the built in iPhone/iPad microphone.
+
+#### External Mic Calibration
+HouseCurve supports calibrated external microphones.  Available calibrations will be displayed in the list.  Select None to disable calibration.
+
+Microphone calibrations can be loaded tapping + at the top of the External Mic Calibration screen.  Calibrations can be removed by tapping Edit.
+
+HouseCurve supports the following [Curve file format](/USAGE.md#curve-file-format).
+
 
