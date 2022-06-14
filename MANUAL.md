@@ -8,7 +8,7 @@
 ![housecurve main screen controls](/assets/img/housecurve_buttons.png "housecurve main screen controls")
 
 #### Page Control
-HouseCurve displays measurements on [power, phase and group delay plots](/USAGE.md#plots).  Tap the page buttons to move between plots.  Alternatively, swipe from the left or right edge of the screen to change plots.
+HouseCurve displays measurements on [magnitude, phase and group delay plots](/USAGE.md#plots).  Tap the page buttons to move between plots.  Alternatively, swipe from the left or right edge of the screen to change plots.
 
 #### Help
 Tap for Help screen
@@ -35,7 +35,7 @@ Tap to [save a measurement](#saved-measurement).  This button is disabled when t
 ![housecurve plot area](/assets/img/housecurve_plot_area.png "housecurve plot area")
 
 #### Target Curve
-The [Target Curve](#target-curve) is displayed on the power plot in yellow with +/- 3 dB bands.
+The [Target Curve](#target-curve) is displayed on the magnitude plot in yellow with +/- 3 dB bands.
 
 The phase and group delay plots always have a target of zero.
 
@@ -95,9 +95,9 @@ Saved Measurements can be displayed on the plot for comparison.  Saved measureme
 Save a measurement by tapping [save measurement](#save-measurement) on the Measure screen.  The [Display Mode](#display-mode) controls what is saved.  In Average mode, the average measurement is saved.  In History mode, the most recent measurement is saved.  If a measurement with the same name exists, it can be overwritten.  
 
 #### Target Curve
-A [Target Curve](/TUNING.md#target-curve) is displayed on the power plot to serve as a guide for [tuning an audio system](/TUNING.md).  
+A [Target Curve](/TUNING.md#target-curve) is displayed on the magnitude plot to serve as a guide for [tuning an audio system](/TUNING.md).  
 
-The curve is positioned on the power plot based on the Target Curve Fit setting.
+The curve is positioned on the magnitude plot based on the Target Curve Fit setting.
 
 HouseCurve ships with some common target curves.  Additional target curves can be loaded by tapping + at the top of the Target Curve screen.  Target curves can be removed by tapping Edit.
 
@@ -134,5 +134,5 @@ The test signal can be exported to a WAV file when this mode is selected.  Note 
 
 **Pink Noise** is provided for interest sake.  Measurements based on pink noise will have a lower signal to noise ratio.
 
-HouseCurve uses coherent averaging.  This has an interesting effect on Pink Noise measurements.  In a sonically treated room, such as one with sound absorbing panels on the walls, Pink Noise noise measurements will closely match Sine Sweep measurements.  In a more typical “reflective” room, Pink Noise power measurements tend to be lower above ~2 KHz.  The degree to which the Pink Noise and Sine Sweep measurements match is an indication of how “dead” the room is.
+HouseCurve uses coherent averaging.  This has an interesting effect on Pink Noise measurements.  In a sonically treated room, such as one with sound absorbing panels on the walls, Pink Noise noise measurements will closely match Sine Sweep measurements.  In a more typical “reflective” room, Pink Noise magnitude measurements tend to be lower above ~2 KHz.  The degree to which the Pink Noise and Sine Sweep measurements match is an indication of how “dead” the room is.
 
