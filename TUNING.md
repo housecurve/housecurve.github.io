@@ -7,9 +7,9 @@
 ### Tuning overview
 The process for tuning an audio system will generally involve the tasks described below:
 
-[Select reference curve](#select-reference-curve).  The reference curve defines how the audio system will sound.  The choice of curve is subject to personal taste.
+[Target curve](#target-curve).  The target curve defines how the audio system will sound.  The choice of curve is subject to personal taste.
 
-[Apply equalization](#apply-equalization).  Equalization means adjusting the volume level at different frequencies to match the reference curve.
+[Apply equalization](#apply-equalization).  Equalization means adjusting the volume level at different frequencies to match the target curve.
 
 For audio systems with separately adjustable speakers, such as a 2.1 system (main speakers and a subwoofer), the following steps should be performed **before equalization**:
 
@@ -22,16 +22,16 @@ For audio systems with separately adjustable speakers, such as a 2.1 system (mai
 It may be necessary to iterate over these tasks a few times to get things right.  Experimentation is encouraged to find what works for a given audio system.
 
 
-### Select reference curve
-A Reference Curve, or “house curve”, is visual guide to ensure you tune your audio system in the right direction.  The system is "tuned" when the average power measurement matches the Reference Curve.
+### Target curve
+A Target Curve, or “house curve”, is visual guide to ensure you tune your audio system in the right direction.  The system is "tuned" when the average power measurement matches the Target Curve.
 
 HouseCurve provides some common curves to experiment with.  These can be selected by going to [Setup](MANUAL.md/setup-screen).  The "House" curves are flatter and intended for home listening.  The "Car" curves have significantly more bass which is common for automobile listing.  HouseCurve will display the selected curve on the power plot when there are measurements.
 
-![reference curve](/assets/img/reference_curve.png "Measurement compared to B&K reference curve (yellow)")
+![target curve](/assets/img/target_curve.png "Measurement compared to B&K target curve (yellow)")
 
-The choice of Reference Curve is subject to individual taste.  Typically, listeners prefer it when low frequencies are louder than high frequencies.  A  downward slope of 1 dB/octave is quite common.  Ultimately, your ears will tell you what one is best.
+The choice of Target Curve is subject to individual taste.  Typically, listeners prefer it when low frequencies are louder than high frequencies.  A  downward slope of 1 dB/octave is quite common.  Ultimately, your ears will tell you what one is best.
 
-Custom curves can be created with a text editor and [imported](/MANUAL.md#reference-curve) into HouseCurve.  See [curve file format](/USAGE.md#curve-file-format) for more information.  The curves provided by HouseCurve are a great starting point for making your own:
+Custom curves can be created with a text editor and [imported](/MANUAL.md#target-curve) into HouseCurve.  See [curve file format](/USAGE.md#curve-file-format) for more information.  The curves provided by HouseCurve are a great starting point for making your own:
 
 * [House A](/curves/House%20A.txt)
 * [House B](/curves/House%20B.txt)
@@ -40,9 +40,9 @@ Custom curves can be created with a text editor and [imported](/MANUAL.md#refere
 * [Car B](/curves/Car%20B.txt)
 * [Car C](/curves/Car%20C.txt)
 
-In the audiophile world, a “flat” response is often seen as the ultimate goal.  However, for everyday listening, a flat response tends to sound overly “bright” and unpleasant.  Try it for yourself: [Flat Reference Curve](/curves/flat.txt).
+In the audiophile world, a “flat” response is often seen as the ultimate goal.  However, for everyday listening, a flat response tends to sound overly “bright” and unpleasant.  Try it for yourself: [Flat Target Curve](/curves/flat.txt).
 
-Below are some resources for understanding what reference curves do and how to choose them:
+Below are some resources for understanding what house curves do and how to choose them:
 * [Advice on better house curve?](https://www.minidsp.com/forum/dirac-series-support/17523-advice-on-better-house-curve)
 * [House Curve: What it is, why you need it, how to do it](https://www.hometheatershack.com/forums/rew-forum/96-house-curve-what-why-you-need-how-do.html)
 * [Relevant loudspeaker tests, in studios, in Hi-Fi dealers' demo rooms, in the home etc](https://www.bksv.com/media/doc/17-197.pdf)
@@ -62,27 +62,27 @@ Equalization in general means changing the volume level at different frequencies
 * Adjust the graphic or parametric equalizer settings
 * Change the room (ex: sound dampening, adjust furniture)
 
-When equalizing, the goal is to adjust the audio system such that the average power measurement ends up within the +/- 3 dB band that surrounds the Reference Curve.
+When equalizing, the goal is to adjust the audio system such that the average power measurement ends up within the +/- 3 dB band that surrounds the Target Curve.
 
-![equalization start](/assets/img/equalizer_start.png "Adjust until measurement within reference curve band")
+![equalization start](/assets/img/equalizer_start.png "Adjust until measurement within target curve band")
 
 Adjust the audio system in small steps, collecting the same measurements after each change.  [Overlays](/MANUAL.md#overlay) are helpful for seeing the effect of an adjustment as can be seen below:
 
 ![equalization changed](/assets/img/equalizer_changed.png "Use overlays to see what adjustment did")
 
-When most of the average power measurement is within the reference band, the audio system is sufficiently equalized.  Further adjustments may not be perceptible.
+When most of the average power measurement is within the target band, the audio system is sufficiently equalized.  Further adjustments may not be perceptible.
 
 Avoid adjustments that are beyond the capability of the audio system.  Doing so will lead to distortion and possibly audio system damage.  Keep in mind that a +10 dB adjustment means the audio system has to output 10 times more signal power.  A change of +20 dB is 100 times more signal power!
 
 
 ### Match speaker levels
-For systems with separately adjustable speakers, the relative levels need to be matched.  The goal is to set the speaker levels such that measurements in the listening area are roughly close to the reference curve on the power plot.
+For systems with separately adjustable speakers, the relative levels need to be matched.  The goal is to set the speaker levels such that measurements in the listening area are roughly close to the target curve on the power plot.
 
 Make sure all speakers are active and set the overall audio system volume to a normal listening level.  It can be helpful to set HouseCurve’s [Display Mode](/MANUAL.md#display-mode) to History.
 
-Take a measurement from the middle of the listening area.  On the power plot, observe how the measurement lines up with the Reference Curve.  Adjust individual speaker levels and repeat the measurement as needed to get close to the Reference Curve.
+Take a measurement from the middle of the listening area.  On the power plot, observe how the measurement lines up with the Target Curve.  Adjust individual speaker levels and repeat the measurement as needed to get close to the Target Curve.
 
-The example below shows an audio system consisting of main speakers and a subwoofer.  The subwoofer level was initially too low.  It was adjusted a few times to get close enough to the Reference Curve.
+The example below shows an audio system consisting of main speakers and a subwoofer.  The subwoofer level was initially too low.  It was adjusted a few times to get close enough to the Target Curve.
 
 ![subwoofer level change](/assets/img/subwoofer_level_change.png "Matching subwoofer level to main speakers")
 
@@ -130,7 +130,7 @@ Destructive interference will cause a dip in the power measurement at the crosso
 
 When using this method it’s important to avoid changing audio system levels (volume, bass/treble, equalizer, etc).
 
-Ensure speakers on either side of the crossover are enabled.  Set HouseCurve’s Display Mode to [History](/MANUAL.md#display-mode).  Zoom into the region around the crossover frequency.  It is also best to set the [Reference Curve Fit](/MANUAL.md#reference-curve-fit) to manual and select an appropriate level as this will prevent the reference curve from moving as adjustments are made.
+Ensure speakers on either side of the crossover are enabled.  Set HouseCurve’s Display Mode to [History](/MANUAL.md#display-mode).  Zoom into the region around the crossover frequency.  It is also best to set the [Target Curve Fit](/MANUAL.md#target-curve-fit) to manual and select an appropriate level as this will prevent the target curve from moving as adjustments are made.
 
 Take a measurement from the middle of the listening area.  On the power plot, place the cursor at the crossover frequency and observe the power value.  Adjust the audio system.  Repeat the measurement and observe the new power value.  Continue to make adjustments until the maximum power level is achieved and the dip is the smallest.  The plot below shows a system being adjusted from the worst alignment (largest dip) to the best (smallest dip).
 
