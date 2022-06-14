@@ -23,9 +23,9 @@ It may be necessary to iterate over these tasks a few times to get things right.
 
 
 ### Target curve
-A Target Curve, or “house curve”, is visual guide to ensure you tune your audio system in the right direction.  The system is "tuned" when the average power measurement matches the Target Curve.
+A Target Curve, or “house curve”, is a visual guide to ensure you tune your audio system in the right direction.  The system is "tuned" when the average  measurement matches the Target Curve.
 
-HouseCurve provides some common curves to experiment with.  These can be selected by going to [Setup](MANUAL.md/setup-screen).  The "House" curves are flatter and intended for home listening.  The "Car" curves have significantly more bass which is common for automobile listing.  HouseCurve will display the selected curve on the power plot when there are measurements.
+HouseCurve provides some common curves to experiment with.  These can be selected by going to [Setup](MANUAL.md/setup-screen).  The "House" curves are flatter and intended for home listening.  The "Car" curves have significantly more bass which is common for automobile listing.  HouseCurve will display the selected curve on the magnitude plot when there are measurements.
 
 ![target curve](/assets/img/target_curve.png "Measurement compared to B&K target curve (yellow)")
 
@@ -62,7 +62,7 @@ Equalization in general means changing the volume level at different frequencies
 * Adjust the graphic or parametric equalizer settings
 * Change the room (ex: sound dampening, adjust furniture)
 
-When equalizing, the goal is to adjust the audio system such that the average power measurement ends up within the +/- 3 dB band that surrounds the Target Curve.
+When equalizing, the goal is to adjust the audio system such that the average magnitude measurement ends up within the +/- 3 dB band that surrounds the Target Curve.
 
 ![equalization start](/assets/img/equalizer_start.png "Adjust until measurement within target curve band")
 
@@ -70,17 +70,17 @@ Adjust the audio system in small steps, collecting the same measurements after e
 
 ![equalization changed](/assets/img/equalizer_changed.png "Save measurements to see what adjustment did")
 
-When most of the average power measurement is within the target band, the audio system is sufficiently equalized.  Further adjustments may not be perceptible.
+When most of the average magnitude measurement is within the target band, the audio system is sufficiently equalized.  Further adjustments may not be perceptible.
 
 Avoid adjustments that are beyond the capability of the audio system.  Doing so will lead to distortion and possibly audio system damage.  Keep in mind that a +10 dB adjustment means the audio system has to output 10 times more signal power.  A change of +20 dB is 100 times more signal power!
 
 
 ### Match speaker levels
-For systems with separately adjustable speakers, the relative levels need to be matched.  The goal is to set the speaker levels such that measurements in the listening area are roughly close to the target curve on the power plot.
+For systems with separately adjustable speakers, the relative levels need to be matched.  This is done to reduce the amount of equalization required.   Adjust the speaker levels such that measurements in the listening area are roughly close to the target curve on the magnitude plot.
 
 Make sure all speakers are active and set the overall audio system volume to a normal listening level.  It can be helpful to set HouseCurve’s [Display Mode](/MANUAL.md#display-mode) to History.
 
-Take a measurement from the middle of the listening area.  On the power plot, observe how the measurement lines up with the Target Curve.  Adjust individual speaker levels and repeat the measurement as needed to get close to the Target Curve.
+Take a measurement from the middle of the listening area.  On the magnitude plot, observe how the measurement lines up with the Target Curve.  Adjust individual speaker levels and repeat the measurement as needed to get close to the Target Curve.
 
 The example below shows an audio system consisting of main speakers and a subwoofer.  The subwoofer level was initially too low.  It was adjusted a few times to get close enough to the Target Curve.
 
@@ -99,14 +99,14 @@ The screenshot below shows a 2.1 desktop audio system consisting of [main speake
 
 The published frequency range for the main speakers is 80-20000 Hz and the subwoofer is 35-165 Hz.  Based on the specs, the overlap of these speakers is 80 - 165 Hz and the crossover frequency should be somewhere in that range.
 
-In the power plot, we can see the main speaker drops off quickly below ~120 Hz.  For this system the crossover frequency should be somewhere in the 100-120 Hz range.  The subwoofer is more than capable of filling in below 100 Hz.
+On the magnitude plot, we can see the main speaker drops off quickly below ~120 Hz.  For this system the crossover frequency should be somewhere in the 100-120 Hz range.  The subwoofer is more than capable of filling in below 100 Hz.
 
 
 ### Time align speakers
 
 When an audio system contains limited range speakers (subwoofers, bi-amped speakers, etc) time alignment becomes an important adjustment.
 
-HouseCurve supports two methods of time aligning speakers.  The [power method](#time-align-using-power) and the [phase method](#time-align-using-phase).  The power method is simpler, the phase method can be more accurate.
+HouseCurve supports two methods of time aligning speakers.  The [magnitude method](#time-align-using-magnitude) and the [phase method](#time-align-using-phase).  The magnitude method is simpler, the phase method can be more accurate.
 
 #### What is time alignment? ####
 
@@ -126,18 +126,18 @@ The adjustments available for time alignment depend on the audio system:
 Most audio systems will have a combination of these adjustments and **experimentation will be required** to figure out what works best.
 
 
-#### Time align using power
-Destructive interference will cause a dip in the power measurement at the crossover frequency.  We can use this effect to figure out what adjustments increase or decrease the dip (polarity, phase, delay, distance, whatever you have).  The speakers are time aligned for the adjustment with the smallest dip.
+#### Time align using magnitude
+Destructive interference will cause a dip in the magnitude measurement at the crossover frequency.  We can use this effect to figure out what adjustments increase or decrease the dip (polarity, phase, delay, distance, whatever you have).  The speakers are time aligned for the adjustment with the smallest dip.
 
 When using this method it’s important to avoid changing audio system levels (volume, bass/treble, equalizer, etc).
 
 Ensure speakers on either side of the crossover are enabled.  Set HouseCurve’s Display Mode to [History](/MANUAL.md#display-mode).  Zoom into the region around the crossover frequency.  It is also best to set the [Target Curve Fit](/MANUAL.md#target-curve-fit) to manual and select an appropriate level as this will prevent the target curve from moving as adjustments are made.
 
-Take a measurement from the middle of the listening area.  On the power plot, place the cursor at the crossover frequency and observe the power value.  Adjust the audio system.  Repeat the measurement and observe the new power value.  Continue to make adjustments until the maximum power level is achieved and the dip is the smallest.  The plot below shows a system being adjusted from the worst alignment (largest dip) to the best (smallest dip).
+Take a measurement from the middle of the listening area.  On the magnitude plot, place the cursor at the crossover frequency and observe the magnitude value.  Adjust the audio system.  Repeat the measurement and observe the new magnitude value.  Continue to make adjustments until the maximum magnitude level is achieved and the dip is the smallest.  The plot below shows a system being adjusted from the worst alignment (largest dip) to the best (smallest dip).
 
-![subwoofer align power](/assets/img/subwoofer_align_power.png "Adjust until the smallest dip is found")
+![subwoofer align magnitude](/assets/img/subwoofer_align_magnitude.png "Adjust until the smallest dip is found")
 
-The downfall of this approach is that maximum power can be achieved at multiples of the crossover wavelength.  This can lead to tuning the system with more delay than necessary.  The group delay plot can be used to check this for subwoofers.  If there is a significant change in group delay before or after the crossover, this could indicate too much delay.  This can be seen in the group delay plot below.
+The downfall of this approach is that maximum magnitude can be achieved at multiples of the crossover wavelength.  This can lead to tuning the system with more delay than necessary.  The group delay plot can be used to check this for subwoofers.  If there is a significant change in group delay before or after the crossover, this could indicate too much delay.  This can be seen in the group delay plot below.
 
 ![subwoofer align groupdelay](/assets/img/subwoofer_align_group_delay.png "Check subwoofer alignment with group delay")
 
@@ -168,10 +168,10 @@ Finally, in the plot below, the audio system is aligned with too much delay.  Wh
 
 ![subwoofer phase not time](/assets/img/subwoofer_align_phase_not_time.png "Phase aligned but not time aligned")
 
-As with the [power method](#time-align-using-power) of time alignment, the group delay plot can be consulted to double check the alignment.  This requires taking a new measurement with both speakers active.
+As with the [magnitude method](#time-align-using-magnitude) of time alignment, the group delay plot can be consulted to double check the alignment.  This requires taking a new measurement with both speakers active.
 
 In the example plots above, the crossovers were disabled to ensure the measurements had enough signal on either side of the crossover to see the phase slope.  Use caution when measuring with crossovers disabled as this could lead to audio system damage.  An alternative approach is to disable [Coherence Blanking](/MANUAL.md#coherence-blanking).
 
-The degree of success one will have with this method depends a lot on the audio system and the room.  Sometimes it is better to start with the power method and fine tune using the phase method.
+The degree of success one will have with this method depends a lot on the audio system and the room.  Sometimes it is better to start with the magnitude method and fine tune using the phase method.
 
 
