@@ -14,7 +14,7 @@ The process for tuning an audio system will generally involve the tasks describe
 
 [Time align speakers](#time-align-speakers).  When two speakers produce the same sound, time alignment ensures the sound arrives at the listening area at the same time.  When speakers are not time aligned, they will interfere with each other in ways that cannot be corrected by equalization.
 
-[Choose a target curve](#target-curve).  The target curve defines how the audio system will sound.  The choice of curve is subject to personal taste.
+[Choose a target curve](#choose-target-curve).  The target curve defines how the audio system will sound.  The choice of curve is subject to personal taste.
 
 [Apply equalization](#apply-equalization).  Equalization means adjusting the volume level at different frequencies to match the target curve.
 
@@ -72,7 +72,6 @@ The adjustments available for time alignment depend on the audio system:
 
 Most audio systems will have a combination of these adjustments and **experimentation will be required** to figure out what works best.
 
-
 #### Time align using magnitude
 
 Destructive interference will cause a dip in the magnitude measurement at the crossover frequency.  We can use this effect to figure out what adjustments increase or decrease the dip (polarity, phase, delay, distance, whatever you have).  The speakers are time aligned for the adjustment with the smallest dip.
@@ -88,7 +87,6 @@ Take a measurement from the middle of the listening area.  On the magnitude plot
 The downfall of this approach is that maximum magnitude can be achieved at multiples of the crossover wavelength.  This can lead to tuning the system with more delay than necessary.  The group delay plot can be used to check this for subwoofers.  If there is a significant change in group delay before or after the crossover, this could indicate too much delay.  This can be seen in the group delay plot below.
 
 ![subwoofer align groupdelay](/assets/img/subwoofer_align_group_delay.png "Check subwoofer alignment with group delay")
-
 
 #### Time align using phase
 
@@ -123,7 +121,7 @@ In the example plots above, the crossovers were disabled to ensure the measureme
 The degree of success one will have with this method depends a lot on the audio system and the room.  Sometimes it is better to start with the magnitude method and fine tune using the phase method.
 
 
-### Target curve
+### Choose Target curve
 
 A Target Curve, or “house curve”, is a visual guide to ensure you tune your audio system in the right direction.  The system is "tuned" when the average  measurement matches the Target Curve.
 
@@ -154,8 +152,15 @@ The curve that works best with your audio system will somewhat depend on how the
 
 
 ### Apply equalization
-
 If the audio system has separately adjustable speakers, such as a subwoofer, ensure that levels have been [matched](#match-speaker-levels), crossovers are [selected](#choose-crossover-frequencies) and speakers are [time aligned](#time-align-speakers).
+
+#### What is equalization?
+
+
+#### Automatic Equalization
+
+
+#### Manual Equalization
 
 Equalization in general means changing the volume level at different frequencies.  There are many ways an audio system can be changed to make this happen.  What can be changed depends on the audio system:
 
