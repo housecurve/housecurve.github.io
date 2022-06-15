@@ -47,11 +47,11 @@ The measurement process starts when [<img src="/assets/img/measure.png" alt="Mea
 
 The stages of the measurement process are displayed in the [Measurement Status](/MANUAL.md#measurement-status) area at the top of the screen.
 
-![housecurve listening](/assets/img/housecurve_listening.png "Press measure to start measurement process")
+![listening](/assets/img/measurement_listening.png "Press measure to start measurement process")
 
 When a measurement succeeds it will be displayed on the plots as shown below. 
 
-![housecurve success](/assets/img/housecurve_success.png "When measurement succeeds, it is displayed on plot")
+![successful measurement](/assets/img/measurement_success.png "When measurement succeeds, it is displayed")
 
 HouseCurve will abort the measurement process for the following reasons:
 
@@ -73,7 +73,7 @@ When [Coherence Blanking](/MANUAL.md#coherence-blanking) is enabled, only portio
 
 For example, the measurement below was taken in the presence of external noise (someone talking).  This significantly contaminated the measurement and unusable sections have been blanked.  This measurement should probably be discarded.
 
-![housecurve low coherence](/assets/img/housecurve_low_coherence.png "Low coherence parts of measurement are blanked")
+![low coherence](/assets/img/measurement_coherence.png "Low coherence parts of measurement are blanked")
 
 Signal to noise issues are typically resolved by removing sources of noise or increasing the volume of the audio system.  In rare situations the microphone may be faulty.
 
@@ -83,19 +83,19 @@ HouseCurve displays successful measurements on the magnitude, phase and group de
 
 The **magnitude plot** is the most important plot for tuning.  The overall level of the magnitude measurement is the “volume” or output power of the audio system.  The level differences between frequencies are what we want to change when [applying equalization](/TUNING.md#apply-equalization).
 
-![magnitude plot](/assets/img/housecurve_magnitude_plot.png "Magnitude plot")
+![magnitude plot](/assets/img/measurement_magnitude.png "Magnitude plot")
 
 The magnitude plot is commonly referred to as the “frequency response” of the audio system.  Since the magnitude plot is displayed in decibels, it is also correct to refer to it as the "power" plot.
 
 The **phase plot** shows the phase of the measurement versus frequency.  Phase plots can be used for [time aligning speakers](/TUNING.md#time-align-using-phase).
 
-![phase plot](/assets/img/housecurve_phase_plot.png "Phase plot")
+![phase plot](/assets/img/measurement_phase.png "Phase plot")
 
 This style of phase plot is traditionally referred to as a “wrapped phase” plot.  The vertical green lines on the plot are referred to as “wraps”.  A wrap is a frequency where the phase exceeds the range of the plot and “wraps” around to the other vertical extreme of the plot.  A wrap is an artifact of the plot and not and indication that the phase is suddenly changing by 360 degrees.
 
 The **group delay plot** shows “when” the sound at a given frequency arrives at the microphone.  The group delay plot can be used to double check [speaker time alignment](/TUNING.md#time-align-speakers).  Extreme peaks in the group delay may indicate regions that can’t be fixed by equalization, such as poor time alignment or problematic room interactions.
 
-![group delay](/assets/img/housecurve_group_delay_plot.png "Group delay plot")
+![group delay plot](/assets/img/measurement_delay.png "Group delay plot")
 
 
 ### Subwoofer measurements
