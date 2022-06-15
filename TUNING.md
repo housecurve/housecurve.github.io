@@ -5,13 +5,8 @@
 {:toc}
 
 ### Tuning overview
-The process for tuning an audio system will generally involve the tasks described below:
 
-[Target curve](#target-curve).  The target curve defines how the audio system will sound.  The choice of curve is subject to personal taste.
-
-[Apply equalization](#apply-equalization).  Equalization means adjusting the volume level at different frequencies to match the target curve.
-
-For audio systems with separately adjustable speakers, such as a 2.1 system (main speakers and a subwoofer), the following steps should be performed **before equalization**:
+The process for tuning an audio system will generally involve the tasks described below.  For audio systems with separately adjustable speakers, such as a 2.1 system (left, right, subwoofer), all the steps below should be performed.  If you have a simple 2.0 audio system (just a left and right speaker), you can skip ahead to selecting a target curve and applying equalization.
 
 [Match speaker levels](#match-speaker-levels).  The speakers of the audio system should be playing at roughly the same volume level in the listening area.  This is done to ensure measurements will reflect the whole audio system and also to avoid using equalization to correct level differences.
 
@@ -19,63 +14,15 @@ For audio systems with separately adjustable speakers, such as a 2.1 system (mai
 
 [Time align speakers](#time-align-speakers).  When two speakers produce the same sound, time alignment ensures the sound arrives at the listening area at the same time.  When speakers are not time aligned, they will interfere with each other in ways that cannot be corrected by equalization.
 
-It may be necessary to iterate over these tasks a few times to get things right.  Experimentation is encouraged to find what works for a given audio system.
+[Choose a target curve](#target-curve).  The target curve defines how the audio system will sound.  The choice of curve is subject to personal taste.
 
+[Apply equalization](#apply-equalization).  Equalization means adjusting the volume level at different frequencies to match the target curve.
 
-### Target curve
-A Target Curve, or “house curve”, is a visual guide to ensure you tune your audio system in the right direction.  The system is "tuned" when the average  measurement matches the Target Curve.
-
-HouseCurve provides some common curves to experiment with.  These can be selected by going to [Plot Setup](MANUAL.md#plot-setup-screen).  The "House" curves are flatter and intended for home listening.  The "Car" curves have significantly more bass which is common for automobile listing.  HouseCurve will display the selected curve on the magnitude plot when there are measurements.
-
-![target curve](/assets/img/target_curve.png "Measurement compared to B&K target curve (yellow)")
-
-The choice of Target Curve is subject to individual taste.  Typically, listeners prefer it when low frequencies are louder than high frequencies.  A  downward slope of 1 dB/octave is quite common.  Ultimately, your ears will tell you what one is best.
-
-Custom curves can be created with a text editor and [imported](/MANUAL.md#target-curve) into HouseCurve.  See [curve file format](/USAGE.md#curve-file-format) for more information.  The curves provided by HouseCurve are a great starting point for making your own:
-
-* [House A](/curves/House%20A.txt)
-* [House B](/curves/House%20B.txt)
-* [House C](/curves/House%20C.txt)
-* [Car A](/curves/Car%20A.txt)
-* [Car B](/curves/Car%20B.txt)
-* [Car C](/curves/Car%20C.txt)
-
-In the audiophile world, a “flat” response is often seen as the ultimate goal.  However, for everyday listening, a flat response tends to sound overly “bright” and unpleasant.  Try it for yourself: [Flat Target Curve](/curves/flat.txt).
-
-Below are some resources for understanding what house curves do and how to choose them:
-* [Advice on better house curve?](https://www.minidsp.com/forum/dirac-series-support/17523-advice-on-better-house-curve)
-* [House Curve: What it is, why you need it, how to do it](https://www.hometheatershack.com/forums/rew-forum/96-house-curve-what-why-you-need-how-do.html)
-* [Relevant loudspeaker tests, in studios, in Hi-Fi dealers' demo rooms, in the home etc](https://www.bksv.com/media/doc/17-197.pdf)
-* [The Measurement and Calibration of Sound Reproducing Systems](http://www.aes.org/e-lib/browse.cfm?elib=17839)
-
-The curve that works best with your audio system will somewhat depend on how the system is measured (mic type, mic placement, mic direction, etc).  When adjusting a single system this doesn't really matter so long as you perform measurements consistently - the curve is just a guide.  However, if you are applying the same curve to multiple audio systems, be aware that the same measurement technique needs to be applied for consistent results.
-
-### Apply equalization
-
-If the audio system has separately adjustable speakers, such as a subwoofer, ensure that levels have been [matched](#match-speaker-levels), crossovers are [selected](#choose-crossover-frequencies) and speakers are [time aligned](#time-align-speakers).
-
-Equalization in general means changing the volume level at different frequencies.  There are many ways an audio system can be changed to make this happen.  What can be changed depends on the audio system:
-
-* Change speaker position in room
-* Adjust the bass or treble controls
-* Change relative levels of speakers (ex: subwoofer level)
-* Adjust the graphic or parametric equalizer settings
-* Change the room (ex: sound dampening, adjust furniture)
-
-When equalizing, the goal is to adjust the audio system such that the average magnitude measurement ends up within the +/- 3 dB band that surrounds the Target Curve.
-
-![equalization start](/assets/img/equalizer_start.png "Adjust until measurement within target curve band")
-
-Adjust the audio system in small steps, collecting the same measurements after each change.  [Saved measurements](/MANUAL.md#saved-measurement) are helpful for seeing the effect of an adjustment as can be seen below:
-
-![equalization changed](/assets/img/equalizer_changed.png "Save measurements to see what adjustment did")
-
-When most of the average magnitude measurement is within the target band, the audio system is sufficiently equalized.  Further adjustments may not be perceptible.
-
-Avoid adjustments that are beyond the capability of the audio system.  Doing so will lead to distortion and possibly audio system damage.  Keep in mind that a +10 dB adjustment means the audio system has to output 10 times more signal power.  A change of +20 dB is 100 times more signal power!
+It may be necessary to iterate over these steps a few times to get things right.  Experimentation is encouraged to find what works for a given audio system.
 
 
 ### Match speaker levels
+
 For systems with separately adjustable speakers, the relative levels need to be matched.  This is done to reduce the amount of equalization required.   Adjust the speaker levels such that measurements in the listening area are roughly close to the target curve on the magnitude plot.
 
 Make sure all speakers are active and set the overall audio system volume to a normal listening level.  It can be helpful to set HouseCurve’s [Display Mode](/MANUAL.md#display-mode) to History.
@@ -127,6 +74,7 @@ Most audio systems will have a combination of these adjustments and **experiment
 
 
 #### Time align using magnitude
+
 Destructive interference will cause a dip in the magnitude measurement at the crossover frequency.  We can use this effect to figure out what adjustments increase or decrease the dip (polarity, phase, delay, distance, whatever you have).  The speakers are time aligned for the adjustment with the smallest dip.
 
 When using this method it’s important to avoid changing audio system levels (volume, bass/treble, equalizer, etc).
@@ -174,4 +122,58 @@ In the example plots above, the crossovers were disabled to ensure the measureme
 
 The degree of success one will have with this method depends a lot on the audio system and the room.  Sometimes it is better to start with the magnitude method and fine tune using the phase method.
 
+
+### Target curve
+
+A Target Curve, or “house curve”, is a visual guide to ensure you tune your audio system in the right direction.  The system is "tuned" when the average  measurement matches the Target Curve.
+
+HouseCurve provides some common curves to experiment with.  These can be selected by going to [Plot Setup](MANUAL.md#plot-setup-screen).  The "House" curves are flatter and intended for home listening.  The "Car" curves have significantly more bass which is common for automobile listing.  HouseCurve will display the selected curve on the magnitude plot when there are measurements.
+
+![target curve](/assets/img/target_curve.png "Measurement compared to B&K target curve (yellow)")
+
+The choice of Target Curve is subject to individual taste.  Typically, listeners prefer it when low frequencies are louder than high frequencies.  A  downward slope of 1 dB/octave is quite common.  Ultimately, your ears will tell you what one is best.
+
+Custom curves can be created with a text editor and [imported](/MANUAL.md#target-curve) into HouseCurve.  See [curve file format](/USAGE.md#curve-file-format) for more information.  The curves provided by HouseCurve are a great starting point for making your own:
+
+* [House A](/curves/House%20A.txt)
+* [House B](/curves/House%20B.txt)
+* [House C](/curves/House%20C.txt)
+* [Car A](/curves/Car%20A.txt)
+* [Car B](/curves/Car%20B.txt)
+* [Car C](/curves/Car%20C.txt)
+
+In the audiophile world, a “flat” response is often seen as the ultimate goal.  However, for everyday listening, a flat response tends to sound overly “bright” and unpleasant.  Try it for yourself: [Flat Target Curve](/curves/flat.txt).
+
+Below are some resources for understanding what house curves do and how to choose them:
+* [Advice on better house curve?](https://www.minidsp.com/forum/dirac-series-support/17523-advice-on-better-house-curve)
+* [House Curve: What it is, why you need it, how to do it](https://www.hometheatershack.com/forums/rew-forum/96-house-curve-what-why-you-need-how-do.html)
+* [Relevant loudspeaker tests, in studios, in Hi-Fi dealers' demo rooms, in the home etc](https://www.bksv.com/media/doc/17-197.pdf)
+* [The Measurement and Calibration of Sound Reproducing Systems](http://www.aes.org/e-lib/browse.cfm?elib=17839)
+
+The curve that works best with your audio system will somewhat depend on how the system is measured (mic type, mic placement, mic direction, etc).  When adjusting a single system this doesn't really matter so long as you perform measurements consistently - the curve is just a guide.  However, if you are applying the same curve to multiple audio systems, be aware that the same measurement technique needs to be applied for consistent results.
+
+
+### Apply equalization
+
+If the audio system has separately adjustable speakers, such as a subwoofer, ensure that levels have been [matched](#match-speaker-levels), crossovers are [selected](#choose-crossover-frequencies) and speakers are [time aligned](#time-align-speakers).
+
+Equalization in general means changing the volume level at different frequencies.  There are many ways an audio system can be changed to make this happen.  What can be changed depends on the audio system:
+
+* Change speaker position in room
+* Adjust the bass or treble controls
+* Change relative levels of speakers (ex: subwoofer level)
+* Adjust the graphic or parametric equalizer settings
+* Change the room (ex: sound dampening, adjust furniture)
+
+When equalizing, the goal is to adjust the audio system such that the average magnitude measurement ends up within the +/- 3 dB band that surrounds the Target Curve.
+
+![equalization start](/assets/img/equalizer_start.png "Adjust until measurement within target curve band")
+
+Adjust the audio system in small steps, collecting the same measurements after each change.  [Saved measurements](/MANUAL.md#saved-measurement) are helpful for seeing the effect of an adjustment as can be seen below:
+
+![equalization changed](/assets/img/equalizer_changed.png "Save measurements to see what adjustment did")
+
+When most of the average magnitude measurement is within the target band, the audio system is sufficiently equalized.  Further adjustments may not be perceptible.
+
+Avoid adjustments that are beyond the capability of the audio system.  Doing so will lead to distortion and possibly audio system damage.  Keep in mind that a +10 dB adjustment means the audio system has to output 10 times more signal power.  A change of +20 dB is 100 times more signal power!
 
