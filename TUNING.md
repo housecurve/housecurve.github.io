@@ -55,7 +55,7 @@ When an audio system contains limited range speakers (subwoofers, bi-amped speak
 
 HouseCurve supports two methods of time aligning speakers.  The [magnitude method](#time-align-using-magnitude) and the [phase method](#time-align-using-phase).  The magnitude method is simpler, the phase method can be more accurate.
 
-#### What is time alignment? ####
+#### What is time alignment?
 
 At the crossover frequencies of an audio system, sound transitions from one speaker to another.  In this region, speakers on either side of the crossover are active.  If sound leaves the speakers at different times, [destructive interference](https://www.phys.uconn.edu/~gibson/Notes/Section5_2/Sec5_2.htm) (or “cancellation”) can occur leading to audible dips in the sound level at the crossover frequency.  These dips cannot be fixed by equalization.
 
@@ -156,8 +156,20 @@ If the audio system has separately adjustable speakers, such as a subwoofer, ens
 
 #### What is equalization?
 
+Equalization means adjusting audio system output so that the measured response in the listening area aligns with a target curve.  It can be used compensate for characteristics of the audio system, or to correct for the effects of the room.  In typical house or car audio systems, it is used to correct for both at the same time.
+
+When applying equalization, it is important to understand what we are hearing in the listening area.  When sound leaves an audio system, it interacts with the room, but this interaction changes with frequency.  At frequencies below what it called the Schroeder frequency (~300 Hz) room resonances have a dominant impact on what is heard in the listening area.  It is said that at these frequencies, the "room is in control".  Above the Schroeder Frequenecy, direct sound from the audio system begins to dominate.  In this region, the audio system is in control.
+
+schroeder frequency
+
+room correction vs system correction
+
+What to correct
+
 
 #### Automatic Equalization
+
+how to use it
 
 
 #### Manual Equalization
