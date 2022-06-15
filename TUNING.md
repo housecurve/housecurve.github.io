@@ -95,7 +95,7 @@ The classic approach is to select crossover frequencies based on speaker specifi
 
 The screenshot below shows a 2.1 desktop audio system consisting of [main speakers](https://www.kantoaudio.com/powered-speakers/yu2) and a [subwoofer](https://www.kantoaudio.com/subwoofers/sub6).  The speakers were measured separately with crossovers disabled and no equalization.  The [subwoofer was measured](/USAGE.md#subwoofer-measurements) first and saved (grey), then the main speakers were measured (green).
 
-![finding crossover frequency](/assets/img/finding_crossover_frequency_kanto_yu2.png "Measure speakers separately to find best crossover frequency")
+![finding crossover frequency](/assets/img/crossover_select.png "Measure speakers separately to find best crossover frequency")
 
 The published frequency range for the main speakers is 80-20000 Hz and the subwoofer is 35-165 Hz.  Based on the specs, the overlap of these speakers is 80 - 165 Hz and the crossover frequency should be somewhere in that range.
 
