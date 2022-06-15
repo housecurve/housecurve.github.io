@@ -156,16 +156,13 @@ If the audio system has separately adjustable speakers, such as a subwoofer, ens
 
 #### What is equalization?
 
-Equalization means adjusting audio system output so that the measured response in the listening area aligns with a target curve.  It can be used compensate for characteristics of the audio system, or to correct for the effects of the room.  In typical house or car audio systems, it is used to correct for both at the same time.
+Equalization means adjusting an audio system’s output such that the measured magnitude response in the listening area aligns with a target curve.  It can be used compensate for characteristics of the audio system, or to correct for the effects of the room (aka “room correction”).  In practice, it is hard to separate these effects, so we adjust for both at the same time.
 
-When applying equalization, it is important to understand what we are hearing in the listening area.  When sound leaves an audio system, it interacts with the room, but this interaction changes with frequency.  At frequencies below what it called the Schroeder frequency (~300 Hz) room resonances have a dominant impact on what is heard in the listening area.  It is said that at these frequencies, the "room is in control".  Above the Schroeder Frequenecy, direct sound from the audio system begins to dominate.  In this region, the audio system is in control.
+Before equalizing, it is important to understand what we hear in the listening area.  When sound leaves an audio system, it interacts with the room, but this interaction changes with frequency.  At frequencies below the Schroeder frequency (~300 Hz or so) room resonances have a dominant impact on what is heard in the listening area.  It is said that at these frequencies, the "room is in control".  Above the Schroeder frequency, direct sound from the audio system begins to dominate with contributions from room diffusion, absorption and reflections.  In this region, the audio system is in control (for a deep dive on this, please read Floyd Toole’s paper: https://www.harman.com/documents/AudioScience_0.pdf).
 
-schroeder frequency
+When applying equalization, it is generally best to start with the low frequencies and work your way up.  At low frequencies, room resonances will create large peaks and dips in the magnitude.  These are quite audible.  Focus on smoothing these out to the target curve.  Moving toward higher frequencies, peaks and dips become much less audible.  Focus on adjusting octave wide regions of the magnitude response towards the target curve.  At the very upper end (10 KHz), it may not be worth making any adjustments at all (A great video on the topic is here: https://www.youtube.com/watch?v=TwGd0aMn1wE).
 
-room correction vs system correction
-
-What to correct
-
+Introduce tools
 
 #### Automatic Equalization
 
