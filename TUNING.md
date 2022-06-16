@@ -170,8 +170,11 @@ With automatic equalization, HouseCurve generates a set of filters to correct a 
 
 #### Automatic Equalization
 
-how to use it
+The equalization tool is accessed from the more menu <img src="/assets/img/more.png" alt="More" width="15">
 
+The equalization tool works by correcting a [saved measurement](MANUAL.md#saved-measurement) to a [target curve](MANUAL.md#target-curve).  The image below shows a saved measurement (grey) being corrected to the target curve (yellow).  The filters that perform the correction are the filled in magenta regions (sum of filter magnitudes).  The predicted result of applying the filters is shown in cyan.
+
+![equalize screen](/assets/img/equalize_biquads.png "Equalize screen showing correction filters and predicted output")
 
 #### Manual Equalization
 
