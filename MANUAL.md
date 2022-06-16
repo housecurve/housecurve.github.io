@@ -7,7 +7,7 @@
 ### Measure Screen
 HouseCurve's main interface is the Measure Screen.  This is where measurements of an audio system are displayed.  Additional tools and the help screen can be accessed via the [more menu](#more-menu).  The lower toolbar contains controls related to measurement.
 
-![measure screen](/assets/img/measure_screen.png "housecurve main screen controls")
+![measure screen](/assets/img/measure_screen.png "housecurve Measure screen")
 
 - **Page Control** Tap to move between [magnitude, phase and group delay plots](/USAGE.md#plots) plots.  Alternatively, swipe from the left or right edge of the screen to change plots.
 
@@ -29,7 +29,7 @@ HouseCurve's main interface is the Measure Screen.  This is where measurements o
 
 
 ### Plot Area
-![housecurve plot area](/assets/img/plot_area.png "housecurve plot area")
+![housecurve plot area](/assets/img/plot_area.png "HouseCurve Measure plot area")
 
 - **Target Curve** The [Target Curve](#target-curve) is displayed on the magnitude plot in yellow with +/- 3 dB bands. The phase and group delay plots always have a target of zero.
 
@@ -129,13 +129,36 @@ HouseCurve supports the following [Curve file format](/USAGE.md#curve-file-forma
 ### Equalize Screen
 The Equalize (automatic room correction) tool can be accessed from the [more menu](#more-menu).  The main interface is the Equalize Screen, which displays the filters used to correct a saved measurement to the target curve. The lower toolbar contains controls related to equalizing.
 
-image
+![Equalize Screen](/assets/img/equalize_screen.png "HouseCurve Equalize screen")
 
-### Filter Detail
+prediction
+
+correction
+
+filter detail
+
+plot setup
+
+equalize setup
+
+filter export
+
+### Equalize Setup
+
+number of filters
+
+frequency range
+
+gain range
 
 ### Filter Export
 
-### Equalize Setup
+coefficients
+
+sample rate
+
+exporting
+
 
 
 
