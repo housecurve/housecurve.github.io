@@ -131,35 +131,43 @@ The Equalize (automatic room correction) tool can be accessed from the [more men
 
 ![Equalize Screen](/assets/img/equalize_screen.png "HouseCurve Equalize screen")
 
-prediction
+- **Predicted output** The predicted magnitude measurement is shown in cyan.  After applying the correction filters, the measured magnitude response should be close to this.
 
-correction
+- **Correction filters** The filters needed to correct the saved measurement (grey) to the target curve (yellow) are shown in magenta.
 
-filter detail
+- **Filter Detail** Tap to show the individual filter parameters.  HouseCurve's biquad filters are based on the [Audio EQ Cookbook by Robert Bristow-Johnson](https://www.w3.org/TR/audio-eq-cookbook/).  Where Frequency is the center frequency of the filter.  Gain is in dBFS and Q is the width of the filter (for peaking biquad Q is a "proportional Q").
 
-plot setup
+- **Plot Setup** Tap to show the [Plot Setup Screen](#plot-setup-screen).  This is shared with the [Measure Screen](#measure-screen).
 
-equalize setup
+- **Equalize Setup** Tap to show the [Equalize Setup Screen](#equalize-setup-screen).
 
-filter export
-
-### Equalize Setup
-
-number of filters
-
-frequency range
-
-gain range
-
-### Filter Export
-
-coefficients
-
-sample rate
-
-exporting
+- **Filter Export** Tap to show the [Filter Export Screen](#filter-export-screen).
 
 
+### Equalize Setup Screen
 
+#### Maximum filters
+HouseCurve will generate up to this number of filters to correct the saved measurement to the target curve.  It may not use all the filters.  Set this to the number of filters your parametric equalizer supports.  HouseCurve currently only support peaking filters (no shelving filters, etc).
+
+#### Frequency
+The frequency range to equalize.  This is mainly used to prevent the algorithm from correcting low frequencies beyond the capabilities of the audio system, ex: trying to boost at 20 Hz when the audio system can barely produce 40 Hz at -6 dBFS.  Doing so will lead to distortion and possibly audio system damage.
+
+#### Gain
+This is the allowable range of filter gains.  Use the minimum gain to prevent the creation of very small (and likely inaudible) filters.  The maximum gain limits the size of a boost or a cut an individual filter can make.  HouseCurve may place filters in close proximity to produce larger gains.  Keep in mind that a +10 dB adjustment means the audio system has to output 10 times more signal power.
+
+### Filter Export Screen
+
+#### Sample Rate
+This is the sample rate of the equalizer (not the audio source).  It is used to calculate biquad coefficients.
+
+### Format
+The is the format of the export file.
+
+**Biquad Coefficients** Export biquad transfer function coefficients b0, b1, b2, a1, a2 where a0 is normalized to 1.0, and the signs of a1, a2 are flipped.  This format may not be compatible with all equalizers.  As a precaution, turn the volume down on the first import of this file.  If you experience problems, please [reach out](mailto:support@housecurve.com).
+
+**Parametric EQ Settings** Export parametric equalizer settings F, G, Q using this [format](https://sourceforge.net/p/equalizerapo/wiki/Configuration%20reference)
+
+#### Export
+Press to initiate the file export.
 
 
