@@ -170,11 +170,23 @@ With automatic equalization, HouseCurve generates a set of filters to correct a 
 
 #### Automatic Equalization
 
-The equalization tool is accessed from the more menu <img src="/assets/img/more.png" alt="More" width="15">
+The equalization tool is accessed from the more menu <img src="/assets/img/more.png" alt="More" width="15">.  It works by correcting a [saved measurement](MANUAL.md#saved-measurement) to a [target curve](MANUAL.md#target-curve).
 
-The equalization tool works by correcting a [saved measurement](MANUAL.md#saved-measurement) to a [target curve](MANUAL.md#target-curve).  The image below shows a saved measurement (grey) being corrected to the target curve (yellow).  The filters that perform the correction are the filled in magenta regions (sum of filter magnitudes).  The predicted result of applying the filters is shown in cyan.
+The image below shows a saved measurement (grey) being corrected to the target curve (yellow).  The filters that perform the correction are the filled in magenta regions (sum of filter magnitudes).  The predicted result of applying the filters is shown in cyan.
 
 ![equalize screen](/assets/img/equalize_biquads.png "Equalize screen showing correction filters and predicted output")
+
+The HouseCurve equalization algorithm uses a form of IIR filter known as peaking biquad filters.  These are commonly used in graphic and parametric equalizers to boost or cut at various frequencies.  You can view the individual filters by tapping <img src="/assets/img/detail.png" alt="Detail" width="15">.
+
+![filter detail screen](/assets/img/equalize_detail.png "Filter details can be imported into your parametric equalizer")
+
+The algorithm allocates filters to regions with the largest deviation from the target curve, preferring to correct low frequency problems first.  It will ignore low coherence (blanked) regions.  The algorithm’s behavior can be controlled by tapping <img src="/assets/img/setup.png" alt="Setup" width="15"> to display the [equalize setup](MANUAL.md#equalize-setup) screen.  The filters are updated immediately.
+
+The filters can be [exported](MANUAL.md#filter-export) to a file by tapping <img src="/assets/img/export.png" alt="Export" width="15">.  This file can then be imported into a compatible equalizer, such as a [miniDSP 2x4HD](https://www.minidsp.com/products/minidsp-in-a-box/minidsp-2x4-hd), or software based equalizers like [Equalizer APO](https://sourceforge.net/projects/equalizerapo/).
+
+**Warning** the biquad coefficient format used by HouseCurve is based on the [Audio EQ Cookbook by Robert Bristow-Johnson](https://www.w3.org/TR/audio-eq-cookbook/).  As a precaution, turn the volume down on the first import just in case.
+
+If you have questions about automatic equalization, or experience problems, please [reach out](mailto:support@housecurve.com).  The feature is somewhat experimental and I would appreciate feedback on how it can be improved.
 
 #### Manual Equalization
 
