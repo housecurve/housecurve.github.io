@@ -127,7 +127,7 @@ HouseCurve supports the following [Curve file format](/USAGE.md#curve-file-forma
 
 
 ### Equalize Screen
-The Equalize (automatic room correction) tool can be accessed from the [more menu](#more-menu).  The main interface is the Equalize Screen, which displays the filters used to correct a saved measurement to the target curve. The lower toolbar contains controls related to equalizing.
+The Equalize tool (aka "room correction") can be accessed from the [more menu](#more-menu).  The main interface is the Equalize Screen, which displays the filters used to correct a saved measurement to the target curve. The lower toolbar contains controls related to equalizing.
 
 ![Equalize Screen](/assets/img/equalize_screen.png "HouseCurve Equalize screen")
 
