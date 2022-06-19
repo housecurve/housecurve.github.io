@@ -156,9 +156,9 @@ If the audio system has separately adjustable speakers, such as a subwoofer, ens
 
 #### What is equalization?
 
-Equalization means adjusting an audio system’s output such that the measured magnitude response in the listening area aligns with a target curve.  It can be used compensate for characteristics of the audio system, or to correct for the effects of the room (aka “room correction”).  In practice, it is hard to separate these effects, so we adjust for both at the same time.
+Equalization means adjusting an audio system’s output such that the measured response in the listening area aligns with a target curve.  It can be used to compensate for characteristics of the audio system, or to correct for the effects of the room (aka “room correction”).  In practice, we typically adjust for both at the same time.
 
-Before equalizing, it is important to understand what we hear in the listening area.  When sound leaves an audio system, it interacts with the room, but this interaction changes with frequency.  Below the Schroeder frequency, or about 300 Hz, room resonances have a dominant impact on what is heard in the listening area.  At these frequencies, the room is in control.  Above the Schroeder frequency, direct sound from the audio system begins to dominate with contributions from room diffusion, absorption and reflection.  In this region, the audio system is in control (If you want to deep dive, please read Floyd Toole’s paper: https://www.harman.com/documents/AudioScience_0.pdf).
+It is important to understand what we hear in the listening area.  When sound leaves an audio system, it interacts with the room, but this interaction changes with frequency.  Below the Schroeder frequency, or about 300 Hz, room resonances have a dominant impact on what is heard in the listening area.  At these frequencies, the room is in control.  Above the Schroeder frequency, direct sound from the audio system begins to dominate with contributions from room diffusion, absorption and reflection.  In this region, the audio system is mostly in control.  Thus, when "equalizing" a typical home or car audio system, we are correcting for the room and compensating for the audio system at the same time.  (For an excellent deep dive, please read Floyd Toole’s paper: https://www.harman.com/documents/AudioScience_0.pdf).
 
 When applying equalization, it is best to start at the low frequencies and work your way up.  At low frequencies, room resonances will create large peaks and dips in the magnitude.  These will be quite audible, so focus on smoothing them out to the target curve.  Moving toward higher frequencies, peaks and dips become much less audible and should not be adjusted.  Instead, shift your focus to adjusting wide regions of the magnitude response towards the target curve (an octave or more).  At the very upper end (10 KHz), it may not be worth making any adjustments at all (A great video on the topic is here: https://www.youtube.com/watch?v=TwGd0aMn1wE).
 
@@ -170,7 +170,7 @@ With automatic equalization, HouseCurve generates a set of filters to correct a 
 
 #### Automatic Equalization
 
-HouseCurve's automatic equalization tool works by correcting a [saved measurement](MANUAL.md#saved-measurement) to a [target curve](MANUAL.md#target-curve).  It can be accessed from the more menu <img src="/assets/img/more.png" alt="More" width="15">.  For best results **average several measurements** from the listening area and then save.  Averaging provides HouseCurve with a better picture of how sound changes in the listening area.
+HouseCurve's automatic equalization tool generates filter settings for a parametric equalizer.  It works by correcting a [saved measurement](MANUAL.md#saved-measurement) to a [target curve](MANUAL.md#target-curve).  It can be accessed from the more menu <img src="/assets/img/more.png" alt="More" width="15">.  For best results **average several measurements** from the listening area and then save.  Averaging provides HouseCurve with a better picture of how sound changes in the listening area.
 
 The image below shows a saved measurement (grey) being corrected to the target curve (yellow).  The filters that perform the correction are shown in magenta.  The predicted magnitude response of applying the filters is shown in cyan.
 
@@ -186,7 +186,7 @@ HouseCurve uses a form of IIR filter known as peaking biquad filters.  These are
 
 ![filter detail screen](/assets/img/equalize_detail.png "Filter details can be imported into your parametric equalizer")
 
-The filters can be [exported](MANUAL.md#filter-export-screen) to a file by tapping <img src="/assets/img/export.png" alt="Export" width="15">.  This file can then be imported into a compatible equalizer, such as a [miniDSP 2x4HD](https://www.minidsp.com/products/minidsp-in-a-box/minidsp-2x4-hd), or software based equalizers like [Equalizer APO](https://sourceforge.net/projects/equalizerapo/).
+The filters can be [exported](MANUAL.md#filter-export-screen) to a file by tapping <img src="/assets/img/export.png" alt="Export" width="15">.  This file can then be imported into a compatible parametric equalizer, such as a [miniDSP 2x4HD](https://www.minidsp.com/products/minidsp-in-a-box/minidsp-2x4-hd), or software based equalizers like [Equalizer APO](https://sourceforge.net/projects/equalizerapo/).
 
 HouseCurve's biquad filters are based on the [Audio EQ Cookbook by Robert Bristow-Johnson](https://www.w3.org/TR/audio-eq-cookbook/).  **Warning** the biquad coefficients exported by HouseCurve may not be compatible with your audio system.  As a precaution, turn the volume down on the first import just in case.  If you have questions about automatic equalization, or experience problems, please [reach out](mailto:support@housecurve.com).  This feature is somewhat experimental and I would appreciate the feedback.
 
