@@ -55,13 +55,15 @@ When a measurement succeeds it will be displayed on the plots as shown below.
 
 HouseCurve will abort the measurement process for the following reasons:
 
-**Could not detect test signal**  If HouseCurve is unable to detect the chirp signal after about 10 seconds, it will abort the measurement.  If this happens, check the following:
+#### Could not detect test signal
+If HouseCurve is unable to detect the chirp signal after about 10 seconds, it will abort the measurement.  If this happens, check the following:
 
 * Ensure the audio system or iPhone/iPad volume is set to a normal listening level.  You should be able to clearly hear the chirp, but it does not need to be loud.
 * If you can hear the chirp sound, check that the microphone is not obstructed.  Cases for iPhone/iPads can obstruct the microphone.  Be sure to aim the microphone at the audio system and ensure it’s not covered up by your hand (ex: Bottom of iPhone).
 * If using an external microphone, ensure the cabling is connected properly.  Try disconnecting and using the built in iPhone/iPad microphone instead.
 
-**Low measurement coherence**  After the chirp is detected, HouseCurve records the sweep as it is played by the audio system.  If the recorded sweep has a very low signal to noise ratio, HouseCurve will abort the measurement.  If this happens, check the following:
+#### Low measurement coherence
+After the chirp is detected, HouseCurve records the sweep as it is played by the audio system.  If the recorded sweep has a very low signal to noise ratio, HouseCurve will abort the measurement.  If this happens, check the following:
 
 * Ensure the audio system or iPhone/iPad volume is set to a normal listening level.  You should be able to clearly hear the sweep, but it does not need to be loud.
 * Take steps to reduce background noise.  HouseCurve works best when measurements are taken from a quiet listening area.
