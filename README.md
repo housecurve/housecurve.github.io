@@ -25,7 +25,7 @@ HouseCurve will produce acceptable results with the built in iPhone/iPad microph
 
 ### Free Trial
 
-Try the app clip for free by visiting [this page](/APPCLIP.md) with an iPhone or iPad (**Safari browser only**).
+Try the app clip for free by visiting [this page](/APPCLIP.md) with an iPhone or iPad.
 
 ### How do I use HouseCurve?
 
