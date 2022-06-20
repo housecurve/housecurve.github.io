@@ -5,7 +5,7 @@
 {:toc}
 
 ### Measure Screen
-HouseCurve's main interface is the Measure Screen.  This is where measurements of an audio system are displayed.  Additional tools and the help screen can be accessed via the [more menu](#more-menu).  The lower toolbar contains controls related to measurement.
+HouseCurve's main interface is the Measure Screen.  This is where measurements of an audio system are displayed.  Additional tools and the help screen can be accessed from the more menu <img src="/assets/img/more.png" alt="More" width="15">.  The lower toolbar contains controls related to measurement.
 
 ![measure screen](/assets/img/measure_screen.png "housecurve Measure screen")
 
@@ -120,7 +120,7 @@ HouseCurve supports the following [Curve file format](/USAGE.md#curve-file-forma
 
 
 ### Equalize Screen
-The Equalize tool (aka "room correction") can be accessed from the [more menu](#more-menu).  The main interface is the Equalize Screen, which displays the filters used to correct a saved measurement to the target curve. The lower toolbar contains controls related to equalizing.
+The Equalize Screen is the main interface for the automatic equalization / room correction tool.  It displays the filters used to correct a saved measurement to the target curve. The lower toolbar contains controls related to equalization.
 
 ![Equalize Screen](/assets/img/equalize_screen.png "HouseCurve Equalize screen")
 
