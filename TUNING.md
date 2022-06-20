@@ -6,7 +6,7 @@
 
 ### Tuning overview
 
-The process for tuning an audio system will generally involve the tasks described below.  For audio systems with separately adjustable speakers, such as a 2.1 system (left, right, subwoofer), all the steps below should be performed.  If you have a simple 2.0 audio system (just a left and right speaker), you can skip ahead to selecting a target curve and applying equalization.
+The process for tuning an audio system will generally involve the tasks described below.  For audio systems with separately adjustable speakers, such as a 2.1 system (left, right, subwoofer), all the steps below should be performed.  If you have a simple 2.0 audio system (just a left and right speaker), you can skip ahead to choosing a target curve and applying equalization.
 
 [Match speaker levels](#match-speaker-levels).  The speakers of the audio system should be playing at roughly the same volume level in the listening area.  This is done to ensure measurements will reflect the whole audio system and also to avoid using equalization to correct level differences.
 
