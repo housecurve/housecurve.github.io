@@ -33,7 +33,7 @@ If you are getting strange measurements, try another microphone.  A common micro
 
 
 ### Listening area
-When listening to an audio system, we hear the combination of the audio system and its surroundings.  In classic audio speak, the surroundings are referred to as “the room” regardless of what they actually are (ex: living room, office, automobile, outdoor patio).
+When we listen to an audio system, we hear the combination of the audio system and its surroundings.  In the audio world, the surroundings are referred to as “the room”.  It doesn’t really matter what the surroundings are, living room, auditorium, car, we still call it “the room”.
 
 When sound leaves an audio system it interacts with the room and this changes the sound.  This interaction is complex.  It depends on the frequency of the sound, the dimensions of the room and how the room is constructed.  In addition, and most importantly, it depends on the location in the room.
 
