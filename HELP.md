@@ -8,7 +8,7 @@
 1. Collect additional measurements by tapping <img src="/assets/img/measure.png" alt="Measure" width="15">
 1. Remove the most recent measurement by tapping <img src="/assets/img/undo.png" alt="Undo" width="15">
 1. Clear all measurements by tapping <img src="/assets/img/reset.png" alt="Reset" width="15">
-1. Switch between plot types tapping <img src="/assets/img/pageleft.png" alt="Page Left" width="15"> or <img src="/assets/img/pageright.png" alt="Page Right" width="15"> or swipe left/right from screen edge.
+1. Switch between plot types tapping <img src="/assets/img/pageleft.png" alt="Page Left" width="15"> or <img src="/assets/img/pageright.png" alt="Page Right" width="15"> or swipe left/right from the edge of the screen.
 1. Tap plot to show cursor, move with single finger, tap again to hide.
 1. Pinch plot to zoom.  Use two fingers to scroll plot left/right.
 

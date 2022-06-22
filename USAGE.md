@@ -60,7 +60,7 @@ If HouseCurve is unable to detect the chirp signal after about 10 seconds, it wi
 
 * Ensure the audio system or iPhone/iPad volume is set to a normal listening level.  You should be able to clearly hear the chirp, but it does not need to be loud.
 * If you can hear the chirp sound, check that the microphone is not obstructed.  Cases for iPhone/iPads can obstruct the microphone.  Be sure to aim the microphone at the audio system and ensure it’s not covered up by your hand (ex: Bottom of iPhone).
-* If using an external microphone, ensure the cabling is connected properly.  Try disconnecting and using the built in iPhone/iPad microphone instead.
+* If using an external microphone, ensure the cabling is connected properly.  To rule out problems with the audio system, try measurements using the built-in microphone.
 
 #### Low measurement coherence
 After the chirp is detected, HouseCurve records the sweep as it is played by the audio system.  If the recorded sweep has a very low signal to noise ratio, HouseCurve will abort the measurement.  If this happens, check the following:
@@ -81,7 +81,7 @@ Signal to noise issues are typically resolved by removing sources of noise or in
 
 
 ### Plots
-HouseCurve displays successful measurements on the magnitude, phase and group delay plots.  Use the Page Control to switch between plot types, or swipe from the left/right edge of the screen.
+HouseCurve displays successful measurements using magnitude, phase and group delay plots.  Switch between plots by tapping <img src="/assets/img/pageleft.png" alt="Page Left" width="15"> or <img src="/assets/img/pageright.png" alt="Page Right" width="15"> or swipe left/right from the edge of the screen.
 
 The **magnitude plot** is the most important plot for tuning.  The overall level of the magnitude measurement is the “volume” or output power of the audio system.  The level differences between frequencies are what we want to change when [applying equalization](/TUNING.md#apply-equalization).
 
