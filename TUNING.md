@@ -6,19 +6,17 @@
 
 ### Tuning overview
 
-The process for tuning an audio system will generally involve the tasks described below.  For audio systems with separately adjustable speakers, such as a 2.1 system (left, right, subwoofer), all the steps below should be performed.  If you have a simple 2.0 audio system (just a left and right speaker), you can skip ahead to choosing a target curve and applying equalization.
+The process for tuning an audio system will generally involve the tasks described below.  For audio systems with separately adjustable speakers, such as a 2.1 system (left, right, subwoofer), all the steps below should be performed.  If you have a simple 2.0 audio system (just a left and right speaker), you can skip ahead to choosing a target curve and applying equalization.  It may be necessary to experiment with different adjustments and to iterate over these steps a few times.
 
-[Match speaker levels](#match-speaker-levels).  The speakers of the audio system should be playing at roughly the same volume level in the listening area.  This is done to ensure measurements will reflect the whole audio system and also to avoid using equalization to correct level differences.
+1. [Match speaker levels](#match-speaker-levels).  The speakers of the audio system should be playing at roughly the same volume level in the listening area.  This is done to ensure measurements will reflect the whole audio system and also to avoid using equalization to correct level differences.
 
-[Choose crossover frequencies](#choose-crossover-frequencies).  Crossover frequencies are used to define regions of responsibility for speakers.  This is important when using speakers that have a limited frequency range, such as a subwoofer.
+1. [Choose crossover frequencies](#choose-crossover-frequencies).  Crossover frequencies are used to define regions of responsibility for speakers.  This is important when using speakers that have a limited frequency range, such as a subwoofer.
 
-[Time align speakers](#time-align-speakers).  When two speakers produce the same sound, time alignment ensures the sound arrives at the listening area at the same time.  When speakers are not time aligned, they will interfere with each other in ways that cannot be corrected by equalization.
+1. [Time align speakers](#time-align-speakers).  When two speakers produce the same sound, time alignment ensures the sound arrives at the listening area at the same time.  When speakers are not time aligned, they will interfere with each other in ways that cannot be corrected by equalization.
 
-[Choose a target curve](#choose-target-curve).  The target curve defines how the audio system will sound.  The choice of curve is subject to personal taste.
+1. [Choose a target curve](#choose-target-curve).  The target curve defines how the audio system will sound.  The choice of curve is subject to personal taste.
 
-[Apply equalization](#apply-equalization).  Equalization means adjusting the volume level at different frequencies to match the target curve.
-
-It may be necessary to iterate over these steps a few times to get things right.  Experimentation is encouraged to find what works for a given audio system.
+1. [Apply equalization](#apply-equalization).  Equalization means adjusting the volume level at different frequencies to match the target curve.
 
 
 ### Match speaker levels
@@ -38,7 +36,7 @@ The example below shows an audio system consisting of main speakers and a subwoo
 
 For audio systems that incorporate limited range speakers, the crossover frequencies need to be selected.
 
-The classic approach is to select crossover frequencies based on speaker specifications, but these may not reflect how the speakers perform in the room.  It is better to measure the actual speaker performance. Use [saved measurements](/MANUAL.md#saved-measurments), to compare individual speaker measurements and select a crossover frequency.
+The classic approach is to select crossover frequencies based on speaker specifications, but these may not reflect how the speakers perform in the room.  It is better to measure the actual speaker performance. Use [saved measurements](/MANUAL.md#saved-measurments), to compare speakers and select a crossover frequency.
 
 The screenshot below shows a 2.1 desktop audio system consisting of [main speakers](https://www.kantoaudio.com/powered-speakers/yu2) and a [subwoofer](https://www.kantoaudio.com/subwoofers/sub6).  The speakers were measured separately with crossovers disabled and no equalization.  The [subwoofer was measured](/USAGE.md#subwoofer-measurements) first and saved (grey), then the main speakers were measured (green).
 
@@ -84,7 +82,7 @@ Take a measurement from the middle of the listening area.  On the magnitude plot
 
 ![subwoofer align magnitude](/assets/img/subwoofer_align_magnitude.png "Adjust until the smallest dip is found")
 
-The downfall of this approach is that maximum magnitude can be achieved at multiples of the crossover wavelength.  This can lead to tuning the system with more delay than necessary.  The group delay plot can be used to check this for subwoofers.  If there is a significant change in group delay before or after the crossover, this could indicate too much delay.  This can be seen in the group delay plot below.
+The downfall of this approach is that maximum magnitude can be achieved at multiples of the crossover wavelength.  This can lead to tuning the system with more delay than necessary.  The group delay plot can be used to check for this.  Excess delay will appear as a step change in group delay before or after the crossover.  The group delay plot below shows a system with increasing amounts of subwoofer delay.  The system is initally aligned at 100 Hz (darkest green).  As unnecessary wavelengths of delay are added, the group delay increases (at 100 Hz, one wavelength is 10 ms).
 
 ![subwoofer align groupdelay](/assets/img/subwoofer_align_group_delay.png "Check subwoofer alignment with group delay")
 
@@ -104,17 +102,17 @@ The phase plot below shows a 2.1 audio system with good time alignment.  The sub
 
 ![subwoofer align phase](/assets/img/subwoofer_align_phase.png "Phase plot showing subwoofer aligned with main speakers")
 
-The plot below shows the same audio system in various states of alignment.  As delay is changed, the phase of the subwoofer moves up or down at the crossover frequency.  The slope of the phase will also slowly change with delay.
+The plot below shows the same audio system in various states of alignment.  As delay is changed, the phase of the subwoofer moves up or down at the crossover frequency.  The overall slope of the phase will also change.
 
 ![subwoofer phase change](/assets/img/subwoofer_align_phase_change.png "Phase plot showing different delay adjustments")
 
 Counterintuitively, the subwoofer phase measurements above (green) were generated by delaying the main speakers (grey).  This works because delaying the main speakers also delays the chirp sound which is the reference for the subwoofer phase.  Subwoofers tend to have more delay to begin with, so delaying the main speakers to match is often the correct adjustment.
 
-Finally, in the plot below, the audio system is aligned with too much delay.  While the main speakers and subwoofer have the nearly same phase at the crossover frequency, the phase slopes are different.  This situation is sometimes described as “phase aligned but not time aligned”.  In this situation, try adding or subtracting delay equivalent to the crossover wavelength.
+Finally, in the plot below, the audio system is aligned, but on the wrong cycle (too much delay).  While the main speakers and subwoofer have the nearly same phase at the crossover frequency, the phase slopes are different.  This is sometimes described as “phase aligned but not time aligned”.  In this situation, try adding or subtracting a delay of one crossover wavelength (ex: 10 ms at 100 Hz).  With a subwoofer, you can also try inverting the polarity (aka "phase" switch).  This effectively changes the subwoofer's delay by 1/2 a wavelength, thus it is also necessary to add or subtract a delay of half a crossover wavelength (ex: 5 ms at 100 Hz).
 
 ![subwoofer phase not time](/assets/img/subwoofer_align_phase_not_time.png "Phase aligned but not time aligned")
 
-As with the [magnitude method](#time-align-using-magnitude) of time alignment, the group delay plot can be consulted to double check the alignment.  This requires taking a new measurement with both speakers active.
+As with the [magnitude method](#time-align-using-magnitude), the group delay plot can be consulted to double check the alignment.  This requires taking a new measurement with both speakers active.
 
 In the example plots above, the crossovers were disabled to ensure the measurements had enough signal on either side of the crossover to see the phase slope.  Use caution when measuring with crossovers disabled as this could lead to audio system damage.  An alternative approach is to disable [Coherence Blanking](/MANUAL.md#coherence-blanking).
 
@@ -129,7 +127,7 @@ HouseCurve provides some common curves to experiment with.  These can be selecte
 
 ![target curve](/assets/img/target_curve.png "Measurement compared to B&K target curve (yellow)")
 
-The choice of Target Curve is subject to individual taste.  Typically, listeners prefer it when low frequencies are louder than high frequencies.  A  downward slope of 1 dB/octave is quite common.  Ultimately, your ears will tell you what one is best.
+The choice of Target Curve is subject to individual taste.  Typically, listeners prefer it when low frequencies are louder than high frequencies.  A  downward slope of 1 dB/octave is quite common.  Let your ears be the judge.
 
 Custom curves can be created with a text editor and [imported](/MANUAL.md#target-curve) into HouseCurve.  See [curve file format](/USAGE.md#curve-file-format) for more information.  The curves provided by HouseCurve are a great starting point for making your own:
 
@@ -147,8 +145,6 @@ Below are some resources for understanding what house curves do and how to choos
 * [House Curve: What it is, why you need it, how to do it](https://www.hometheatershack.com/forums/rew-forum/96-house-curve-what-why-you-need-how-do.html)
 * [Relevant loudspeaker tests, in studios, in Hi-Fi dealers' demo rooms, in the home etc](https://www.bksv.com/media/doc/17-197.pdf)
 * [The Measurement and Calibration of Sound Reproducing Systems](http://www.aes.org/e-lib/browse.cfm?elib=17839)
-
-The curve that works best with your audio system will somewhat depend on how the system is measured (mic type, mic placement, mic direction, etc).  When adjusting a single system this doesn't really matter so long as you perform measurements consistently - the curve is just a guide.  However, if you are applying the same curve to multiple audio systems, be aware that the same measurement technique needs to be applied for consistent results.
 
 
 ### Apply equalization
@@ -170,7 +166,7 @@ HouseCurve supports automatic and manual equalization:
 
 #### Automatic Equalization
 
-HouseCurve's automatic equalization tool generates filter settings for a parametric equalizer.  It works by correcting a [saved measurement](MANUAL.md#saved-measurement) to a [target curve](MANUAL.md#target-curve).  It can be accessed from the more menu <img src="/assets/img/more.png" alt="More" width="15">.  For best results **average several measurements** from the listening area and then save.  Averaging provides HouseCurve with a better picture of how sound changes in the listening area.
+HouseCurve's automatic equalization tool generates filter settings for parametric equalizers.  It works by correcting a [saved measurement](MANUAL.md#saved-measurement) to a [target curve](MANUAL.md#target-curve).  It can be accessed from the more menu <img src="/assets/img/more.png" alt="More" width="15">.  For best results **average several measurements** from the listening area and then save.  Averaging provides HouseCurve with a better picture of how sound changes in the listening area.
 
 The image below shows a saved measurement (grey) being corrected to the target curve (yellow).  The filters that perform the correction are shown in magenta.  The predicted magnitude response (when filters are applied) is shown in cyan.
 
@@ -182,17 +178,17 @@ The predicted response should be reasonably close to real world measurements.  T
 
 ![measurement after equalizing](/assets/img/equalize_measure_after.png "Measured results will be reasonably close to predicted")
 
-HouseCurve uses a form of IIR filter known as peaking biquad filters.  These are commonly used in graphic and parametric equalizers to boost or cut at various frequencies.  You can view the individual filters by tapping <img src="/assets/img/detail.png" alt="Detail" width="15">, as can be seen below.  The Filter Detail screen can be used to manually enter filters into a parametric equalizer.
+HouseCurve uses a form of Infinite Impule Response (IIR) filter known as peaking biquad filter.  These are commonly used in graphic and parametric equalizers to boost or cut at various frequencies.  You can view the individual filters by tapping <img src="/assets/img/detail.png" alt="Detail" width="15"> to bring up the Filter Detail screen, shown below.  This screen can be used to manually enter filter settings into your audio system.
 
 ![filter detail screen](/assets/img/equalize_detail.png "Filter details can be imported into your parametric equalizer")
 
 The filters can be [exported](MANUAL.md#filter-export-screen) to a file by tapping <img src="/assets/img/export.png" alt="Export" width="15">.  This file can then be imported into a compatible parametric equalizer, such as a [miniDSP 2x4HD](https://www.minidsp.com/products/minidsp-in-a-box/minidsp-2x4-hd), or software based equalizers like [Equalizer APO](https://sourceforge.net/projects/equalizerapo/).
 
-HouseCurve's biquad filters are based on the [Audio EQ Cookbook by Robert Bristow-Johnson](https://www.w3.org/TR/audio-eq-cookbook/).  **Warning** the biquad coefficients exported by HouseCurve may not be compatible with your audio system.  As a precaution, turn the volume down on the first import just in case.  If you have questions about automatic equalization, or experience problems, please [reach out](mailto:support@housecurve.com).  This feature is somewhat experimental and I would appreciate the feedback.
+HouseCurve's biquad filters are based on the [Audio EQ Cookbook by Robert Bristow-Johnson](https://www.w3.org/TR/audio-eq-cookbook/).  **Warning** the biquad coefficients exported by HouseCurve may not be compatible with your audio system.  As a precaution, turn the volume down on the first import just in case.  If you have questions or experience problems, please [reach out](mailto:support@housecurve.com).
 
 #### Manual Equalization
 
-Equalization in general means changing the volume level at different frequencies.  There are many ways an audio system can be changed to make this happen.  What can be changed depends on the audio system:
+Equalization means changing the volume level at different frequencies.  There are many ways an audio system can be changed to make this happen:
 
 * Change speaker position in room
 * Adjust the bass or treble controls
