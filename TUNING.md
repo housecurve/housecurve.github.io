@@ -1,8 +1,4 @@
 ## How to tune an audio system
-{:.no_toc}
-
-1. table of contents inserted here
-{:toc}
 
 ### Tuning overview
 

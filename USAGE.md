@@ -1,8 +1,4 @@
 ## How to use HouseCurve
-{:.no_toc}
-
-1. table of contents inserted here
-{:toc}
 
 ### Connecting to an audio system
 HouseCurve sends a test signal to your audio system and measures the result using a microphone. This is shown in the diagram below.
