@@ -4,4 +4,4 @@ source "https://rubygems.org"
 gem "github-pages", group: :jekyll_plugins
 
 # This is the theme's gem (no gem for minimal theme)
-#gem "just-the-docs"
+gem "just-the-docs"
