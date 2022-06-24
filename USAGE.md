@@ -1,6 +1,10 @@
-## How to use HouseCurve
+---
+layout: default
+nav_order: 5
+---
+# How to use HouseCurve
 
-### Connecting to an audio system
+## Connecting to an audio system
 HouseCurve sends a test signal to your audio system and measures the result using a microphone. This is shown in the diagram below.
 
 ![connecting housecurve](/assets/img/connecting_housecurve.png "Connecting HouseCurve to audio system")
@@ -11,11 +15,11 @@ Alternatively, the headphone connector can be used to create a wired connection 
 
 If direct connection is not possible, HouseCurve can use [external stimulus](/MANUAL.md#stimulus-type).  In this mode, the audio system is responsible for playing the test signal and HouseCurve listens for it when measuring.  The test signal must be manually transferred to the audio system (ex: SD card, CD, streaming library).
 
-#### AirPlay peculiarities
+### AirPlay peculiarities
 To use HouseCurve with AirPlay, you must tap <img src="/assets/img/airplay.png" alt="AirPlay" width="15"> at the top right.  Connections established using the iOS Control Center or Apple Music are not recognized by HouseCurve (this is an iOS limitation related to long form audio and recording).
 
 
-### Microphones
+## Microphones
 HouseCurve will default to using the built in microphone of your iPhone/iPad.  These microphones are quite accurate and are suitable for most tuning tasks.
 
 For additional accuracy, HouseCurve can use external microphones.  It will automatically use an external microphone if one is connected to your iPhone/iPad.  HouseCurve has been tested with the following external microphones:
@@ -28,7 +32,7 @@ When CarPlay is used to connect to an automobile audio system, be aware that the
 If you are getting strange measurements, try another microphone.  A common microphone for sanity checks is the [iPhone EarPods with Lighning Connector](https://www.apple.com/shop/product/MMTN2AM/A/earpods-with-lightning-connector).
 
 
-### Listening area
+## Listening area
 When we listen to an audio system, we hear the combination of the audio system and its surroundings.  In the audio world, the surroundings are referred to as “the room”.  It doesn’t really matter what the surroundings are, living room, auditorium, car, we still call it “the room”.
 
 When sound leaves an audio system it interacts with the room and this changes the sound.  This interaction is complex.  It depends on the frequency of the sound, the dimensions of the room and how the room is constructed.  In addition, and most importantly, it depends on the location in the room.
@@ -36,7 +40,7 @@ When sound leaves an audio system it interacts with the room and this changes th
 The first step in tuning an audio system is to establish a listening area.  Where in “the room” do you want it to sound good?  This could be a couch, a desk, or a kitchen.  Think about where the listeners ears will be most of the time.  This is the listening area.
 
 
-### Measurement process
+## Measurement process
 A single measurement represents how the audio system sounds at a single location.  To get a realistic measurement of the listening area, it is important to **average measurements from several locations**.  Averaging will cancel small variances making it possible to find a “best fit” tune for a given listening area.  For a desk (near field), try measuring from 2-3 locations.  For a living room, try 3-5 locations.
 
 The measurement process starts when [<img src="/assets/img/measure.png" alt="Measure" width="15">](/MANUAL.md#measure) is tapped.  HouseCurve listens to the audio system play a test signal.  This signal consists of a “chirp” sound followed by the stimulus “sweep” sound.  The chirp is a timing reference that tells HouseCurve when to expect the sweep sound.  The sweep sound is used to measure the audio system.
@@ -51,14 +55,14 @@ When a measurement succeeds it will be displayed on the plots as shown below.
 
 HouseCurve will abort the measurement process for the following reasons:
 
-#### Could not detect test signal
+### Could not detect test signal
 If HouseCurve is unable to detect the chirp signal after about 10 seconds, it will abort the measurement.  If this happens, check the following:
 
 * Ensure the audio system or iPhone/iPad volume is set to a normal listening level.  You should be able to clearly hear the chirp, but it does not need to be loud.
 * If you can hear the chirp sound, check that the microphone is not obstructed.  Cases for iPhone/iPads can obstruct the microphone.  Be sure to aim the microphone at the audio system and ensure it’s not covered up by your hand (ex: Bottom of iPhone).
 * If using an external microphone, ensure the cabling is connected properly.  To rule out problems with the audio system, try measurements using the built-in microphone.
 
-#### Low measurement coherence
+### Low measurement coherence
 After the chirp is detected, HouseCurve records the sweep as it is played by the audio system.  If the recorded sweep has a very low signal to noise ratio, HouseCurve will abort the measurement.  If this happens, check the following:
 
 * Ensure the audio system or iPhone/iPad volume is set to a normal listening level.  You should be able to clearly hear the sweep, but it does not need to be loud.
@@ -66,7 +70,7 @@ After the chirp is detected, HouseCurve records the sweep as it is played by the
 * Lower the [Coherence Blanking](/MANUAL.md#coherence-blanking) threshold.
 
 
-### Measurement quality
+## Measurement quality
 When [Coherence Blanking](/MANUAL.md#coherence-blanking) is enabled, only portions of the measurement that are above the selected signal to noise ratio will be displayed.  This is a helpful indicator of measurement quality.  
 
 For example, the measurement below was taken in the presence of external noise (someone talking).  This significantly contaminated the measurement and unusable sections have been blanked.  This measurement should probably be discarded.
@@ -76,7 +80,7 @@ For example, the measurement below was taken in the presence of external noise (
 Signal to noise issues are typically resolved by removing sources of noise or increasing the volume of the audio system.  In rare situations the microphone may be faulty.
 
 
-### Plots
+## Plots
 HouseCurve displays successful measurements using magnitude, phase and group delay plots.  Switch between plots by tapping <img src="/assets/img/pageleft.png" alt="Page Left" width="15"> or <img src="/assets/img/pageright.png" alt="Page Right" width="15"> or swipe left/right from the edge of the screen.
 
 The **magnitude plot** is the most important plot for tuning.  The overall level of the magnitude measurement is the “volume” or output power of the audio system.  The level differences between frequencies are what we want to change when [applying equalization](/TUNING.md#apply-equalization).
@@ -96,7 +100,7 @@ The **group delay plot** shows “when” the sound at a given frequency arrives
 ![group delay plot](/assets/img/measurement_delay.png "Group delay plot")
 
 
-### Subwoofer measurements
+## Subwoofer measurements
 A subwoofer (or woofer) lacks the frequency range to play the chirp sound of the test signal (see [measurement process](#measurement-process)).  To measure a subwoofer with HouseCurve, another full range speaker is needed to produce the chirp and serve as the timing reference.
 
 HouseCurve can be configured to play the chirp and sweep sounds on [different audio channels](/MANUAL.md#chirp-and-sweep-channel).  This makes it possible to route the sweep to the subwoofer and the chirp to another speaker (typically a main or center speaker).  Not all audio systems will support this.
@@ -116,7 +120,7 @@ Below the same measurement is shown with Coherence Blanking set to 50%.  Now onl
 When separately adjusting main and subwoofer speakers to the same Target Curve, it is recommended that the [Target Curve Fit](/MANUAL.md#target-curve-fit) setting be switched to manual and a suitable level entered.  The Target Curve will then appear at the same level for all measurements.  In the examples above, the Target Curve was fixed at 24.5 dB @ 100 Hz.
 
 
-### Curve file format
+## Curve file format
 
 HouseCurve supports the following file format for target curves and microphone calibrations: 
 

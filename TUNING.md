@@ -1,6 +1,10 @@
-## How to tune an audio system
+---
+layout: default
+nav_order: 6
+---
+# How to tune an audio system
 
-### Tuning overview
+## Tuning overview
 
 The process for tuning an audio system will generally involve the tasks described below.  For audio systems with separately adjustable speakers, such as a 2.1 system (left, right, subwoofer), all the steps below should be performed.  If you have a simple 2.0 audio system (just a left and right speaker), you can skip ahead to choosing a target curve and applying equalization.  It may be necessary to experiment with different adjustments and to iterate over these steps a few times.
 
@@ -15,7 +19,7 @@ The process for tuning an audio system will generally involve the tasks describe
 1. [Apply equalization](#apply-equalization).  Equalization means adjusting the volume level at different frequencies to match the target curve.
 
 
-### Match speaker levels
+## Match speaker levels
 
 For systems with separately adjustable speakers, the relative levels need to be matched.  This is done to reduce the amount of equalization required.   Adjust the speaker levels such that measurements in the listening area are roughly close to the target curve on the magnitude plot.
 
@@ -28,7 +32,7 @@ The example below shows an audio system consisting of main speakers and a subwoo
 ![subwoofer level change](/assets/img/subwoofer_level_change.png "Matching subwoofer level to main speakers")
 
 
-### Choose crossover frequencies
+## Choose crossover frequencies
 
 For audio systems that incorporate limited range speakers, the crossover frequencies need to be selected.
 
@@ -43,13 +47,13 @@ The published frequency range for the main speakers is 80-20000 Hz and the subwo
 On the magnitude plot, we can see the main speaker drops off quickly below ~120 Hz.  For this system the crossover frequency should be somewhere in the 100-120 Hz range.  The subwoofer is more than capable of filling in below 100 Hz.
 
 
-### Time align speakers
+## Time align speakers
 
 When an audio system contains limited range speakers (subwoofers, bi-amped speakers, etc) time alignment becomes an important adjustment.
 
 HouseCurve supports two methods of time aligning speakers.  The [magnitude method](#time-align-using-magnitude) and the [phase method](#time-align-using-phase).  The magnitude method is simpler, the phase method can be more accurate.
 
-#### What is time alignment?
+### What is time alignment?
 
 At the crossover frequencies of an audio system, sound transitions from one speaker to another.  In this region, speakers on either side of the crossover are active.  If sound leaves the speakers at different times, [destructive interference](https://www.phys.uconn.edu/~gibson/Notes/Section5_2/Sec5_2.htm) (or “cancellation”) can occur leading to audible dips in the sound level at the crossover frequency.  These dips cannot be fixed by equalization.
 
@@ -66,7 +70,7 @@ The adjustments available for time alignment depend on the audio system:
 
 Most audio systems will have a combination of these adjustments and **experimentation will be required** to figure out what works best.
 
-#### Time align using magnitude
+### Time align using magnitude
 
 Destructive interference will cause a dip in the magnitude measurement at the crossover frequency.  We can use this effect to figure out what adjustments increase or decrease the dip (polarity, phase, delay, distance, whatever you have).  The speakers are time aligned for the adjustment with the smallest dip.
 
@@ -82,7 +86,7 @@ The downfall of this approach is that maximum magnitude can be achieved at multi
 
 ![subwoofer align groupdelay](/assets/img/subwoofer_align_group_delay.png "Check subwoofer alignment with group delay")
 
-#### Time align using phase
+### Time align using phase
 
 When two speakers are time aligned, they will have the same phase at the crossover frequency and their phase plots will have the same slope in the crossover region.
 
@@ -115,7 +119,7 @@ In the example plots above, the crossovers were disabled to ensure the measureme
 The degree of success one will have with this method depends a lot on the audio system and the room.  Sometimes it is better to start with the magnitude method and fine tune using the phase method.
 
 
-### Choose Target curve
+## Choose Target curve
 
 A Target Curve, or “house curve”, is a visual guide to ensure you tune your audio system in the right direction.  The system is "tuned" when the average  measurement matches the Target Curve.
 
@@ -143,10 +147,10 @@ Below are some resources for understanding what house curves do and how to choos
 * [The Measurement and Calibration of Sound Reproducing Systems](http://www.aes.org/e-lib/browse.cfm?elib=17839)
 
 
-### Apply equalization
+## Apply equalization
 If the audio system has separately adjustable speakers, such as a subwoofer, ensure that levels have been [matched](#match-speaker-levels), crossovers are [selected](#choose-crossover-frequencies) and speakers are [time aligned](#time-align-speakers).
 
-#### What is equalization?
+### What is equalization?
 
 Equalization means adjusting an audio system’s output such that the measured response in the listening area aligns with a target curve.  It can be used to compensate for characteristics of the audio system, or to correct for the effects of the room (aka “room correction”).  In practice, it's hard to separate the audio system from the room, so we end up adjusting for both.
 
@@ -160,7 +164,7 @@ HouseCurve supports automatic and manual equalization:
 
 - [Manual equalization](#manual-equalization) is the most straight forward approach.  It works by iteratively measuring the audio system, adjusting it, then measuring again.  It will work with any audio system, even ones with limited adjustments (ex: you can move furniture and see the impact).
 
-#### Automatic Equalization
+### Automatic Equalization
 
 HouseCurve's automatic equalization tool generates filter settings for parametric equalizers.  It works by correcting a [saved measurement](MANUAL.md#saved-measurement) to a [target curve](MANUAL.md#target-curve).  It can be accessed from the more menu <img src="/assets/img/more.png" alt="More" width="15">.  For best results **average several measurements** from the listening area and then save.  Averaging provides HouseCurve with a better picture of how sound changes in the listening area.
 
@@ -182,7 +186,7 @@ The filters can be [exported](MANUAL.md#filter-export-screen) to a file by tappi
 
 HouseCurve's biquad filters are based on the [Audio EQ Cookbook by Robert Bristow-Johnson](https://www.w3.org/TR/audio-eq-cookbook/).  **Warning** the biquad coefficients exported by HouseCurve may not be compatible with your audio system.  As a precaution, turn the volume down on the first import just in case.  If you have questions or experience problems, please [reach out](mailto:support@housecurve.com).
 
-#### Manual Equalization
+### Manual Equalization
 
 Equalization means changing the volume level at different frequencies.  There are many ways an audio system can be changed to make this happen:
 

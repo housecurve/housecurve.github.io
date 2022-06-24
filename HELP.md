@@ -1,4 +1,8 @@
-## Quick Start
+---
+layout: default
+nav_order: 3
+---
+# Quick Start
 
 1. Connect iPhone/iPad to the audio system using [AirPlay, Bluetooth or the headphone connector](/USAGE.md#connecting-to-an-audio-system).
 1. Set volume to a low setting with the iPhone/iPad volume buttons.
@@ -12,7 +16,7 @@
 1. Tap plot to show cursor, move with single finger, tap again to hide.
 1. Pinch plot to zoom.  Use two fingers to scroll plot left/right.
 
-## Documentation
+# Documentation
 
 [Manual](/MANUAL.md)
 

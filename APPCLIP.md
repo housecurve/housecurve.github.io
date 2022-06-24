@@ -1,8 +1,10 @@
 ---
+layout: default
+nav_order: 2
 appclipbanner: true
 ---
 
-## Free Trial
+# Free Trial
 
  **Visit this page using Safari on an iPhone/iPad**
  
