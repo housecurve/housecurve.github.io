@@ -2,7 +2,7 @@
 layout: default
 nav_order: 5
 ---
-# How to use HouseCurve
+# Usage
 
 ## Connecting to an audio system
 HouseCurve sends a test signal to your audio system and measures the result using a microphone. This is shown in the diagram below.
