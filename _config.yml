@@ -6,6 +6,7 @@ include: [".well-known"]
 
 title: HouseCurve
 description: Simple audio system tuning
+repository: housecurve/housecurve.github.io
 logo: /assets/img/small.png
 google_analytics: G-CLP8SY1HP1
 
