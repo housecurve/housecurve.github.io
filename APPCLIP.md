@@ -1,5 +1,5 @@
 ---
-layout: appclip
+appclipbanner: true
 ---
 
 ## Free Trial
