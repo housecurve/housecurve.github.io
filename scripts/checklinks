@@ -1,0 +1,8 @@
+#!/usr/bin/bash
+
+set +e
+
+basedir=`git rev-parse --show-toplevel`
+
+# when a link is broken, it doesn't convert into html, so and *.md is a broken link
+find $basedir/_site -name "*.html" | xargs grep -c "\.md"
