@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: /USAGE.html
 nav_order: 5
 ---
 # Usage

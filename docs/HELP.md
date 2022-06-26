@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: /HELP.html
 nav_order: 3
 ---
 # Quick Start

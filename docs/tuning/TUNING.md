@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: TUNING.html
 nav_order: 6
 ---
 # Tuning

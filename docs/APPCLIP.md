@@ -1,6 +1,7 @@
 ---
 layout: default
 nav_order: 2
+permalink: /APPCLIP.html
 appclipbanner: true
 ---
 
