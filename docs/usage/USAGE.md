@@ -14,7 +14,7 @@ HouseCurve can connect to the audio system wirelessly using AirPlay or Bluetooth
 
 Alternatively, the headphone connector can be used to create a wired connection to the audio system.  Use a [Lightning to 3.5mm adapter](https://www.apple.com/shop/product/MMX62AM/A/lightning-to-35mm-headphone-jack-adapter).
 
-If direct connection is not possible, HouseCurve can use [external stimulus](/MANUAL.md#stimulus-type).  In this mode, the audio system is responsible for playing the test signal and HouseCurve listens for it when measuring.  The test signal must be manually transferred to the audio system (ex: SD card, CD, streaming library).
+If direct connection is not possible, HouseCurve can use [external stimulus](../manual/measure_setup.md#stimulus-type).  In this mode, the audio system is responsible for playing the test signal and HouseCurve listens for it when measuring.  The test signal must be manually transferred to the audio system (ex: SD card, CD, streaming library).
 
 ### AirPlay peculiarities
 To use HouseCurve with AirPlay, you must tap <img src="/assets/img/airplay.png" alt="AirPlay" width="15"> at the top right.  Connections established using the iOS Control Center or Apple Music are not recognized by HouseCurve (this is an iOS limitation related to long form audio and recording).
@@ -44,9 +44,9 @@ The first step in tuning an audio system is to establish a listening area.  Wher
 ## Measurement process
 A single measurement represents how the audio system sounds at a single location.  To get a realistic measurement of the listening area, it is important to **average measurements from several locations**.  Averaging will cancel small variances making it possible to find a “best fit” tune for a given listening area.  For a desk (near field), try measuring from 2-3 locations.  For a living room, try 3-5 locations.
 
-The measurement process starts when [<img src="/assets/img/measure.png" alt="Measure" width="15">](/MANUAL.md#measure) is tapped.  HouseCurve listens to the audio system play a test signal.  This signal consists of a “chirp” sound followed by the stimulus “sweep” sound.  The chirp is a timing reference that tells HouseCurve when to expect the sweep sound.  The sweep sound is used to measure the audio system.
+The measurement process starts when [<img src="/assets/img/measure.png" alt="Measure" width="15">](../manual/measure_screen.md#measure) is tapped.  HouseCurve listens to the audio system play a test signal.  This signal consists of a “chirp” sound followed by the stimulus “sweep” sound.  The chirp is a timing reference that tells HouseCurve when to expect the sweep sound.  The sweep sound is used to measure the audio system.
 
-The stages of the measurement process are displayed in the [Measurement Status](/MANUAL.md#measurement-status) area at the top of the screen.
+The stages of the measurement process are displayed in the [Measurement Status](../manual/plot_area.md#measurement-status) area at the top of the screen.
 
 ![listening](/assets/img/measurement_listening.png "Press measure to start measurement process")
 
@@ -68,11 +68,11 @@ After the chirp is detected, HouseCurve records the sweep as it is played by the
 
 * Ensure the audio system or iPhone/iPad volume is set to a normal listening level.  You should be able to clearly hear the sweep, but it does not need to be loud.
 * Take steps to reduce background noise.  HouseCurve works best when measurements are taken from a quiet listening area.
-* Lower the [Coherence Blanking](/MANUAL.md#coherence-blanking) threshold.
+* Lower the [Coherence Blanking](../manual/plot_setup.md#coherence-blanking) threshold.
 
 
 ## Measurement quality
-When [Coherence Blanking](/MANUAL.md#coherence-blanking) is enabled, only portions of the measurement that are above the selected signal to noise ratio will be displayed.  This is a helpful indicator of measurement quality.  
+When [Coherence Blanking](../manual/plot_setup.md#coherence-blanking) is enabled, only portions of the measurement that are above the selected signal to noise ratio will be displayed.  This is a helpful indicator of measurement quality.  
 
 For example, the measurement below was taken in the presence of external noise (someone talking).  This significantly contaminated the measurement and unusable sections have been blanked.  This measurement should probably be discarded.
 
@@ -104,13 +104,13 @@ The **group delay plot** shows “when” the sound at a given frequency arrives
 ## Subwoofer measurements
 A subwoofer (or woofer) lacks the frequency range to play the chirp sound of the test signal (see [measurement process](#measurement-process)).  To measure a subwoofer with HouseCurve, another full range speaker is needed to produce the chirp and serve as the timing reference.
 
-HouseCurve can be configured to play the chirp and sweep sounds on [different audio channels](/MANUAL.md#chirp-and-sweep-channel).  This makes it possible to route the sweep to the subwoofer and the chirp to another speaker (typically a main or center speaker).  Not all audio systems will support this.
+HouseCurve can be configured to play the chirp and sweep sounds on [different audio channels](../manual/measure_setup.md#chirp-and-sweep-channel).  This makes it possible to route the sweep to the subwoofer and the chirp to another speaker (typically a main or center speaker).  Not all audio systems will support this.
 
 For a typical 2.1 audio system, this can be accomplished by disabling (or disconnecting) a main speaker, ex: the right speaker.  HouseCurve is then configured to play the sweep through the right channel and the chirp through the left channel.  The subwoofer will receive the right channel via the “subwoofer out” of the audio system.  This is pictured below:
 
 ![subwoofer measurement connections](/assets/img/subwoofer_measurement_sweep.png "Signal paths for subwoofer measurement")
 
-Use [Coherence Blanking](/MANUAL.md#coherence-blanking) to ensure the plots only show portions of the measurement that are actually from the subwoofer and not simply noise.  The plot below shows a subwoofer measurement with Coherence Blanking turned off.  As can be seen, the plot shows a peak where the subwoofer is actually able to produce sound.  The rest of the measurement is the noise floor of the audio system and room.
+Use [Coherence Blanking](../manual/plot_setup.md#coherence-blanking) to ensure the plots only show portions of the measurement that are actually from the subwoofer and not simply noise.  The plot below shows a subwoofer measurement with Coherence Blanking turned off.  As can be seen, the plot shows a peak where the subwoofer is actually able to produce sound.  The rest of the measurement is the noise floor of the audio system and room.
 
 ![subwoofer no blanking](/assets/img/subwoofer_no_coherence_blanking.png "Subwoofer measurement without coherence blanking")
 
@@ -118,7 +118,7 @@ Below the same measurement is shown with Coherence Blanking set to 50%.  Now onl
 
 ![subwoofer coherence blanking](/assets/img/subwoofer_coherence_blanking.png "Subwoofer measurement with coherence blanking")
 
-When separately adjusting main and subwoofer speakers to the same Target Curve, it is recommended that the [Target Curve Fit](/MANUAL.md#target-curve-fit) setting be switched to manual and a suitable level entered.  The Target Curve will then appear at the same level for all measurements.  In the examples above, the Target Curve was fixed at 24.5 dB @ 100 Hz.
+When separately adjusting main and subwoofer speakers to the same Target Curve, it is recommended that the [Target Curve Fit](../manual/plot_setup.md#target-curve-fit) setting be switched to manual and a suitable level entered.  The Target Curve will then appear at the same level for all measurements.  In the examples above, the Target Curve was fixed at 24.5 dB @ 100 Hz.
 
 
 ## Curve file format

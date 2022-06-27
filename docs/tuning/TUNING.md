@@ -24,7 +24,7 @@ The process for tuning an audio system will generally involve the tasks describe
 
 For systems with separately adjustable speakers, the relative levels need to be matched.  This is done to reduce the amount of equalization required.   Adjust the speaker levels such that measurements in the listening area are roughly close to the target curve on the magnitude plot.
 
-Make sure all speakers are active and set the overall audio system volume to a normal listening level.  It can be helpful to set HouseCurve’s [Display Mode](/MANUAL.md#display-mode) to History.
+Make sure all speakers are active and set the overall audio system volume to a normal listening level.  It can be helpful to set HouseCurve’s [Display Mode](../manual/plot_setup.md#display-mode) to History.
 
 Take a measurement from the middle of the listening area.  On the magnitude plot, observe how the measurement lines up with the Target Curve.  Adjust individual speaker levels and repeat the measurement as needed to get close to the Target Curve.
 
@@ -37,7 +37,7 @@ The example below shows an audio system consisting of main speakers and a subwoo
 
 For audio systems that incorporate limited range speakers, the crossover frequencies need to be selected.
 
-The classic approach is to select crossover frequencies based on speaker specifications, but these may not reflect how the speakers perform in the room.  It is better to measure the actual speaker performance. Use [saved measurements](/MANUAL.md#saved-measurments), to compare speakers and select a crossover frequency.
+The classic approach is to select crossover frequencies based on speaker specifications, but these may not reflect how the speakers perform in the room.  It is better to measure the actual speaker performance. Use [saved measurements](../manual/plot_setup.md#saved-measurments), to compare speakers and select a crossover frequency.
 
 The screenshot below shows a 2.1 desktop audio system consisting of [main speakers](https://www.kantoaudio.com/powered-speakers/yu2) and a [subwoofer](https://www.kantoaudio.com/subwoofers/sub6).  The speakers were measured separately with crossovers disabled and no equalization.  The [subwoofer was measured](/USAGE.md#subwoofer-measurements) first and saved (grey), then the main speakers were measured (green).
 
@@ -77,7 +77,7 @@ Destructive interference will cause a dip in the magnitude measurement at the cr
 
 When using this method it’s important to avoid changing audio system levels (volume, bass/treble, equalizer, etc).
 
-Ensure speakers on either side of the crossover are enabled.  Set HouseCurve’s Display Mode to [History](/MANUAL.md#display-mode).  Zoom into the region around the crossover frequency.  It is also best to set the [Target Curve Fit](/MANUAL.md#target-curve-fit) to manual and select an appropriate level as this will prevent the target curve from moving as adjustments are made.
+Ensure speakers on either side of the crossover are enabled.  Set HouseCurve’s Display Mode to [History](../manual/plot_setup.md#display-mode).  Zoom into the region around the crossover frequency.  It is also best to set the [Target Curve Fit](../manual/plot_setup.md#target-curve-fit) to manual and select an appropriate level as this will prevent the target curve from moving as adjustments are made.
 
 Take a measurement from the middle of the listening area.  On the magnitude plot, place the cursor at the crossover frequency and observe the magnitude value.  Adjust the audio system.  Repeat the measurement and observe the new magnitude value.  Continue to make adjustments until the maximum magnitude level is achieved and the dip is the smallest.  The plot below shows a system being adjusted from the worst alignment (largest dip) to the best (smallest dip).
 
@@ -91,7 +91,7 @@ The downfall of this approach is that maximum magnitude can be achieved at multi
 
 When two speakers are time aligned, they will have the same phase at the crossover frequency and their phase plots will have the same slope in the crossover region.
 
-Time alignment using phase requires **separate measurement** of the speakers on either side of the crossover.  To do this with HouseCurve, measurements of the first speaker are compared to the second using a [saved measurement](/MANUAL.md#saved-measurement).  The second speaker is adjusted until a good time alignment is found on the phase plot.
+Time alignment using phase requires **separate measurement** of the speakers on either side of the crossover.  To do this with HouseCurve, measurements of the first speaker are compared to the second using a [saved measurement](../manual/plot_setup.md#saved-measurement).  The second speaker is adjusted until a good time alignment is found on the phase plot.
 
 Phase measurements are very sensitive to changes in the distance between speaker and microphone.  For best results, take measurements from the middle of the listening area, keeping the microphone in the same location for each measurement.  For lower frequency crossovers (~100 Hz), it is possible to average phase measurements in the listening area, but this will quickly break down for large areas.  Keep in mind that sound takes about 3 ms to travel 1 meter.
 
@@ -115,7 +115,7 @@ Finally, in the plot below, the audio system is aligned, but on the wrong cycle 
 
 As with the [magnitude method](#time-align-using-magnitude), the group delay plot can be consulted to double check the alignment.  This requires taking a new measurement with both speakers active.
 
-In the example plots above, the crossovers were disabled to ensure the measurements had enough signal on either side of the crossover to see the phase slope.  Use caution when measuring with crossovers disabled as this could lead to audio system damage.  An alternative approach is to disable [Coherence Blanking](/MANUAL.md#coherence-blanking).
+In the example plots above, the crossovers were disabled to ensure the measurements had enough signal on either side of the crossover to see the phase slope.  Use caution when measuring with crossovers disabled as this could lead to audio system damage.  An alternative approach is to disable [Coherence Blanking](../manual/plot_setup.md#coherence-blanking).
 
 The degree of success one will have with this method depends a lot on the audio system and the room.  Sometimes it is better to start with the magnitude method and fine tune using the phase method.
 
@@ -124,13 +124,13 @@ The degree of success one will have with this method depends a lot on the audio 
 
 A Target Curve, or “house curve”, is a visual guide to ensure you tune your audio system in the right direction.  The system is "tuned" when the average  measurement matches the Target Curve.
 
-HouseCurve provides some common curves to experiment with.  These can be selected by going to [Plot Setup](MANUAL.md#plot-setup-screen).  The "House" curves are flatter and intended for home listening.  The "Car" curves have significantly more bass which is common for automobile listing.  HouseCurve will display the selected curve on the magnitude plot when there are measurements.
+HouseCurve provides some common curves to experiment with.  These can be selected by going to [Plot Setup](../manual/plot_setup.md).  The "House" curves are flatter and intended for home listening.  The "Car" curves have significantly more bass which is common for automobile listing.  HouseCurve will display the selected curve on the magnitude plot when there are measurements.
 
 ![target curve](/assets/img/target_curve.png "Measurement compared to B&K target curve (yellow)")
 
 The choice of Target Curve is subject to individual taste.  Typically, listeners prefer it when low frequencies are louder than high frequencies.  A  downward slope of 1 dB/octave is quite common.  Let your ears be the judge.
 
-Custom curves can be created with a text editor and [imported](/MANUAL.md#target-curve) into HouseCurve.  See [curve file format](/USAGE.md#curve-file-format) for more information.  The curves provided by HouseCurve are a great starting point for making your own:
+Custom curves can be created with a text editor and [imported](../manual/plot_setup.md#target-curve) into HouseCurve.  See [curve file format](/USAGE.md#curve-file-format) for more information.  The curves provided by HouseCurve are a great starting point for making your own:
 
 * [House A](/curves/House%20A.txt)
 * [House B](/curves/House%20B.txt)
@@ -167,13 +167,13 @@ HouseCurve supports automatic and manual equalization:
 
 ### Automatic Equalization
 
-HouseCurve's automatic equalization tool generates filter settings for parametric equalizers.  It works by correcting a [saved measurement](MANUAL.md#saved-measurement) to a [target curve](MANUAL.md#target-curve).  It can be accessed from the more menu <img src="/assets/img/more.png" alt="More" width="15">.  For best results **average several measurements** from the listening area and then save.  Averaging provides HouseCurve with a better picture of how sound changes in the listening area.
+HouseCurve's automatic equalization tool generates filter settings for parametric equalizers.  It works by correcting a [saved measurement](../manual/plot_setup.md#saved-measurement) to a [target curve](../manual/plot_setup.md#target-curve).  It can be accessed from the more menu <img src="/assets/img/more.png" alt="More" width="15">.  For best results **average several measurements** from the listening area and then save.  Averaging provides HouseCurve with a better picture of how sound changes in the listening area.
 
 The image below shows a saved measurement (grey) being corrected to the target curve (yellow).  The filters that perform the correction are shown in magenta.  The predicted magnitude response (when filters are applied) is shown in cyan.
 
 ![equalize screen](/assets/img/equalize_biquads.png "Equalize screen showing correction filters and predicted output")
 
-HouseCurve allocates filters to regions with the largest deviation from the target curve, starting with lower frequencies and ignoring blanked regions (see [Coherence Blanking](/MANUAL.md#coherence-blanking)).  The algorithm’s behavior can be controlled by tapping <img src="/assets/img/setup.png" alt="Setup" width="15"> to display the [equalize setup screen](MANUAL.md#equalize-setup-screen).  Plot settings, such target curve fit and blanking threshold also impact the algorithm.  Changes are reflected immediately.
+HouseCurve allocates filters to regions with the largest deviation from the target curve, starting with lower frequencies and ignoring blanked regions (see [Coherence Blanking](/../manual/plot_setup.md#coherence-blanking)).  The algorithm’s behavior can be controlled by tapping <img src="/assets/img/setup.png" alt="Setup" width="15"> to display the [equalize setup screen](../manual/equalize_setup.md).  Plot settings, such target curve fit and blanking threshold also impact the algorithm.  Changes are reflected immediately.
 
 The predicted response should be reasonably close to real world measurements.  The screenshot below shows the same audio system after applying filters generated by HouseCurve (green) compared to the original measurement (grey).
 
@@ -183,7 +183,7 @@ HouseCurve uses a form of Infinite Impule Response (IIR) filter known as peaking
 
 ![filter detail screen](/assets/img/equalize_detail.png "Filter details can be imported into your parametric equalizer")
 
-The filters can be [exported](MANUAL.md#filter-export-screen) to a file by tapping <img src="/assets/img/export.png" alt="Export" width="15">.  This file can then be imported into a compatible parametric equalizer, such as a [miniDSP 2x4HD](https://www.minidsp.com/products/minidsp-in-a-box/minidsp-2x4-hd), or software based equalizers like [Equalizer APO](https://sourceforge.net/projects/equalizerapo/).
+The filters can be [exported](../manual/filter_export.md) to a file by tapping <img src="/assets/img/export.png" alt="Export" width="15">.  This file can then be imported into a compatible parametric equalizer, such as a [miniDSP 2x4HD](https://www.minidsp.com/products/minidsp-in-a-box/minidsp-2x4-hd), or software based equalizers like [Equalizer APO](https://sourceforge.net/projects/equalizerapo/).
 
 HouseCurve's biquad filters are based on the [Audio EQ Cookbook by Robert Bristow-Johnson](https://www.w3.org/TR/audio-eq-cookbook/).  **Warning** the biquad coefficients exported by HouseCurve may not be compatible with your audio system.  As a precaution, turn the volume down on the first import just in case.  If you have questions or experience problems, please [reach out](mailto:support@housecurve.com).
 
@@ -201,7 +201,7 @@ When equalizing, the goal is to adjust the audio system such that the average ma
 
 ![equalization start](/assets/img/equalizer_start.png "Adjust until measurement within target curve band")
 
-Adjust the audio system in small steps, collecting the same measurements after each change.  [Saved measurements](/MANUAL.md#saved-measurement) are helpful for seeing the effect of an adjustment as can be seen below.  You can also take a look at the [Automatic Equalization](automatic-equalization) screen to see what HouseCurve would equalize (based on the saved measurement).
+Adjust the audio system in small steps, collecting the same measurements after each change.  [Saved measurements](../manual/plot_setup.md#saved-measurement) are helpful for seeing the effect of an adjustment as can be seen below.  You can also take a look at the [Automatic Equalization](automatic-equalization) screen to see what HouseCurve would equalize (based on the saved measurement).
 
 ![equalization changed](/assets/img/equalizer_changed.png "Save measurements to see what adjustment did")
 
