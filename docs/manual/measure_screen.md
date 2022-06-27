@@ -21,11 +21,11 @@ HouseCurve's main interface is the Measure Screen.  This is where measurements o
 
 - **Undo** Tap to discard the most recent measurement.  This button is disabled when there are no measurements.
 
-- **Measure Setup** Tap to show the [Measure Setup Screen](#measure-setup-screen).
+- **Measure Setup** Tap to show the [Measure Setup Screen](measure_setup.md).
 
-- **Plot Setup** Tap to show the [Plot Setup Screen](#plot-setup-screen).
+- **Plot Setup** Tap to show the [Plot Setup Screen](plot_setup.md).
 
-- **Save Measurement** Tap to [save a measurement](#saved-measurement).  This button is disabled when there are no measurements on the plot.
+- **Save Measurement** Tap to [save a measurement](plot_setup.md#saved-measurement).  This button is disabled when there are no measurements on the plot.
 
 - **Reset** Tap to discard all measurements.
 
