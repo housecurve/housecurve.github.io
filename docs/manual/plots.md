@@ -1,13 +1,15 @@
 ---
 layout: default
 
-title: Plot Area
+title: Plots
 parent: Manual
 nav_order: 1
 ---
 
-## Plot Area
-![housecurve plot area](/assets/img/plot_area.png "HouseCurve Measure plot area")
+## Plots
+HouseCurve displays a lot of plots.  A typical example is shown below.
+
+![housecurve plot](/assets/img/plot_area.png "HouseCurve Measure plot")
 
 - **Target Curve** is displayed on the magnitude plot in yellow with +/- 3 dB bands. The phase and group delay plots always have a target of zero.  The targe curve can be changed by going to [plot setup](plot_setup.md#target-curve).
 

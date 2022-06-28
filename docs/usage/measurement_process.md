@@ -12,7 +12,7 @@ A single measurement represents how the audio system sounds at a single location
 
 The measurement process starts when [<img src="/assets/img/measure.png" alt="Measure" class="app-icon">](../manual/measure_screen.md#measure) is tapped.  HouseCurve listens to the audio system play a test signal.  This signal consists of a “chirp” sound followed by the stimulus “sweep” sound.  The chirp is a timing reference that tells HouseCurve when to expect the sweep sound.  The sweep sound is used to measure the audio system.
 
-The stages of the measurement process are displayed in the [Measurement Status](../manual/plot_area.md#measurement-status) area at the top of the screen.
+The stages of the measurement process are displayed in the [Measurement Status](../manual/plots.md#measurement-status) area at the top of the screen.
 
 ![listening](/assets/img/measurement_listening.png "Press measure to start measurement process")
 
