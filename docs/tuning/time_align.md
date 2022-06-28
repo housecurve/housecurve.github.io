@@ -11,8 +11,6 @@ nav_order: 4
 
 When an audio system contains limited range speakers (subwoofers, bi-amped speakers, etc) time alignment becomes an important adjustment.
 
-HouseCurve supports two methods of time aligning speakers.  The [magnitude method](#time-align-using-magnitude) and the [phase method](#time-align-using-phase).  The magnitude method is simpler, the phase method can be more accurate.
-
 ### What is time alignment?
 
 At the crossover frequencies of an audio system, sound transitions from one speaker to another.  In this region, speakers on either side of the crossover are active.  If sound leaves the speakers at different times, [destructive interference](https://www.phys.uconn.edu/~gibson/Notes/Section5_2/Sec5_2.htm) (or “cancellation”) can occur leading to audible dips in the sound level at the crossover frequency.  These dips cannot be fixed by equalization.
@@ -29,6 +27,13 @@ The adjustments available for time alignment depend on the audio system:
 * Subwoofers may have a polarity switch (often labelled “phase”) or a dial that permits adjusting phase from 0 to 180 degrees.
 
 Most audio systems will have a combination of these adjustments and **experimentation will be required** to figure out what works best.
+
+HouseCurve supports two methods of time aligning speakers.
+
+- [Magnitude method](#time-align-using-magnitude).  This is the simpler of the two methods, but it can be less accurate.
+
+- [Phase method](#time-align-using-phase).  This method is more accurate, but it requires more steps to measure correctly.
+
 
 ### Time align using magnitude
 
