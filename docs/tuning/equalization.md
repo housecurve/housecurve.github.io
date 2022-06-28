@@ -8,7 +8,7 @@ nav_order: 5
 
 
 ## Apply equalization
-If the audio system has separately adjustable speakers, such as a subwoofer, ensure that levels have been [matched](#match-speaker-levels), crossovers are [selected](#choose-crossover-frequencies) and speakers are [time aligned](#time-align-speakers).
+If the audio system has separately adjustable speakers, such as a subwoofer, ensure that levels have been [matched](match_levels.md), crossovers are [selected](crossover.md) and speakers are [time aligned](time_align.md).
 
 ### What is equalization?
 
