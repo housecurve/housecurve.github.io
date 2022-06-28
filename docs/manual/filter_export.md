@@ -8,6 +8,8 @@ nav_order: 7
 
 ## Filter Export Screen
 
+<img src="/assets/img/filter_export.png" alt="Filter export screen" class="app-portrait">
+
 ### Format
 This is the format of the export file.  The following formats are supported:
 

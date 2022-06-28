@@ -8,6 +8,8 @@ nav_order: 4
 
 ## Measure Setup Screen
 
+<img src="/assets/img/measure_setup.png" alt="Measure setup screen" class="app-portrait">
+
 ### Chirp and Sweep Channel
 The "chirp" and "sweep" sounds of the test signal can be played on different channels (see [measurement process](../usage/measurement_process.md)).  This is mainly used for [subwoofer measurements](../usage/subwoofer.md).
 

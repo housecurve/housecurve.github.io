@@ -8,6 +8,8 @@ nav_order: 6
 
 ## Equalize Setup Screen
 
+<img src="/assets/img/equalize_setup.png" alt="Equalize setup screen" class="app-portrait">
+
 ### Maximum filters
 The number of filters to use for correction.
 

@@ -8,6 +8,8 @@ nav_order: 2
 
 ## Plot Setup Screen
 
+<img src="/assets/img/plot_setup.png" alt="Plot setup screen" class="app-portrait">
+
 ### Saved Measurement
 Saved Measurements can be displayed on the plot for comparison.  Only one saved measurement can be selected at a time.  Select None to disable.  Measurements can be removed by tapping Edit.
 
