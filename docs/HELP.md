@@ -5,7 +5,7 @@ nav_order: 3
 ---
 # Quick Start
 
-1. Connect iPhone/iPad to the audio system using [AirPlay, Bluetooth or the headphone connector](usage/USAGE.md#connecting-to-an-audio-system).
+1. Connect iPhone/iPad to the audio system using [AirPlay, Bluetooth or the headphone connector](usage/connection.md).
 1. Set volume to a low setting with the iPhone/iPad volume buttons.
 1. Tap <img src="/assets/img/measure.png" alt="Measure" width="15"> to start measurement process. HouseCurve will play a test signal through the audio system.
 1. Adjust volume to a normal listening level, repeating measurements as needed.  If measurements are not successful, increasing volume *slightly* may help.  Excessive volume levels indicate a microphone problem (ex: blocked by case or hand).

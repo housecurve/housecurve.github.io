@@ -17,7 +17,7 @@ nav_order: 1
 
 - **Cursor** Tap plot area to show cursor, move with a single finger, tap again to hide.
 
-- **Measurement Status** HouseCurve displays the status of the [measurement process](/USAGE.md#measurement-process) in this area.  The status disappears after a few seconds.
+- **Measurement Status** HouseCurve displays the status of the [measurement process](../usage/measurement_process.md) in this area.  The status disappears after a few seconds.
 
 - **Setup Status** HouseCurve displays setup information in this area.  The status disappears after a few seconds.
 

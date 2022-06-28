@@ -9,7 +9,7 @@ nav_order: 4
 ## Measure Setup Screen
 
 ### Chirp and Sweep Channel
-The "chirp" and "sweep" sounds of the test signal can be played on different channels (see [measurement process](/USAGE.md#measurement-process)).  This is mainly used for [subwoofer measurements](/USAGE.md#subwoofer-measurements).
+The "chirp" and "sweep" sounds of the test signal can be played on different channels (see [measurement process](../usage/measurement_process.md)).  This is mainly used for [subwoofer measurements](../usage/subwoofer.md).
 
 ### Stimulus Type
 Stimulus Type controls the test signal used to measure the audio system.
@@ -34,7 +34,7 @@ HouseCurve supports calibrated external microphones.  Available calibrations wil
 
 Microphone calibrations can be loaded tapping + at the top of the External Mic Calibration screen.  Calibrations can be removed by tapping Edit.
 
-HouseCurve supports the following [Curve file format](/USAGE.md#curve-file-format).
+HouseCurve supports the following [Curve file format](../usage/file_formats.md#curve-file-format).
 
 
 

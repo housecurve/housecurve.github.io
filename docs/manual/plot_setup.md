@@ -20,7 +20,7 @@ The curve is positioned on the magnitude plot based on the Target Curve Fit sett
 
 Additional target curves can be loaded by tapping + at the top of the Target Curve screen.  Target curves can be removed by tapping Edit.
 
-HouseCurve supports the following [Curve file format](/USAGE.md#curve-file-format).
+HouseCurve supports the following [Curve file format](../usage/file_formats.md#curve-file-format).
 
 ### Target Curve Fit
 By default, the selected Target Curve is automatically fitted to measurements based on the [Display Mode](#display-mode).  In Average mode, the average measurement is used.  In History mode, the most recent measurement is used.
@@ -40,11 +40,11 @@ HouseCurve can display measurements to suit a given task.
 Smoothing can be applied to measurements to make it easier to see trends.  To remove smoothing, select None.
 
 ### Coherence Blanking
-Coherence blanking hides portions of the measurement that are [low quality](/USAGE.md#measurement-quality) and should not be used for tuning.  
+Coherence blanking hides portions of the measurement that are [low quality](../usage/measurement_quality.md) and should not be used for tuning.  
 
 Blanking occurs wherever the measurement falls below the selected signal to noise ratio (blanking threshold).  To disable blanking, select Off.
 
-This setting also controls the threshold at which HouseCurve will [automatically discard measurements](/USAGE.md#low-measurement-coherence).
+This setting also controls the threshold at which HouseCurve will [automatically discard measurements](../usage/measurement_process.md).
 
 ### Frequency Scale
 The frequency axis can have an Octave or Decade scale.  This setting applies to all plots.
