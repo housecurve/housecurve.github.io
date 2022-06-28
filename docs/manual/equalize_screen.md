@@ -7,7 +7,7 @@ nav_order: 3
 ---
 
 ## Equalize Screen
-The Equalize Screen can be accessed from the more menu <img src="/assets/img/more.png" alt="More" width="15"> on the measure screen.  It is the main interface for automatic equalization / room correction.  The plot area displays the filters used to correct a saved measurement to a target curve. The lower toolbar contains controls related to equalization.
+The Equalize Screen can be accessed from the more menu <img src="/assets/img/more.png" alt="More" class="app-icon"> on the measure screen.  It is the main interface for automatic equalization / room correction.  The plot area displays the filters used to correct a saved measurement to a target curve. The lower toolbar contains controls related to equalization.
 
 ![Equalize Screen](/assets/img/equalize_screen.png "HouseCurve Equalize screen")
 

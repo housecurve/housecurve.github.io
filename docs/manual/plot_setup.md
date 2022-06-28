@@ -13,7 +13,7 @@ nav_order: 4
 ### Saved Measurement
 Saved Measurements can be displayed on the plot for comparison.  Only one saved measurement can be selected at a time.  Select None to disable.  Measurements can be removed by tapping Edit.
 
-Save a measurement by tapping [<img src="/assets/img/save.png" alt="Save" width="15">](#save-measurement) on the Measure screen.  The [Display Mode](#display-mode) controls what is saved.  In Average mode, the average measurement is saved.  In History mode, the most recent measurement is saved.  If a measurement with the same name exists, it can be overwritten.  
+Save a measurement by tapping [<img src="/assets/img/save.png" alt="Save" class="app-icon">](#save-measurement) on the Measure screen.  The [Display Mode](#display-mode) controls what is saved.  In Average mode, the average measurement is saved.  In History mode, the most recent measurement is saved.  If a measurement with the same name exists, it can be overwritten.  
 
 ### Target Curve
 A [Target Curve](../tuning/target_curve.md) is displayed on the magnitude plot to serve as a guide for [tuning an audio system](../tuning/TUNING.md).  

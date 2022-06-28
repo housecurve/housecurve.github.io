@@ -26,7 +26,7 @@ HouseCurve supports automatic and manual equalization:
 
 ### Automatic Equalization
 
-HouseCurve's automatic equalization tool generates filter settings for parametric equalizers.  It works by correcting a [saved measurement](../manual/plot_setup.md#saved-measurement) to a [target curve](../manual/plot_setup.md#target-curve).  It can be accessed from the more menu <img src="/assets/img/more.png" alt="More" width="15">.  For best results **average several measurements** from the listening area and then save.  Averaging provides HouseCurve with a better picture of how sound changes in the listening area.
+HouseCurve's automatic equalization tool generates filter settings for parametric equalizers.  It works by correcting a [saved measurement](../manual/plot_setup.md#saved-measurement) to a [target curve](../manual/plot_setup.md#target-curve).  It can be accessed from the more menu <img src="/assets/img/more.png" alt="More" class="app-icon">.  For best results **average several measurements** from the listening area and then save.  Averaging provides HouseCurve with a better picture of how sound changes in the listening area.
 
 The image below shows a saved measurement (grey) being corrected to the target curve (yellow).  The filters that perform the correction are shown in magenta.  The predicted magnitude response (when filters are applied) is shown in cyan.
 

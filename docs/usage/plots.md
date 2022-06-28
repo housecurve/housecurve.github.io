@@ -8,7 +8,7 @@ nav_order: 6
 
 
 ## Plots
-HouseCurve displays successful measurements using magnitude, phase and group delay plots.  Switch between plots by tapping <img src="/assets/img/pageleft.png" alt="Page Left" width="15"> or <img src="/assets/img/pageright.png" alt="Page Right" width="15"> or swipe left/right from the edge of the screen.
+HouseCurve displays successful measurements using magnitude, phase and group delay plots.  Switch between plots by tapping <img src="/assets/img/pageleft.png" alt="Page Left" class="app-icon"> or <img src="/assets/img/pageright.png" alt="Page Right" class="app-icon"> or swipe left/right from the edge of the screen.
 
 The **magnitude plot** is the most important plot for tuning.  The overall level of the magnitude measurement is the “volume” or output power of the audio system.  The level differences between frequencies are what we want to change when [applying equalization](../tuning/equalization.md).
 

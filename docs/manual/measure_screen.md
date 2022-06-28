@@ -7,7 +7,7 @@ nav_order: 2
 ---
 
 ## Measure Screen
-HouseCurve's main interface is the Measure Screen.  This is where measurements of an audio system are displayed.  Additional tools and the help screen can be accessed from the more menu <img src="/assets/img/more.png" alt="More" width="15">.  The lower toolbar contains controls related to measurement.
+HouseCurve's main interface is the Measure Screen.  This is where measurements of an audio system are displayed.  Additional tools and the help screen can be accessed from the more menu <img src="/assets/img/more.png" alt="More" class="app-icon">.  The lower toolbar contains controls related to measurement.
 
 ![measure screen](/assets/img/measure_screen.png "housecurve Measure screen")
 
