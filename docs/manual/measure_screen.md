@@ -17,7 +17,7 @@ HouseCurve's main interface is the Measure Screen.  This is where measurements o
 
 - **More Menu** Tap to show additional tools and the help screen.
 
-- **Measure** Tap to start [measurement process](../usage/measurement-process.md).  Tap again to to stop.  This button is disabled when not connected to an audio system.
+- **Measure** Tap to start [measurement process](../usage/measurement_process.md).  Tap again to to stop.  This button is disabled when not connected to an audio system.
 
 - **Undo** Tap to discard the most recent measurement.  This button is disabled when there are no measurements.
 
