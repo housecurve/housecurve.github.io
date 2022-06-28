@@ -7,6 +7,7 @@ nav_order: 6
 ---
 
 ## Equalize Setup
+The Equalize Setup screen can be accessed by tapping <img src="/assets/img/setup.png" alt="Setup" class="app-icon"> on the Equalize screen.
 
 <img src="/assets/img/equalize_setup.png" alt="Equalize setup screen" class="app-portrait">
 

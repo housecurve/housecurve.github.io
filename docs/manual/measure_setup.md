@@ -7,6 +7,7 @@ nav_order: 5
 ---
 
 ## Measure Setup
+The Measure Setup screen can be accessed by tapping <img src="/assets/img/setup.png" alt="Setup" class="app-icon"> on the Measure screen.
 
 <img src="/assets/img/measure_setup.png" alt="Measure setup screen" class="app-portrait">
 
