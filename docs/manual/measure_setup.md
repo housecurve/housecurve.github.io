@@ -3,10 +3,10 @@ layout: default
 
 title: Measure Setup
 parent: Manual
-nav_order: 4
+nav_order: 5
 ---
 
-## Measure Setup Screen
+## Measure Setup
 
 <img src="/assets/img/measure_setup.png" alt="Measure setup screen" class="app-portrait">
 

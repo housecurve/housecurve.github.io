@@ -6,7 +6,7 @@ parent: Manual
 nav_order: 6
 ---
 
-## Equalize Setup Screen
+## Equalize Setup
 
 <img src="/assets/img/equalize_setup.png" alt="Equalize setup screen" class="app-portrait">
 

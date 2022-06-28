@@ -3,10 +3,10 @@ layout: default
 
 title: Plot Setup
 parent: Manual
-nav_order: 2
+nav_order: 4
 ---
 
-## Plot Setup Screen
+## Plot Setup
 
 <img src="/assets/img/plot_setup.png" alt="Plot setup screen" class="app-portrait">
 

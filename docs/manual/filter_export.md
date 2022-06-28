@@ -6,7 +6,7 @@ parent: Manual
 nav_order: 7
 ---
 
-## Filter Export Screen
+## Filter Export
 
 <img src="/assets/img/filter_export.png" alt="Filter export screen" class="app-portrait">
 

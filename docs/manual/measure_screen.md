@@ -3,7 +3,7 @@ layout: default
 
 title: Measure Screen
 parent: Manual
-nav_order: 3
+nav_order: 2
 ---
 
 ## Measure Screen
