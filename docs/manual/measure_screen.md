@@ -7,9 +7,9 @@ nav_order: 2
 ---
 
 ## Measure Screen
-HouseCurve's main interface is the Measure Screen.  This is where measurements of an audio system are displayed.  Additional tools and the help screen can be accessed from the more menu <img src="/assets/img/more.png" alt="More" class="app-icon">.  The lower toolbar contains controls related to measurement.
+HouseCurve's main interface is the Measure screen.  This is where measurements of an audio system are displayed.  Additional tools and the help screen can be accessed from the more menu <img src="/assets/img/more.png" alt="More" class="app-icon">.  The lower toolbar contains controls related to measurement.
 
-![measure screen](/assets/img/measure_screen.png "housecurve Measure screen")
+![Measure screen](/assets/img/measure_screen.png "housecurve Measure screen")
 
 - **Page Control** Tap to move between [magnitude, phase and group delay plots](../usage/plots.md) plots.  Alternatively, swipe from the left or right edge of the screen to change plots.
 
@@ -21,9 +21,9 @@ HouseCurve's main interface is the Measure Screen.  This is where measurements o
 
 - **Undo** Tap to discard the most recent measurement.  This button is disabled when there are no measurements.
 
-- **Measure Setup** Tap to show the [Measure Setup Screen](measure_setup.md).
+- **Measure Setup** Tap to show the [Measure Setup screen](measure_setup.md).
 
-- **Plot Setup** Tap to show the [Plot Setup Screen](plot_setup.md).
+- **Plot Setup** Tap to show the [Plot Setup screen](plot_setup.md).
 
 - **Save Measurement** Tap to [save a measurement](plot_setup.md#saved-measurement).  This button is disabled when there are no measurements on the plot.
 
