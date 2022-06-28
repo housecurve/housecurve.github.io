@@ -33,7 +33,9 @@ Tap <img src="/assets/img/setup.png" alt="Measure Setup" class="app-icon"> to sh
 Tap <img src="/assets/img/plot.png" alt="Plot Setup" class="app-icon"> to show the [Plot Setup screen](plot_setup.md).
 
 ### Save Measurement
-Tap <img src="/assets/img/save.png" alt="Save" class="app-icon"> to [save a measurement](plot_setup.md#saved-measurement).  This button is disabled when there are no measurements on the plot.
+Tap <img src="/assets/img/save.png" alt="Save" class="app-icon"> to save a measurement.  This button is disabled when there are no measurements on the plot.
+
+The [Display Mode](plot_setup.md#display-mode) controls what is saved.  In Average mode, the average measurement is saved.  In History mode, the most recent measurement is saved.  If a measurement with the same name exists, it can be overwritten.
 
 ### Reset
 Tap <img src="/assets/img/reset.png" alt="Reset" class="app-icon"> to discard all measurements.
