@@ -9,9 +9,9 @@ nav_order: 1
 ## Plot Area
 ![housecurve plot area](/assets/img/plot_area.png "HouseCurve Measure plot area")
 
-- **Target Curve** The [Target Curve](plot_setup.md#target-curve) is displayed on the magnitude plot in yellow with +/- 3 dB bands. The phase and group delay plots always have a target of zero.
+- **Target Curve** is displayed on the magnitude plot in yellow with +/- 3 dB bands. The phase and group delay plots always have a target of zero.  The targe curve can be changed by going to [plot setup](plot_setup.md#target-curve).
 
-- **Saved Measurement** The [saved measurement](plot_setup.md#saved-measurement) is displayed in grey.  The name of the measurement is displayed in Setup Status.
+- **Saved Measurement** is displayed in grey.  The name of the measurement is displayed in Setup Status.  Choose which saved measurement is displayed by going to [plot setup](plot_setup.md#saved-measurement).
 
 - **Measurements** Measurements are displayed on the plot in green.
 
