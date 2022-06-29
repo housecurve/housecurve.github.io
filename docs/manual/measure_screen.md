@@ -12,7 +12,7 @@ HouseCurve's main interface is the Measure screen.  This is where measurements o
 ![Measure screen](/assets/img/measure_screen.png "housecurve Measure screen")
 
 ## Page Control
-Tap <img src="/assets/img/pageleft.png" alt="Page Left" class="app-icon"> or <img src="/assets/img/pageright.png" alt="Page Right" class="app-icon"> to move between [magnitude, phase and group delay plots](../usage/plots.md) plots.  Alternatively, swipe from the left or right edge of the screen to change plots.
+Tap <img src="/assets/img/pageleft.png" alt="Page Left" class="app-icon"> or <img src="/assets/img/pageright.png" alt="Page Right" class="app-icon"> to move between [magnitude, phase and group delay plots](../usage/plot_types.md) plots.  Alternatively, swipe from the left or right edge of the screen to change plots.
 
 ## Airplay
 Tap <img src="/assets/img/airplay.png" alt="AirPlay" class="app-icon"> to select from available AirPlay and Bluetooth audio outputs.  The analog (wired) output is automatically selected when something is plugged into the iPhone/iPad headphone connector.  See [connecting to an audio system](../usage/connection.md).
