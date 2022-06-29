@@ -11,7 +11,7 @@ HouseCurve is a multi-tool for audio systems.  Use it to adjust equalizers, set 
 
 ![housecurve main](/assets/img/housecurve_main_page.png "HouseCurve showing main speaker measurement with subwoofer")
 
-## Features:
+## Features
 
 * Sine sweep measurements
 * Display magnitude, phase and group delay
@@ -23,8 +23,7 @@ HouseCurve is a multi-tool for audio systems.  Use it to adjust equalizers, set 
 * Use with built-in or external microphones
 * Connect with AirPlay, Bluetooth, headphone jack (analog) or use externally played sweeps
 
-
-## How does HouseCurve work?
+## Overview
 
 HouseCurve measures in-room frequency response by listening to your audio system play a sine sweep.  Measurements are displayed on top of a target curve, making it easy to see where adjustment is needed.  Multiple measurements can be averaged to fully capture how the system sounds in the listening area.  With small changes and repeat measurements, you can manually tune your system to the target curve.  If your audio system has a parametric equalizer, HouseCurve can automatically generate filter settings to match the target curve.
 
@@ -32,13 +31,11 @@ HouseCurve can help with home and car audio system tuning, from system equalizat
 
 HouseCurve will produce acceptable results with the built in iPhone/iPad microphone. Using calibrated external microphones will provide higher accuracy.
 
-
 ## Free Trial
 
 Visit [this page](APPCLIP.md) with an iPhone or iPad for a free trial.
 
-
-## How do I use HouseCurve?
+## Documentation
 
 [Quick Start](HELP.md)
 
@@ -47,7 +44,6 @@ Visit [this page](APPCLIP.md) with an iPhone or iPad for a free trial.
 [How to use HouseCurve](usage/USAGE.md)
 
 [How to tune an audio system](tuning/TUNING.md)
-
 
 ## Privacy Policy
 
