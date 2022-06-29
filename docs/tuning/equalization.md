@@ -20,9 +20,9 @@ When applying equalization, it is best to start at the low frequencies and work 
 
 HouseCurve supports automatic and manual equalization:
 
-- [Automatic equalization](#automatic-equalization), HouseCurve generates a set of filters to correct a measurement to a target curve.  If your audio system has a parametric equalizer, the filter parameters can be imported from a file, or manually entered.  Even without a parametric equalizer, the feature is still useful - you can see what HouseCurve would adjust and use that as a guide.
+- [**Automatic equalization**](#automatic-equalization), HouseCurve generates a set of filters to correct a measurement to a target curve.  If your audio system has a parametric equalizer, the filter parameters can be imported from a file, or manually entered.  Even without a parametric equalizer, the feature is still useful - you can see what HouseCurve would adjust and use that as a guide.
 
-- [Manual equalization](#manual-equalization) is the most straight forward approach.  It works by iteratively measuring the audio system, adjusting it, then measuring again.  It will work with any audio system, even ones with limited adjustments (ex: you can move furniture and see the impact).
+- [**Manual equalization**](#manual-equalization) is the most straight forward approach.  It works by iteratively measuring the audio system, adjusting it, then measuring again.  It will work with any audio system, even ones with limited adjustments (ex: you can move furniture and see the impact).
 
 ## Automatic Equalization
 

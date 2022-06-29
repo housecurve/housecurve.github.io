@@ -30,9 +30,9 @@ Most audio systems will have a combination of these adjustments and **experiment
 
 HouseCurve supports two methods of time aligning speakers.
 
-- [Magnitude method](#time-align-using-magnitude).  This is the simpler of the two methods, but it can be less accurate.
+- [**Magnitude method**](#time-align-using-magnitude).  This is the simpler of the two methods, but it can be less accurate.
 
-- [Phase method](#time-align-using-phase).  This method is more accurate, but it requires more steps to measure correctly.
+- [**Phase method**](#time-align-using-phase).  This method is more accurate, but it requires more steps to measure correctly.
 
 
 ## Time align using magnitude

@@ -35,9 +35,11 @@ When automatic fitting is disabled, the curve can be manually positioned by sett
 ## Display Mode
 HouseCurve can display measurements to suit a given task.
 
-- **Average** mode (default) is used to capture how an audio system sounds in a listening area. Use this mode when tuning the audio system to match a target curve.  Measurements are included in an average as they are collected.  The average measurement is displayed in bold green. Individual measurements will appear in faded green.
+### Average
+Average mode is used to capture how an audio system sounds in a listening area. Use this mode when tuning the audio system to match a target curve.  Measurements are included in an average as they are collected.  The average measurement is displayed in bold green. Individual measurements will appear in faded green.
 
-- **History** mode is used to see the effect of an adjustment from a single microphone location. Use this mode for initial audio system setup, such as speaker position or time alignment.  The most recent measurement is displayed in bold green.  Older measurements appear in green and are faded according to age.
+### History
+History mode is used to see the effect of an adjustment from a single microphone location. Use this mode for initial audio system setup, such as speaker position or time alignment.  The most recent measurement is displayed in bold green.  Older measurements appear in green and are faded according to age.
 
 ## Smoothing
 Smoothing can be applied to measurements to make it easier to see trends.  To remove smoothing, select None.
