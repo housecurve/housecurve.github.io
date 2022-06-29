@@ -9,9 +9,9 @@ title: Free Trial
 
 # Free Trial
 
- **Visit this page using Safari on an iPhone/iPad**
- 
-The HouseCurve trial is provided as an Apple App Clip.  A banner will appear at the top of this page in a moment.  Tap the banner to launch and follow the quick start [instructions here](HELP.md).
+To access, you must **visit this page with an iPhone/iPad** using Safari.
+
+An app-clip banner will appear at the top of this page.  Tap the banner to launch and follow the [quick start](HELP.md) instructions.
 
 The app clip provides access to all HouseCurve features, but the number of measurements is limited.  If you find HouseCurve useful, please consider purchasing - not often can you improve your audio system for the price of a pint 😉.
 
