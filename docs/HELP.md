@@ -2,6 +2,8 @@
 layout: default
 permalink: /HELP.html
 nav_order: 3
+
+title: Quick Start
 ---
 # Quick Start
 
@@ -17,7 +19,7 @@ nav_order: 3
 1. Tap plot to show cursor, move with single finger, tap again to hide.
 1. Pinch plot to zoom.  Use two fingers to scroll plot left/right.
 
-# Documentation
+## Documentation
 
 [Manual](manual/MANUAL.md)
 

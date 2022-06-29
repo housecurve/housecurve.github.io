@@ -1,8 +1,10 @@
 ---
 layout: default
+appclipbanner: true
 nav_order: 2
 permalink: /APPCLIP.html
-appclipbanner: true
+
+title: Free Trial
 ---
 
 # Free Trial
