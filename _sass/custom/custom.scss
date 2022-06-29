@@ -1,3 +1,10 @@
+// Override the default font weight (too heavy in dark mode).
+// This will only affect content, the navigation bar, etc will still have a heavier weight.
+.main-content {
+  font-weight: 200;
+}
+
+// customize app images
 .app-portrait {
    width: 50%;
    padding: 5%;
