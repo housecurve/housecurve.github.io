@@ -8,7 +8,7 @@ description: Simple audio system tuning
 repository: housecurve/housecurve.github.io
 
 logo: /assets/img/title_icon.png
-google_analytics: G-CLP8SY1HP1
+ga_tracking: G-CLP8SY1HP1
 
 search_enabled: true
 heading_level: 2
