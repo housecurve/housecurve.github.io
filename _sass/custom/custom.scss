@@ -2,6 +2,10 @@
 // This will only affect content, the navigation bar, etc will still have a heavier weight.
 .main-content {
   font-weight: 300;
+
+  b, strong {
+    font-weight: 700;
+  }
 }
 
 // Search input text color too dark in dark mode
