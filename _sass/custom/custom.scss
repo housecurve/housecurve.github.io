@@ -1,7 +1,12 @@
 // Override the default font weight (too heavy in dark mode).
 // This will only affect content, the navigation bar, etc will still have a heavier weight.
 .main-content {
-  font-weight: 200;
+  font-weight: 300;
+}
+
+// Search input text color too dark in dark mode
+.search-input {
+  color: $body-text-color;
 }
 
 // customize app images
