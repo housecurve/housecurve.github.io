@@ -7,7 +7,7 @@ nav_order: 8
 ---
 
 
-## Curve file format
+# Curve file format
 
 HouseCurve supports the following file format for target curves and microphone calibrations: 
 

@@ -6,7 +6,7 @@ parent: Usage
 nav_order: 2
 ---
 
-## Microphones
+# Microphones
 HouseCurve will default to using the built in microphone of your iPhone/iPad.  These microphones are quite accurate and are suitable for most tuning tasks.
 
 For additional accuracy, HouseCurve can use external microphones.  It will automatically use an external microphone if one is connected to your iPhone/iPad.  HouseCurve has been tested with the following external microphones:

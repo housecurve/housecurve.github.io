@@ -7,10 +7,10 @@ nav_order: 5
 ---
 
 
-## Apply equalization
+# Apply equalization
 If the audio system has separately adjustable speakers, such as a subwoofer, ensure that levels have been [matched](match_levels.md), crossovers are [selected](crossover.md) and speakers are [time aligned](time_align.md).
 
-### What is equalization?
+## What is equalization?
 
 Equalization means adjusting an audio system’s output such that the measured response in the listening area aligns with a target curve.  It can be used to compensate for characteristics of the audio system, or to correct for the effects of the room (aka “room correction”).  In practice, it's hard to separate the audio system from the room, so we end up adjusting for both.
 
@@ -24,7 +24,7 @@ HouseCurve supports automatic and manual equalization:
 
 - [Manual equalization](#manual-equalization) is the most straight forward approach.  It works by iteratively measuring the audio system, adjusting it, then measuring again.  It will work with any audio system, even ones with limited adjustments (ex: you can move furniture and see the impact).
 
-### Automatic Equalization
+## Automatic Equalization
 
 HouseCurve's automatic equalization tool generates filter settings for parametric equalizers.  It works by correcting a [saved measurement](../manual/plot_setup.md#saved-measurement) to a [target curve](../manual/plot_setup.md#target-curve).  It can be accessed from the more menu <img src="/assets/img/more.png" alt="More" class="app-icon">.  For best results **average several measurements** from the listening area and then save.  Averaging provides HouseCurve with a better picture of how sound changes in the listening area.
 
@@ -46,7 +46,7 @@ The filters can be [exported](../manual/filter_export.md) to a file by tapping <
 
 HouseCurve's biquad filters are based on the [Audio EQ Cookbook by Robert Bristow-Johnson](https://www.w3.org/TR/audio-eq-cookbook/).  **Warning** the biquad coefficients exported by HouseCurve may not be compatible with your audio system.  As a precaution, turn the volume down on the first import just in case.  If you have questions or experience problems, please [reach out](mailto:support@housecurve.com).
 
-### Manual Equalization
+## Manual Equalization
 
 Equalization means changing the volume level at different frequencies.  There are many ways an audio system can be changed to make this happen:
 

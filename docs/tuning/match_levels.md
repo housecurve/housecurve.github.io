@@ -6,7 +6,7 @@ parent: Tuning
 nav_order: 1
 ---
 
-## Match speaker levels
+# Match speaker levels
 
 For systems with separately adjustable speakers, the relative levels need to be matched.  This is done to reduce the amount of equalization required.   Adjust the speaker levels such that measurements in the listening area are roughly close to the target curve on the magnitude plot.
 

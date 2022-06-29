@@ -7,7 +7,7 @@ nav_order: 2
 ---
 
 
-## Choose crossover frequencies
+# Choose crossover frequencies
 
 For audio systems that incorporate limited range speakers, the crossover frequencies need to be selected.
 

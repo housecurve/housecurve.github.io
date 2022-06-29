@@ -7,7 +7,7 @@ nav_order: 3
 ---
 
 
-## Choose Target curve
+# Choose Target curve
 
 A Target Curve, or “house curve”, is a visual guide to ensure you tune your audio system in the right direction.  The system is "tuned" when the average  measurement matches the Target Curve.
 

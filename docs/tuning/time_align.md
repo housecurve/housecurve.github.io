@@ -7,11 +7,11 @@ nav_order: 4
 ---
 
 
-## Time align speakers
+# Time align speakers
 
 When an audio system contains limited range speakers (subwoofers, bi-amped speakers, etc) time alignment becomes an important adjustment.
 
-### What is time alignment?
+## What is time alignment?
 
 At the crossover frequencies of an audio system, sound transitions from one speaker to another.  In this region, speakers on either side of the crossover are active.  If sound leaves the speakers at different times, [destructive interference](https://www.phys.uconn.edu/~gibson/Notes/Section5_2/Sec5_2.htm) (or “cancellation”) can occur leading to audible dips in the sound level at the crossover frequency.  These dips cannot be fixed by equalization.
 
@@ -35,7 +35,7 @@ HouseCurve supports two methods of time aligning speakers.
 - [Phase method](#time-align-using-phase).  This method is more accurate, but it requires more steps to measure correctly.
 
 
-### Time align using magnitude
+## Time align using magnitude
 
 Destructive interference will cause a dip in the magnitude measurement at the crossover frequency.  We can use this effect to figure out what adjustments increase or decrease the dip (polarity, phase, delay, distance, whatever you have).  The speakers are time aligned for the adjustment with the smallest dip.
 
@@ -51,7 +51,7 @@ The downfall of this approach is that maximum magnitude can be achieved at multi
 
 ![subwoofer align groupdelay](/assets/img/subwoofer_align_group_delay.png "Check subwoofer alignment with group delay")
 
-### Time align using phase
+## Time align using phase
 
 When two speakers are time aligned, they will have the same phase at the crossover frequency and their phase plots will have the same slope in the crossover region.
 
