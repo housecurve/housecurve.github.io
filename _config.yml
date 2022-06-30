@@ -14,5 +14,4 @@ search_enabled: true
 heading_level: 2
 
 heading_anchors: true
-footer_content: "Copyright &copy; 2022 Greg Wilding - Made in Canada - info@housecurve.com"
 gh_edit_links: false
