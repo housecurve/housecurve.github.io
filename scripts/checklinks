@@ -2,7 +2,16 @@
 
 set +e
 
-basedir=`git rev-parse --show-toplevel`
+if [ "$#" -ne 1 ]
+then
+   echo
+   echo "Scan a site for broken links:"
+   echo "$0 <url to check>"
+   echo
+   exit
+fi
 
-# when a link is broken, it doesn't convert into html, so and *.md is a broken link
-find $basedir/_site -name "*.html" | xargs grep -c "\.md"
+site="$1"
+
+wget --spider -p -r -nd $site
+ 
