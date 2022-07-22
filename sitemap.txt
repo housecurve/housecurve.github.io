@@ -4,6 +4,7 @@ https://housecurve.com/HELP.html
 https://housecurve.com/MANUAL.html
 https://housecurve.com/APPCLIP.html
 https://housecurve.com/USAGE.html
+https://housecurve.com/LEGAL.html
 https://housecurve.com/docs/usage/subwoofer.html
 https://housecurve.com/docs/usage/microphones.html
 https://housecurve.com/docs/usage/file_formats.html
