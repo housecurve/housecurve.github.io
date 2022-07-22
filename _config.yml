@@ -17,43 +17,43 @@ gh_edit_links: false
 
 
 features:
+- title: Objective
+  description: See how it sounds.  Compare your audio system to a target curve of your choice quickly and easily.
+  link: /docs/manual/plots.html
+
+- title: Made for Tuning
+  description: A portable audio analyzer made for tinkering with audio systems.  All you need is your iPhone or iPad.
+  link: /TUNING.html
+
+- title: Accurate
+  description: Automatic validation ensures accurate sine sweep measurements of magnitude, phase and group delay.
+  link: /docs/usage/measurement_process.html
+
+
 - title: Room Correction
+  description: Equalize your audio system in one step by generating settings for your parametric equalizer.
   link: /docs/tuning/equalization.html
-  description: Match your audio system to a target curve with automatically generated parametric equalizer settings.
   
 - title: Subwoofer Phase
-  link: /docs/tuning/time_align.html
   description: Time align your subwoofer with confidence and enjoy fast and tight bass.
+  link: /docs/tuning/time_align.html
   
 - title: Crossover Selection
+  description: Avoid the guesswork.  Measure how individual speakers perform and choose the right crossover frequency.
   link: /docs/tuning/crossover.html
-  description: Avoid the guesswork.  Measure how individual speakers perform an choose the right crossover point.
-
-
-- title: See How it Sounds
-  link: /docs/manual/plots.html
-  description: Compare your audio system to a target curve quickly and easily.
-
-- title: Built for Tuning
-  link: /TUNING.html
-  description: See how adjustments change the sound with measurement history.  Adjust what matters with measurement averaging.
-
-- title: Reliable Measurements
-  link: /docs/usage/measurement_process.html
-  description: Use sine sweeps to measure magnitude, phase and group delay.
 
 
 - title: Connectivity
-  link: /docs/usage/connection.html
   description: Connect to your audio system with AirPlay, Bluetooth, headphone jack (analog) or just play the sweep file manually.
+  link: /docs/usage/connection.html
 
 - title: Microphones
+  description: Achieve great results with just your iPhone or iPad.  Use external calibrated microphones for additional accuracy.
   link: /docs/usage/microphones.html
-  description: If you have an iPhone or iPad, that’s all you need for great results.  Use external calibrated microphones for additional accuracy.
 
 - title: Documentation
+  description: Need help?  Follow step by step instructions on how to measure and tune your audio system.
   link: /HELP.html
-  description: Follow step-by-step instructions on how to measure and tune your audio system.
 
 
 
