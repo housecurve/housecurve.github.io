@@ -9,7 +9,7 @@ title: Free Trial
 
 # Free Trial
 
-To access, you must **visit this page with an iPhone/iPad** using Safari.
+To access, you must visit this page with an iPhone/iPad using Safari.
 
 An app-clip banner will appear at the top of this page.  Tap the banner to launch and follow the [quick start](HELP.md) instructions.
 
