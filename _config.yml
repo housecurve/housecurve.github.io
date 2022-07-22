@@ -17,10 +17,6 @@ gh_edit_links: false
 
 
 features:
-- title: See How it Sounds
-  link: /docs/manual/plots.html
-  description: Compare your audio system to a target curve quickly and easily.
-
 - title: Room Correction
   link: /docs/tuning/equalization.html
   description: Match your audio system to a target curve with automatically generated parametric equalizer settings.
@@ -33,13 +29,19 @@ features:
   link: /docs/tuning/crossover.html
   description: Avoid the guesswork.  Measure how individual speakers perform an choose the right crossover point.
 
+
+- title: See How it Sounds
+  link: /docs/manual/plots.html
+  description: Compare your audio system to a target curve quickly and easily.
+
 - title: Built for Tuning
   link: /TUNING.html
   description: See how adjustments change the sound with measurement history.  Adjust what matters with measurement averaging.
 
 - title: Reliable Measurements
   link: /docs/usage/measurement_process.html
-  description: Measure magnitude, phase and group delay with sine sweeps.   Low quality measurements are discarded automatically.
+  description: Use sine sweeps to measure magnitude, phase and group delay.
+
 
 - title: Connectivity
   link: /docs/usage/connection.html
