@@ -19,7 +19,7 @@ title: Quick Start
 1. Tap plot to show cursor, move with single finger, tap again to hide.
 1. Pinch plot to zoom.  Use two fingers to scroll plot left/right.
 
-## Documentation
+# Documentation
 
 [Manual](manual/MANUAL.md)
 

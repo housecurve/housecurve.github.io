@@ -9,5 +9,5 @@ has_children: true
 
 # Usage
 
-
+This document outlines the basics of taking measurements of an audio system with HouseCurve.
 

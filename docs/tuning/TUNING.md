@@ -10,7 +10,9 @@ has_children: true
 
 # Tuning
 
-The process for tuning an audio system will generally involve the tasks described below.  For audio systems with separately adjustable speakers, such as a 2.1 system (left, right, subwoofer), all the steps below should be performed.  If you have a simple 2.0 audio system (just a left and right speaker), you can skip ahead to choosing a target curve and applying equalization.  It may be necessary to experiment with different adjustments and to iterate over these steps a few times.
+This document covers how to use HouseCurve for tuning audio systems.  For basic usage information see [how to use HouseCurve](../usage/USAGE.md).
+
+The process for tuning an audio system will generally involve the tasks described below.  For audio systems with separately adjustable speakers, such as a 2.1 system (left, right, subwoofer), all the steps below should be performed.  If you have a simple 2.0 audio system (just a left and right speaker), you can skip to choosing a target curve and applying equalization.  It may be necessary to experiment with different adjustments and to iterate over these steps a few times.
 
 1. [**Match speaker levels**](match_levels.md).  The speakers of the audio system should be playing at roughly the same volume level in the listening area.  This is done to ensure measurements will reflect the whole audio system and also to avoid using equalization to correct level differences.
 

@@ -9,4 +9,5 @@ has_children: true
 
 # Manual
 
+This document provides an overview of the HouseCurve user interface.
 
