@@ -5,6 +5,12 @@ nav_order: 3
 
 title: Quick Start
 ---
+# Documentation
+
+* [Manual](manual/MANUAL.md)
+* [How to use HouseCurve](usage/USAGE.md)
+* [How to tune an audio system](tuning/TUNING.md)
+
 # Quick Start
 
 1. Connect iPhone/iPad to the audio system using [AirPlay, Bluetooth or the headphone connector](usage/connection.md).
@@ -18,13 +24,5 @@ title: Quick Start
 1. Switch between plot types tapping <img src="/assets/img/pageleft.png" alt="Page Left" class="app-icon"> or <img src="/assets/img/pageright.png" alt="Page Right" class="app-icon"> or swipe left/right from the edge of the screen.
 1. Tap plot to show cursor, move with single finger, tap again to hide.
 1. Pinch plot to zoom.  Use two fingers to scroll plot left/right.
-
-# Documentation
-
-[Manual](manual/MANUAL.md)
-
-[How to use HouseCurve](usage/USAGE.md)
-
-[How to tune an audio system](tuning/TUNING.md)
 
 
