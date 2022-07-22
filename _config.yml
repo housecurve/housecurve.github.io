@@ -5,8 +5,9 @@ include: [".well-known"]
 
 title: HouseCurve
 description: Simple audio system tuning
-
+appstore: https://apps.apple.com/ca/app/housecurve/id1470695018
 logo: /assets/img/title_icon.png
+
 ga_tracking: G-CLP8SY1HP1
 
 search_enabled: true
