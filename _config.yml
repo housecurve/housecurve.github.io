@@ -14,3 +14,46 @@ heading_level: 2
 
 heading_anchors: true
 gh_edit_links: false
+
+
+features:
+- title: See How it Sounds
+  link: /docs/manual/plots.html
+  description: Compare your audio system to a target curve quickly and easily.
+
+- title: Room Correction
+  link: /docs/tuning/equalization.html
+  description: Match your audio system to a target curve with automatically generated parametric equalizer settings.
+  
+- title: Subwoofer Phase
+  link: /docs/tuning/time_align.html
+  description: Time align your subwoofer with confidence and enjoy fast and tight bass.
+  
+- title: Crossover Selection
+  link: /docs/tuning/crossover.html
+  description: Avoid the guesswork.  Measure how individual speakers perform an choose the right crossover point.
+
+- title: Built for Tuning
+  link: /TUNING.html
+  description: See how adjustments change the sound with measurement history.  Adjust what matters with measurement averaging.
+
+- title: Reliable Measurements
+  link: /docs/usage/measurement_process.html
+  description: Measure magnitude, phase and group delay with sine sweeps.   Low quality measurements are discarded automatically.
+
+- title: Connectivity
+  link: /docs/usage/connection.html
+  description: Connect to your audio system with AirPlay, Bluetooth, headphone jack (analog) or just play the sweep file manually.
+
+- title: Microphones
+  link: /docs/usage/microphones.html
+  description: If you have an iPhone or iPad, that’s all you need for great results.  Use external calibrated microphones for additional accuracy.
+
+- title: Documentation
+  link: /HELP.html
+  description: Follow step-by-step instructions on how to measure and tune your audio system.
+
+
+
+
+

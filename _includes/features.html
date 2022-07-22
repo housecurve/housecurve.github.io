@@ -1,0 +1,20 @@
+<div class="features">
+
+  {% for feature in site.features %}
+  {% if feature.title %}
+
+  <div class="feature">
+    <div class="featureText">
+      <h3>
+        <a href="{{ feature.link }}">{{ feature.title }}</a>
+      </h3>
+      <p>
+        {{ feature.description }}
+      </p>
+    </div>
+  </div>
+
+  {% endif %}
+  {% endfor %}
+
+</div>

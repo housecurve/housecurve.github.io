@@ -8,12 +8,14 @@
   }
 }
 
+
 // Search input text color too dark in dark mode
 .search-input {
   color: $body-text-color;
 }
 
-// customize app images
+
+// Custom app images
 .app-portrait {
    width: 50%;
    padding: 5%;
@@ -24,3 +26,35 @@
    max-height: 1em;
    max-width: 1em;
 }
+
+
+// Feature lists for landing page
+.features {
+  grid-area: c;
+  display: flex;
+  flex: 0 1 auto;
+  align-content: flex-start;
+  justify-content: flex-start;
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+
+.feature {
+  display: flex;
+  padding-right: 20px;
+  width: 100%;
+
+  @include mq(md) {
+    width: calc(100%/2);
+  }
+
+  @include mq(lg) {
+    width: calc(100%/3);
+  }
+}
+
+.featureText > p {
+  margin-top: 8px;
+  line-height: 1.5;
+}
+

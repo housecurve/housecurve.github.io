@@ -9,19 +9,9 @@ title: Main
 # Simple Audio System Tuning
 HouseCurve is an iOS app for tuning audio systems.  Use it to adjust equalizers, set subwoofer phase, choose crossovers, match levels and more.
 
-![housecurve main](/assets/img/housecurve_main_page.png "HouseCurve showing main speaker measurement with subwoofer")
+![housecurve main](/assets/img/housecurve_main_page.png "HouseCurve screenshots")
 
-## Features
-
-* Sine sweep measurements
-* Display magnitude, phase and group delay
-* Compare measurements to target curve
-* Generate parametric equalizer settings
-* Export equalizer settings to file
-* Average and history display modes
-* Measurement save and undo
-* Use with built-in or external microphones
-* Connect with AirPlay, Bluetooth, headphone jack (analog) or use externally played sweeps
+{% include features.html %}
 
 ## Overview
 
@@ -34,24 +24,4 @@ HouseCurve will produce acceptable results with the built in iPhone/iPad microph
 ## Free Trial
 
 Visit [this page](APPCLIP.md) with an iPhone or iPad for a free trial.
-
-## Documentation
-
-[Quick Start](HELP.md)
-
-[Manual](manual/MANUAL.md)
-
-[How to use HouseCurve](usage/USAGE.md)
-
-[How to tune an audio system](tuning/TUNING.md)
-
-## Privacy Policy
-
-HouseCurve does not collect, use, store or transfer personal data.  With your permission, Apple collects app analytics to help developers improve their apps.  For more information, see [Apple Privacy Policy](https://www.apple.com/privacy/).
-
-## EULA
-
-[Apple Standard License Agreement](https://www.apple.com/legal/internet-services/itunes/dev/stdeula)
-
-
 

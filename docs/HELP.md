@@ -27,5 +27,4 @@ title: Quick Start
 
 [How to tune an audio system](tuning/TUNING.md)
 
-[Home page](/README.md)
 
