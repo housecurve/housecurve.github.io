@@ -3,7 +3,7 @@ layout: default
 nav_order: 1
 permalink: /index.html
 
-title: Main
+title: Home
 ---
 
 # Simple Audio System Tuning
