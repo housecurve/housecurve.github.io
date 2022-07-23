@@ -4,10 +4,11 @@ color_scheme: dark
 include: [".well-known"]
 
 title: HouseCurve
-description: Simple audio system tuning
-appstore: https://apps.apple.com/ca/app/housecurve/id1470695018
+tagline: Simple Audio System Tuning
+description: HouseCurve is an iOS app for tuning audio systems.  Use it for room correction, adjusting equalizers, setting subwoofer phase, choosing crossover frequencies and more.
 logo: /assets/img/title_icon.png
 
+appstore: https://apps.apple.com/ca/app/housecurve/id1470695018
 ga_tracking: G-CLP8SY1HP1
 
 search_enabled: true
