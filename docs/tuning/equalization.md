@@ -48,7 +48,7 @@ When the filters have been loaded into your audio system, you should find that m
 
 ![measurement after equalizing](/assets/img/equalize_measure_after.png "Measured results will be reasonably close to predicted")
 
-If your results are radically different from the prediction, check that the filter sample rate is correct - a mismatch will cause the filters to be applied to the wrong frequency.  Setting/coefficent compatibility can also be a issue.  HouseCurve's biquad filters are based on the [Audio EQ Cookbook by Robert Bristow-Johnson](https://www.w3.org/TR/audio-eq-cookbook/).  If you have questions or experience problems, please [reach out](mailto:support@housecurve.com).
+If your results are radically different from the prediction, check that the filter sample rate is correct - a mismatch will cause the filters to be applied to the wrong frequency.  Setting/coefficent compatibility can also be a issue.  HouseCurve's biquad filters are based on the [Audio EQ Cookbook](https://www.w3.org/TR/audio-eq-cookbook/) by Robert Bristow-Johnson.  If you have questions or experience problems, please [reach out](mailto:support@housecurve.com).
 
 ## Manual Equalization
 
