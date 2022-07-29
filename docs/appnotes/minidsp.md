@@ -12,12 +12,10 @@ nav_order: 1
 
 In this application note we will demonstrate room correction using HouseCurve and a miniDSP processor.
 
-If you are unfamiliar with room correction please read the [overview](https://www.minidsp.com/applications/digital-room-correction/161-digital-room-correction).
-
-If you are unfamiliar with taking measurements with HouseCurve please see the usage [documentation](https://housecurve.com/USAGE.html).
+For an introduction to room correction please read the [overview](https://www.minidsp.com/applications/digital-room-correction/161-digital-room-correction).  To learn more about taking measurements with HouseCurve please see the usage [documentation](https://housecurve.com/USAGE.html).
 
 
-## What You Will Need
+## What you need
 
 * A miniDSP processor [link?] connected to your audio system
 * Plug-in software to configure the miniDSP processor [link?]
@@ -41,13 +39,14 @@ If direct connection isn’t possible, the sweep file can be transferred to the 
 
 ## 2. Collect Measurements
 
-Using the miniDSload filter file using miniDSP plug-in software")
+Using the miniDSP plug-in software, ensure that all equalization is disabled.
+
 Set HouseCurve’s display mode to “average”.
 
 ![plot setup](/assets/img/minidsp_plot_setup.png "plot setup screen showing average mode")
 {: .app-portrait }
 
-Use HouseCurve to measure your listening area.  Ensure that the microphone is pointed in the direction of the speakers.
+Use HouseCurve to measure your listening area.  Ensure that the microphone is pointed in the direction of the speakers.  Measure at a normal listening volume.
 
 To get a realistic measurement of the listening area, it is important to average measurements from several locations.  Averaging provides HouseCurve with a better picture of how sound changes over the listening area.  For a desk (near field), try measuring from 2-3 locations. For a living room, try 3-5 locations.
 
