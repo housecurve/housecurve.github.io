@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /LEGAL.html
-nav_order: 7
+nav_order: 8
 
 title: Legal
 ---
