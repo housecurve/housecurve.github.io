@@ -12,13 +12,13 @@ HouseCurve displays a lot of plots.  A typical example is shown below.
 ![housecurve plot](/assets/img/plot_area.png "HouseCurve Measure plot")
 
 ## Target Curve
-The target curve is displayed on the magnitude plot in yellow with +/- 3 dB bands. The phase and group delay plots always have a target of zero.  The targe curve can be changed by going to [plot setup](plot_setup.md#target-curve).
+The target curve is displayed on the magnitude plot in yellow with +/- 3 dB bands. The phase and group delay plots always have a target of zero.  The targe curve can be changed by going to [Plot Setup](plot_setup.md#target-curve).
 
 ## Saved Measurement
-A single saved measurement can be displayed in grey.  The name of the measurement is displayed in Setup Status.  Choose which saved measurement is displayed by going to [plot setup](plot_setup.md#saved-measurement).
+A single saved measurement can be displayed in grey.  The name of the measurement is displayed in Setup Status.  Choose which saved measurement is displayed by going to [Plot Setup](plot_setup.md#saved-measurement).
 
 ## Measurements
-Measurements are displayed on the plot in green.  See [display mode](plot_setup.md#display-mode) for details.
+Measurements are displayed on the plot in green.  See [Plot Mode](plot_setup.md#plot-mode) for details.
 
 ## Cursor
 Tap plot area to show cursor, move with a single finger, tap again to hide.

@@ -27,13 +27,13 @@ Additional target curves can be loaded by tapping + at the top of the Target Cur
 HouseCurve supports the following [Curve file format](../usage/file_formats.md#curve-file-format).
 
 ## Target Curve Fit
-By default, the selected Target Curve is automatically fitted to measurements based on the [Display Mode](#display-mode).  In Average mode, the average measurement is used.  In History mode, the most recent measurement is used.
+By default, the selected Target Curve is automatically fitted to measurements based on the [Plot Mode](#plot-mode).  In Average mode, the average measurement is used.  In History mode, the most recent measurement is used.
 
 [Coherence Blanking](#coherence-blanking) also affects how the Target Curve is positioned.  Portions of the measurement below the blanking threshold are ignored for fitting.
 
 When automatic fitting is disabled, the curve can be manually positioned by setting a desired dB level at 100 Hz.  This is useful when separately adjusting speakers to a common level, such as main speakers and a subwoofer.
 
-## Display Mode
+## Plot Mode
 HouseCurve can display measurements to suit a given task.
 
 ### Average

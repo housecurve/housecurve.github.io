@@ -10,7 +10,7 @@ nav_order: 1
 
 For systems with separately adjustable speakers, the relative levels need to be matched.  This is done to reduce the amount of equalization required.   Adjust the speaker levels such that measurements in the listening area are roughly close to the target curve on the magnitude plot.
 
-Make sure all speakers are active and set the overall audio system volume to a normal listening level.  It can be helpful to set HouseCurve’s [Display Mode](../manual/plot_setup.md#display-mode) to History.
+Make sure all speakers are active and set the overall audio system volume to a normal listening level.  It can be helpful to set HouseCurve’s [Plot Mode](../manual/plot_setup.md#plot-mode) to History.
 
 Take a measurement from the middle of the listening area.  On the magnitude plot, observe how the measurement lines up with the Target Curve.  Adjust individual speaker levels and repeat the measurement as needed to get close to the Target Curve.
 
