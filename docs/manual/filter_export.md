@@ -9,7 +9,8 @@ nav_order: 7
 # Filter Export
 The Filter Export screen can be accessed by tapping <img src="/assets/img/export.png" alt="Export" class="app-icon"> on the Equalize screen.
 
-<img src="/assets/img/filter_export.png" alt="Filter export screen" class="app-portrait">
+![Filter export screen](/assets/img/filter_export.png)
+{: .app-portrait-right }
 
 ## Format
 This is the format of the export file.  The following formats are supported:

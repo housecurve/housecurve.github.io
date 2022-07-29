@@ -45,7 +45,7 @@ Using the miniDSload filter file using miniDSP plug-in software")
 Set HouseCurve’s display mode to “average”.
 
 ![plot setup](/assets/img/minidsp_plot_setup.png "plot setup screen showing average mode")
-{: .app-portrait-small }
+{: .app-portrait }
 
 Use HouseCurve to measure your listening area.  Ensure that the microphone is pointed in the direction of the speakers.
 
@@ -67,19 +67,19 @@ HouseCurve allocates filters to regions with the largest deviation from the targ
 Ensure that HouseCurve uses the correct number of filters (PEQs) supported by your miniDSP processor by going tapping <img src="/assets/img/setup.png" alt="Equalize Setup" class="app-icon">.
 
 ![equalize setup](/assets/img/minidsp_equalize_setup.png "equalize setup controls filter generation")
-{: .app-portrait-small }
+{: .app-portrait }
 
 The individual filter parameters can be viewed by tapping <img src="/assets/img/detail.png" alt="Detail" class="app-icon">.
 
 ![filter detail](/assets/img/minidsp_filter_detail.png "filter detail screen shows individual filter settings")
-{: .app-portrait-small }
+{: .app-portrait }
 
 ## 4. Export Filters
 
 Filters can be exported to a file by tapping <img src="/assets/img/export.png" alt="Export" class="app-icon">.  Ensure that the selected format is “biquad coefficients” and that the sample rate is appropriate for your miniDSP processor (ex: 2x4 HD uses 96000 Hz and the DDRC-24 uses 48000 Hz).
 
 ![filter export](/assets/img/minidsp_filter_export.png "export filter settings to file")
-{: .app-portrait-small }
+{: .app-portrait }
 
 Press ***Export filters***, select a location for the filter file and then tap save.  Ideally, choose a location that the miniDSP plug-in software can access (ex: iCloud Drive).  Alternatively, you can choose a location on the device and transfer via email, AirDrop, iMessage, etc.
 

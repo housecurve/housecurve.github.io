@@ -9,7 +9,8 @@ nav_order: 4
 # Plot Setup
 The Plot Setup screen can be accessed by tapping <img src="/assets/img/plot.png" alt="Plot Setup" class="app-icon"> on the Measure or Equalize screens.
 
-<img src="/assets/img/plot_setup.png" alt="Plot setup screen" class="app-portrait">
+![Plot setup screen](/assets/img/plot_setup.png)
+{: .app-portrait-right }
 
 ## Saved Measurement
 Saved Measurements can be displayed on the plot for comparison.  Select None to disable.  Measurements can be removed by tapping Edit.
