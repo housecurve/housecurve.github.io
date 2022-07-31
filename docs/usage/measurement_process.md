@@ -12,7 +12,7 @@ The measurement process starts when [<img src="/assets/img/measure.png" alt="Mea
 
 The stages of the measurement process are displayed in the [Measurement Status](../manual/plots.md#measurement-status) area at the top of the screen.
 
-![listening](/assets/img/measurement_listening.png "Press measure to start measurement process")
+![listening](/assets/img/measurement_listening.png "Tap measure to start measurement process")
 
 When a measurement succeeds it will be displayed on the plots as shown below. 
 

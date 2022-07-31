@@ -25,6 +25,6 @@ Export parametric equalizer settings (frequency, gain, Q) using this [format](ht
 This is the sample rate of the equalizer (not the audio source).
 
 ## Export
-Press to initiate the file export.
+Tap to initiate the file export.
 
 

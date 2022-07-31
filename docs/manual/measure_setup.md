@@ -27,7 +27,7 @@ Pink noise stimulus is provided for interest sake.  Measurements based on pink n
 HouseCurve uses coherent averaging.  This has an interesting effect on Pink Noise measurements.  In a sonically treated room, such as one with sound absorbing panels on the walls, Pink Noise noise measurements will closely match Sine Sweep measurements.  In a more typical “reflective” room, Pink Noise magnitude measurements tend to be lower above ~2 KHz.  The degree to which the Pink Noise and Sine Sweep measurements match is an indication of how “dead” the room is.
 
 ### External Sine Sweep
-This mode also uses a logarithmic sinusoid sweep, but it does not require a connection to the audio system.  Instead, the test signal must be manually transferred to the audio system (ex: SD card, CD, streaming library).  The audio system is responsible for playing the test signal and HouseCurve will listen for it when measure is pressed.
+This mode also uses a logarithmic sinusoid sweep, but it does not require a connection to the audio system.  Instead, the test signal must be manually transferred to the audio system (ex: SD card, CD, streaming library).  The audio system is responsible for playing the test signal and HouseCurve will listen for it when measure is tapped.
 
 The test signal can be exported to a WAV file when this mode is selected.  The chirp and sweep channel setting will be used to produce the test signal file.
 
