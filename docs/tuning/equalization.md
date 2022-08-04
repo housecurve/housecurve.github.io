@@ -38,7 +38,7 @@ HouseCurve uses a form of Infinite Impule Response (IIR) filter known as biquad 
 
 ![filter detail screen](/assets/img/equalize_detail.png "Filter details can be imported into your parametric equalizer")
 
-The filters can be [exported](../manual/filter_export.md) to a file by tapping <img src="/assets/img/export.png" alt="Export" class="app-icon">.  This file can then be imported into a compatible parametric equalizer, such as a [miniDSP 2x4HD](https://www.minidsp.com/products/minidsp-in-a-box/minidsp-2x4-hd), or software based equalizers like [Equalizer APO](https://sourceforge.net/projects/equalizerapo/).
+The filters can be [exported](../manual/filter_export.md) to a file by tapping <img src="/assets/img/export.png" alt="Export" class="app-icon">.  This file can then be imported into a compatible parametric equalizer, such as a [miniDSP 2x4HD](https://www.minidsp.com/products/minidsp-in-a-box/minidsp-2x4-hd), or software based equalizers like [Equalizer APO](https://sourceforge.net/projects/equalizerapo/) and [Roon](https://help.roonlabs.com/portal/en/kb/articles/dsp-engine-parametric-equalizer).
 
 Note that biquad coefficients exported by HouseCurve may not be compatible with your audio system.  As a precaution, turn the volume down on the first import just in case. 
  
