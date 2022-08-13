@@ -2,7 +2,7 @@
 layout: default
 
 title: File Formats
-parent: Usage
+parent: Manual
 nav_order: 8
 ---
 
@@ -16,6 +16,4 @@ A space or tab delimited text file with a frequency (Hz) followed by a gain (dB)
 [Example Target Curve](/curves/curve.txt)
 
 HouseCurve is able to load files from iPhone/iPad local storage and iCloud.  To load a curve file from a website, save it to the iPhone/iPad storage and then select from within HouseCurve.
-
-
 
