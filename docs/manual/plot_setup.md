@@ -20,14 +20,14 @@ When a measurement is [saved](measure_screen.md#save-measurement), it will be ad
 ## Target Curve
 A [Target Curve](../tuning/target_curve.md) is displayed on the magnitude plot to serve as a guide for [tuning an audio system](../tuning/TUNING.md).  
 
-The curve is positioned on the magnitude plot based on the Target Curve Fit setting.
+The curve is positioned on magnitude plots based on the Target Curve Fit setting.
 
 Additional target curves can be loaded by tapping + at the top of the Target Curve screen.  Target curves can be removed by tapping Edit.
 
 HouseCurve supports the following [curve file format](file_formats.md#curve-file-format).
 
 ## Target Curve Fit
-By default, the selected Target Curve is automatically fitted to measurements based on the [Plot Mode](#plot-mode).  In Average mode, the average measurement is used.  In History mode, the most recent measurement is used.
+By default, the selected Target Curve is automatically fitted to measurements based on the [Plot Mode](#plot-mode).  In Average mode, the average measurement is used.  In History mode, the most recent measurement is used.  If there are no current measurements the target curve is fitted to the saved measurement.
 
 [Coherence Blanking](#coherence-blanking) also affects how the Target Curve is positioned.  Portions of the measurement below the blanking threshold are ignored for fitting.
 
