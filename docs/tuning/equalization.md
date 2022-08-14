@@ -26,7 +26,9 @@ HouseCurve supports automatic and manual equalization:
 
 ## Automatic Equalization
 
-HouseCurve's automatic equalization tool generates filter settings for parametric equalizers.  It works by correcting a [saved measurement](../manual/plot_setup.md#saved-measurement) to a [target curve](../manual/plot_setup.md#target-curve).  It can be accessed from the more menu <img src="/assets/img/more.png" alt="More" class="app-icon">.  For best results average several measurements from the listening area and then save.  Averaging provides HouseCurve with a better picture of how sound changes in the listening area.
+HouseCurve's automatic equalization tool generates filter settings for parametric equalizers.  It works by correcting a [saved measurement](../manual/plot_setup.md#saved-measurement) to a [target curve](../manual/plot_setup.md#target-curve).  It can be accessed from the more menu <img src="/assets/img/more.png" alt="More" class="app-icon">.
+
+For best results, average several measurements from the listening area and then save.  Averaging provides HouseCurve with a better picture of how sound changes in the listening area.
 
 The image below shows a saved measurement (grey) being corrected to the target curve (yellow).  The filters that perform the correction are shown in magenta.  The predicted magnitude response (when filters are applied) is shown in cyan.
 
@@ -34,21 +36,29 @@ The image below shows a saved measurement (grey) being corrected to the target c
 
 HouseCurve allocates filters to regions with the largest deviation from the target curve, starting with lower frequencies and ignoring blanked regions (see [Coherence Blanking](/../manual/plot_setup.md#coherence-blanking)).  The algorithm’s behavior can be controlled by tapping <img src="/assets/img/setup.png" alt="Setup" class="app-icon"> to display the [equalize setup screen](../manual/equalize_setup.md).  Plot settings, such target curve fit and blanking threshold also impact the algorithm.  Changes are reflected immediately.
 
-HouseCurve uses a form of Infinite Impule Response (IIR) filter known as biquad filter.  These are commonly used in graphic and parametric equalizers to boost or cut at various frequencies.  You can view the individual filters by tapping <img src="/assets/img/detail.png" alt="Detail" class="app-icon"> to bring up the Filter Detail screen, shown below.  This screen can be used to manually enter filter settings into your audio system.
+HouseCurve uses a form of IIR filter known as a peaking biquad filter.  These are commonly used in graphic and parametric equalizers to boost or cut at various frequencies.  You can view the individual filters by tapping <img src="/assets/img/detail.png" alt="Detail" class="app-icon"> to bring up the Filter Detail screen, shown below.  This screen can be used to manually enter filter settings into your audio system.
 
 ![filter detail screen](/assets/img/equalize_detail.png "Filter details can be imported into your parametric equalizer")
 
-The filters can be [exported](../manual/filter_export.md) to a file by tapping <img src="/assets/img/export.png" alt="Export" class="app-icon">.  This file can then be imported into a compatible parametric equalizer, such as a [miniDSP 2x4HD](https://www.minidsp.com/products/minidsp-in-a-box/minidsp-2x4-hd), or software based equalizers like [Equalizer APO](https://sourceforge.net/projects/equalizerapo/) and [Roon](https://help.roonlabs.com/portal/en/kb/articles/dsp-engine-parametric-equalizer).
+The filters can be [exported](../manual/filter_export.md) to a file by tapping <img src="/assets/img/export.png" alt="Export" class="app-icon">.  This file can then be imported into a compatible parametric equalizer.  HouseCurve has been tested with the following hardware/software:
 
-Note that biquad coefficients exported by HouseCurve may not be compatible with your audio system.  As a precaution, turn the volume down on the first import just in case. 
- 
+* [miniDSP 2x4HD](https://www.minidsp.com/products/minidsp-in-a-box/minidsp-2x4-hd)
+* [Volumio3 with FusionDSP](https://volumio.com/)
+* [HifiBerry DAC+DSP](https://www.hifiberry.com/shop/boards/hifiberry-dac-dsp/)
+* [Equalizer APO](https://sourceforge.net/projects/equalizerapo/)
+* [moOde Audio Player](https://moodeaudio.org) (manual entry)
+* [Roon](https://help.roonlabs.com/portal/en/kb/articles/dsp-engine-parametric-equalizer) (manual entry)
+
+It is recommended that the same filters be applied to the left and right channels of your audio system.  Separate filters may be generated for your subwoofers.
+
 When the filters have been loaded into your audio system, you should find that measurements are reasonably close to the predicted response.  The screenshots below show the predicted response (cyan) and actual measurements (green) after applying the filters.
 
 ![equalize screen](/assets/img/equalize_biquads_before.png "Equalize screen's predicted output")
 
 ![measurement after equalizing](/assets/img/equalize_measure_after.png "Measured results will be reasonably close to predicted")
 
-If your results are radically different from the prediction, check that the filter sample rate is correct - a mismatch will cause the filters to be applied to the wrong frequency.  Setting/coefficent compatibility can also be a issue.  HouseCurve's biquad filters are based on the [Audio EQ Cookbook](https://www.w3.org/TR/audio-eq-cookbook/) by Robert Bristow-Johnson.  If you have questions or experience problems, please [reach out](mailto:support@housecurve.com).
+If your results are radically different from the prediction, check that the filter sample rate is correct - a mismatch will cause the filters to be applied to the wrong frequency.  The [filter file format](../manual/file_formats.md#filters) may also be incompatible with your equalizer.  If you have questions or experience problems, please [reach out](mailto:support@housecurve.com).
+
 
 ## Manual Equalization
 
