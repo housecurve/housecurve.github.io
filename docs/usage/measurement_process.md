@@ -18,17 +18,20 @@ When a measurement succeeds it will be displayed on the plots as shown below.
 
 ![successful measurement](/assets/img/measurement_success.png "When measurement succeeds, it is displayed")
 
+
+# Measurement failures
 HouseCurve will abort the measurement process for the following reasons:
 
 ## Could not detect test signal
-If HouseCurve is unable to detect the chirp signal after about 10 seconds, it will abort the measurement.  If this happens, check the following:
+If HouseCurve is unable to detect the [chirp](#measurement-process) signal after about 10 seconds, it will abort the measurement.  If this happens, check the following:
 
 * Ensure the audio system or iPhone/iPad volume is set to a normal listening level.  You should be able to clearly hear the chirp, but it does not need to be loud.
+* Ensure that the audio system isn't buffering or cross fading the signal.  This can cause the chirp to be cut off or substantially distorted.
 * If you can hear the chirp sound, check that the microphone is not obstructed.  Cases for iPhone/iPads can obstruct the microphone.  Be sure to aim the microphone at the audio system and ensure it’s not covered up by your hand (ex: Bottom of iPhone).
 * If using an external microphone, ensure the cabling is connected properly.  To rule out problems with the audio system, try measurements using the built-in microphone.
 
 ## Low measurement coherence
-After the chirp is detected, HouseCurve records the sweep as it is played by the audio system.  If the recorded sweep has a very low signal to noise ratio, HouseCurve will abort the measurement.  If this happens, check the following:
+After the chirp is detected, HouseCurve records the [sweep](#measurement-process) as it is played by the audio system.  If the recorded sweep has a very low signal to noise ratio, HouseCurve will abort the measurement.  If this happens, check the following:
 
 * Ensure the audio system or iPhone/iPad volume is set to a normal listening level.  You should be able to clearly hear the sweep, but it does not need to be loud.
 * Take steps to reduce background noise.  HouseCurve works best when measurements are taken from a quiet listening area.
