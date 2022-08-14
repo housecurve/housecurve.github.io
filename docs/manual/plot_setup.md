@@ -24,7 +24,7 @@ The curve is positioned on magnitude plots based on the Target Curve Fit setting
 
 Additional target curves can be loaded by tapping + at the top of the Target Curve screen.  Target curves can be removed by tapping Edit.
 
-HouseCurve supports the following [curve file format](file_formats.md#curve-file-format).
+HouseCurve supports the following [curve file format](file_formats.md#curves).
 
 ## Target Curve Fit
 By default, the selected Target Curve is automatically fitted to measurements based on the [Plot Mode](#plot-mode).  In Average mode, the average measurement is used.  In History mode, the most recent measurement is used.  If there are no current measurements the target curve is fitted to the saved measurement.

@@ -6,8 +6,9 @@ parent: Manual
 nav_order: 8
 ---
 
+# File Formats
 
-# Curve file format
+## Curves
 
 HouseCurve supports the following file format for target curves and microphone calibrations: 
 

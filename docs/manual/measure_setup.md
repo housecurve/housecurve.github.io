@@ -41,7 +41,7 @@ HouseCurve supports calibrated external microphones.  Available calibrations wil
 
 Microphone calibrations can be loaded tapping + at the top of the External Mic Calibration screen.  Calibrations can be removed by tapping Edit.
 
-HouseCurve uses the following [curve file format](file_formats.md#curve-file-format) for microphone calibration.
+HouseCurve uses the following [curve file format](file_formats.md#curves) for microphone calibration.
 
 
 
