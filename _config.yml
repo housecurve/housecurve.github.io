@@ -27,14 +27,14 @@ features:
   description: A portable audio analyzer made for tinkering with audio systems.  All you need is your iPhone or iPad.
   link: /TUNING.html
 
-- title: Accurate
+- title: Reliable
   description: Automatic validation ensures accurate sine sweep measurements of magnitude, phase and group delay.
   link: /docs/usage/measurement_process.html
 
 
 - title: Room Correction
   description: Equalize your audio system in one step by generating settings for your parametric equalizer.
-  link: /docs/tuning/equalization.html
+  link: /docs/tuning/equalization.html#automatic-equalization
   
 - title: Subwoofer Phase
   description: Time align your subwoofer with confidence and enjoy fast and tight bass.
