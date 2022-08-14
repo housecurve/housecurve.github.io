@@ -32,7 +32,7 @@ This mode also uses a logarithmic sinusoid sweep, but it does not require a conn
 The test signal can be exported to a WAV file when this mode is selected.  The chirp and sweep channel setting will be used to produce the test signal file.
 
 ## Internal Mic Compensation
-The built in iPhone/iPad microphones have a reasonably flat response and are quite acceptable for tuning an audio system.  However, when compared to an external calibrated microphone, they do show some roll off at the extreme ends of the frequency spectrum.  
+The built in iPhone/iPad microphones have a surprisingly flat response and are quite acceptable for tuning an audio system.  However, when compared to an external calibrated microphone, they do show some roll off at the extreme ends of the frequency spectrum.  
 
 Internal Mic Compensation applies a moderate boost below 60 Hz and above 16 KHz to measurements made with the built in iPhone/iPad microphone.
 

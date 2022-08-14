@@ -7,7 +7,7 @@ nav_order: 2
 ---
 
 # Microphones
-HouseCurve will default to using the built in microphone of your iPhone/iPad.  These microphones are quite accurate and are suitable for most tuning tasks.  See [internal compensation](../manual/measure_setup.md#internal-mic-compensation) for more information.
+HouseCurve will default to using the built in microphone of your iPhone/iPad.  These microphones have a surprisingly flat response and are quite acceptable for tuning an audio system.  When compared to an external calibrated microphone, they do show some roll off at the extreme ends of the frequency spectrum (below 60Hz and above 16 KHz).  HouseCurve compensates for this by applying a moderate boost.  See [internal compensation](../manual/measure_setup.md#internal-mic-compensation) for more information.
 
 For additional accuracy, HouseCurve can use external microphones.  It will automatically use an external microphone if one is connected to your iPhone/iPad.  HouseCurve has been tested with the following external microphones:
 
