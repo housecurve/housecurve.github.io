@@ -32,9 +32,9 @@ This mode also uses a logarithmic sinusoid sweep, but it does not require a conn
 The test signal can be exported to a WAV file when this mode is selected.  The chirp and sweep channel setting will be used to produce the test signal file.
 
 ## Internal Mic Compensation
-The built in iPhone/iPad microphones have a surprisingly flat response and are quite acceptable for tuning an audio system.  However, when compared to an external calibrated microphone, they do show some roll off at the extreme ends of the frequency spectrum.  
+The average built in iPhone/iPad is reasonably flat, but begins to roll off below ~60 Hz and above ~16 KHz.  Internal Mic Compensation applies a moderate boost to correct this.  The boost curve is +6 dB at 30 Hz, tapering to zero at 60 Hz.  Likewise, at 16 KHz, the boost is zero and this increases to 6 dB at 20 KHz.
 
-Internal Mic Compensation applies a moderate boost below 60 Hz and above 16 KHz to measurements made with the built in iPhone/iPad microphone.
+It's worth keeping in mind that the iPhone/iPad can still "hear" below 60 Hz and above 16 KHz, it's just not as sensitive.  Internal Mic Compensation brings the measured response closer to what you would get with a calibrated extrnal mic.
 
 ## External Mic Calibration
 HouseCurve supports calibrated external microphones.  Available calibrations will be displayed in the list.  Select None to disable calibration.
