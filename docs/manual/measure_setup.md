@@ -15,25 +15,27 @@ The Measure Setup screen can be accessed by tapping <img src="/assets/img/setup.
 ## Chirp and Sweep Channel
 The "chirp" and "sweep" sounds of the test signal can be played on different channels (see [measurement process](../usage/measurement_process.md)).  This is mainly used for [subwoofer measurements](../usage/subwoofer.md).
 
+
 ## Stimulus Type
 Stimulus Type controls the "sweep" portion of the test signal (chirp + sweep) used to measure the audio system.
 
 ### Sine Sweep
-Use a logarithmic sinusoid sweep as the stimulus signal.  This is the default mode.  It requires a connection to the audio system in order to play the test signal.
+Use a logarithmic sinusoid sweep.  This is the default mode.  It requires a connection to the audio system in order to play the test signal.
+
+### External Sine Sweep
+Play the test signal manually.  Use this mode when connection to the audio system isn't possible, or wireless methods are not working correctly.  The audio system is responsible for playing the test signal and HouseCurve will listen for it when measure is tapped.
+
+The test signal can be exported to a WAV file when this mode is selected.  The file can be saved to any file system visible to the iPhone/iPad (iCloud, Samba, etc).  Or you can save locally and share with text message, email, AirDrop, etc.  The chirp and sweep channel setting will be used to produce the test signal file.
+
+HouseCurve must stay in the foreground when taking measurements.  If you need to use your iPhone/iPad to trigger the playback of the test signal, put the player into single song repeat.  You can then switch back to HouseCurve and capture measurements as needed.
+
+The AirPlay button is disabled in this mode.
 
 ### Pink Noise
 Pink noise stimulus is provided for interest sake.  Measurements based on pink noise will have a signal to noise ratio that is lower than sine sweeps.  The measurement process is identical to sine sweep (this is not a real time analyzer (RTA) mode).
 
 HouseCurve uses coherent averaging when collecting the measurement.  This has an interesting effect on Pink Noise measurements.  In a sonically treated room, such as one with sound absorbing panels on the walls, Pink Noise noise measurements will closely match Sine Sweep measurements.  In a more typical “reflective” room, Pink Noise magnitude measurements tend to be lower above ~2 KHz.  The degree to which the Pink Noise and Sine Sweep measurements match is an indication of how “dead” the room is.
 
-### External Sine Sweep
-This mode also uses a logarithmic sinusoid sweep, but it does not require a connection to the audio system.  Instead, the test signal must be manually transferred to the audio system (ex: SD card, CD, streaming library).  The audio system is responsible for playing the test signal and HouseCurve will listen for it when measure is tapped.
-
-The test signal can be exported to a WAV file when this mode is selected.  The chirp and sweep channel setting will be used to produce the test signal file.
-
-HouseCurve needs to stay in the foreground when taking measurements.  If you need to use your iPhone/iPad to trigger the playback of the test signal, put the player into single song repeat.  You can then switch back to HouseCurve and capture measurements as needed.
-
-The AirPlay button is disabled in this mode.
 
 ## Internal Mic Compensation
 The average built in iPhone/iPad is reasonably flat, but begins to roll off below ~60 Hz and above ~16 KHz.  Internal Mic Compensation applies a moderate boost to correct this.  The boost curve is +6 dB at 30 Hz, tapering to zero at 60 Hz.  Likewise, at 16 KHz, the boost is zero and this increases to 6 dB at 20 KHz.
