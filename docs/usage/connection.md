@@ -18,8 +18,12 @@ Alternatively, the headphone connector can be used to create a wired connection 
 
 If direct connection is not possible, HouseCurve can use [external stimulus](../manual/measure_setup.md#stimulus-type).  In this mode, the audio system is responsible for playing the test signal and HouseCurve listens for it when measuring.  The test signal must be manually transferred to the audio system (ex: SD card, CD, streaming library).
 
-## AirPlay peculiarities
-To use HouseCurve with AirPlay, you must tap <img src="/assets/img/airplay.png" alt="AirPlay" class="app-icon"> at the top right.  Connections established using the iOS Control Center or Apple Music are not recognized by HouseCurve (this is an iOS limitation related to long form audio and recording).
+## AirPlay connections
+To use HouseCurve with AirPlay, you must tap <img src="/assets/img/airplay.png" alt="AirPlay" class="app-icon"> at the top right.  Connections established using the iOS Control Center or Apple Music are not recognized by HouseCurve (this is an iOS limitation related to long form audio and recording).  Note - this button is disabled when using external stimulus.
 
+## AirPlay and filter delays/buffering
 
+Some implementations of AirPlay struggle with short segments of audio and will not work with HouseCurve (currently).  This can be compounded by systems that introduce a lot of delay in the playback, such as a systems running a convolution engine (FIR filters).
+
+If you encounter problems with AirPlay, try using [external stimulus](../manual/measure_setup.md#stimulus-type) or a Bluetooth connection.  And, please [let me know](mailto:support@housecurve.com) as this helps me develop a more robust solution.
 
