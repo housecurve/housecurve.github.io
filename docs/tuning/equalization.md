@@ -40,14 +40,14 @@ HouseCurve uses a form of IIR filter known as a peaking biquad filter.  These ar
 
 ![filter detail screen](/assets/img/equalize_detail.png "Filter details can be imported into your parametric equalizer")
 
-The filters can be [exported](../manual/filter_export.md) to a file by tapping <img src="/assets/img/export.png" alt="Export" class="app-icon">.  This file can then be imported into a compatible parametric equalizer.  HouseCurve has been tested with the following hardware/software:
+The filters can be [exported](../manual/filter_export.md) to a file by tapping <img src="/assets/img/export.png" alt="Export" class="app-icon">.  This file can then be imported into a compatible parametric equalizer.  HouseCurve's filters have been tested on the following systems:
 
-* [miniDSP 2x4HD](https://www.minidsp.com/products/minidsp-in-a-box/minidsp-2x4-hd)
-* [Volumio3 with FusionDSP](https://volumio.com/)
-* [HifiBerry DAC+DSP](https://www.hifiberry.com/shop/boards/hifiberry-dac-dsp/)
-* [Equalizer APO](https://sourceforge.net/projects/equalizerapo/)
-* [moOde Audio Player](https://moodeaudio.org) (manual entry)
-* [Roon](https://help.roonlabs.com/portal/en/kb/articles/dsp-engine-parametric-equalizer) (manual entry)
+* [Roon](https://help.roonlabs.com/portal/en/kb/articles/dsp-engine-parametric-equalizer) - impulse response
+* [moOde Audio](https://moodeaudio.org) - impulse response
+* [miniDSP 2x4HD](https://www.minidsp.com/products/minidsp-in-a-box/minidsp-2x4-hd) - biquad coefficients
+* [HifiBerry DAC+DSP](https://www.hifiberry.com/shop/boards/hifiberry-dac-dsp/) - parametric EQ settings
+* [Volumio3 with FusionDSP](https://volumio.com/) - parametric EQ settings
+* [Equalizer APO](https://sourceforge.net/projects/equalizerapo/) - parametric EQ settings
 
 It is recommended that the same filters be applied to the left and right channels of your audio system.  Separate filters may be generated for your subwoofers.
 
