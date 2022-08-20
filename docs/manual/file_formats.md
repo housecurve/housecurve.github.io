@@ -29,7 +29,7 @@ HouseCurve supports the same filter formats as [REW](https://www.roomeqwizard.co
 
 ### Biquad Coefficients
 
-A text file containing [biquad](https://en.wikipedia.org/wiki/Digital_biquad_filter) transfer function coefficients b0, b1, b2, a1, a2 where a0 is normalized to 1.0, and the signs of a1, a2 are flipped.  The file extension is txt.
+A text file containing [biquad](https://en.wikipedia.org/wiki/Digital_biquad_filter) transfer function coefficients b0, b1, b2, a1, a2 where a0 is normalized to 1.0, and the signs of a1, a2 are flipped.  This format depends on the selected sample rate.  The file extension is txt.
 
 [Example biquad coefficients](/filters/biquad.txt)
 
@@ -42,12 +42,13 @@ A text file containing human-readable equalizer settings (frequency, gain, Q).  
 
 [Example peq settings](/filters/peq.txt)
 
-This format is compatible with [Volumio](https://volumio.com/en/), [HifiBerry](https://www.hifiberry.com), [Equalizer APO](https://sourceforge.net/projects/equalizerapo/), etc.
+This format is meant for systems with a parametric equalizer, such as [Volumio](https://volumio.com/en/), [HifiBerry](https://www.hifiberry.com), [Equalizer APO](https://sourceforge.net/projects/equalizerapo/), etc.
 
 
 ### Impulse reponses
 
-(coming soon)
+A [WAV](https://en.wikipedia.org/wiki/WAV) formatted audio file containing the impulse response of all filters together.  Samples are 32-bit floating point.  The impulse peak is at the first sample.  The overall length is 128k samples (roughly 3 seconds at a sample rate of 44.1 KHz).
 
+This format is meant for audio systems with a convolution engine (aka "convolver") such as [Roon](https://help.roonlabs.com/portal/en/kb/articles/dsp-engine-parametric-equalizer), [moOde](https://moodeaudio.org), [CamillaDSP](https://github.com/HEnquist/camilladsp), etc.
 
 

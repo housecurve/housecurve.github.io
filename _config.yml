@@ -33,7 +33,7 @@ features:
 
 
 - title: Room Correction
-  description: Equalize your audio system in one step by generating settings for your parametric equalizer.
+  description: Equalize your audio system in one step by generating filters for your parametric equalizer or convolution engine.
   link: /docs/tuning/equalization.html#automatic-equalization
   
 - title: Subwoofer Phase
