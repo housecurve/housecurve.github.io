@@ -10,7 +10,7 @@ title: Home
 
 HouseCurve is an iOS app for tuning audio systems.  Use it for room correction, adjusting equalizers, setting subwoofer phase, choosing crossover frequencies and more.
 
-[![housecurve main](/assets/img/housecurve_main_page.png "HouseCurve screenshots")]({{ site.appstore }})
+[![housecurve main](/assets/img/housecurve_main_page.webp "HouseCurve screenshots")]({{ site.appstore }})
 
 {% include features.html %}
 
