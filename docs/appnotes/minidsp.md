@@ -86,7 +86,7 @@ Filters can be exported to a file by tapping <img src="/assets/img/export.png" a
 ![filter export](/assets/img/minidsp_filter_export.png "export filter settings to file")
 {: .app-portrait }
 
-Tap ***Export filters***, select a location for the filter file and then tap save.  Ideally, choose a location that the miniDSP plug-in software can access (ex: iCloud Drive).  Alternatively, you can choose a location on the iPhone/iPad and then transfer the file using email, AirDrop, iMessage, etc.
+Tap ***Export filters***, select a location for the filter file and then tap save.  Choose a location that the miniDSP plug-in software can access (ex: iCloud Drive).  Alternatively, you can choose a location on the iPhone/iPad and then transfer the file using email, AirDrop, iMessage, etc.
 
 
 ## 5. Load Filters
