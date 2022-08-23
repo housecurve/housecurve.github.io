@@ -1,12 +1,12 @@
 ---
 layout: default
 
-title: miniDSP Room Correction
+title: Room Correction with miniDSP
 parent: App Notes
 nav_order: 1
 ---
 
-# Room Correction with HouseCurve
+# Room Correction with miniDSP
 
 HouseCurve is an iOS application for tuning audio systems.  It can be used for tuning tasks like room correction, subwoofer time alignment, level matching and choosing crossovers.  A free trial can be found at [housecurve.com](https://housecurve.com).
 
@@ -58,10 +58,10 @@ To get a realistic measurement of the listening area, it is important to average
 
 When you are satisfied with the average measurement, save it by tapping <img src="/assets/img/save.png" alt="Save" class="app-icon">.  This measurement will be used to generate the room correction filters.
 
-Tap <img src="/assets/img/more.png" alt="More" class="app-icon"> and select Equalize.  HouseCurve will display the Equalize tool.
-
 
 ## 3. Generate Filters
+
+Tap <img src="/assets/img/more.png" alt="More" class="app-icon"> and select Equalize.  HouseCurve will display the Equalize tool.
 
 HouseCurve’s [Equalize](https://housecurve.com/docs/manual/equalize_screen.html) tool generates biquad (IIR) filter settings for parametric equalizers.  It works by correcting a saved measurement to a target curve.  The process is instantaneous, so the display automatically updates to reflect any setting change (target curve, saved measurement, filter settings, etc).
 
