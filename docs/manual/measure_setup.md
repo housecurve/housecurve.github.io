@@ -25,7 +25,7 @@ Use a logarithmic sinusoid sweep.  This is the default mode.  It requires a conn
 ### External Sine Sweep
 Play the test signal manually.  Use this mode when connection to the audio system isn't possible, or wireless methods are not working correctly.  The audio system is responsible for playing the test signal and HouseCurve will listen for it when measure is tapped.
 
-The test signal can be exported to a WAV file when this mode is selected.  The file can be saved to any file system visible to the iPhone/iPad (iCloud, Samba, etc).  Or you can save locally and share with text message, email, AirDrop, etc.  The chirp and sweep channel setting will be used to produce the test signal file.
+The test signal can be exported to a [WAV file](file_formats.md#test-signal) when this mode is selected.  The file can be saved to any file system visible to the iPhone/iPad (iCloud, Samba, etc).  Or you can save locally and share with text message, email, AirDrop, etc.  The chirp and sweep channel setting will be used to produce the test signal file.
 
 HouseCurve must stay in the foreground when taking measurements.  If you need to use your iPhone/iPad to trigger the playback of the test signal, put the player into single song repeat.  You can then switch back to HouseCurve and capture measurements as needed.
 
