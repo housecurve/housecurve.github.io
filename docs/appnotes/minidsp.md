@@ -52,7 +52,7 @@ Tap <img src="/assets/img/plot.png" alt="Plot Setup" class="app-icon"> to displa
 
 Use HouseCurve to measure your listening area.  Ensure that the microphone is pointed in the direction of the speakers.  Measure at a normal listening volume.
 
-HouseCurve will automatically average measurements as they are collected.  To get a realistic measurement of your [listening area](https://housecurve.com/docs/usage/listening_area.md), it is important to average measurements from several locations.  For a desk (near field), try measuring from 2-3 locations. For a living room, try 3-5 locations.
+HouseCurve will automatically average measurements as they are collected.  To get a realistic measurement of your [listening area](https://housecurve.com/docs/usage/listening_area.html), it is important to average measurements from several locations.  For a desk (near field), try measuring from 2-3 locations. For a living room, try 3-5 locations.
 
 ![averaged measurements](/assets/img/minidsp_average_cursor.png "average measurements to capture listening area")
 
