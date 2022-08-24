@@ -8,7 +8,7 @@ nav_order: 1
 
 # Room Correction with miniDSP
 
-HouseCurve is an iOS application for tuning audio systems.  It can be used for tuning tasks like room correction, subwoofer time alignment, level matching and choosing crossovers.  A free trial can be found at [housecurve.com](https://housecurve.com).
+HouseCurve is an iOS application for tuning audio systems.  It can be used for tuning tasks like creating room correction filters, subwoofer time alignment, level matching and choosing crossovers.  A free trial can be found at [housecurve.com](https://housecurve.com).
 
 In this application note, we will demonstrate room correction using HouseCurve and a miniDSP processor.
 
@@ -52,7 +52,7 @@ Tap <img src="/assets/img/plot.png" alt="Plot Setup" class="app-icon"> to displa
 
 Use HouseCurve to measure your listening area.  Ensure that the microphone is pointed in the direction of the speakers.  Measure at a normal listening volume.
 
-To get a realistic measurement of the listening area, it is important to average measurements from several locations.  Averaging provides HouseCurve with a better picture of how sound changes over the listening area.  For a desk (near field), try measuring from 2-3 locations. For a living room, try 3-5 locations.
+HouseCurve will automatically average measurements as they are collected.  To get a realistic measurement of your [listening area](https://housecurve.com/docs/usage/listening_area.md), it is important to average measurements from several locations.  For a desk (near field), try measuring from 2-3 locations. For a living room, try 3-5 locations.
 
 ![averaged measurements](/assets/img/minidsp_average_cursor.png "average measurements to capture listening area")
 
@@ -61,13 +61,13 @@ When you are satisfied with the average measurement, save it by tapping <img src
 
 ## 3. Generate Filters
 
-Tap <img src="/assets/img/more.png" alt="More" class="app-icon"> and select Equalize.  HouseCurve will display the Equalize tool.
+Tap <img src="/assets/img/more.png" alt="More" class="app-icon"> and select Equalize.  HouseCurve will display the [Equalize](https://housecurve.com/docs/manual/equalize_screen.html) tool.
 
-HouseCurve’s [Equalize](https://housecurve.com/docs/manual/equalize_screen.html) tool generates biquad (IIR) filter settings for parametric equalizers.  It works by correcting a saved measurement to a target curve.  The process is instantaneous, so the display automatically updates to reflect any setting change (target curve, saved measurement, filter settings, etc).
+The Equalize tool generates biquad (IIR) filters to correct a saved measurement to a target curve.  The process is instantaneous, so the display automatically updates to reflect any setting change (target curve, saved measurement, filter settings, etc).
 
 ![equalize screen](/assets/img/minidsp_equalized.png "equalize tool creates filers to match saved measurement to target curve")
 
-HouseCurve allocates filters to regions with the largest deviation from the target curve, preferring lower frequencies and ignoring areas with poor SNR (low coherence).  You can adjust the target curve and coherence blanking threshold by tapping <img src="/assets/img/plot.png" alt="Plot Setup" class="app-icon">.
+HouseCurve allocates filters to regions with the largest deviation from the target curve, preferring lower frequencies and ignoring areas with low coherence (SNR).  You can adjust the target curve and coherence blanking threshold by tapping <img src="/assets/img/plot.png" alt="Plot Setup" class="app-icon">.
 
 Tap <img src="/assets/img/setup.png" alt="Equalize Setup" class="app-icon"> to display the Equalize Setup screen.  Check that maximum filters is set to the number supported by your miniDSP processor.
 
