@@ -47,7 +47,7 @@ features:
 
 - title: Connectivity
   description: Connect to your audio system with AirPlay, Bluetooth, headphone jack (analog) or just play the sweep file manually.
-  link: /docs/usage/connection.html
+  link: /docs/usage/connecting.html
 
 - title: Microphones
   description: Achieve great results with just your iPhone or iPad.  Use external calibrated microphones for additional accuracy.

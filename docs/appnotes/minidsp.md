@@ -32,7 +32,7 @@ The procedures below may not exactly apply to your system.  The miniDSP processo
 
 HouseCurve measures your audio system by listening to it play a sine sweep.  Connect your iPhone or iPad to your audio system using AirPlay, Bluetooth or the headphone jack (using an appropriate [cable](https://www.apple.com/shop/product/MMX62AM/A/lightning-to-35mm-headphone-jack-adapter)).
 
-If direct connection isn’t possible, the sine sweep file can be transferred to the audio system and played manually while HouseCurve listens.  For more information see [connection](https://housecurve.com/docs/usage/connection.html).
+If direct connection isn’t possible, the sine sweep file can be transferred to the audio system and played manually while HouseCurve listens.  For more information see [connecting](https://housecurve.com/docs/usage/connecting.html).
 
 
 ## 2. Collect Measurements

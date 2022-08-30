@@ -19,7 +19,7 @@ https://housecurve.com/docs/usage/listening_area.html
 https://housecurve.com/docs/usage/plot_types.html
 https://housecurve.com/docs/usage/measurement_quality.html
 https://housecurve.com/docs/usage/measurement_process.html
-https://housecurve.com/docs/usage/connection.html
+https://housecurve.com/docs/usage/connecting.html
 https://housecurve.com/docs/usage/microphones.html
 https://housecurve.com/docs/usage/subwoofer.html
 https://housecurve.com/docs/tuning/target_curve.html
