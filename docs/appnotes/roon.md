@@ -74,7 +74,7 @@ When you are satisfied with the average measurement, save it by tapping <img src
 
 ## 3. Generate Filters
 
-Tap <img src="/assets/img/more.png" alt="More" class="app-icon"> and select Equalize.  HouseCurve will display the [Equalize](https://housecurve.com/docs/manual/equalize_screen.html) tool.
+Tap <img src="/assets/img/more.png" alt="More" class="app-icon"> and select Equalize.  HouseCurve will display the [Equalize](../manual/equalize_screen.md) tool.
 
 The Equalize tool generates biquad (IIR) filters to correct a saved measurement to a target curve.  The impulse response of the filters can be exported and used as a convolution filter (FIR filter).  This is what we will use for Roon.
 
