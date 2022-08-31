@@ -16,7 +16,7 @@ The Filter Export screen can be accessed by tapping <img src="/assets/img/export
 See [filter file formats](file_formats.md#filters).
 
 ## Sample Rate
-The sample rate of the equalizer (not the audio source).
+The sample rate for the exported settings (ie: equalizer, not the audio source).  This setting is hidden for file formats that don't need a sample rate, ex: parametric EQ settings.
 
 ## Export
 Tap to initiate the file export.

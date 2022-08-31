@@ -13,9 +13,10 @@ The Equalize Setup screen can be accessed by tapping <img src="/assets/img/setup
 {: .app-portrait-right }
 
 ## Maximum filters
-The number of filters to use for correction.
+The maximum number of filters to use for correction.  HouseCurve will allocate filters until the remaining corrections are outside of the frequency and gain settings.
 
-Set this to the number of filters your parametric equalizer supports.  HouseCurve may not use all the filters.  HouseCurve currently only supports peaking filters (no shelving filters, etc.  If you would find this useful, please [reach out](mailto:support@housecurve.com)).
+For a parametric equalizer, set this to the number of filters your system supports.  For a convolution engine (ie: using the impulse response), the number of filters just controls the fidelity of the correction.  More filters may not make an audible difference.
+
 
 ## Frequency
 The frequency range to equalize.  
