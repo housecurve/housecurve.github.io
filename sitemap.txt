@@ -5,8 +5,9 @@ https://housecurve.com/USAGE.html
 https://housecurve.com/MANUAL.html
 https://housecurve.com/HELP.html
 https://housecurve.com/LEGAL.html
-https://housecurve.com/docs/appnotes/roon.html
 https://housecurve.com/docs/appnotes/minidsp.html
+https://housecurve.com/docs/appnotes/roon.html
+https://housecurve.com/docs/appnotes/volumio.html
 https://housecurve.com/docs/manual/equalize_setup.html
 https://housecurve.com/docs/manual/measure_setup.html
 https://housecurve.com/docs/manual/filter_export.html
