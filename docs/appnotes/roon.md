@@ -113,7 +113,7 @@ Ensure that Headroom management is enabled.  It is normal for convolutions to re
 
 ## Wrapping Up
 
-With the filters loaded, you can repeat your original measurements to confirm that your system now matches the target curve.  The average should be reasonably close to the response predicted by HouseCurve.  Happy listening!
+With the filters loaded, you can repeat the original measurements to confirm that your system now matches the target curve.  The average should be reasonably close to the response predicted by HouseCurve.  Happy listening!
 
 
 
