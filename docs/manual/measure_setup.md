@@ -23,13 +23,11 @@ Stimulus Type controls the "sweep" portion of the test signal (chirp + sweep) us
 Use a logarithmic sinusoid sweep.  This is the default mode.  It requires a connection to the audio system in order to play the test signal.
 
 ### External Sine Sweep
-Play the test signal manually.  Use this mode when connection to the audio system isn't possible, or wireless methods are not working correctly.  The audio system is responsible for playing the test signal and HouseCurve will listen for it when measure is tapped.
+Play the test signal manually.  Use this when connection to the audio system isn't possible, or wireless methods are not working correctly.  The audio system is responsible for playing the test signal and HouseCurve will listen for it when measure is tapped.
 
-The test signal can be exported to a [WAV file](file_formats.md#test-signal) when this mode is selected.  The file can be saved to any file system visible to the iPhone/iPad (iCloud, Samba, etc).  Or you can save locally and share with text message, email, AirDrop, etc.  The chirp and sweep channel setting will be used to produce the test signal file.
+When this mode is selected, the test signal can be exported to a [WAV file](file_formats.md#test-signal).
 
-HouseCurve must stay in the foreground when taking measurements.  If you need to use your iPhone/iPad to trigger the playback of the test signal, put the player into single song repeat.  You can then switch back to HouseCurve and capture measurements as needed.
-
-The AirPlay button is disabled in this mode.
+For more information, see [connecting](../usage/connecting.md#externally-played-sweeps).
 
 ### Pink Noise
 Pink noise stimulus is provided for interest sake.  Measurements based on pink noise will have a signal to noise ratio that is lower than sine sweeps.  The measurement process is identical to sine sweep (this is not a real time analyzer (RTA) mode).

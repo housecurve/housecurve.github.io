@@ -54,7 +54,7 @@ This format is meant for audio systems with a convolution engine (aka "convolver
 
 ## Test signal
 
-A stereo [WAV](https://en.wikipedia.org/wiki/WAV) formatted audio file containing the "chirp" and "sweep" sounds.  Samples are 32-bit floating point.  The sample rate is 44.1 KHz.  See [external sine sweep](measure_setup.md#external-sine-sweep) for more information.
+A stereo [WAV](https://en.wikipedia.org/wiki/WAV) formatted audio file containing the "chirp" and "sweep" sounds.  Samples are 32-bit floating point.  The sample rate is 44.1 KHz.  See [externally played sweeps](../usage/connecting.md#externally-played-sweeps) for more information.
 
 
 

@@ -30,7 +30,7 @@ HouseCurve achieves reasonable measurement accuracy with the built in iPhone or 
 
 HouseCurve measures your audio system by listening to it play a sine sweep test signal.
 
-For this app note, we will perform measurements using [external sine sweeps](../manual/measure_setup.md#external-sine-sweep).  This method doesn't require a direct connection to the audio system.  Instead, we transfer the test signal as a wav file to the audio system and play it manually.  HouseCurve will measure by listening to the test signal as it is played.
+For this app note, we will perform measurements using [externally played sweeps](../usage/connecting.md#externally-played-sweeps).  This method doesn't require a direct connection to the audio system.  Instead, we transfer the test signal as a wav file to the audio system and play it manually.  HouseCurve will measure by listening to the test signal as it is played.
 
 This method will work with any audio system, but it requires more steps.  If you like, you can skip this and connect HouseCurve to the audio system using Bluetooth or AirPlay.  As long as the signal passes through the Roon Core, you will get the same result.
 
