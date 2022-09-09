@@ -26,7 +26,7 @@ If you encounter problems with wireless connections, try a wired connection or e
 
 ## Wired
 
-The iPhone/iPad headphone connector can be used to create a wired connection to the audio system.  Use a [Lightning to 3.5mm adapter](https://www.apple.com/shop/product/MMX62AM/A/lightning-to-35mm-headphone-jack-adapter).  HouseCurve will use the connection as soon as the cable is plugged in.
+HouseCurve automatically detects and uses USB audio and analog (ex: [Lightning to 3.5mm adapter](https://www.apple.com/shop/product/MMX62AM/A/lightning-to-35mm-headphone-jack-adapter)) connections.  Wired connections override wireless ones.
 
 
 ## Externally played sweeps
@@ -39,7 +39,7 @@ The file can be saved to any network drive visible to the iPhone/iPad (iCloud, S
 
 HouseCurve must stay in the foreground when taking measurements.  If you need to use your iPhone/iPad to trigger the playback of the test signal, put the player into single song repeat.  You can then switch back to HouseCurve and capture measurements as needed.
 
-Note - the AirPlay button is disabled in this mode.
+Note - External stimulus mode overrides any wireless or wired connection.  The AirPlay button will be disabled.
 
 
 
