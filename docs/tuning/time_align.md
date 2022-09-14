@@ -9,7 +9,12 @@ nav_order: 4
 
 # Time align speakers
 
-When an audio system contains limited range speakers (subwoofers, bi-amped speakers, etc) time alignment becomes an important adjustment.
+When an audio system contains limited range speakers (subwoofers, bi-amped speakers, etc) time alignment becomes an important adjustment.  HouseCurve supports two methods:
+
+- [**Magnitude method**](#time-align-using-magnitude).  This is the simpler of the two methods, but it can be less accurate.
+
+- [**Phase method**](#time-align-using-phase).  This method is more accurate, but it requires more steps to measure correctly.
+
 
 ## What is time alignment?
 
@@ -26,24 +31,20 @@ The adjustments available for time alignment depend on the audio system:
 * Active crossovers and parametric equalizers usually have delay settings too (a [MiniDSP 2x4 HD](https://www.minidsp.com/products/minidsp-in-a-box/minidsp-2x4-hd) was used for many of the measurements in this document).
 * Subwoofers may have a polarity switch (often labelled “phase”) or a dial that permits adjusting phase from 0 to 180 degrees.
 
-Most audio systems will have a combination of these adjustments and **experimentation will be required** to figure out what works best.
-
-HouseCurve supports two methods of time aligning speakers.
-
-- [**Magnitude method**](#time-align-using-magnitude).  This is the simpler of the two methods, but it can be less accurate.
-
-- [**Phase method**](#time-align-using-phase).  This method is more accurate, but it requires more steps to measure correctly.
+Most audio systems will have a combination of these adjustments and experimentation will be required to figure out what works best.
 
 
 ## Time align using magnitude
 
-Destructive interference will cause a dip in the magnitude measurement at the crossover frequency.  We can use this effect to figure out what adjustments increase or decrease the dip (polarity, phase, delay, distance, whatever you have).  The speakers are time aligned for the adjustment with the smallest dip.
+Destructive interference will cause a dip in the magnitude measurement at the crossover frequency.  We can use this effect to figure out what adjustments increase or decrease the dip (polarity, phase, delay, distance, whatever you have).  The smaller the dip, the better the time alignment.
 
-When using this method it’s important to avoid changing audio system levels (volume, bass/treble, equalizer, etc).
+When using this method it s important to avoid changing audio system levels (volume, bass/treble, equalizer, etc).
 
-Ensure speakers on either side of the crossover are enabled.  Set HouseCurve’s Plot Mode to [History](../manual/plot_setup.md#plot-mode).  Zoom into the region around the crossover frequency.  It is also best to set the [Target Curve Fit](../manual/plot_setup.md#target-curve-fit) to manual and select an appropriate level as this will prevent the target curve from moving as adjustments are made.
+Set HouseCurve’s Plot Mode to [History](../manual/plot_setup.md#plot-mode).  Zoom into the region around the crossover frequency.
 
-Take a measurement from the middle of the listening area.  On the magnitude plot, place the cursor at the crossover frequency and observe the magnitude value.  Adjust the audio system.  Repeat the measurement and observe the new magnitude value.  Continue to make adjustments until the maximum magnitude level is achieved and the dip is the smallest.  The plot below shows a system being adjusted from the worst alignment (largest dip) to the best (smallest dip).
+Set the [Target Curve Fit](../manual/plot_setup.md#target-curve-fit) to manual and select an appropriate level.  This will stop the target curve from shifting slightly between measurements, providing a better reference.
+
+Ensure speakers on either side of the crossover are enabled.  Take a measurement from the middle of the listening area.  On the magnitude plot, place the cursor at the crossover frequency and observe the magnitude value.  Adjust the audio system.  Repeat the measurement and observe the new magnitude value.  Continue to make adjustments until the maximum magnitude level is achieved and the dip is the smallest.  The plot below shows a system being adjusted from the worst alignment (largest dip) to the best (smallest dip).
 
 ![subwoofer align magnitude](/assets/img/subwoofer_align_magnitude.png "Adjust until the smallest dip is found")
 
@@ -53,17 +54,29 @@ The downfall of this approach is that maximum magnitude can be achieved at multi
 
 ## Time align using phase
 
-When two speakers are time aligned, they will have the same phase at the crossover frequency and their phase plots will have the same slope in the crossover region.
+When two speakers are time aligned, their [phase plots](../usage/plot_types.md#phase-plot) will show the same value at the crossover frequency and the phase slopes will be roughly simlilar in the crossover region.
 
-Time alignment using phase requires **separate measurement** of the speakers on either side of the crossover.  To do this with HouseCurve, measurements of the first speaker are compared to the second using a [saved measurement](../manual/plot_setup.md#saved-measurement).  The second speaker is adjusted until a good time alignment is found on the phase plot.
+Time alignment using phase requires separate measurement of the speakers on either side of the crossover.  To do this with HouseCurve, measurements of the first speaker are [saved](../manual/plot_setup.md#saved-measurement) so that they can be compared to measurements of the second speaker.  As adjustments are made, measurements of the second speaker are repeated.
 
-Phase measurements are very sensitive to changes in the distance between speaker and microphone.  For best results, take measurements from the middle of the listening area, keeping the microphone in the same location for each measurement.  For lower frequency crossovers (~100 Hz), it is possible to average phase measurements in the listening area, but this will quickly break down for large areas.  Keep in mind that sound takes about 3 ms to travel 1 meter.
+Phase measurements are very sensitive to changes in the distance between speaker and microphone.  For best results, take measurements from the middle of the listening area, keeping the microphone in the same location for each measurement.
 
-Phase measurements must share the same time reference to be compared.  To achieve this with HouseCurve, the chirp sound must come from the same speaker (for more information, see [measurement process](../usage/measurement_process.md)).
+In addition, phase measurements must share the same time reference to be compared.  To achieve this with HouseCurve, the chirp sound must come from one speaker for all measurements (see [measurement process](../usage/measurement_process.md)).
 
-For a typical 2.1 audio system, use **either** the left or right main speaker as the “chirp” speaker.  Use the same chirp speaker for both subwoofer and main speaker measurements.  Measure the main speakers first, allowing the sweep to play from both left and right speakers to get an average phase.  Save this measurement.  [Measure the subwoofer](../usage/subwoofer.md) second and compare to the saved main measurement.  Adjust the audio system as needed to obtain alignment (adjust main speakers or subwoofer).
+### Example
 
-The phase plot below shows a 2.1 audio system with good time alignment.  The subwoofer measurement (green) is compared to a saved measurement of the main speakers (grey).  The crossover frequency is 100 Hz.  The main speakers and subwoofer have nearly the same phase at the crossover frequency, and the phase slopes are roughly the same.
+To demonstrate the phase method, we'll align a subwoofer with the main speakers of a typical 2.1 audio system.
+
+The first step is to choose a "chirp" speaker for the timing reference.  Go to [measure setup](../manual/measure_setup.md#chirp-and-sweep-channel) and set the ***Chirp Channel*** to either left or right.  This will cause the chirp sound to come from only one of the main speakers.  Set the ***Sweep Channel*** to all.  This will cause the sweep sound to come from both main speakers, providing an average phase measurement at the chosen microphone location.
+
+Disable the subwoofer and perform a measurement of the main speakers.  Save the measurement when you are satisfied.
+
+Next, to measure the subwoofer we'll use a technique described here [subwoofer measurement](../usage/subwoofer.md).  Change the ***Sweep Channel*** to the opposite of the chirp.  This will prevent the chirp speaker from playing the sweep sound.  Disable the non-chirp main speaker and enable the subwoofer.  This will cause the sweep to play only from the subwoofer.
+
+Set HouseCurve’s Plot Mode to [History](../manual/plot_setup.md#plot-mode).  Switch to the phase plot and zoom into the region around the crossover frequency.  Place the cursor at the crossover frequency.
+
+Measure the subwoofer.  Measurements will appear on top of the saved main speaker measurement.  Make small adjustments to the audio system and repeat the subwoofer measurement until good alignment is found.  With the plot in history mode, you'll be able to see how the phase gradually changes.
+
+The phase plot below shows a 2.1 audio system with good time alignment.  The subwoofer measurement (green) is compared to a saved measurement of the main speakers (grey).  The main speakers and subwoofer have nearly the same phase at the crossover frequency (100 Hz) and the phase slopes are roughly the same.
 
 ![subwoofer align phase](/assets/img/subwoofer_align_phase.png "Phase plot showing subwoofer aligned with main speakers")
 
@@ -71,16 +84,11 @@ The plot below shows the same audio system in various states of alignment.  As d
 
 ![subwoofer phase change](/assets/img/subwoofer_align_phase_change.png "Phase plot showing different delay adjustments")
 
-Counterintuitively, the subwoofer phase measurements above (green) were generated by delaying the main speakers (grey).  This works because delaying the main speakers also delays the chirp sound which is the reference for the subwoofer phase.  Subwoofers tend to have more delay to begin with, so delaying the main speakers to match is often the correct adjustment.
+Counterintuitively, the subwoofer phase measurements above (green) were generated by delaying the main speakers (grey).  This works because delaying the main speakers also delays the chirp, which is the timing reference.  Subwoofers tend to have more delay to begin with, so delaying the main speakers to match is often the correct adjustment.
 
 Finally, in the plot below, the audio system is aligned, but on the wrong cycle (too much delay).  While the main speakers and subwoofer have the nearly same phase at the crossover frequency, the phase slopes are different.  This is sometimes described as “phase aligned but not time aligned”.  In this situation, try adding or subtracting a delay of one crossover wavelength (ex: 10 ms at 100 Hz).  With a subwoofer, you can also try inverting the polarity (aka "phase" switch).  This effectively changes the subwoofer's delay by 1/2 a wavelength, thus it is also necessary to add or subtract a delay of half a crossover wavelength (ex: 5 ms at 100 Hz).
 
 ![subwoofer phase not time](/assets/img/subwoofer_align_phase_not_time.png "Phase aligned but not time aligned")
 
-As with the [magnitude method](#time-align-using-magnitude), the group delay plot can be consulted to double check the alignment.  This requires taking a new measurement with both speakers active.
-
-In the example plots above, the crossovers were disabled to ensure the measurements had enough signal on either side of the crossover to see the phase slope.  Use caution when measuring with crossovers disabled as this could lead to audio system damage.  An alternative approach is to disable [Coherence Blanking](../manual/plot_setup.md#coherence-blanking).
-
-The degree of success one will have with this method depends a lot on the audio system and the room.  Sometimes it is better to start with the magnitude method and fine tune using the phase method.
-
+The degree of success one will have with the phase method depends a lot on the audio system and the room.  It is recommended that you try the [magnitude method](#time-align-using-magnitude) first and then fine tune with the phase method.
 
