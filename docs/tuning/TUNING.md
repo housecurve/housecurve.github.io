@@ -22,7 +22,7 @@ The process for tuning an audio system will generally involve the tasks describe
 
 1. [**Choose a target curve**](target_curve.md).  The target curve defines how the audio system will sound.  The choice of curve is subject to personal taste.
 
-1. [**Apply equalization**](equalization.md).  Equalization means adjusting the volume level at different frequencies to match the target curve.
+1. [**Apply equalization**](equalization.md).  Equalization / Room Correction means adjusting the volume level at different frequencies to match the target curve.
 
 
 
