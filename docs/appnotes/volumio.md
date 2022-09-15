@@ -26,6 +26,8 @@ You will need a way to transfer files from your iPhone/iPad to Volumio.  Use wha
 
 Samba on Linux doesn't always work with iOS devices.  To ensure compatibility, install the [Fruit](https://www.samba.org/samba/docs/current/man-html/vfs_fruit.8.html) Samba VFS module.  Without this, file transfers may fail with "attribute not found" errors.  For instructions [see](https://apple.stackexchange.com/questions/424681/the-operation-couldnt-be-completed-operation-canceled-error-message-when-sa).
 
+For best results, ensure the audio system is [set up correctly](../tuning/TUNING.md) before applying room correction.
+
 
 ## 1. Install FusionDSP Plugin
 

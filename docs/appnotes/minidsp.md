@@ -27,6 +27,8 @@ For additional accuracy, a calibrated measurement microphone can be used, such a
 
 The procedures below may not exactly apply to your system.  The miniDSP processors are very flexible and can be set up in many different ways.  Fortunately, HouseCurve was designed for rapid experimentation.  We suggest trying the steps below as written and then adjust as needed to suit your own particular situation.
 
+For best results, ensure the audio system is [set up correctly](../tuning/TUNING.md) before applying room correction.
+
 
 ## 1. Get Connected
 
