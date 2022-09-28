@@ -21,9 +21,12 @@ This app note will demonstrate room correction using HouseCurve and the [convolu
 * A MacOS or Windows computer with the Roon control software installed.
 * An iPhone or iPad with HouseCurve installed.
 
-At the time of creating this app note, Roon did not support loading convolution filters from a mobile device.  That is why this app note relies on a computer to transfer data.
+Roon's mobile app doesn't currently support loading convolution filters, thus a computer is needed to perform the load.  You can let Roon know you would like this capability by voting [here](https://community.roonlabs.com/t/loading-convolution-filters-from-a-mobile-device).
+
 
 HouseCurve achieves reasonable measurement accuracy with the built in iPhone or iPad microphones.  For more information see [microphones](../usage/microphones.md).
+
+For best results, ensure the audio system is [set up correctly](../tuning/TUNING.md) before applying room correction.
 
 
 ## 1. Get Connected
