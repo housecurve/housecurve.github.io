@@ -14,6 +14,9 @@ HouseCurve is an iOS application for tuning audio systems.  It turns your iPhone
 
 This app note will demonstrate room correction using HouseCurve and Volumio's FusionDSP plugin.
 
+For an introduction to room correction, please read the [overview](../tuning/equalization.md#what-is-equalization--room-correction).  To learn more about taking measurements with HouseCurve please see the usage [documentation](../usage/USAGE.md).
+
+
 ## What you need
 
 * An audio system running Volumio 3 with the FusionDSP plugin.
