@@ -42,7 +42,8 @@ Using the Volumio control, install the plugin by going to Volumio settings -> pl
 
 ## 2. Get Connected
 
-HouseCurve measures your audio system by listening to it play a sine sweep test signal.
+HouseCurve measures your audio system by listening to it play a sine sweep test signal.  There are several way
+s to do this as described in [connecting](../usage/connecting.md).
 
 For this app note, we will perform measurements using [externally played sweeps](../usage/connecting.md#externally-played-sweeps).  This method doesn't require a direct connection to the audio system.  Instead, we transfer the test signal as a wav file to the audio system and play it manually.  HouseCurve will measure by listening to the test signal as it is played.
 
