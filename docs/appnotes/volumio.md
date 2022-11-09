@@ -103,11 +103,11 @@ When you are satisfied with the average measurement, save it by tapping <img src
 
 Tap <img src="/assets/img/more.png" alt="More" class="app-icon"> and select Equalize.  HouseCurve will display the [Equalize](../manual/equalize_screen.md) tool.
 
-The Equalize tool generates biquad (IIR) filters to correct a saved measurement to a target curve.  These filters can be exported as parametric equalizer settings, which is what we will use in this app note (FusionDSP also supports the impulse response (FIR filer) exported by HouseCurve).
+The Equalize tool generates biquad (IIR) filters to correct a saved measurement to a target curve.  These filters can be exported as parametric equalizer settings, which is what we will use in this app note (FusionDSP also supports the impulse response (FIR filter) exported by HouseCurve).
 
 The generation process is instantaneous, so the display automatically updates to reflect any setting change (target curve, saved measurement, filter settings, etc).
 
-![equalize screen](/assets/img/volumio_equalized.png "equalize tool creates filers to match saved measurement to target curve")
+![equalize screen](/assets/img/volumio_equalized.png "equalize tool creates filters to match saved measurement to target curve")
 
 HouseCurve allocates filters to regions with the largest deviation from the target curve, preferring lower frequencies and ignoring areas with low coherence (SNR).  You can adjust the target curve and coherence blanking threshold by tapping <img src="/assets/img/plot.png" alt="Plot Setup" class="app-icon">.
 
