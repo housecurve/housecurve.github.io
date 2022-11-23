@@ -1,4 +1,4 @@
-Insipred by Dr. Floyd Toole, https://www.aes.org/tmpFiles/elib/20211012/17839.pdf
+A Harman curve, insipred by Dr. Floyd Toole, https://www.aes.org/e-lib/browse.cfm?elib=17839
 Hz		Offset
 20.0		2.0
-20000.0	-8.0
+20000.0		-8.0
