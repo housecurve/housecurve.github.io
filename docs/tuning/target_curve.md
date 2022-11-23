@@ -19,12 +19,12 @@ The choice of Target Curve is subject to individual taste.  Typically, listeners
 
 Custom curves can be created with a text editor and [imported](../manual/plot_setup.md#target-curve) into HouseCurve.  See [curve file format](../manual/file_formats.md#curves) for more information.  The curves provided by HouseCurve are a great starting point for making your own:
 
-* [House A](/curves/House%20A.txt)
-* [House B](/curves/House%20B.txt)
-* [House C](/curves/House%20C.txt)
-* [Car A](/curves/Car%20A.txt)
-* [Car B](/curves/Car%20B.txt)
-* [Car C](/curves/Car%20C.txt)
+* [House A](/curves/House_A_web.txt)
+* [House B](/curves/House_B_web.txt)
+* [House C](/curves/House_C_web.txt)
+* [Car A](/curves/Car_A_web.txt)
+* [Car B](/curves/Car_B_web.txt)
+* [Car C](/curves/Car_C_web.txt)
 
 In the audiophile world, a “flat” response is often seen as the ultimate goal.  However, for everyday listening, a flat response tends to sound overly “bright” and unpleasant.  Try it for yourself: [Flat Target Curve](/curves/flat.txt).
 
