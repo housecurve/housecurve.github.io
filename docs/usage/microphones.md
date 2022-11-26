@@ -12,7 +12,7 @@ HouseCurve will default to using the built in microphone of your iPhone/iPad.  T
 
 ## External Microphones
 
-For additional accuracy, HouseCurve can use external microphones.  Your iPhone/iPad will automatically detect when one is plugged in and tell HouseCurve to use it.  The [setup status](http://pear.local:4000/docs/manual/plots.html#setup-status) will indicate "external microphone".  If the microphone is not detected, check cables and verify the microphone is working by recording audio with the Voice Memo application.
+For additional accuracy, HouseCurve can use external microphones.  Your iPhone/iPad will automatically detect when one is plugged in and tell HouseCurve to use it.  The [setup status](../manual/plots.html#setup-status) will indicate "external microphone".  If the microphone is not detected, check cables and verify the microphone is working by recording audio with the Voice Memo application.
 
 HouseCurve has been tested with the following external microphones:
 
