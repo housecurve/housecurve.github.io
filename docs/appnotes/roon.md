@@ -10,7 +10,7 @@ nav_order: 2
 
 Roon is music playback software that is compatible with a large number of audio systems.  An interesting feature of Roon is its [architecture](https://roonlabs.com/howroonworks).  The brains of a Roon system is the "Roon Core", which sends audio to playback devices.  The Roon Core has a [DSP Engine](https://help.roonlabs.com/portal/en/kb/articles/dsp-engine) which makes room correction possible on any playback device.
 
-HouseCurve is an iOS application for tuning audio systems.  It turns your iPhone/iPad into a capable audio analyzer using the built in microphone.  It can be used for tuning tasks like creating room correction filters, subwoofer time alignment, level matching and choosing crossovers.  A free trial can be found at [housecurve.com](https://housecurve.com).
+HouseCurve is an iOS application for tuning audio systems.  It turns your iPhone/iPad into a capable audio analyzer using the built in microphone.  It can be used for tuning tasks like creating room correction filters, subwoofer time alignment, level matching and choosing crossovers.  A free trial can be found [here](../APPCLIP.md).
 
 This app note will demonstrate room correction using HouseCurve and the [convolution](https://help.roonlabs.com/portal/en/kb/articles/dsp-engine-convolution) feature of Roon's DSP Engine.
 
