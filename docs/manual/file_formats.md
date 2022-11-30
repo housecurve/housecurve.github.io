@@ -47,7 +47,7 @@ This format is meant for systems with a parametric equalizer, such as [Volumio](
 
 ### Impulse reponses
 
-A monural [WAV](https://en.wikipedia.org/wiki/WAV) formatted audio file containing the impulse response of all filters together.  Samples are 32-bit floating point.  The impulse peak is at the first sample, normalized to 1.0.  The overall length is 128k samples (roughly 3 seconds at a sample rate of 44.1 KHz).
+A monural [WAV](https://en.wikipedia.org/wiki/WAV) formatted audio file containing the impulse response of all filters together.  Samples are 32-bit floating point.  The impulse peak is at the first sample, normalized to 1.0.  The overall length is 128k samples (roughly 3 seconds at a sample rate of 44.1 KHz).  Note - because the impulse is normalized, you will need a way to adjust the overall system gain to avoid distortion.
 
 This format is meant for audio systems with a convolution engine (aka "convolver") such as [Roon](https://help.roonlabs.com/portal/en/kb/articles/dsp-engine-parametric-equalizer), [moOde](https://moodeaudio.org), [CamillaDSP](https://github.com/HEnquist/camilladsp), [Volumio](https://volumio.com/en/), etc.
 

@@ -26,6 +26,17 @@ When sound leaves an audio system, it interacts with the room, but this interact
 When applying equalization, it is best to start at the low frequencies and work your way up.  At low frequencies, room resonances will create large peaks and dips in the magnitude.  These will be quite audible, so focus on smoothing them out to the target curve.  Moving toward higher frequencies, peaks and dips become much less audible and should not be adjusted.  Instead, shift your focus to adjusting wide regions of the magnitude response towards the target curve (an octave or more).  At the very upper end (10 KHz), it may not be worth making any adjustments at all (A great video on the topic is [here](https://www.youtube.com/watch?v=TwGd0aMn1wE)).
 
 
+## Gain management
+
+Equalization adjusts the audio system gain at different frequencies through "boosts" and "cuts".  In order to avoid pushing your audio system too hard and causing distortion, please follow these recommendations:
+
+1. **Equalize the average of several measurements in the listening area** - A single measurement will have narrow deep dips caused by standing waves known as [room modes](https://en.wikipedia.org/wiki/Room_modes).  The dip is measured when the microphone is in a location where a standing wave has an antinode.  Boosting the dip has no effect at this location, but it will elsewhere in the room, leading to boomy sound and possibly distortion.  Since the dips are location dependent, averaging helps to hide them, providing a better overall measurement of the listening area.
+
+1. **Lower the target curve** - To avoid increasing the overall gain, you can manually lower the target curve (see: [target curve fit](../manual/plot_setup.md#target-curve-fit)).  This will cause more of the measurement to appear above the target curve, effectively increasing the number and size of cuts needed to correct.  The results is lower overall system gain.
+
+1. **Avoid correcting beyond the capabilites of the system** - A small bookshelf speaker may have a low frequency limit of 50 Hz (-6 dB).  Applying a +10 dB boost at 30 Hz to get more bass is going to drive the speaker beyond its capabilities and lead to distortion (and possibly damage).  When [Coherence Blanking](../manual/plot_setup.md#coherence-blanking) is enabled, the low frequency capability of the speaker is more obvious.  If the speaker can't produce 30 Hz, this portion of the measurement will not be displayed.
+
+
 ## Automatic Equalization
 
 HouseCurve's [Equalize](../manual/equalize_screen.md) tool generates filters to correct a [saved measurement](../manual/plot_setup.md#saved-measurement) to a [target curve](../manual/plot_setup.md#target-curve).  It can be accessed from the more menu <img src="/assets/img/more.png" alt="More" class="app-icon">.
@@ -86,7 +97,6 @@ Adjust the audio system in small steps, collecting the same measurements after e
 
 When most of the average magnitude measurement is within the target band, the audio system is sufficiently equalized.  Further adjustments may not be perceptible.
 
-Avoid adjustments that are beyond the capability of the audio system.  Doing so will lead to distortion and possibly audio system damage.  Keep in mind that a +10 dB adjustment means the audio system has to output 10 times more signal power.  A change of +20 dB is 100 times more signal power!
 
 
 
