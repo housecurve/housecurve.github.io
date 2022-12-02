@@ -16,6 +16,8 @@ This app note will demonstrate room correction using HouseCurve and the [convolu
 
 For an introduction to room correction, please read the [overview](../tuning/equalization.md#what-is-equalization--room-correction).  To learn more about taking measurements with HouseCurve please see the usage [documentation](../usage/USAGE.md).
 
+There is also a [Roon Community topic](https://community.roonlabs.com/t/room-correction-using-your-iphone-and-housecurve) when you can join in and discuss this app note.
+
 
 ## What you need
 
@@ -118,8 +120,6 @@ Ensure that Headroom management is enabled.  It is normal for convolutions to re
 ## Wrapping Up
 
 With the filters loaded, you can repeat the original measurements to confirm that your system now matches the target curve.  The average should be reasonably close to the response predicted by HouseCurve.  Happy listening!
-
-If you have a question about this app note, or want to share your experience, please check out this Roon Community [topic](https://community.roonlabs.com/t/room-correction-using-your-iphone-and-housecurve).
 
 
 
