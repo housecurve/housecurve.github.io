@@ -31,7 +31,7 @@ By default, the selected Target Curve is automatically fitted to measurements ba
 
 [Coherence Blanking](#coherence-blanking) also affects how the Target Curve is positioned.  Portions of the measurement below the blanking threshold are ignored for fitting.
 
-When automatic fitting is disabled, the curve can be manually positioned by setting a desired dB level at 100 Hz.  This is useful when separately adjusting speakers to a common level, such as main speakers and a subwoofer.
+When automatic fitting is disabled, the curve can be manually positioned by setting a desired dB level.  This is useful when you don't want the curve to move, for example, when applying room correction to left and right speakers separately.
 
 ## Plot Mode
 HouseCurve can display measurements to suit a given task.

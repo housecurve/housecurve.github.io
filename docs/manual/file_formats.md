@@ -47,9 +47,13 @@ This format is meant for systems with a parametric equalizer, such as [Volumio](
 
 ### Impulse reponses
 
-A monural [WAV](https://en.wikipedia.org/wiki/WAV) formatted audio file containing the impulse response of all filters together.  Samples are 32-bit floating point.  The impulse peak is at the first sample, normalized to 1.0.  The overall length is 128k samples (roughly 3 seconds at a sample rate of 44.1 KHz).  Note - because the impulse is normalized, you will need a way to adjust the overall system gain to avoid distortion.
+A monural [WAV](https://en.wikipedia.org/wiki/WAV) formatted audio file containing the impulse response of all filters together.  Samples are 32-bit floating point.  The impulse peak is at the first sample, normalized to 1.0.  The overall length is 128k samples (roughly 3 seconds at a sample rate of 44.1 KHz).
 
 This format is meant for audio systems with a convolution engine (aka "convolver") such as [Roon](https://help.roonlabs.com/portal/en/kb/articles/dsp-engine-parametric-equalizer), [moOde](https://moodeaudio.org), [CamillaDSP](https://github.com/HEnquist/camilladsp), [Volumio](https://volumio.com/en/), etc.
+
+It is normal for a change in overall system gain to happen when using a convolver.  You will need a way to adjust the overall gain to avoid distortion.
+
+When exporting the impulse response of IIR filters (ex: PEQs), the tail of the impulse response will never actually reach zero (that's what Infinite Impulse Response means).  This is why HouseCurve exports a relatively long impulse response.  On some systems, the length of this filter will cause high CPU usage.  In this situation, you can experiment with truncating the impulse response by shortening it in a audio editor like [Audacity](https://www.audacityteam.org).
 
 
 ## Test signal
