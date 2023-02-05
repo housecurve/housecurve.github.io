@@ -12,9 +12,9 @@ For systems with separately adjustable speakers, the relative levels need to be 
 
 Make sure all speakers are active and set the overall audio system volume to a normal listening level.  It can be helpful to set HouseCurve’s [Plot Mode](../manual/plot_setup.md#plot-mode) to History.
 
-Take a measurement from the middle of the listening area.  On the magnitude plot, observe how the measurement lines up with the Target Curve.  Adjust individual speaker levels and repeat the measurement as needed to get close to the Target Curve.
+Take a measurement from the middle of the listening area.  On the magnitude plot, observe how the measurement lines up with the target Curve.  Adjust individual speaker levels and repeat the measurement as needed to get close to the target curve.
 
-The example below shows an audio system consisting of main speakers and a subwoofer.  The subwoofer level was initially too low.  It was adjusted a few times to get close enough to the Target Curve.
+The example below shows an audio system consisting of main speakers and a subwoofer.  The subwoofer level was initially too low.  It was adjusted a few times to get close enough to the target curve.
 
 ![subwoofer level change](/assets/img/subwoofer_level_change.png "Matching subwoofer level to main speakers")
 

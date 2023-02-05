@@ -87,7 +87,7 @@ Equalization means changing the volume level at different frequencies.  There ar
 * Adjust the graphic or parametric equalizer settings
 * Change the room (ex: sound dampening, adjust furniture)
 
-When equalizing, the goal is to adjust the audio system such that the average magnitude measurement ends up within the +/- 3 dB band that surrounds the Target Curve.
+When equalizing, the goal is to adjust the audio system such that the average magnitude measurement ends up within the +/- 3 dB band that surrounds the target curve.
 
 ![equalization start](/assets/img/equalizer_start.png "Adjust until measurement within target curve band")
 

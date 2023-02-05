@@ -24,7 +24,7 @@ Below the same measurement is shown with Coherence Blanking set to 50%.  Now onl
 
 ![subwoofer coherence blanking](/assets/img/subwoofer_coherence_blanking.png "Subwoofer measurement with coherence blanking")
 
-When separately adjusting main and subwoofer speakers to the same Target Curve, it is recommended that the [Target Curve Fit](../manual/plot_setup.md#target-curve-fit) setting be switched to manual and a suitable level entered.  The Target Curve will then appear at the same level for all measurements.  In the examples above, the Target Curve was fixed at 24.5 dB @ 100 Hz.
+When separately adjusting main and subwoofer speakers to the same target curve, it is recommended that the [Target Curve Fit](../manual/plot_setup.md#target-curve-fit) setting be switched to manual and a suitable level entered.  The target curve will then appear at the same level for all measurements.  In the examples above, the target curve was fixed at 24.5 dB @ 100 Hz.
 
 
 
