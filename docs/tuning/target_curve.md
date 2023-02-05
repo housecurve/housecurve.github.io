@@ -20,7 +20,7 @@ The choice of Target Curve is subject to individual taste.  Typically, listeners
 
 HouseCurve provides a [Curve Editor](../manual/curve_edit.md) for tweaking curves or making your own.  It can be accessed from the more menu <img src="/assets/img/more.png" alt="More" class="app-icon">.  Curve files can also be [imported](../manual/plot_setup.md#target-curve) into HouseCurve.  See curve file [format](../manual/file_formats.md#curves) for details.
 
-HouseCurve ships with two common curves for home listening: [B&K](/curves/B&K.txt) and [Harmon](/curves/Harman.txt).  These can be selected by going to [Plot Setup](../manual/plot_setup.md).  Some additional curves are provided below for automobiles.  These curves have significantly more bass which is common for automobile listing.
+HouseCurve ships with two common curves for home listening: [B&K](/curves/B&K.txt) and [Harman](/curves/Harman.txt).  These can be selected by going to [Plot Setup](../manual/plot_setup.md).  Some additional curves are provided below for automobiles.  These curves have significantly more bass which is common for automobile listing.
 
 * [Car A](/curves/Car_A_web.txt)
 * [Car B](/curves/Car_B_web.txt)

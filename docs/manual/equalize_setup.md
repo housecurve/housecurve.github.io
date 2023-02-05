@@ -3,7 +3,7 @@ layout: default
 
 title: Equalize Setup
 parent: Manual
-nav_order: 6
+nav_order: 7
 ---
 
 # Equalize Setup

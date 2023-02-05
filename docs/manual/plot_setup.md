@@ -3,7 +3,7 @@ layout: default
 
 title: Plot Setup
 parent: Manual
-nav_order: 4
+nav_order: 5
 ---
 
 # Plot Setup
