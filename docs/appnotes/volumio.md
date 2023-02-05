@@ -16,6 +16,8 @@ This app note will demonstrate room correction using HouseCurve and Volumio's Fu
 
 For an introduction to room correction, please read the [overview](../tuning/equalization.md#what-is-equalization--room-correction).  To learn more about taking measurements with HouseCurve please see the usage [documentation](../usage/USAGE.md).
 
+You can also check out the Volumio community [forum](https://community.volumio.org) for more information or to ask for help.
+
 
 ## What you need
 
@@ -148,7 +150,5 @@ The filters will be loaded and enabled immediately. Scroll back up to the ***Set
 ## Wrapping up
 
 With the filters loaded, you can repeat the original measurements to confirm that your system now matches the target curve.  The average should be reasonably close to the response predicted by HouseCurve.  Happy listening!
-
-
 
 
