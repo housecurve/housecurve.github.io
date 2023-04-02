@@ -60,7 +60,7 @@ Time alignment using phase requires separate measurement of the speakers on eith
 
 Phase measurements are very sensitive to changes in the distance between speaker and microphone.  For best results, take measurements from the middle of the listening area, keeping the microphone in the same location for each measurement.
 
-In addition, phase measurements must share the same time reference to be compared.  To achieve this with HouseCurve, the chirp sound must come from one speaker for all measurements (see [measurement process](../usage/measurement_process.md)).
+In addition, phase measurements must share the same time reference to be compared.  To achieve this with HouseCurve, the chirp sound must come from one speaker for all measurements (see [measurement process](../usage/measurement_process.md)).  It is also necessary to disable the [Remove Delay](../manual/measure_setup.md#remove-delay) feature.
 
 ### Example
 
