@@ -22,6 +22,11 @@ A space or tab delimited text file with a frequency (Hz) followed by a gain (dB)
 [Example target curve](/curves/curve.txt)
 
 
+## Measurements
+
+Saved measurements can be exported as impulse responses for use in other tools.  The file format is a monural [WAV](https://en.wikipedia.org/wiki/WAV). Samples are 32-bit floating point.  The impulse response is windowed to be 500 ms in length, with the peak occurring at the first sample.  The file is padded out to 1 second in length.
+
+
 ## Filters
 
 HouseCurve supports the same filter formats as [REW](https://www.roomeqwizard.com/help/help_en-GB/html/equaliser.html).  These are quasi-standard, but may not work with all equalizers.  When trying this out for the first time, turn the volume down as a precaution.  For support, questions and suggestions, please [reach out](mailto:support@housecurve.com).
@@ -47,7 +52,7 @@ This format is meant for systems with a parametric equalizer, such as [Volumio](
 
 ### Impulse reponses
 
-A monural [WAV](https://en.wikipedia.org/wiki/WAV) formatted audio file containing the impulse response of all filters together.  Samples are 32-bit floating point.  The impulse peak is at the first sample, normalized to 1.0.  The overall length is 128k samples (roughly 3 seconds at a sample rate of 44.1 KHz).
+A monural [WAV](https://en.wikipedia.org/wiki/WAV) formatted audio file containing the impulse response of all filters together.  Samples are 32-bit floating point.  The impulse peak is at the first sample, normalized to 1.0.  The length of the impulse is 500 ms (number of samples will depend on the sample rate).
 
 This format is meant for audio systems with a convolution engine (aka "convolver") such as [Roon](https://help.roonlabs.com/portal/en/kb/articles/dsp-engine-parametric-equalizer), [moOde](https://moodeaudio.org), [CamillaDSP](https://github.com/HEnquist/camilladsp), [Volumio](https://volumio.com/en/), etc.
 

@@ -13,7 +13,7 @@ The Plot Setup screen can be accessed by tapping <img src="/assets/img/plot.png"
 {: .app-portrait-right }
 
 ## Saved Measurement
-Saved Measurements can be displayed on the plot for comparison.  Select None to disable.  Measurements can be removed by tapping Edit.
+Saved Measurements can be displayed on the plot for comparison.  Choose "None" to disable.  Measurements can be removed or [exported](file_formats.md#measurements) by tapping Select.
 
 When a measurement is [saved](measure_screen.md#save-measurement), it will be added to this list and selected.
 
@@ -22,7 +22,7 @@ A [target curve](../tuning/target_curve.md) is displayed on the magnitude plot t
 
 The curve is positioned on magnitude plots based on the Target Curve Fit setting.
 
-Additional target curves can be loaded by tapping + at the top of the target curve screen.  Target curves can be removed by tapping Edit.
+Additional target curves can be loaded by tapping + at the top of the target curve screen.  Target curves can be removed by tapping Select.
 
 HouseCurve supports the following [curve file format](file_formats.md#curves).
 

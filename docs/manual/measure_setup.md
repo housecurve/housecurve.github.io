@@ -35,15 +35,24 @@ Pink noise stimulus is provided for interest sake.  Measurements based on pink n
 HouseCurve uses coherent averaging when collecting the measurement.  This has an interesting effect on Pink Noise measurements.  In a sonically treated room, such as one with sound absorbing panels on the walls, Pink Noise noise measurements will closely match Sine Sweep measurements.  In a more typical “reflective” room, Pink Noise magnitude measurements tend to be lower above ~2 KHz.  The degree to which the Pink Noise and Sine Sweep measurements match is an indication of how “dead” the room is.
 
 
+## Remove Delay
+When measuring, HouseCurve expects the sweep sound to arrive at a precise moment after it detects the chirp.  Any difference between the expected and actual arrival will appear as a change in phase slope and a vertical shift in group delay.  This setting removes the difference by aligning the measured impulse response peak to t=0.
+
+When averaging measurements, this setting should be enabled.  This ensures the average is not corrupted by delays a listener cannot experience, for example, listening from two different seats at the same time.
+
+When time aligning speakers, this setting should be disabled.  The change in phase slope and group delay is needed to measure alignment.
+
+
 ## Internal Mic Compensation
 The average built in iPhone/iPad is reasonably flat, but begins to roll off below ~60 Hz and above ~16 KHz.  Internal Mic Compensation applies a moderate boost to correct this.  The boost curve is +6 dB at 30 Hz, tapering to zero at 60 Hz.  Likewise, at 16 KHz, the boost is zero and this increases to 6 dB at 20 KHz.
 
 It's worth keeping in mind that the iPhone/iPad can still "hear" below 60 Hz and above 16 KHz, it's just not as sensitive.  Internal Mic Compensation brings the measured response closer to what you would get with a calibrated extrnal mic.
 
-## External Mic Calibration
-HouseCurve supports calibrated external microphones.  Available calibrations will be displayed in the list.  Select None to disable calibration.
 
-Microphone calibrations can be loaded tapping + at the top of the External Mic Calibration screen.  Calibrations can be removed by tapping Edit.
+## External Mic Calibration
+HouseCurve supports calibrated external microphones.  Available calibrations will be displayed in the list.  Choose "None" to disable calibration.
+
+Microphone calibrations can be loaded tapping + at the top of the External Mic Calibration screen.  Calibrations can be removed by tapping Select.
 
 HouseCurve uses the following [curve file format](file_formats.md#curves) for microphone calibration.
 
