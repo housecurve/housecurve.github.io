@@ -7,12 +7,23 @@ nav_order: 2
 ---
 
 # Microphones
-HouseCurve will default to using the built in microphone of your iPhone/iPad.  These microphones have a surprisingly flat response and are quite acceptable for tuning an audio system.  When compared to an external calibrated microphone, they do show some roll off at the extreme ends of the frequency spectrum (below 60Hz and above 16 KHz).  HouseCurve compensates for this by applying a moderate boost.  See [internal compensation](../manual/measure_setup.md#internal-mic-compensation) for more information.
+HouseCurve was designed to work with built in iPhone / iPad microphones (aka "internal microphones").  By default, HouseCurve will use the bottom mic on an iPhone and the top mic on an iPad.  If an external microphone is connected, HouseCurve will use that instead.
 
+The following settings change how HouseCurve chooses microphones:
+
+* [Internal Mic Location](../manual/measure_setup.md#internal-mic-location)
+* [External Mic Enable](../manual/measure_setup.md#external-mic-enable)
+
+
+## Internal Micrphones
+
+The iPhone/iPad microphones have a surprisingly flat response and are quite acceptable for tuning an audio system.  When compared to an external calibrated microphone, they do show some roll off at the extreme ends of the frequency spectrum (below 60Hz and above 16 KHz).  HouseCurve compensates for this by applying a moderate boost.  See [internal compensation](../manual/measure_setup.md#internal-mic-compensation) for more information.
+
+If measurements don't look right, try using a [different internal mic](../manual/measure_setup.md#internal-mic-location) or removing the case.  On new devices the mics should measure about the same.
 
 ## External Microphones
 
-For additional accuracy, HouseCurve can use external microphones.  Your iPhone/iPad will automatically detect when one is plugged in and tell HouseCurve to use it.  The [setup status](../manual/plots.html#setup-status) will indicate "external microphone".  If the microphone is not detected, check cables and verify the microphone is working by recording audio with the Voice Memo application.
+HouseCurve will automatically use an external mic if one is plugged in (provided that [external mics are enabled](../manual/measure_setup.md#external-mic-enable)).  The [setup status](../manual/plots.html#setup-status) will display the name of the microphone.   If the microphone is not detected, check cables and verify the microphone is working by recording audio with the Voice Memo iOS application.
 
 HouseCurve has been tested with the following external microphones:
 
@@ -21,7 +32,7 @@ HouseCurve has been tested with the following external microphones:
 
 HouseCurve supports the following [curve file format](../manual/file_formats.md#curves) for microphone calibration.
 
-If you are getting strange measurements, try another microphone.  The [iPhone EarPods](https://www.apple.com/shop/product/MMTN2AM/A/earpods-with-lightning-connector) buried in your desk drawer are great for testing adapters, cables, etc.
+If you are getting strange measurements, try another microphone.  The [iPhone EarPods](https://www.apple.com/shop/product/MMTN2AM/A/earpods-with-lightning-connector) buried in your desk drawer are great for testing adapters, cables, etc.  You can also compare to the internal mics.
 
 
 ## CarPlay

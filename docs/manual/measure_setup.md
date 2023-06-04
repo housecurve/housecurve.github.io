@@ -43,6 +43,10 @@ When averaging measurements, this setting should be enabled.  This ensures the a
 When time aligning speakers, this setting should be disabled.  The change in phase slope and group delay is needed to measure alignment.
 
 
+## Internal Mic Location
+Choose which internal microphone to use for measurement.  By default, HouseCurve uses the bottom microphone on iPhones and the top microphone on iPads.
+
+
 ## Internal Mic Compensation
 The average built in iPhone/iPad is reasonably flat, but begins to roll off below ~60 Hz and above ~16 KHz.  Internal Mic Compensation applies a moderate boost to correct this.  The boost curve is +6 dB at 30 Hz, tapering to zero at 60 Hz.  Likewise, at 16 KHz, the boost is zero and this increases to 6 dB at 20 KHz.
 
@@ -57,6 +61,9 @@ Microphone calibrations can be loaded tapping + at the top of the External Mic C
 HouseCurve uses the following [curve file format](file_formats.md#curves) for microphone calibration.
 
 
+## External Mic Enable
+HouseCurve will use an external microphone if one is connected to the iPhone / iPad.  Disable this option to force HouseCurve to use the internal microphone.
 
+This is useful when connected to USB devices (ex: DACs) that appear as input and output to the iPhone / iPad.
 
 
