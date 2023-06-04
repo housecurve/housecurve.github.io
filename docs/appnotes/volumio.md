@@ -44,34 +44,24 @@ Using the Volumio control, install the plugin by going to Volumio settings -> pl
 
 ## 2. Get Connected
 
-HouseCurve measures your audio system by listening to it play a sine sweep test signal.  There are several way
-s to do this as described in [connecting](../usage/connecting.md).
+HouseCurve measures your audio system by listening to it play a sine sweep test signal.  There are several ways to do this as described in [connecting](../usage/connecting.md).
 
-For this app note, we will perform measurements using [externally played sweeps](../usage/connecting.md#externally-played-sweeps).  This method doesn't require a direct connection to the audio system.  Instead, we transfer the test signal as a wav file to the audio system and play it manually.  HouseCurve will measure by listening to the test signal as it is played.
+For this app note, we will perform measurements using [externally played sweeps](../usage/connecting.md#externally-played-sweeps).  This method doesn't require a direct connection to the audio system.  Instead, the test signal is played manually while HouseCurve just listens.
 
-This method will work with any audio system, but it requires more steps.  You can skip this and use a direct connection instead, see [connecting](../usage/connecting.md) for more infomration.  Note - at the time of writing this app note, measurements over AirPlay didn't work with Volumio on a Raspberry Pi 3B.  This isn't uncommon for unofficial AirPlay implementations (Shairport-sync, etc).
+The FusionDSP plugin makes this easy by shipping with HouseCurve's test signal.  To access it, go to FusionDSP settings.  In the "Tools" section, select "install tools".  When the install completes, choose HouseCurveTestSignal.wav as the file to play.  Press "Play selected file" to play the sweep.
 
-To transfer files to Volumio's Samba share, open up the [Files](https://apps.apple.com/ca/app/files/id1232058109) app on you iPhone/iPad and select ***Connect to Server***.  Enter the network name of the Volumio device (ex: volumio.local) and connect as a Guest.  HouseCurve will now be able to save to this location.
-
-![Volumio samba share](/assets/img/volumio_connect_server.png "connect to server as guest")
+![fusiondsp tools](/assets/img/volumio_fusiondsp_tools.png "FusionDSP HouseCurve integration")
 {: .app-portrait }
 
-Launch HouseCurve on your iPhone/iPad.  Tap <img src="/assets/img/setup.png" alt="Setup" class="app-icon"> to display the Measure Setup screen, then tap ***Stimulus Type***.
+Next, we need to configure HouseCurve for external sweeps.  Launch HouseCurve on your iPhone/iPad.  Tap <img src="/assets/img/setup.png" alt="Setup" class="app-icon"> to display the Measure Setup screen, then tap ***Stimulus Type***.
 
 ![measure setup](/assets/img/volumio_measure_setup.png "measure setup")
 {: .app-portrait }
 
-Set the stimulus type to  ***External Sine Sweep***.  Tap ***Export test signal*** and select a location to save the wav file and transfer to Volumio's library.
+Set the stimulus type to  ***External Sine Sweep***.
 
-![stimulus type](/assets/img/volumio_stimulus_type.png "select external sine sweep and export test signal")
+![stimulus type](/assets/img/volumio_stimulus_type.png "select external sine sweep")
 {: .app-portrait }
-
-If you save directly to Volumio's Samba share, you will need to refresh the library to see the file.
-
-![Saving to share](/assets/img/volumio_save_signal.png "saving directly to Volumio's library")
-{: .app-portrait }
-
-You should now be able to play the test signal using Volumio.
 
 
 ## 3. Collect Measurements
