@@ -58,8 +58,6 @@ This format is meant for audio systems with a convolution engine (aka "convolver
 
 It is normal for a change in overall system gain to happen when using a convolver.  You will need a way to adjust the overall gain to avoid distortion.
 
-When exporting the impulse response of IIR filters (ex: PEQs), the tail of the impulse response will never actually reach zero (that's what Infinite Impulse Response means).  This is why HouseCurve exports a relatively long impulse response.  On some systems, the length of this filter will cause high CPU usage.  In this situation, you can experiment with truncating the impulse response by shortening it in a audio editor like [Audacity](https://www.audacityteam.org).
-
 
 ## Test signal
 
