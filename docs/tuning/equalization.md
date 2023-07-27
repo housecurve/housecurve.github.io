@@ -39,13 +39,13 @@ Equalization adjusts the audio system gain at different frequencies through "boo
 
 ## Automatic Equalization
 
-HouseCurve's [Equalize](../manual/equalize_screen.md) tool generates filters to correct a [saved measurement](../manual/plot_setup.md#saved-measurement) to a [target curve](../manual/plot_setup.md#target-curve).  It can be accessed from the more menu <img src="/assets/img/more.png" alt="More" class="app-icon">.
+HouseCurve's [Equalize Tool](../manual/equalize_tool.md) generates filters to correct a [saved measurement](../manual/plot_setup.md#saved-measurement) to a [target curve](../manual/plot_setup.md#target-curve).  It can be accessed from the more menu <img src="/assets/img/more.png" alt="More" class="app-icon">.
 
 For best results, average several measurements from the listening area and then save.  Averaging provides HouseCurve with a better picture of how sound changes in the listening area.
 
 The image below shows a saved measurement (grey) being corrected to the target curve (yellow).  The filters that perform the correction are shown in magenta.  The predicted magnitude response (when filters are applied) is shown in cyan.
 
-![equalize screen](/assets/img/equalize_biquads.png "Equalize screen showing correction filters and predicted output")
+![equalize tool](/assets/img/equalize_biquads.png "Equalize tool showing correction filters and predicted output")
 
 HouseCurve allocates filters to regions with the largest deviation from the target curve, starting with lower frequencies and ignoring blanked regions (see [Coherence Blanking](/../manual/plot_setup.md#coherence-blanking)).  The algorithm’s behavior can be controlled by tapping <img src="/assets/img/setup.png" alt="Setup" class="app-icon"> to display the [equalize setup screen](../manual/equalize_setup.md).  Plot settings, such target curve fit and blanking threshold also impact the algorithm.  The display automatically updates to reflect any setting change.
 
@@ -58,7 +58,7 @@ The filters can be [exported](../manual/filter_export.md) to a file by tapping <
 
 When the filters have been loaded into your audio system, you should find that measurements are reasonably close to the predicted response.  The screenshots below show the predicted response (cyan) and actual measurements (green) after applying the filters.
 
-![equalize screen](/assets/img/equalize_biquads_before.png "Equalize screen's predicted output")
+![equalize tool](/assets/img/equalize_biquads_before.png "Equalize tool's predicted output")
 
 ![measurement after equalizing](/assets/img/equalize_measure_after.png "Measured results will be reasonably close to predicted")
 
@@ -91,7 +91,7 @@ When equalizing, the goal is to adjust the audio system such that the average ma
 
 ![equalization start](/assets/img/equalizer_start.png "Adjust until measurement within target curve band")
 
-Adjust the audio system in small steps, collecting the same measurements after each change.  [Saved measurements](../manual/plot_setup.md#saved-measurement) are helpful for seeing the effect of an adjustment as can be seen below.  You can also take a look at the [Automatic Equalization](#automatic-equalization) screen to see what HouseCurve would equalize (based on the saved measurement).
+Adjust the audio system in small steps, collecting the same measurements after each change.  [Saved measurements](../manual/plot_setup.md#saved-measurement) are helpful for seeing the effect of an adjustment as can be seen below.  You can also take a look at the [Equalize Tool](#automatic-equalization) to see what HouseCurve would equalize (based on the saved measurement).
 
 ![equalization changed](/assets/img/equalizer_changed.png "Save measurements to see what adjustment did")
 

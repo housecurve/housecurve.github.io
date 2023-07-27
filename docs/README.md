@@ -16,5 +16,5 @@ HouseCurve is an iOS app for tuning audio systems.  Use it for room correction, 
 
 ## Try HouseCurve for free
 
-Visit [this page](APPCLIP.md) with an iPhone or iPad for a free trial.
+Visit [this page](DOWNLOAD.md) to download the free version.
 

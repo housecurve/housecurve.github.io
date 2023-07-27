@@ -13,7 +13,7 @@ The Plot Setup screen can be accessed by tapping <img src="/assets/img/plot.png"
 {: .app-portrait-right }
 
 ## Saved Measurement
-Saved Measurements can be displayed on the plot for comparison.  Choose "None" to disable.  Measurements can be removed or [exported](file_formats.md#measurements) by tapping Select.
+Saved Measurements can be displayed on the plot for comparison.  Choose "None" to disable.  Measurements can be removed or [exported](file_formats.md#measurements) by tapping Select (export with Tuning Bundle in-app purchase).
 
 When a measurement is [saved](measure_screen.md#save-measurement), it will be added to this list and selected.
 
@@ -34,7 +34,7 @@ By default, the selected target curve is automatically fitted to measurements ba
 When automatic fitting is disabled, the curve can be manually positioned by setting a desired dB level.  This is useful when you don't want the curve to move, for example, when applying room correction to left and right speakers separately.
 
 ## Plot Mode
-HouseCurve can display measurements to suit a given task.
+HouseCurve can display measurements to suit a given task (with Tuning Bundle in-app purchase).
 
 ### Average
 Average mode is used to capture how an audio system sounds in a listening area. Use this mode when tuning the audio system to match a target curve.  Measurements are included in an average as they are collected.  The average measurement is displayed in bold green. Individual measurements will appear in faded green.
