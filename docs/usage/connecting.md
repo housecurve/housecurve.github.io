@@ -42,5 +42,9 @@ HouseCurve must stay in the foreground when taking measurements.  If you need to
 Note - External stimulus mode overrides any wireless or wired connection.  The AirPlay button will be disabled.
 
 
+## HouseCurve on macOS
+
+HouseCurve _can_ be used on a macOS computer with Apple silicon (ex M1 chipset), however it is not currently supported.  Audio input/output must be controlled through the system sound settings, not the app itself.  Mac microphones have not been tested for use with HouseCurve. An external microphone is recommended.
+
 
 
