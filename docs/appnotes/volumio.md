@@ -10,7 +10,7 @@ nav_order: 3
 
 [Volumio](https://volumio.com) is open source music playback software that can run on a PC, Raspberry Pi, etc.  It provides DSP features through a plugin called FusionDSP, which is a front end for [CamillaDSP](https://github.com/HEnquist/camilladsp).
 
-HouseCurve is an iOS application for tuning audio systems.  It turns your iPhone/iPad into a capable audio analyzer using the built in microphone.  It can be used for tuning tasks like creating room correction filters, subwoofer time alignment, level matching and choosing crossovers.  A free trial can be found [here](../DOWNLOAD.md).
+HouseCurve is an iOS application for tuning audio systems.  It turns your iPhone/iPad into a capable audio analyzer using the built in microphone.  It can be used for tuning tasks like creating room correction filters, subwoofer time alignment, level matching and choosing crossovers.  Download [here](../DOWNLOAD.md).
 
 This app note will demonstrate room correction using HouseCurve and Volumio's FusionDSP plugin.
 

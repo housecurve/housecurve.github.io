@@ -8,7 +8,7 @@ nav_order: 1
 
 # Room Correction with miniDSP
 
-HouseCurve is an iOS application for tuning audio systems.  It can be used for tuning tasks like creating room correction filters, subwoofer time alignment, level matching and choosing crossovers.  A free trial can be found [here](../DOWNLOAD.md).
+HouseCurve is an iOS application for tuning audio systems.  It can be used for tuning tasks like creating room correction filters, subwoofer time alignment, level matching and choosing crossovers.  Download [here](../DOWNLOAD.md).
 
 In this application note, we will demonstrate room correction using HouseCurve and a miniDSP processor.
 
