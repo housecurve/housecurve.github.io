@@ -12,13 +12,13 @@ HouseCurve is an iOS application for tuning audio systems.  It can be used for t
 
 In this application note, we will demonstrate room correction using HouseCurve and a miniDSP processor.
 
-For an introduction to room correction please read the [overview](https://www.minidsp.com/applications/digital-room-correction/161-digital-room-correction).  To learn more about taking measurements with HouseCurve please see the usage [documentation](../usage/USAGE.md).
+For an introduction to room correction please read the [overview](https://www.minidsp.com/applications/digital-room-correction/161-digital-room-correction).  To learn more about HouseCurve please see the usage [documentation](../usage/USAGE.md).
 
 
 ## What you need
 
 * A miniDSP processor connected to your audio system.
-* Plug-in software to configure the miniDSP processor.
+* miniDSP [Device Console](https://docs.minidsp.com/getting-started/device-console.html) software to configure processor.
 * An iPhone or iPad with HouseCurve installed on it.
 
 HouseCurve achieves reasonable measurement accuracy with the built in iPhone or iPad microphones (cases may interfere with microphone).
@@ -39,7 +39,7 @@ If direct connection isn’t possible, the sine sweep file can be transferred to
 
 ## 2. Collect Measurements
 
-Using the miniDSP plug-in software, ensure that all equalization is disabled.
+Using the miniDSP Device Console software, ensure that any equalization is disabled.
 
 ![equalizer set to flat](/assets/img/minidsp_flat.png "measure with equalization disabled")
 
@@ -88,14 +88,14 @@ Filters can be exported to a file by tapping <img src="/assets/img/export.png" a
 ![filter export](/assets/img/minidsp_filter_export.png "export filter settings to file")
 {: .app-portrait }
 
-Tap ***Export filters***, select a location for the filter file and then tap save.  Choose a location that the miniDSP plug-in software can access (ex: iCloud Drive).  Alternatively, you can choose a location on the iPhone/iPad and then transfer the file using email, AirDrop, iMessage, etc.
+Tap ***Export filters***, select a location for the filter file and then tap save.  Choose a location that the miniDSP Device Console software can access (ex: iCloud Drive).  Alternatively, you can choose a location on the iPhone/iPad and then transfer the file using email, AirDrop, iMessage, etc.
 
 
 ## 5. Load Filters
 
-Load the filters into your miniDSP processor using the plug-in software.  Open the PEQ block that you want to put the filters in.  Choose Advanced mode and click on IMPORT.  Select the filter file and click Open.  The plug-in will display the correction filters.
+Load the filters into your miniDSP processor using the Device Console software.  Open the PEQ block that you want to put the filters in.  Ensure the menu switch is turned "on", then choose LOAD BIQUADS FILE.  Select the filter file and click Open.  The Device Console will display the correction filters.
 
-![loaded filters](/assets/img/minidsp_peqs.png "load filter file using miniDSP plug-in software")
+![loaded filters](/assets/img/minidsp_peqs.png "load filter file using miniDSP Device Console software")
 
 Double check that the filter peaks are in the correct location by comparing to HouseCurve’s Equalize tool.  If they appear slightly shifted, it’s likely the filters were created for the wrong sample rate. Repeat the export process with the correct sample rate.
 
