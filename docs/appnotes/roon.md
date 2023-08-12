@@ -14,7 +14,7 @@ HouseCurve is an iOS application for tuning audio systems.  It turns your iPhone
 
 This app note will demonstrate room correction using HouseCurve and the [convolution](https://help.roonlabs.com/portal/en/kb/articles/dsp-engine-convolution) feature of Roon's DSP Engine.
 
-For an introduction to room correction, please read the [overview](../tuning/equalization.md#what-is-equalization--room-correction).  To learn more about taking measurements with HouseCurve please see the usage [documentation](../usage/USAGE.md).
+For an introduction to room correction, please read the [overview](../tuning/equalization.md#what-is-equalization-room-correction).  To learn more about taking measurements with HouseCurve please see the usage [documentation](../usage/USAGE.md).
 
 You can also check out the Roon community [forum](https://community.roonlabs.com) for more information or to ask for help.  There's a dedicated [topic](https://community.roonlabs.com/t/room-correction-using-your-iphone-and-housecurve) on this app note if you'd like to share your results.
 
