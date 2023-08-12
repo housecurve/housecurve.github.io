@@ -69,7 +69,7 @@ The Equalize tool generates biquad (IIR) filters to correct a saved measurement
 
 ![equalize tool](/assets/img/minidsp_equalized.png "equalize tool creates filters to match saved measurement to target curve")
 
-HouseCurve allocates filters to regions with the largest deviation from the target curve, preferring lower frequencies and ignoring areas with low coherence (SNR).  You can adjust the target curve and coherence blanking threshold by tapping <img src="/assets/img/plot.png" alt="Plot Setup" class="app-icon">.
+HouseCurve allocates filters to regions with the largest deviation from the target curve, preferring lower frequencies and ignoring areas with low coherence (SNR).  You can adjust the target curve and coherence blanking threshold by tapping <img src="/assets/img/plot.png" alt="Plot Setup" class="app-icon">.  For more information, see [gain management](../tuning/equalization.md#gain-management).
 
 Tap <img src="/assets/img/setup.png" alt="Equalize Setup" class="app-icon"> to display the Equalize Setup screen.  Check that maximum filters is set to the number supported by your miniDSP processor.
 
