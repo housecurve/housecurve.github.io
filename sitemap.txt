@@ -14,7 +14,6 @@ https://housecurve.com/docs/manual/filter_export.html
 https://housecurve.com/docs/manual/measure_screen.html
 https://housecurve.com/docs/manual/file_formats.html
 https://housecurve.com/docs/manual/plot_setup.html
-https://housecurve.com/docs/manual/equalize_screen.html
 https://housecurve.com/docs/manual/plots.html
 https://housecurve.com/docs/manual/curve_edit.html
 https://housecurve.com/docs/usage/listening_area.html
