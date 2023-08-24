@@ -1,5 +1,5 @@
 ---
-permalink: /manual/equalze_screen.html
-redirect_to: /manual/equalize_tool.html
+permalink: /docs/manual/equalze_screen.html
+redirect_to: /docs/manual/equalize_tool.html
 ---
  
