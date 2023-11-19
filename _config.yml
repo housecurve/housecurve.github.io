@@ -36,7 +36,7 @@ features:
 
 
 - title: Room Correction
-  description: Equalize your audio system in one step by generating filters for your parametric equalizer or convolution engine.
+  description: Equalize your audio system in one step by generating filters for your parametric equalizer (PEQ) or convolution engine (FIR).
   link: /docs/tuning/equalization.html#automatic-equalization
   
 - title: Subwoofer Phase
