@@ -13,12 +13,11 @@ The Equalize Setup screen can be accessed by tapping <img src="/assets/img/equal
 {: .app-portrait-right }
 
 ## Filter type
-This selects the type of filter HouseCurve will use to produce a correction.
+Selects the type of filter HouseCurve will use to produce a correction.
 
 When PEQ is selected, HouseCurve will generate a set of parametric equalizer filters (peaking biquad filters).  These can be exported as PEQ settings, biquad coefficients or converted into an impulse response.
 
 When FIR is selected, HouseCurve will generate a mixed phase FIR filter.  FIR filters are exported as impulse responses.
-
 
 ## Frequency
 The frequency range to equalize.  
@@ -33,10 +32,14 @@ The maximum gain range filters (absolute gain).
 The maximum gain limits the size of a boost or a cut an individual filter can make.  HouseCurve may place filters in close proximity to produce larger gains.  Keep in mind that a +10 dB adjustment means the audio system has to output 10 times more signal power.
 
 ## Allow only cuts
-Prevents the creation of filters with positive gain to avoid clipping.  Use manual [curve fit](../manual/plot_setup.md#target-curve-fit) to lower the target curve and improve the overall correction without using boost.
+Prevents the creation of filters with positive gain (boost) to avoid clipping.  Use manual [curve fit](../manual/plot_setup.md#target-curve-fit) to lower the target curve and improve the overall correction without using boost.
 
-## Maximum filters
-The maximum number of filters to use for correction.  HouseCurve will allocate filters until the remaining corrections are outside of the frequency and gain settings.
+## Max filters
+The maximum number of filters to use for PEQ correction.  HouseCurve will allocate filters until the remaining corrections are outside of the frequency and gain settings.
 
 For a parametric equalizer, set this to the number of filters your system supports.  For a convolution engine (ie: using the impulse response), the number of filters just controls the fidelity of the correction.  More filters may not make an audible difference.
+
+## Max Q
+The maximum Q for PEQ filters, set this to the value your parametric equalizer supports.  The "Q" of a filter is roughly the width.  The higher the Q, the narrower the filter.
+
 
