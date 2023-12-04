@@ -25,7 +25,7 @@ HouseCurve achieves reasonable measurement accuracy with the built in iPhone or 
 
 For additional accuracy, a calibrated measurement microphone can be used, such as the [UMIK-1](https://www.minidsp.com/products/acoustic-measurement/umik-1) or [UMIK-2](https://www.minidsp.com/products/acoustic-measurement/umik-2) (requires a Lightning to USB [adapter](https://www.apple.com/shop/product/MD821AM/A/lightning-to-usb-camera-adapter)).
 
-The procedures below may not exactly apply to your system.  The miniDSP processors are very flexible and can be set up in many different ways.  Fortunately, HouseCurve was designed for rapid experimentation.  We suggest trying the steps below as written and then adjust as needed to suit your own particular situation.
+The procedures below may not exactly apply to your system.  The miniDSP processors are very flexible and can be set up in many different ways.  Fortunately, HouseCurve was designed for rapid experimentation.  Try the steps below as written and then adjust as needed to suit your own particular situation.
 
 For best results, ensure the audio system is [set up correctly](../tuning/TUNING.md) before applying room correction.
 
@@ -56,7 +56,7 @@ Use HouseCurve to measure your listening area.  Ensure that the microphone is po
 
 HouseCurve will automatically average measurements as they are collected.  To get a realistic measurement of your [listening area](../usage/listening_area.md), it is important to average measurements from several locations.  For a desk (near field), try measuring from 2-3 locations. For a living room, try 3-5 locations.
 
-![averaged measurements](/assets/img/minidsp_average_cursor.png "average measurements to capture listening area")
+![averaged measurements](/assets/img/minidsp_average.png "average measurements to capture listening area")
 
 When you are satisfied with the average measurement, save it by tapping <img src="/assets/img/save.png" alt="Save" class="app-icon">.  This measurement will be used to generate the room correction filters.
 
@@ -65,13 +65,13 @@ When you are satisfied with the average measurement, save it by tapping <img src
 
 Tap <img src="/assets/img/more.png" alt="More" class="app-icon"> and select Equalize.  HouseCurve will display the [Equalize](../manual/equalize_tool.md) tool.
 
-The Equalize tool generates biquad (IIR) filters to correct a saved measurement to a target curve.  The process is instantaneous, so the display automatically updates to reflect any setting change (target curve, saved measurement, filter settings, etc).
+The Equalize tool generates PEQ (biquad) filters to correct a saved measurement to a target curve.  The process is instantaneous, so the display automatically updates to reflect any setting change (target curve, saved measurement, filter settings, etc).
 
 ![equalize tool](/assets/img/minidsp_equalized.png "equalize tool creates filters to match saved measurement to target curve")
 
 HouseCurve allocates filters to regions with the largest deviation from the target curve, preferring lower frequencies and ignoring areas with low coherence (SNR).  You can adjust the target curve and coherence blanking threshold by tapping <img src="/assets/img/plot.png" alt="Plot Setup" class="app-icon">.  For more information, see [gain management](../tuning/equalization.md#gain-management).
 
-Tap <img src="/assets/img/setup.png" alt="Equalize Setup" class="app-icon"> to display the Equalize Setup screen.  Check that maximum filters is set to the number supported by your miniDSP processor.
+Tap <img src="/assets/img/equalize_setup.png" alt="Equalize Setup" class="app-icon"> to display the Equalize Setup screen.  Ensure filter type is PEQ and set maximum filters to the number supported by your miniDSP processor.
 
 ![equalize setup](/assets/img/minidsp_equalize_setup.png "equalize setup controls filter generation")
 {: .app-portrait }

@@ -82,15 +82,15 @@ When you are satisfied with the average measurement, save it by tapping <img src
 
 Tap <img src="/assets/img/more.png" alt="More" class="app-icon"> and select Equalize.  HouseCurve will display the [Equalize](../manual/equalize_tool.md) tool.
 
-The Equalize tool generates biquad (IIR) filters to correct a saved measurement to a target curve.  The impulse response of the filters can be exported and used as a convolution filter (FIR filter).  This is what we will use for Roon.
+The Equalize tool generates PEQ (biquad) or FIR filters to correct a saved measurement to a target curve.  Either filter type can be exported as an impulse response and loaded into Roon's convolution engine.  For this application note, we'll use the FIR filter as it has good low frequency resolution, resulting in smoother bass and nicer sound stage/imaging.  If you're curious, try both filter types and see which one you like better.
 
 The generation process is instantaneous, so the display automatically updates to reflect any setting change (target curve, saved measurement, filter settings, etc).
 
 ![equalize tool](/assets/img/roon_equalized.png "equalize tool creates filters to match saved measurement to target curve")
 
-HouseCurve allocates filters to regions with the largest deviation from the target curve, preferring lower frequencies and ignoring areas with low coherence (SNR).  You can adjust the target curve and coherence blanking threshold by tapping <img src="/assets/img/plot.png" alt="Plot Setup" class="app-icon">.  For more information, see [gain management](../tuning/equalization.md#gain-management).
+HouseCurve corrects regions with the largest deviation from the target curve, preferring lower frequencies and ignoring areas with low coherence (SNR).  You can adjust the target curve and coherence blanking threshold by tapping <img src="/assets/img/plot.png" alt="Plot Setup" class="app-icon">.  For more information, see [gain management](../tuning/equalization.md#gain-management).
 
-Tap <img src="/assets/img/setup.png" alt="Equalize Setup" class="app-icon"> to display the [Equalize Setup](../manual/equalize_setup.md) screen.  The default settings should provide a good correction, but feel free to experiment.
+Tap <img src="/assets/img/equalize_setup.png" alt="Equalize Setup" class="app-icon"> to display the [Equalize Setup](../manual/equalize_setup.md) screen.  Set the filter type to FIR.  The default settings should provide a good correction, but feel free to experiment.
 
 ![equalize setup](/assets/img/roon_equalize_setup.png "equalize setup controls filter generation")
 {: .app-portrait }
@@ -98,7 +98,7 @@ Tap <img src="/assets/img/setup.png" alt="Equalize Setup" class="app-icon"> to d
 
 ## 4. Export Filters
 
-Filters can be exported to a file by tapping <img src="/assets/img/export.png" alt="Export" class="app-icon">.  Ensure that the format is set to “impulse response” and the sample rate is appropriate for your audio system.  When in doubt, choose 44100 Hz.  Roon will automatically resample the filter as needed.  You can also export the same impulse in different sample rates and Roon will pick the [closest one](https://help.roonlabs.com/portal/en/kb/articles/dsp-engine-convolution#Filter_resampling).
+Filters can be exported to a file by tapping <img src="/assets/img/export.png" alt="Export" class="app-icon">.  FIR filters are exported as an impulse response in WAV format.  Ensure the sample rate is appropriate for your audio system.  When in doubt, choose 44100 Hz.  Roon will automatically resample the filter as needed.  You can also export with several different sample rates and Roon will pick the [closest one](https://help.roonlabs.com/portal/en/kb/articles/dsp-engine-convolution#Filter_resampling).
 
 ![filter export](/assets/img/roon_filter_export.png "export filter settings to file")
 {: .app-portrait }

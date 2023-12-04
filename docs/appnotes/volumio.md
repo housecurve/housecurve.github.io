@@ -95,7 +95,7 @@ When you are satisfied with the average measurement, save it by tapping <img src
 
 Tap <img src="/assets/img/more.png" alt="More" class="app-icon"> and select Equalize.  HouseCurve will display the [Equalize](../manual/equalize_tool.md) tool.
 
-The Equalize tool generates biquad (IIR) filters to correct a saved measurement to a target curve.  These filters can be exported as parametric equalizer settings, which is what we will use in this app note (FusionDSP also supports the impulse response (FIR filter) exported by HouseCurve).
+The Equalize tool can produce PEQ (biquad) or FIR filters to correct a saved measurement to a target curve.  For this app note, we will use PEQ filters and export them as parametric equalizer settings (ie: Freq, Gain, Q).  Note that FusionDSP can also support FIR filters via convolution.  The FIR filter produced by HouseCurve has better low frequency resolution, resulting in smoother bass and nicer sound stage/imaging.  However, this comes at a cost of higher CPU usage.
 
 The generation process is instantaneous, so the display automatically updates to reflect any setting change (target curve, saved measurement, filter settings, etc).
 
@@ -103,7 +103,7 @@ The generation process is instantaneous, so the display automatically updates to
 
 HouseCurve allocates filters to regions with the largest deviation from the target curve, preferring lower frequencies and ignoring areas with low coherence (SNR).  You can adjust the target curve and coherence blanking threshold by tapping <img src="/assets/img/plot.png" alt="Plot Setup" class="app-icon">.  For more information, see [gain management](../tuning/equalization.md#gain-management).
 
-Tap <img src="/assets/img/setup.png" alt="Equalize Setup" class="app-icon"> to display the [Equalize Setup](../manual/equalize_setup.md) screen.  The default settings should provide a good correction, but feel free to experiment.
+Tap <img src="/assets/img/equalize_setup.png" alt="Equalize Setup" class="app-icon"> to display the [Equalize Setup](../manual/equalize_setup.md) screen.  Ensure filter type is PEQ.  The default settings should provide a good correction, but feel free to experiment.
 
 ![equalize setup](/assets/img/volumio_equalize_setup.png "equalize setup controls filter generation")
 {: .app-portrait }
