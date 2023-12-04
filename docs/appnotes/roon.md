@@ -1,12 +1,12 @@
 ---
 layout: default
 
-title: Room Correction with Roon
+title: Roon Room Correction
 parent: App Notes
 nav_order: 2
 ---
 
-# Room Correction with Roon
+# Roon Room Correction
 
 Roon is music playback software that is compatible with a large number of audio systems.  An interesting feature of Roon is its [architecture](https://roonlabs.com/howroonworks).  The brains of a Roon system is the "Roon Core", which sends audio to playback devices.  The Roon Core has a [DSP Engine](https://help.roonlabs.com/portal/en/kb/articles/dsp-engine) which makes room correction possible on any playback device.
 

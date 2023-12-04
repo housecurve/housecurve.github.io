@@ -1,12 +1,12 @@
 ---
 layout: default
 
-title: Room Correction with Volumio
+title: Volumio Room Correction
 parent: App Notes
 nav_order: 3
 ---
 
-# Room Correction with Volumio
+# Volumio Room Correction
 
 [Volumio](https://volumio.com) is open source music playback software that can run on a PC, Raspberry Pi, etc.  It provides DSP features through a plugin called FusionDSP, which is a front end for [CamillaDSP](https://github.com/HEnquist/camilladsp).
 
