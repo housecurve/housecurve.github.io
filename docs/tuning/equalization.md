@@ -12,7 +12,7 @@ If the audio system has separately adjustable speakers, such as a subwoofer, ens
 
 HouseCurve supports automatic and manual equalization:
 
-- [**Automatic equalization**](#automatic-equalization) - HouseCurve generates a set of biquad filters to correct a saved measurement to a target curve.  The filter parameters can then be exported to a [file](../manual/file_formats.md#filters) and loaded into your audio system (ex: parametric equalizer, convolution engine, etc).  Even if you can't import the filters - you can see what HouseCurve would adjust and use that as a guide.
+- [**Automatic equalization**](#automatic-equalization) - HouseCurve generates a filter that corrects a saved measurement to a target curve.  HouseCurve supports PEQ (biquad) or FIR filters.  The filter parameters can be exported to a [file](../manual/file_formats.md#filters) and loaded into your audio system (ex: parametric equalizer, convolution engine, etc).  Even if you can't import the filters - you can see what HouseCurve would adjust and use that as a guide.
 
 - [**Manual equalization**](#manual-equalization) - HouseCurve is used to guide manual tuning.  This is the most straight forward approach.  It works by iteratively measuring the audio system, adjusting it, then measuring again.  It will work with any audio system, even ones with limited adjustments (ex: you can move furniture and see the impact).
 
@@ -23,33 +23,36 @@ Equalization means adjusting an audio system’s output so that the response mea
 
 When sound leaves an audio system, it interacts with the room, but this interaction changes with frequency.  Below the Schroeder frequency, or about 300 Hz, room resonances have a dominant impact on what is heard in the listening area.  At these frequencies, the room is in control.  Above the Schroeder frequency, direct sound from the audio system begins to dominate with contributions from room diffusion, absorption and reflection.  In this region, the audio system is mostly in control.  Thus, when equalizing a typical home or car audio system, we are correcting for the room below the Schroeder frequency and for the audio system above it.  For more information, read [Floyd Toole’s paper](https://www.harman.com/documents/AudioScience_0.pdf)).
 
-When applying equalization, it is best to start at the low frequencies and work your way up.  At low frequencies, room resonances will create large peaks and dips in the magnitude.  These will be quite audible, so focus on smoothing them out to the target curve.  Moving toward higher frequencies, peaks and dips become much less audible and should not be adjusted.  Instead, shift your focus to adjusting wide regions of the magnitude response towards the target curve (an octave or more).  At the very upper end (10 KHz), it may not be worth making any adjustments at all.  A great video on the topic is [here](https://www.youtube.com/watch?v=TwGd0aMn1wE)).
+When applying equalization, it is best to start at the low frequencies and work your way up.  At low frequencies, room resonances will create large peaks and dips in the magnitude.  The peaks and wide dips will be audible, so focus on smoothing them out to the target curve.  Moving toward higher frequencies, peaks and dips become much less audible and should not be adjusted.  Instead, shift your focus to adjusting wide regions of the magnitude response towards the target curve (an octave or more).  At the very upper end (10 KHz), it may not be worth making any adjustments at all.  A great video on the topic is [here](https://www.youtube.com/watch?v=TwGd0aMn1wE)).
 
 
 ## Gain management
 
 Equalization adjusts the audio system gain at different frequencies through "boosts" and "cuts".  In order to avoid pushing your audio system too hard and causing distortion, please follow these recommendations:
 
-1. **Equalize the average of several measurements in the listening area** - A single measurement will have narrow deep dips caused by standing waves known as [room modes](https://en.wikipedia.org/wiki/Room_modes).  The dip is measured when the microphone is in a location where a standing wave has an antinode.  Boosting the dip has no effect at this location, but it will elsewhere in the room, leading to boomy sound and possibly distortion.  Since the dips are location dependent, averaging helps to hide them, providing a better overall measurement of the listening area.
+1. **Equalize the average of several measurements in the listening area** - A single measurement will have narrow deep dips caused by standing waves known as [room modes](https://en.wikipedia.org/wiki/Room_modes).  The dip is measured when the microphone is in a location where a standing wave has an antinode.  Boosting the dip has no effect at this location, but it will elsewhere in the room, leading to boomy sound and possibly distortion.  Since the dips are location dependent, averaging helps to hide them, providing a better measurement of the "average experience" in the listening area.
 
 1. **Lower the target curve** - To avoid increasing the overall gain, you can manually lower the target curve (see: [target curve fit](../manual/plot_setup.md#target-curve-fit)).  This will cause more of the measurement to appear above the target curve, effectively increasing the number and size of cuts needed to correct.  The results is lower overall system gain.
+
+1. **Use only cuts** - You can also disable boosts altogether (see: [allow only cuts](../manual/plot_setup.md#allow-only-cuts)).  It is best to also lower the target curve a *few* decibels to get a better correction.  Keep in mind that the peaks are more audible than the dips. avoid lowering the target curve to the bottom of the deepest dip.  Doing so may lead to increased noise (you'll have to increase the system volume to compensate for large cuts).
 
 1. **Avoid correcting beyond the capabilites of the system** - A small bookshelf speaker may have a low frequency limit of 50 Hz (-6 dB).  Applying a +10 dB boost at 30 Hz to get more bass is going to drive the speaker beyond its capabilities and lead to distortion (and possibly damage).  When [Coherence Blanking](../manual/plot_setup.md#coherence-blanking) is enabled, the low frequency capability of the speaker is more obvious.  If the speaker can't produce 30 Hz, this portion of the measurement will not be displayed.
 
 
 ## Automatic Equalization
 
-HouseCurve's [Equalize Tool](../manual/equalize_tool.md) generates filters to correct a [saved measurement](../manual/plot_setup.md#saved-measurement) to a [target curve](../manual/plot_setup.md#target-curve).  It can be accessed from the more menu <img src="/assets/img/more.png" alt="More" class="app-icon">.
+HouseCurve's [Equalize Tool](../manual/equalize_tool.md) generates a filter to correct a [saved measurement](../manual/plot_setup.md#saved-measurement) to a [target curve](../manual/plot_setup.md#target-curve).  It can be accessed from the more menu <img src="/assets/img/more.png" alt="More" class="app-icon">.
 
 For best results, average several measurements from the listening area and then save.  Averaging provides HouseCurve with a better picture of how sound changes in the listening area.
 
-The image below shows a saved measurement (grey) being corrected to the target curve (yellow).  The filters that perform the correction are shown in magenta.  The predicted magnitude response (when filters are applied) is shown in cyan.
+The image below shows a saved measurement (grey) being corrected to the target curve (yellow).  The filter that performs the correction is shown in magenta.  The predicted magnitude response (when filter is applied) is shown in cyan.
 
 ![equalize tool](/assets/img/equalize_biquads.png "Equalize tool showing correction filters and predicted output")
 
-HouseCurve allocates filters to regions with the largest deviation from the target curve, starting with lower frequencies and ignoring blanked regions (see [Coherence Blanking](/../manual/plot_setup.md#coherence-blanking)).  The algorithm’s behavior can be controlled by tapping <img src="/assets/img/setup.png" alt="Setup" class="app-icon"> to display the [equalize setup screen](../manual/equalize_setup.md).  Plot settings, such target curve fit and blanking threshold also impact the algorithm.  The display automatically updates to reflect any setting change.
+HouseCurve generates a filter by focusing on regions with the largest deviation from the target curve, starting with lower frequencies and ignoring blanked regions (see [Coherence Blanking](/../manual/plot_setup.md#coherence-blanking)).  The algorithm’s behavior can be controlled by tapping <img src="/assets/img/equalize_setup.png" alt="Setup" class="app-icon"> to display the [equalize setup screen](../manual/equalize_setup.md).  Plot settings, such target curve fit and blanking threshold also impact the algorithm.  The display automatically updates to reflect any setting change.
 
-HouseCurve uses a form of IIR filter known as a peaking biquad filter.  These are commonly used in graphic and parametric equalizers to boost or cut at various frequencies.  You can view the individual filters by tapping <img src="/assets/img/detail.png" alt="Detail" class="app-icon"> to bring up the Filter Detail screen, shown below.  This screen can be used to manually enter filter settings into your audio system.
+
+When [filter type](../manual/equalize_setup.md#filter-type) is PEQ, you can view the individual filters that make up the correction by tapping <img src="/assets/img/detail.png" alt="Detail" class="app-icon">.  This will display the Filter Detail screen, shown below.  This screen can be used to manually enter filter settings into your audio system.
 
 ![filter detail screen](/assets/img/equalize_detail.png "Filter details can be imported into your audio system")
 {: .app-portrait }

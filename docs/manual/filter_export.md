@@ -13,10 +13,10 @@ The Filter Export screen can be accessed by tapping <img src="/assets/img/export
 {: .app-portrait-right }
 
 ## Format
-See [filter file formats](file_formats.md#filters).
+The export file format, see [filter file formats](file_formats.md#filters).  This setting is hidden for FIR filters, which are always exported as impulse responses (WAV).
 
 ## Sample Rate
-The sample rate for the exported filter coefficients or impulse response (ie: rate used by equalizer).  This setting is hidden for file formats that don't need a sample rate, ex: parametric EQ settings.  Choose "all" to export for all supported sample rates.
+The sample rate for the exported filter (ie: rate used by equalizer).  Choose "all" to export for all supported sample rates.  This setting is hidden for formats that don't require a sample rate.
 
 ## Export
 Tap to initiate the file export.
