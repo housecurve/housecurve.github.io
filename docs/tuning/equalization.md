@@ -36,7 +36,7 @@ Equalization adjusts the audio system gain at different frequencies through "boo
 
 1. **Use only cuts** - You can also disable boosts altogether (see: [allow only cuts](../manual/plot_setup.md#allow-only-cuts)).  It is best to also lower the target curve a *few* decibels to get a better correction.  Keep in mind that the peaks are more audible than the dips. avoid lowering the target curve to the bottom of the deepest dip.  Doing so may lead to increased noise (you'll have to increase the system volume to compensate for large cuts).
 
-1. **Avoid correcting beyond the capabilites of the system** - A small bookshelf speaker may have a low frequency limit of 50 Hz (-6 dB).  Applying a +10 dB boost at 30 Hz to get more bass is going to drive the speaker beyond its capabilities and lead to distortion (and possibly damage).  When [Coherence Blanking](../manual/plot_setup.md#coherence-blanking) is enabled, the low frequency capability of the speaker is more obvious.  If the speaker can't produce 30 Hz, this portion of the measurement will not be displayed.
+1. **Avoid correcting beyond the capabilities of the system** - A small bookshelf speaker may have a low frequency limit of 50 Hz (-6 dB).  Applying a +10 dB boost at 30 Hz to get more bass is going to drive the speaker beyond its capabilities and lead to distortion (and possibly damage).  When [Coherence Blanking](../manual/plot_setup.md#coherence-blanking) is enabled, the low frequency capability of the speaker is more obvious.  If the speaker can't produce 30 Hz, this portion of the measurement will not be displayed.
 
 
 ## Automatic Equalization
@@ -51,15 +51,16 @@ The image below shows a saved measurement (grey) being corrected to the target c
 
 HouseCurve generates a filter by focusing on regions with the largest deviation from the target curve, starting with lower frequencies and ignoring blanked regions (see [Coherence Blanking](/../manual/plot_setup.md#coherence-blanking)).  The algorithm’s behavior can be controlled by tapping <img src="/assets/img/equalize_setup.png" alt="Setup" class="app-icon"> to display the [equalize setup screen](../manual/equalize_setup.md).  Plot settings, such target curve fit and blanking threshold also impact the algorithm.  The display automatically updates to reflect any setting change.
 
+The filter produced by HouseCurve is controlled by the [filter type](../manual/equalize_setup.md#filter-type) setting.  FIR requires an audio system with a convolution engine (ex: Roon, Volumio, etc).  PEQ requires a parametric equalizer.  Note - if your audio system has a graphic equalizer (GEQ) it lacks the precision required for automatic equalization, try [manual equalization](#manual-equalization) instead.
 
-When [filter type](../manual/equalize_setup.md#filter-type) is PEQ, you can view the individual filters that make up the correction by tapping <img src="/assets/img/detail.png" alt="Detail" class="app-icon">.  This will display the Filter Detail screen, shown below.  This screen can be used to manually enter filter settings into your audio system.
+When filter type is PEQ, you can view the individual filters that make up the correction by tapping <img src="/assets/img/detail.png" alt="Detail" class="app-icon">.  This will display the Filter Detail screen, shown below.  This screen is handy if you need to manually enter the PEQ parameters into your audio system.
 
 ![filter detail screen](/assets/img/equalize_detail.png "Filter details can be imported into your audio system")
 {: .app-portrait }
 
 The filters can be [exported](../manual/filter_export.md) to a file by tapping <img src="/assets/img/export.png" alt="Export" class="app-icon">.  For more information see [file formats](../manual/file_formats.md#filters).
 
-When the filters have been loaded into your audio system, you should find that measurements are reasonably close to the predicted response.  The screenshots below show the predicted response (cyan) and actual measurements (green) after applying the filters.
+With the filter(s) loaded into your audio system, you should find that measurements are reasonably close to the predicted response.  The screenshots below show the predicted response (cyan) and actual measurements (green) after applying the filters.
 
 ![equalize tool](/assets/img/equalize_biquads_before.png "Equalize tool's predicted output")
 

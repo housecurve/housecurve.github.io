@@ -15,7 +15,7 @@ The Equalize Setup screen can be accessed by tapping <img src="/assets/img/equal
 ## Filter type
 Selects the type of filter HouseCurve will use to produce a correction.
 
-When PEQ is selected, HouseCurve will generate a set of parametric equalizer filters (peaking biquad filters).  These can be exported as PEQ settings, biquad coefficients or converted into an impulse response.
+When PEQ is selected, HouseCurve will generate a set of peak filters.  These can be exported as PEQ settings, biquad coefficients or converted into an impulse response.
 
 When FIR is selected, HouseCurve will generate a mixed phase FIR filter.  FIR filters are exported as impulse responses.
 
