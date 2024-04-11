@@ -43,14 +43,16 @@ When averaging measurements, this setting should be enabled.  This ensures the a
 When time aligning speakers, this setting should be disabled.  The change in phase slope and group delay is needed to measure alignment.
 
 
+## Volume Warning
+If the iPhone/iPad volume is set too high when a measurement is started, a warning appears and the measurement is aborted.  The warning will only appear once per connection.  It can be disabled if it's a nuisance (ex: audio system has another way to control the volume).
+
+
 ## Internal Mic Location
 Choose which internal microphone to use for measurement.  By default, HouseCurve uses the bottom microphone on iPhones and the top microphone on iPads.
 
 
 ## Internal Mic Compensation
-The average built in iPhone/iPad is reasonably flat, but begins to roll off below ~60 Hz and above ~16 KHz.  Internal Mic Compensation applies a moderate boost to correct this.  The boost curve is +6 dB at 30 Hz, tapering to zero at 60 Hz.  Likewise, at 16 KHz, the boost is zero and this increases to 6 dB at 20 KHz.
-
-It's worth keeping in mind that the iPhone/iPad can still "hear" below 60 Hz and above 16 KHz, it's just not as sensitive.  Internal Mic Compensation brings the measured response closer to what you would get with a calibrated extrnal mic.
+The average built in iPhone/iPad microphone is reasonably flat, but begins to roll off below ~60 Hz.  Internal Mic Compensation brings the measured response closer to what you would get with a calibrated external mic.  It is worth keeping in mind that the iPhone/iPad can still "hear" below 60 Hz, it is just not as sensitive.
 
 
 ## External Mic Calibration
