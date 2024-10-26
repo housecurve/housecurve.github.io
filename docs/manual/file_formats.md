@@ -24,7 +24,7 @@ A space, tab or comma delimited text file with a frequency (Hz) followed by a ga
 
 ## Measurements
 
-Saved measurements can be exported as impulse responses for use in other tools.  The file format is a monural [WAV](https://en.wikipedia.org/wiki/WAV). Samples are 32-bit floating point.  The impulse response is windowed to be 500 ms in length, with the peak occurring at the first sample.  The file is padded out to 1 second in length.
+Saved measurements can be exported as impulse responses for use in other tools.  The file format is a monural [WAV](https://en.wikipedia.org/wiki/WAV). Samples are 32-bit floating point.  The impulse response peak will appear at 250 ms, when no delays are present.  The file is padded out to 1 second in length.
 
 
 ## Filters
@@ -52,11 +52,9 @@ This format is meant for systems with a parametric equalizer, such as [Volumio](
 
 ### Impulse reponses
 
-A monural [WAV](https://en.wikipedia.org/wiki/WAV) formatted audio file containing the impulse response of all filters together.  Samples are 32-bit floating point.  The impulse peak is at the first sample, normalized to 1.0.  The length of the impulse is 500 ms (number of samples will depend on the sample rate).
+FIR and PEQ filters can be exported as impulse responses for use in audio systems with a convolution engine (aka "convolver").  The system must support at least 500 ms long FIR filters (ex: 24000 samples or "taps" at 48000 KHz).  Systems such as [Roon](https://help.roonlabs.com/portal/en/kb/articles/dsp-engine-parametric-equalizer), [moOde](https://moodeaudio.org), [CamillaDSP](https://github.com/HEnquist/camilladsp), [Volumio](https://volumio.com/en/) have this capability.  Beware that some systems support only short FIR filters, such as the [miniDSP-2x4HD](https://www.minidsp.com).
 
-This format is meant for audio systems with a convolution engine (aka "convolver") such as [Roon](https://help.roonlabs.com/portal/en/kb/articles/dsp-engine-parametric-equalizer), [moOde](https://moodeaudio.org), [CamillaDSP](https://github.com/HEnquist/camilladsp), [Volumio](https://volumio.com/en/), etc.
-
-It is normal for a change in overall system gain to happen when using a convolver.  You will need a way to adjust the overall gain to avoid distortion.
+The file format is a monural [WAV](https://en.wikipedia.org/wiki/WAV). Samples are 32-bit floating point.  The length of the file is 500 ms.  With PEQ filters, the impulse peak is at first sample (zero delay).  FIR filters have the impulse peak at 250 ms.  This is to accommodate some pre-ringing in the filter.
 
 
 ## Test signal
