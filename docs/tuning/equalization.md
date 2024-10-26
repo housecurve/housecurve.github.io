@@ -53,7 +53,7 @@ HouseCurve generates a filter by focusing on regions with the largest deviation 
 
 The filter produced by HouseCurve is controlled by the [filter type](../manual/equalize_setup.md#filter-type) setting.  FIR is higher fidelity than PEQ, but requires an audio system with a convolution engine (ex: Roon, Volumio, etc).  PEQ requires a parametric equalizer.  Note - if your audio system has a graphic equalizer (GEQ) it lacks the precision required for automatic equalization, try [manual equalization](#manual-equalization) instead.
 
-When filter type is PEQ, you can view the individual filters that make up the correction by tapping <img src="/assets/img/detail.png" alt="Detail" class="app-icon">.  This will display the Filter Detail screen, shown below.  This screen is handy if you need to manually enter the PEQ parameters into your audio system.
+When filter type is PEQ, you can view the individual filters that make up the correction by tapping <img src="/assets/img/detail.png" alt="Detail" class="app-icon">.  This will display the Filter Detail screen, shown below.  This screen is handy if you need to manually enter the PEQ parameters into your audio system (PK = peak filter, HS = high shelf, LS = low shelf).
 
 ![filter detail screen](/assets/img/equalize_detail.png "Filter details can be imported into your audio system")
 {: .app-portrait }
