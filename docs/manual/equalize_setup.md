@@ -22,9 +22,9 @@ When FIR is selected, HouseCurve will generate a mixed phase FIR filter.  FIR fi
 ## Frequency
 The frequency range to equalize.  
 
-Use the minimum frequency to prevent the algorithm from correcting low frequencies beyond the capabilities of the audio system, ex: trying to boost at 20 Hz when the audio system can barely produce 40 Hz at -6 dBFS.  Doing so will lead to distortion and possibly audio system damage.
+Adjust the frequency range to match the capabilties of your audio system.  Attempting to correct beyond its capabilities will lead to distortion and possibly audio system damage.  For example, if your system is -10 dB below the target curve at 40 Hz, it is unlikely a 10 dB boost will improve the bass without distortion (+10 dB is 10x the power).
 
-The maximum frequency can be used to avoid wasting filters on high frequency issues that may not be audible.
+Lower the maximum frequency to avoid wasting filters on issues that may not be audible.  This also helps Equalize Tool focus on the lower frequencies, where room correction has the largest benefit.
 
 ## Max gain
 The maximum gain range filters (absolute gain).
@@ -40,6 +40,11 @@ The maximum number of filters to use for PEQ correction.  HouseCurve will alloca
 For a parametric equalizer, set this to the number of filters your system supports.  For a convolution engine (ie: using the impulse response), the number of filters just controls the fidelity of the correction.  More filters may not make an audible difference.
 
 ## Max Q
-The maximum Q for PEQ filters, set this to the value your parametric equalizer supports.  The "Q" of a filter is roughly the width.  The higher the Q, the narrower the filter.
+The maximum Q for PEQ filters.  Set this to the value your parametric equalizer supports.  The minimum Q is fixed at 0.5.  The "Q" of a peak filter is roughly the width.  The higher the Q, the narrower the filter.
+
+## Allow shelf filters
+When enabled, Equalize Tool will consider high shelf and low shelf filters in the correction.  In some cases, a single shelf filter can replace several peak filters, resulting in a better correction.
+
+The Q range for shelf filters is limited to between 0.5 and 1.0.  This ensures the shelf filters smoothly raise or lower regions.  At Q values above 1.0, the smooth shape of the shelf begins to degenerate, growing peaks on either side of the center frequency (a boost and a cut).
 
 
