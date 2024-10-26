@@ -11,14 +11,20 @@ The Equalize Tool can be accessed from the more menu <img src="/assets/img/more.
 
 ![Equalize tool](/assets/img/equalize_screen.png "HouseCurve Equalize tool")
 
+## Saved measurement
+Equalize Tool corrects a saved measurement to a target curve.
+
 ## Predicted output
 The predicted magnitude measurement is shown in cyan.  After applying the correction filters, the measured magnitude response should be close to this.
 
 ## Correction filters
 The filters needed to correct the saved measurement (grey) to the target curve (yellow) are shown in magenta.
 
+## Equalize status
+Basic information about the correction is displayed here.  The maximum boost value can be used to adjust overall system gain to avoid clipping.
+
 ## Filter Detail
-Tap <img src="/assets/img/detail.png" alt="Detail" class="app-icon"> to show the individual filter parameters.  HouseCurve's biquad filters are based on the [Audio EQ Cookbook by Robert Bristow-Johnson](https://www.w3.org/TR/audio-eq-cookbook/).  Where Frequency is the center frequency of the filter.  Gain is in dB and Q is the width of the filter (constant Q).
+Tap <img src="/assets/img/detail.png" alt="Detail" class="app-icon"> to show PEQ filter parameters (disabled when using FIR filter).  Use this screen when manually entering PEQ filters.
 
 ## Plot Setup
 Tap <img src="/assets/img/plot.png" alt="Plot Setup" class="app-icon"> to show the [Plot Setup screen](plot_setup.md).  Use this to select target curves and saved measurements.
