@@ -6,6 +6,9 @@ parent: App Notes
 nav_order: 3
 ---
 
+* This is the table of contents (don't remove this line, won't be displayed)
+{:toc}
+
 # Volumio Room Correction
 
 [Volumio](https://volumio.com) is open source music playback software that can run on a PC, Raspberry Pi, etc.  It provides DSP features through a plugin called FusionDSP, which is a front end for [CamillaDSP](https://github.com/HEnquist/camilladsp).
