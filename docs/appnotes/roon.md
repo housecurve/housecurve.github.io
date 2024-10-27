@@ -112,7 +112,15 @@ Go to the DSP Engine for the measured audio zone and add a convolution by pressi
 
 ![filter import](/assets/img/roon_convolution.png "load filter")
 
-Ensure that Headroom management is enabled.  It is normal for convolutions to result in an overall boost to the signal and this can result in clipping.  You may need to change the adjustment to -6 dB or more.
+
+## 6.  Headroom Management
+
+Ensure that Headroom management is enabled.  Convolution can increase the overall system gain, causing clipping.  To compensate, the "headroom" can be adjusted.  Use the maximum boost as a starting point for this adjustment.  If the value is large, it may be necessary to change the equalization settings, see [gain management](../tuning/equalization.md#gain-management).
+
+![maximum boost](/assets/img/roon_maximum_boost.png "use maximum boost to adjust headroom")
+
+
+To compensate for a maximum boost of about +6 dB, enter -6 dB.  Enable the clipping indicator to see if the headroom adjustment is sufficient.
 
 ![headroom management](/assets/img/roon_headroom.png "enable headroom management")
 
