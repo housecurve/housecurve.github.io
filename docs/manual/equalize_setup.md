@@ -22,14 +22,14 @@ When FIR is selected, HouseCurve will generate a mixed phase FIR filter.  FIR fi
 ## Frequency
 The frequency range to equalize.  
 
-Adjust the frequency range to match the capabilties of your audio system.  Attempting to correct beyond its capabilities will lead to distortion and possibly audio system damage.  For example, if your system is -10 dB below the target curve at 40 Hz, it is unlikely a 10 dB boost will improve the bass without distortion (+10 dB is 10x the power).
+Adjust the frequency range to match the capabilties of your audio system.  Attempting to correct beyond its capabilities will lead to distortion and possibly audio system damage.  For example, if your system is -10 dB below the target curve at 40 Hz, it is unlikely a 10 dB boost will improve the bass without distortion.  Keep in mind that a +10 dB adjustment means the audio system has to output 10 times more power. 
 
 Lower the maximum frequency to avoid wasting filters on issues that may not be audible.  This also helps Equalize Tool focus on the lower frequencies, where room correction has the largest benefit.
 
 ## Max gain
-The maximum gain range filters (absolute gain).
+The maximum boost or cut an individual filter can make.
 
-The maximum gain limits the size of a boost or a cut an individual filter can make.  HouseCurve may place filters in close proximity to produce larger gains.  Keep in mind that a +10 dB adjustment means the audio system has to output 10 times more signal power.
+Equalize Tool may place PEQ filters in close proximity to produce a boost that exceed the maximum.  If this happens, the maximum boost will be displayed in red (see: [equalize status](../manual/equalize_tool.md)).
 
 ## Allow only cuts
 Prevents the creation of filters with positive gain (boost) to avoid clipping.  Use manual [curve fit](../manual/plot_setup.md#target-curve-fit) to lower the target curve and improve the overall correction without using boost.
