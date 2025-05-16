@@ -17,9 +17,11 @@ HouseCurve measures your audio system by listening to it play a test signal.  Th
 
 HouseCurve can connect to the audio system wirelessly using AirPlay or Bluetooth. Tap <img src="/assets/img/airplay.png" alt="AirPlay" class="app-icon"> at the top right of the screen to see a list of wireless outputs.
 
-Note - Connections established using the iOS Control Center or Apple Music are not recognized by HouseCurve (this is an iOS limitation related to long form audio and recording).
+Connections established using the iOS Control Center or Apple Music are not recognized by HouseCurve (Apps that play and record are not permitted to use the buffered AirPlay v2 used by music apps).
 
 Some implementations of AirPlay and Bluetooth struggle with short segments of audio and will not work with HouseCurve.  This can be compounded by long playback delay/buffering, for example, running a convolution engine (FIR filters).
+
+**Note - AirPlay v1 was broken in iOS-18.4.x, this prevented HouseCurve from connecting to AirPlay devices.  This issue was resolved in iOS 18.5**
 
 If you encounter problems with wireless connections, try a wired connection or externally played sweeps.
 
