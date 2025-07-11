@@ -79,7 +79,7 @@ The following application notes dive into the details of creating filters:
 In addition, HouseCurve's filters have been tested on these systems:
 
 * [moOde Audio](https://moodeaudio.org) - FIR / PEQ impulse response
-* [HQPlayer](https://www.signalyst.com/consumer.html) - FIR / PEQ impulse response
+* [HQPlayer](https://www.signalyst.com/consumer/) - FIR / PEQ impulse response
 * [Equalizer APO](https://sourceforge.net/projects/equalizerapo/) - parametric EQ settings
 * [HifiBerry DAC+DSP](https://www.hifiberry.com/shop/boards/hifiberry-dac-dsp/) - parametric EQ settings
 
