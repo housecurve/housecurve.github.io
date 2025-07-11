@@ -78,7 +78,7 @@ The following application notes dive into the details of creating filters:
 
 In addition, HouseCurve's filters have been tested on these systems:
 
-* [Crestron DM NAX](https://www.crestron.com/Products/Featured-Solutions/Audio-Over-IP) - PEQ direct upload
+* [Crestron&reg; DM NAX](https://www.crestron.com/Products/Featured-Solutions/Audio-Over-IP) - PEQ direct upload
 * [HQPlayer](https://www.signalyst.com/consumer/) - FIR / PEQ impulse response
 * [Equalizer APO](https://sourceforge.net/projects/equalizerapo/) - parametric EQ settings
 * [moOde Audio](https://moodeaudio.org) - FIR / PEQ impulse response
