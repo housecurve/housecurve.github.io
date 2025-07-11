@@ -16,7 +16,7 @@ HouseCurve does not collect, use, store or transfer personal data.  With your pe
 
 ## Partners
 
-HouseCurve supports room correction with [Crestron&reg; DM NAX](ihttps://www.crestron.com/Products/Featured-Solutions/Audio-Over-IP) audio systems.
+HouseCurve supports room correction with [Crestron&reg; DM NAX](https://www.crestron.com/Products/Featured-Solutions/Audio-Over-IP) audio systems.
 
 ![Crestron](/assets/img/crestron_logo_ko_cmyk.png)
 {: .logo }
