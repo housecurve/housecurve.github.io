@@ -15,11 +15,9 @@ The Filter Export screen can be accessed by tapping <img src="/assets/img/export
 ## Format
 The format used to export the filters.  This setting is hidden when the [filter type](../manual/equalize_setup.md#filter-type) is set to FIR.
 
-### File export
-Biquad Coefficients, Parametric EQ Settings and Impulse responses are file based [filter formats](file_formats.md#filters).  When export is tapped a screen will appear asking where to save the file, ex: iCloud drive.
+Biquad Coefficients, Parametric EQ Settings, Impulse Response - These are file based [filter formats](file_formats.md#filters).  When export is tapped a screen will appear asking where to save the file, ex: iCloud drive.
 
-### Direct upload
-[Crestron&reg; DM NAX](https://www.crestron.com/Products/Featured-Solutions/Audio-Over-IP) is a direct upload format.  When export is tapped, a connection screen will appear asking for the device IP address and login credentials (same as [web interface](https://docs.crestron.com/en-us/9045/Content/Topics/DM-NAX-8ZSA/Configure-8ZSA.htm#Access_the_Web_Interface_with_a_Web_Browser)).  Choose a zone and tap upload.  To clear filters, choose a zone and tap reset.  Changes take effect immediately.
+Crestron DM NAX - Uploads filters to a [Crestron&reg; DM NAX](https://www.crestron.com/Products/Featured-Solutions/Audio-Over-IP) device.  When export is tapped, a connection screen will appear asking for the device IP address and login credentials (same as [web interface](https://docs.crestron.com/en-us/9045/Content/Topics/DM-NAX-8ZSA/Configure-8ZSA.htm#Access_the_Web_Interface_with_a_Web_Browser)).  Choose a zone and tap upload.  To clear filters, choose a zone and tap reset.  Changes take effect immediately.
 
 
 ## Sample Rate
