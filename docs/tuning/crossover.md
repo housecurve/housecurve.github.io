@@ -13,7 +13,7 @@ For audio systems that incorporate limited range speakers, the crossover frequen
 
 The classic approach is to select crossover frequencies based on speaker specifications, but these may not reflect how the speakers perform in the room.  It is better to measure the actual speaker performance. Use [saved measurements](../manual/plot_setup.md#saved-measurments), to compare speakers and select a crossover frequency.
 
-The screenshot below shows a 2.1 desktop audio system consisting of [main speakers](https://www.kantoaudio.com/powered-speakers/yu2) and a [subwoofer](https://www.kantoaudio.com/subwoofers/sub6).  The speakers were measured separately with crossovers disabled and no equalization.  The [subwoofer was measured](../usage/subwoofer.md) first and saved (grey), then the main speakers were measured (green).
+The screenshot below shows a small 2.1 desktop audio system.  The speakers were measured separately with crossovers disabled and no equalization.  The [subwoofer was measured](../usage/subwoofer.md) first and saved (grey), then the main speakers were measured (green).
 
 ![finding crossover frequency](/assets/img/crossover_select.png "Measure speakers separately to find best crossover frequency")
 
