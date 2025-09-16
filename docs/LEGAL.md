@@ -8,7 +8,9 @@ title: Legal
 
 # Privacy Policy
 
-HouseCurve does not collect, use, store or transfer personal data.  With your permission, Apple collects app analytics to help developers improve their apps.  For more information, see [Apple Privacy Policy](https://www.apple.com/privacy/).
+HouseCurve does not collect, use, store or transfer personal data.  HouseCurve may occasionally collect anonymous usage data to help improve features and debug problems.
+
+With your permission, Apple collects app analytics to help developers improve their apps.  For more information, see [Apple Privacy Policy](https://www.apple.com/privacy/).
 
 ## EULA
 
