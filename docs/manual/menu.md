@@ -19,7 +19,7 @@ A sine sweep produces a better measurement than pink noise because it concentrat
 
 The drawback to sweeps is they can't be used in real time, ex: to see the effect of tuning.  Tuning with sine sweeps requires repeated measure-adjust-measure steps.  Multiple sweep measurements must be averaged to capture the average sound of a listening area.
 
-Single sine sweep measurements are included in the free version of HouseCurve.  With the Tuning Bundle, measurements can be averaged or compared, and phase and group delay plots are available.
+Single sine sweep measurements are included in the free version of HouseCurve.  With the [Tuning Bundle](../DOWNLOAD.md#tuning-bundle), measurements can be averaged or compared, and phase and group delay plots are available.
 
 ## Real Time
 The [Real Time tool](realtime_tool.md) measures your audio system with pink noise.
