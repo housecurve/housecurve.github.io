@@ -43,14 +43,14 @@ For this app note, we will perform measurements using [external stimulus](../usa
 
 This method will work with any audio system, but it requires more steps.  If you like, you can skip this and connect HouseCurve to the audio system using Bluetooth or AirPlay.  As long as the signal passes through the Roon Core, you will get the same result.
 
-Launch HouseCurve on your iPhone/iPad.  Tap <img src="/assets/img/setup.png" alt="Setup" class="app-icon"> to display the Measure Setup screen, then tap ***Stimulus Type***.
+Launch HouseCurve on your iPhone/iPad.  Tap <img src="/assets/img/setup.png" alt="Setup" class="app-icon"> to display the Measure Setup screen, then tap ***External Stimulus***.
 
 ![measure setup](/assets/img/roon_measure_setup.png "measure setup")
 {: .app-portrait }
 
-Set the stimulus type to  ***External Sine Sweep***.  Tap ***Export test signal*** and select a location to save the wav file.  Add this file to your Roon Library using a Music Folder (etc).
+Turn External Stimulus on.  Tap ***Export test signal*** and select a location to save the wav file.  Add this file to your Roon Library using a Music Folder (etc).
 
-![stimulus type](/assets/img/roon_stimulus_type.png "select external sine sweep and export test signal")
+![stimulus type](/assets/img/roon_stimulus_type.png "enable external stimulus and export test signal")
 {: .app-portrait }
 
 You should now be able to play the test signal through your desired audio zone using Roon.

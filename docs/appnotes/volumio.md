@@ -56,16 +56,15 @@ The FusionDSP plugin makes this easy by shipping with HouseCurve's test signal. 
 ![fusiondsp tools](/assets/img/volumio_fusiondsp_tools.png "FusionDSP HouseCurve integration")
 {: .app-portrait }
 
-Next, we need to configure HouseCurve for external stimulus.  Launch HouseCurve on your iPhone/iPad.  Tap <img src="/assets/img/setup.png" alt="Setup" class="app-icon"> to display the Measure Setup screen, then tap ***Stimulus Type***.
+Next, we need to configure HouseCurve for external stimulus.  Launch HouseCurve on your iPhone/iPad.  Tap <img src="/assets/img/setup.png" alt="Setup" class="app-icon"> to display the Measure Setup screen, then tap ***External Stimulus***.
 
-![measure setup](/assets/img/volumio_measure_setup.png "measure setup")
+![measure setup](/assets/img/roon_measure_setup.png "measure setup")
 {: .app-portrait }
 
-Set the stimulus type to  ***External Sine Sweep***.
-
-![stimulus type](/assets/img/volumio_stimulus_type.png "select external sine sweep")
+Turn External Stimulus on.  Tap ***Export test signal*** and select a location to save the wav file.  Add this file to your Roon Library using a Music Folder (etc).
+ 
+![stimulus type](/assets/img/roon_stimulus_type.png "enable external stimulus and export test signal")
 {: .app-portrait }
-
 
 ## 3. Collect Measurements
 
