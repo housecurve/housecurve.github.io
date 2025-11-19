@@ -3,7 +3,7 @@ layout: default
 
 title: Measure Setup
 parent: Manual
-nav_order: 6
+nav_order: 9
 ---
 
 # Measure Setup

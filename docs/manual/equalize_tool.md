@@ -3,7 +3,7 @@ layout: default
 
 title: Equalize Tool
 parent: Manual
-nav_order: 3
+nav_order: 7
 ---
 
 # Equalize Tool

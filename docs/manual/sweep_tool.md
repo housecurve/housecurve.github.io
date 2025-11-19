@@ -1,12 +1,12 @@
 ---
 layout: default
 
-title: Measure Screen
+title: Sweep Tool
 parent: Manual
-nav_order: 2
+nav_order: 3
 ---
 
-# Measure Screen
+# Sweep Tool
 HouseCurve's main interface is the Measure screen.  This is where measurements of an audio system are displayed.  Additional tools and the help screen can be accessed from the more menu <img src="/assets/img/more.png" alt="More" class="app-icon">.  The lower toolbar contains controls related to measurement.
 
 ![Measure screen](/assets/img/measure_screen.png "housecurve Measure screen")

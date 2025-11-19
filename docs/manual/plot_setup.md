@@ -3,7 +3,7 @@ layout: default
 
 title: Plot Setup
 parent: Manual
-nav_order: 5
+nav_order: 8
 ---
 
 # Plot Setup
@@ -15,7 +15,7 @@ The Plot Setup screen can be accessed by tapping <img src="/assets/img/plot.png"
 ## Saved Measurement
 Saved Measurements can be displayed on the plot for comparison.  Choose "None" to disable.  Measurements can be removed or [exported](file_formats.md#measurements) by tapping Select (export with Tuning Bundle in-app purchase).
 
-When a measurement is [saved](measure_screen.md#save-measurement), it will be added to this list and selected.
+When a measurement is [saved](sweep_tool.md#save-measurement), it will be added to this list and selected.
 
 ## Target Curve
 A [target curve](../tuning/target_curve.md) is displayed on the magnitude plot to serve as a guide for [tuning an audio system](../tuning/TUNING.md).  
