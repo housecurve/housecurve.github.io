@@ -27,7 +27,7 @@ Tap plot area to show cursor, move with a single finger, tap again to hide.
 HouseCurve displays the status of the [measurement process](../usage/measurement_process.md) in this area.  The status disappears after a few seconds.
 
 ## Setup Status
-HouseCurve displays setup information in this area.  The status disappears after a few seconds.
+HouseCurve displays plot and hardware setup information in this area.  The status disappears after a few seconds.
 
 ## Zoom / Scroll
 To zoom into a plot, pinch anywhere on the plot area.  The plot can be scrolled left or right with two fingers.  Plot zoom and scroll only change the horizontal frequency axis.  HouseCurve automatically sets the vertical axis of the plots to show the measurement.

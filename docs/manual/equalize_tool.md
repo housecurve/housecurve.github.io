@@ -3,11 +3,11 @@ layout: default
 
 title: Equalize Tool
 parent: Manual
-nav_order: 7
+nav_order: 5
 ---
 
 # Equalize Tool
-The Equalize Tool can be accessed from the more menu <img src="/assets/img/more.png" alt="More" class="app-icon"> on the Measure screen.  It is the main interface for automatic equalization / room correction.  The plot area displays the filters used to correct a saved measurement to a target curve. The lower toolbar contains controls related to equalization.
+The Equalize Tool displays filters used to correct a saved measurement to a target curve. The lower toolbar contains controls related to equalization.
 
 ![Equalize tool](/assets/img/equalize_screen.png "HouseCurve Equalize tool")
 

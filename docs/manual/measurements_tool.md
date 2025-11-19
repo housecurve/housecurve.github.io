@@ -3,11 +3,11 @@ layout: default
 
 title: Measurements
 parent: Manual
-nav_order: 7
+nav_order: 8
 ---
 
 # Measurements Tool
 
-![main menu](/assets/img/main_menu.png "HouseCurve Main Menu")
+![Measurements tool](/assets/img/measurements_tool.png "Measurements tool")
 
 

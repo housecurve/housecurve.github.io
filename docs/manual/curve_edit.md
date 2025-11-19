@@ -3,13 +3,13 @@ layout: default
 
 title: Curve Editor
 parent: Manual
-nav_order: 6
+nav_order: 7
 ---
 
-The Curve Editor can be accessed from the more menu <img src="/assets/img/more.png" alt="More" class="app-icon"> on the Measure screen.
+# Curve Edit
+The curve editor displays a target curve and optionally fits it on a saved measurement.  The lower toolbar contains controls related to curve editing.
 
 ![Curve Edit screen](/assets/img/curve_edit.png "HouseCurve Curve Editor")
-
 
 ## Target curve and points
 The editor supports curves with up to 20 points.  Drag points to adjust the curve.  Add points with a single tap.  Remove points with a double tap.

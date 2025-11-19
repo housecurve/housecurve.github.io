@@ -7,18 +7,15 @@ nav_order: 3
 ---
 
 # Sweep Tool
-HouseCurve's main interface is the Measure screen.  This is where measurements of an audio system are displayed.  Additional tools and the help screen can be accessed from the more menu <img src="/assets/img/more.png" alt="More" class="app-icon">.  The lower toolbar contains controls related to measurement.
+The Sweep Tool displays sweep measurements on top of the selected target curve and optionally a saved measurement (see: [Plots](plots.md)). The lower toolbar contains controls for sweep measurements.  Some settings are shared with the Real Time tool.
 
-![Measure screen](/assets/img/measure_screen.png "housecurve Measure screen")
-
-## Page Control
-Tap <img src="/assets/img/pageleft.png" alt="Page Left" class="app-icon"> or <img src="/assets/img/pageright.png" alt="Page Right" class="app-icon"> to move between [magnitude, phase and group delay plots](../usage/plot_types.md) plots.  Alternatively, swipe from the left or right edge of the screen to change plots.
+![Sweep tool](/assets/img/sweep_tool.png "Sweep tool")
 
 ## Airplay
 Tap <img src="/assets/img/airplay.png" alt="AirPlay" class="app-icon"> to select from available AirPlay and Bluetooth audio outputs.  The analog (wired) output is automatically selected when something is plugged into the iPhone/iPad headphone connector.  See [connecting to an audio system](../usage/connecting.md).
 
-## More Menu
-Tap <img src="/assets/img/more.png" alt="More" class="app-icon"> to show additional tools and the help screen.
+## Page Control
+Tap <img src="/assets/img/pageleft.png" alt="Page Left" class="app-icon"> or <img src="/assets/img/pageright.png" alt="Page Right" class="app-icon"> to move between [magnitude, phase and group delay plots](../usage/plot_types.md) plots.  Alternatively, swipe from the left or right edge of the screen to change plots.
 
 ## Measure
 Tap <img src="/assets/img/measure.png" alt="Measure" class="app-icon"> to start [measurement process](../usage/measurement_process.md).  Tap again to to stop.  This button is disabled when not connected to an audio system.
