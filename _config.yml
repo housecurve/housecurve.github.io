@@ -29,7 +29,7 @@ features:
   link: /docs/manual/plots.html
 
 - title: Made for Tuning
-  description: A portable audio analyzer made for tinkering with audio systems.  All you need is your iPhone or iPad.
+  description: A portable audio analyzer made for tinkering with audio systems.  Measure with sine sweeps or in real time with pink noise.
   link: /TUNING.html
 
 - title: Reliable
