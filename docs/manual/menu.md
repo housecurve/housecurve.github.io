@@ -38,5 +38,5 @@ Use the [Curve Editor](curve_edit.md) to create a target curve of your liking.  
 The [Measurements tool](measurements_tool.md) is an organizer for saved measurements.  Use it to delete or export measurements.  In the future this tool will also support comparison, etc.
 
 ## Help
-Help includes links to help topics, contact info and Tuning Bundle subscription status.
+Help includes links to help topics, contact info and [Tuning Bundle](../DOWNLOAD.md#tuning-bundle) subscription status.
 
