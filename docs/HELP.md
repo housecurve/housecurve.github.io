@@ -14,6 +14,7 @@ title: Quick Start
 
 # Quick Start
 
+1. Choose <img src="/assets/img/sweep.png" alt="Sweep" class="app-icon"> Sweep from the main menu.
 1. Connect iPhone/iPad to your audio system, see [connecting](usage/connecting.md) for details.
 1. Set volume to a low setting with the iPhone/iPad volume buttons.
 1. Tap <img src="/assets/img/measure.png" alt="Measure" class="app-icon"> to start measurement process. HouseCurve will play a test signal through the audio system.
