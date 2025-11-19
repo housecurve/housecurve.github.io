@@ -39,7 +39,7 @@ For best results, ensure the audio system is [set up correctly](../tuning/TUNING
 
 HouseCurve measures your audio system by listening to it play a sine sweep test signal.  There are several ways to do this as described in [connecting](../usage/connecting.md).
 
-For this app note, we will perform measurements using [externally played sweeps](../usage/connecting.md#externally-played-sweeps).  This method doesn't require a direct connection to the audio system.  Instead, we transfer the test signal as a wav file to the audio system and play it manually.  HouseCurve will measure by listening to the test signal as it is played.
+For this app note, we will perform measurements using [external stimulus](../usage/connecting.md#external-stimulus).  This method doesn't require a direct connection to the audio system.  Instead, we transfer the test signal as a wav file to the audio system and play it manually.  HouseCurve will measure by listening to the test signal as it is played.
 
 This method will work with any audio system, but it requires more steps.  If you like, you can skip this and connect HouseCurve to the audio system using Bluetooth or AirPlay.  As long as the signal passes through the Roon Core, you will get the same result.
 
@@ -70,7 +70,7 @@ Tap <img src="/assets/img/plot.png" alt="Plot Setup" class="app-icon"> to displa
 ![plot setup](/assets/img/roon_plot_setup.png "plot setup screen showing average mode")
 {: .app-portrait }
 
-To measure with external sweeps, first tap <img src="/assets/img/measure.png" alt="Plot Setup" class="app-icon"> on HouseCurve to start the measurement process.  Then use Roon to play back the test signal.  Ensure that the iPhone/iPad microphone is pointed in the direction of the speakers.  Measure at a normal listening volume.
+To measure with external stimulus, first tap <img src="/assets/img/measure.png" alt="Plot Setup" class="app-icon"> on HouseCurve to start the measurement process.  Then use Roon to play back the test signal.  Ensure that the iPhone/iPad microphone is pointed in the direction of the speakers.  Measure at a normal listening volume.
 
 Note - HouseCurve must remain in the foreground to measure.  If you need to trigger playback with the same device, start a looped playback, then switch back to HouseCurve to start the measurement.  HouseCurve will only collect one measurement at a time.
 

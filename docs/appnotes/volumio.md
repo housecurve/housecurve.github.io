@@ -49,14 +49,14 @@ Using the Volumio control, install the plugin by going to Volumio settings -> pl
 
 HouseCurve measures your audio system by listening to it play a sine sweep test signal.  There are several ways to do this as described in [connecting](../usage/connecting.md).
 
-For this app note, we will perform measurements using [externally played sweeps](../usage/connecting.md#externally-played-sweeps).  This method doesn't require a direct connection to the audio system.  Instead, the test signal is played manually while HouseCurve just listens.
+For this app note, we will perform measurements using [external stimulus](../usage/connecting.md#external-stimulus).  This method doesn't require a direct connection to the audio system.  Instead, the test signal is played manually while HouseCurve just listens.
 
 The FusionDSP plugin makes this easy by shipping with HouseCurve's test signal.  To access it, go to FusionDSP settings.  In the "Tools" section, select "install tools".  When the install completes, choose HouseCurveTestSignal.wav as the file to play.  Press "Play selected file" to play the sweep.
 
 ![fusiondsp tools](/assets/img/volumio_fusiondsp_tools.png "FusionDSP HouseCurve integration")
 {: .app-portrait }
 
-Next, we need to configure HouseCurve for external sweeps.  Launch HouseCurve on your iPhone/iPad.  Tap <img src="/assets/img/setup.png" alt="Setup" class="app-icon"> to display the Measure Setup screen, then tap ***Stimulus Type***.
+Next, we need to configure HouseCurve for external stimulus.  Launch HouseCurve on your iPhone/iPad.  Tap <img src="/assets/img/setup.png" alt="Setup" class="app-icon"> to display the Measure Setup screen, then tap ***Stimulus Type***.
 
 ![measure setup](/assets/img/volumio_measure_setup.png "measure setup")
 {: .app-portrait }
@@ -80,7 +80,7 @@ Tap <img src="/assets/img/plot.png" alt="Plot Setup" class="app-icon"> to displa
 ![plot setup](/assets/img/volumio_plot_setup.png "plot setup screen showing average mode")
 {: .app-portrait }
 
-To measure with external sweeps, first tap <img src="/assets/img/measure.png" alt="Plot Setup" class="app-icon"> on HouseCurve to start the measurement process.  Then use Volumio to play back the test signal.  Ensure that the iPhone/iPad microphone is pointed in the direction of the speakers.  Measure at a normal listening volume.
+To measure with external stimulus, first tap <img src="/assets/img/measure.png" alt="Plot Setup" class="app-icon"> on HouseCurve to start the measurement process.  Then use Volumio to play back the test signal.  Ensure that the iPhone/iPad microphone is pointed in the direction of the speakers.  Measure at a normal listening volume.
 
 Note - HouseCurve must remain in the foreground to measure.  If you need to trigger playback with the same iPhone/iPad, start a looped playback, then switch back to HouseCurve to start the measurement.  HouseCurve will only collect one measurement at a time.
 

@@ -23,7 +23,7 @@ Some implementations of AirPlay and Bluetooth struggle with short segments of au
 
 **Note - AirPlay v1 was broken in iOS-18.4.x, this prevented HouseCurve from connecting to AirPlay devices.  This issue was resolved in iOS 18.5**
 
-If you encounter problems with wireless connections, try a wired connection or externally played sweeps.
+If you encounter problems with wireless connections, try a wired connection or external stimulus.
 
 
 ## Wired
@@ -31,17 +31,19 @@ If you encounter problems with wireless connections, try a wired connection or e
 HouseCurve automatically detects and uses USB audio and analog (ex: [Lightning to 3.5mm adapter](https://www.apple.com/shop/product/MMX62AM/A/lightning-to-35mm-headphone-jack-adapter)) connections.  Wired connections override wireless ones.
 
 
-## Externally played sweeps
+## External stimulus
 
-Use this method when direct connection isn't possible, or if wireless methods are not working.  The audio system is responsible for playing the test signal and HouseCurve will listen for it when measure is tapped.
+With this method, the audio system is responsible for playing the test signal and HouseCurve will listen for it when measure is tapped.  Use when direct connection is not possible, or if wireless methods are not working.
 
-The [test signal](../manual/file_formats.md#test-signal) can be downloaded by going to [Measure Setup](../manual/measure_setup.md) and changing the Stimulus Type to External Sine Sweep.  The chirp and sweep [channel settings](../manual/measure_setup.md#chirp-and-sweep-channel) are used to generate the file.
+The [test signal](../manual/file_formats.md#test-signal) can be downloaded by going to [Measure Setup](../manual/measure_setup.md) of the sweep or realtime tools and enabling external stimulus.  The [channel settings](../manual/measure_setup.md#chirp-and-sweep-channel) for the measurement tool are used to generate the file.  Note - the realtime test signal is about one minute long, use looped playback if you need more.
 
-The file can be saved to any network drive visible to the iPhone/iPad (iCloud, Samba, etc).  Alternatively, you can save locally and share with text message, email, AirDrop, etc.
+The test signal file can be saved to any network drive visible to the iPhone/iPad (iCloud, Samba, etc).  Alternatively, you can save locally and share with text message, email, AirDrop, etc.
 
-HouseCurve must stay in the foreground when taking measurements.  If you need to use your iPhone/iPad to trigger the playback of the test signal, put the player into single song repeat.  You can then switch back to HouseCurve and capture measurements as needed.
+HouseCurve must stay in the foreground when taking measurements (iOS restriction).  If you need to use your iPhone/iPad to trigger audio system playback, use looped playback.  You can then switch back to HouseCurve and capture measurements as needed.
 
-Note - External stimulus mode overrides any wireless or wired connection.  The AirPlay button will be disabled.
+It is not possible to measure audio streamed from an app running on the same iOS device, ex: to adjust the Spotify equalizer.  In this situation, use a separate iOS device running HouseCurve to measure.
+
+When external stimulus is enabled, wired connections are ignored and the AirPlay button will be disabled.
 
 
 ## HouseCurve on macOS
