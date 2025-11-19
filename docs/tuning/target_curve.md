@@ -18,7 +18,7 @@ A target curve, or “house curve”, is a visual guide to tune your audio syste
 
 The choice of target curve is subject to individual taste.  Typically, listeners prefer it when low frequencies are louder than high frequencies.  A  downward slope of 1 dB/octave is quite common.  Let your ears be the judge.
 
-HouseCurve provides a [Curve Editor](../manual/curve_edit.md) for tweaking curves or making your own.  It can be accessed from the more menu <img src="/assets/img/more.png" alt="More" class="app-icon">.  Curve files can also be [imported](../manual/plot_setup.md#target-curve) into HouseCurve.  See curve file [format](../manual/file_formats.md#curves) for details.
+HouseCurve provides a [Curve Editor](../manual/curve_edit.md) for tweaking curves or making your own.  Curve files can also be [imported](../manual/plot_setup.md#target-curve) into HouseCurve.  See curve file [format](../manual/file_formats.md#curves) for details.
 
 HouseCurve ships with two common curves for home listening: [B&K](/curves/B&K.txt) and [Harman](/curves/Harman.txt).  These can be selected by going to [Plot Setup](../manual/plot_setup.md).  Some additional curves are provided below for automobiles.  These curves have significantly more bass which is common for automobile listing.
 

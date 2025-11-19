@@ -41,7 +41,7 @@ Equalization adjusts the audio system gain at different frequencies through "boo
 
 ## Automatic Equalization
 
-HouseCurve's [Equalize Tool](../manual/equalize_tool.md) generates a filter to correct a [saved measurement](../manual/plot_setup.md#saved-measurement) to a [target curve](../manual/plot_setup.md#target-curve).  It can be accessed from the more menu <img src="/assets/img/more.png" alt="More" class="app-icon">.
+HouseCurve's [Equalize Tool](../manual/equalize_tool.md) generates a filter to correct a [saved measurement](../manual/plot_setup.md#saved-measurement) to a [target curve](../manual/plot_setup.md#target-curve).
 
 For best results, average several measurements from the listening area and then save.  Averaging provides HouseCurve with a better picture of how sound changes in the listening area.
 

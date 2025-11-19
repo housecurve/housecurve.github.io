@@ -83,7 +83,7 @@ When you are satisfied with the average measurement, save it by tapping <img src
 
 ## 3. Generate Filters
 
-Tap <img src="/assets/img/more.png" alt="More" class="app-icon"> and select Equalize.  HouseCurve will display the [Equalize](../manual/equalize_tool.md) tool.
+Go to the main menu and choose the [Equalize](../manual/equalize_tool.md) tool.
 
 The Equalize tool generates PEQ (biquad) or FIR filters to correct a saved measurement to a target curve.  Either filter type can be exported as an impulse response and loaded into Roon's convolution engine.  For this application note, we'll use the FIR filter as it has good low frequency resolution, resulting in smoother bass and nicer sound stage/imaging.  If you're curious, try both filter types and see which one you like better.
 

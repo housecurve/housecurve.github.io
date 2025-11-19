@@ -96,7 +96,7 @@ When you are satisfied with the average measurement, save it by tapping <img src
 
 ## 4. Generate Filters
 
-Tap <img src="/assets/img/more.png" alt="More" class="app-icon"> and select Equalize.  HouseCurve will display the [Equalize](../manual/equalize_tool.md) tool.
+Go to the main menu and choose the [Equalize](../manual/equalize_tool.md) tool.
 
 The Equalize tool can produce PEQ (biquad) or FIR filters to correct a saved measurement to a target curve.  For this app note, we will use PEQ filters and export them as parametric equalizer settings (ie: Freq, Gain, Q).  Note that FusionDSP can also support FIR filters via convolution.  The FIR filter produced by HouseCurve has better low frequency resolution, resulting in smoother bass and nicer sound stage/imaging.  However, this comes at a cost of higher CPU usage.
 

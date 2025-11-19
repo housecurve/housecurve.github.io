@@ -66,7 +66,7 @@ When you are satisfied with the average measurement, save it by tapping <img src
 
 ## 3. Generate Filters
 
-Tap <img src="/assets/img/more.png" alt="More" class="app-icon"> and select Equalize.  HouseCurve will display the [Equalize](../manual/equalize_tool.md) tool.
+Go to the main menu and choose the [Equalize](../manual/equalize_tool.md) tool.
 
 The Equalize tool generates PEQ (biquad) filters to correct a saved measurement to a target curve.  The process is instantaneous, so the display automatically updates to reflect any setting change (target curve, saved measurement, filter settings, etc).
 
