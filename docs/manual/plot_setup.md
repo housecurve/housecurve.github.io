@@ -7,7 +7,7 @@ nav_order: 8
 ---
 
 # Plot Setup
-The Plot Setup screen can be accessed by tapping <img src="/assets/img/plot.png" alt="Plot Setup" class="app-icon"> on the Measure or Equalize screens.
+The Plot Setup screen can be accessed by tapping <img src="/assets/img/plot.png" alt="Plot Setup" class="app-icon"> from the Sweep, Real Time, Equalize and Curve Edit tools.
 
 ![Plot setup screen](/assets/img/plot_setup.png)
 {: .app-portrait-right }
@@ -31,17 +31,6 @@ By default, the selected target curve is automatically fitted to measurements ba
 
 When automatic fitting is disabled, the curve can be manually positioned by setting a desired dB level.  This is useful when you don't want the curve to move, for example, when applying room correction to left and right speakers separately.
 
-## Plot Mode
-HouseCurve can display measurements to suit a given task (with Tuning Bundle in-app purchase).
-
-### Average
-Average mode is used to capture how an audio system sounds in a listening area. Use this mode when tuning the audio system to match a target curve.  Measurements are included in an average as they are collected.  The average measurement is displayed in bold green. Individual measurements will appear in faded green.
-
-HouseCurve applies averaging suitable for equalization and time alignment.  Decibel averaging is used for magnitudes.  Vector averaging is used for phase.  Arithmetic averaging is used for group delay.
-
-### History
-History mode is used to see the effect of an adjustment from a single microphone location. Use this mode for initial audio system setup, such as speaker position or time alignment.  The most recent measurement is displayed in bold green.  Older measurements appear in green and are faded according to age.
-
 ## Smoothing
 Smoothing can be applied to measurements to make it easier to see trends.  To remove smoothing, select None.
 
@@ -54,6 +43,19 @@ This setting also controls the threshold at which HouseCurve will [automatically
 
 ## Frequency Scale
 The frequency axis can have an Octave or Decade scale.  This setting applies to all plots.
+
+## Plot Modes
+HouseCurve can display measurements to suit a given task (with [Tuning Bundle](../DOWNLOADS.md) purchase).  Sweep and Real Time tool have independent plot modes.
+
+### Sweep
+* **Average** - Averages sweep measurements as they are captured.  This mode is well suited for tuning an audio system to match a target curve.  The average measurement is displayed in bold green. Individual measurements will appear in faded green.  HouseCurve applies averaging suitable for equalization and time alignment.  Decibel averaging is used for magnitudes.  Vector averaging is used for phase.  Arithmetic averaging is used for group delay.
+
+* **History** - Displays the latest sweep measurement on top of previous ones.  This mode is used to see the effect of an adjustment from a single microphone location.  Use this mode for initial audio system setup, such as speaker position or time alignment.  The most recent measurement is displayed in bold green.  Older measurements appear in green and are faded according to age.
+
+### Real Time
+* **Live** - Displays a short term average of the pink noise measurement (about 5 seconds).  Use this mode to see the measurement change as an adjustment is being made.
+
+* **Average** - Long term continuous average of the pink noise measurement.  Use this mode to quickly capture an average measurement of a listening area by moving the microphone (aka: “moving mic measurements”, or MMM).
 
 
 

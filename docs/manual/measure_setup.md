@@ -7,13 +7,19 @@ nav_order: 9
 ---
 
 # Measure Setup
-The Measure Setup screen can be accessed by tapping <img src="/assets/img/setup.png" alt="Setup" class="app-icon"> on the Measure screen.
+The Measure Setup screen can be accessed by tapping <img src="/assets/img/setup.png" alt="Setup" class="app-icon"> on the Sweep and Real Time tools.
 
 ![Measure setup screen](/assets/img/measure_setup.png)
 {: .app-portrait-right }
 
-## Chirp and Sweep Channel
+## Channels
+Control which channels are used to play stimulus.  The Sweep and Real Time tools have independent channel settings.
+
+### Sweep
 The "chirp" and "sweep" sounds of the test signal can be played on different channels (see [measurement process](../usage/measurement_process.md)).  This is mainly used for [subwoofer measurements](../usage/subwoofer.md).
+
+### Real Time
+Then channel used to play pink noise, defaults to "all".
 
 ## External Stimulus
 When enabled, HouseCurve will not attempt to play the test signal, it will only listen when measure is tapped.  Use this when connection to the audio system isn't possible, or wireless methods are not working correctly.
