@@ -59,6 +59,6 @@ The file format is a monural [WAV](https://en.wikipedia.org/wiki/WAV). Samples a
 
 ## Test signal
 
-A stereo [WAV](https://en.wikipedia.org/wiki/WAV) formatted audio file containing the "chirp" and "sweep" sounds.  Samples are 32-bit floating point.  The sample rate is 44.1 KHz.  See [external stimulus](../usage/connecting.md#external-stimulus) for more information.
+A stereo [WAV](https://en.wikipedia.org/wiki/WAV) formatted audio file containing the measurement tool's stimulus.  Samples are 32-bit floating point.  The sample rate is 48 KHz.  See [external stimulus](../usage/connecting.md#external-stimulus) for more information.
 
 

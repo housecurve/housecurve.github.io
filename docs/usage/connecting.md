@@ -35,7 +35,7 @@ HouseCurve automatically detects and uses USB audio and analog (ex: [Lightning t
 
 With this method, the audio system is responsible for playing the test signal and HouseCurve will listen for it when measure is tapped.  Use when direct connection is not possible, or if wireless methods are not working.
 
-The [test signal](../manual/file_formats.md#test-signal) can be downloaded by going to [Measure Setup](../manual/measure_setup.md) of the sweep or realtime tools and enabling external stimulus.  The [channel settings](../manual/measure_setup.md#chirp-and-sweep-channel) for the measurement tool are used to generate the file.  Note - the realtime test signal is about one minute long, use looped playback if you need more.
+The [test signal](../manual/file_formats.md#test-signal) can be downloaded by going to [Measure Setup](../manual/measure_setup.md) of the Sweep or Real Time tools and enabling external stimulus.  The [channel settings](../manual/measure_setup.md#channels) for the measurement tool are used to generate the file.  Note - the Real Time test signal is about one minute long, use looped playback if you need more.
 
 The test signal file can be saved to any network drive visible to the iPhone/iPad (iCloud, Samba, etc).  Alternatively, you can save locally and share with text message, email, AirDrop, etc.
 

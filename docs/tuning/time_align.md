@@ -67,7 +67,7 @@ In addition, phase measurements must share the same time reference to be compare
 
 To demonstrate the phase method, we'll align a subwoofer with the main speakers of a typical 2.1 audio system.
 
-The first step is to choose a "chirp" speaker for the timing reference.  Go to [measure setup](../manual/measure_setup.md#chirp-and-sweep-channel) and set the ***Chirp Channel*** to either left or right.  This will cause the chirp sound to come from only one of the main speakers.  Set the ***Sweep Channel*** to all.  This will cause the sweep sound to come from both main speakers, providing an average phase measurement at the chosen microphone location.
+The first step is to choose a "chirp" speaker for the timing reference.  Go to [measure setup](../manual/measure_setup.md#channels) and set the ***Chirp Channel*** to either left or right.  This will cause the chirp sound to come from only one of the main speakers.  Set the ***Sweep Channel*** to all.  This will cause the sweep sound to come from both main speakers, providing an average phase measurement at the chosen microphone location.
 
 Disable the subwoofer and perform a measurement of the main speakers.  Save the measurement when you are satisfied.
 

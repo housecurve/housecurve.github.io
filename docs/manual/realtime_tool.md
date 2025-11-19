@@ -1,12 +1,12 @@
 ---
 layout: default
 
-title: Realtime Tool
+title: Real Time Tool
 parent: Manual
 nav_order: 4
 ---
 
-# Realtime Tool
+# Real Time Tool
 The Real Time tool displays live pink noise measurments on top of a target curve and optionally a saved measurement (see: [Plots](plots.md)).  The lower toolbar provides controls for real time measurements.  Some settings are shared with the Sweep tool.
 
 ![Real Time tool](/assets/img/realtime_tool.png "Real Time tool")

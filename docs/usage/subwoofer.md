@@ -10,7 +10,7 @@ nav_order: 7
 # Subwoofer measurements
 A subwoofer (or woofer) lacks the frequency range to play the chirp sound of the test signal (see [measurement process](measurement_process.md)).  To measure a subwoofer with HouseCurve, another full range speaker is needed to produce the chirp and serve as the timing reference.
 
-HouseCurve can be configured to play the chirp and sweep sounds on [different audio channels](../manual/measure_setup.md#chirp-and-sweep-channel).  This makes it possible to route the sweep to the subwoofer and the chirp to another speaker (typically a main or center speaker).  Not all audio systems will support this.
+HouseCurve can be configured to play the chirp and sweep sounds on [different audio channels](../manual/measure_setup.md#channels).  This makes it possible to route the sweep to the subwoofer and the chirp to another speaker (typically a main or center speaker).  Not all audio systems will support this.
 
 For a typical 2.1 audio system, this can be accomplished by disabling (or disconnecting) a main speaker, ex: the right speaker.  HouseCurve is then configured to play the sweep through the right channel and the chirp through the left channel.  The subwoofer will receive the right channel via the “subwoofer out” of the audio system.  This is pictured below:
 
