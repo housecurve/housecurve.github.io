@@ -7,7 +7,7 @@ nav_order: 8
 ---
 
 # Measurements Tool
-The Measurements tool is an organizer for measurements saved by the Sweep and Real Time tool.
+The Measurements tool is an organizer for measurements saved by the Sweep and Real Time tool.  Use it to export and delete measurements.  In the future this tool will also have the ability to view and compare saved measurements.
 
 ![Measurements tool](/assets/img/measurements_tool.png "Measurements tool")
 {: .app-portrait-right }

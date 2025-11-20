@@ -1,12 +1,18 @@
 ---
 layout: default
 
-title: Real Time Tool
+title: Real Time
 parent: Manual
 nav_order: 4
 ---
 
 # Real Time Tool
+Use the Real Time tool to measure your audio system with pink noise.
+
+Pink noise spreads signal power over the entire audible range.  This means pink noise measurements will have a lower signal to noise ratio comared to sweeps.
+
+The advantage of pink noise is that it can be used in real time.  This makes it possible to see the measurement change as an adjustment is being made, ex: moving a graphic EQ slider.  Pink noise can also be used to capture an average measurement of a listening area by moving the microphone (aka: "moving mic measurements", or MMM).
+
 The Real Time tool displays live pink noise measurments on top of a target curve and optionally a saved measurement (see: [Plots](plots.md)).  The lower toolbar provides controls for real time measurements.  Some settings are shared with the Sweep tool.
 
 ![Real Time tool](/assets/img/realtime_tool.png "Real Time tool")

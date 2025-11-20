@@ -1,18 +1,20 @@
 ---
 layout: default
 
-title: Equalize Tool
+title: Equalize
 parent: Manual
 nav_order: 5
 ---
 
 # Equalize Tool
-The Equalize Tool displays filters used to correct a saved measurement to a target curve. The lower toolbar contains controls related to equalization.
+Use the Equalize tool to generate room correction filters from a saved measurement and a target curve.
+
+The Equalize tool displays filters used to correct a saved measurement to a target curve. The lower toolbar contains controls related to equalization.
 
 ![Equalize tool](/assets/img/equalize_screen.png "HouseCurve Equalize tool")
 
 ## Saved measurement
-Equalize Tool corrects a saved measurement to a target curve.
+Equalize tool corrects a saved measurement to a target curve.
 
 ## Predicted output
 The predicted magnitude measurement is shown in cyan.  After applying the correction filters, the measured magnitude response should be close to this.

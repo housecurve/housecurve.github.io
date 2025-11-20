@@ -1,12 +1,14 @@
 ---
 layout: default
 
-title: Curve Editor
+title: Curve Edit
 parent: Manual
 nav_order: 7
 ---
 
 # Curve Edit
+Use the Curve Editor to create a target curve of your liking.  Curves can be created by dragging and droppging points, or the points can be entered as text into the source editor.
+
 The curve editor displays a target curve and optionally fits it on a saved measurement.  The lower toolbar contains controls related to curve editing.
 
 ![Curve Edit screen](/assets/img/curve_edit.png "HouseCurve Curve Editor")

@@ -1,13 +1,21 @@
 ---
 layout: default
 
-title: Sweep Tool
+title: Sweep
 parent: Manual
 nav_order: 3
 ---
 
 # Sweep Tool
-The Sweep Tool displays sweep measurements on top of the selected target curve and optionally a saved measurement (see: [Plots](plots.md)). The lower toolbar contains controls for sweep measurements.  Some settings are shared with the Real Time tool.
+Use the Sweep tool to measure your audio system with logarithmic sine sweeps.
+
+A sine sweep produces a better measurement than pink noise because it concentrates the signal power at one frequency at a time.  The resulting measurement has a higher signal to noise ratio.
+
+The drawback to sweeps is they can't be used in real time, ex: to see the effect of tuning.  Tuning with sine sweeps requires repeated measure-adjust-measure steps.  Multiple sweep measurements must be averaged to capture the sound of a listening area.
+
+Single sine sweep measurements are included in the free version of HouseCurve.  With the [Tuning Bundle](../DOWNLOAD.md#tuning-bundle), measurements can be averaged or compared, and phase and group delay plots are available.
+
+The Sweep tool displays sweep measurements on top of the selected target curve and optionally a saved measurement (see: [Plots](plots.md)). The lower toolbar contains controls for sweep measurements.  Some settings are shared with the Real Time tool.
 
 ![Sweep tool](/assets/img/sweep_tool.png "Sweep tool")
 
