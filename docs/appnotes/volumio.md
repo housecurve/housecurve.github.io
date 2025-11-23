@@ -86,7 +86,7 @@ Note - HouseCurve must remain in the foreground to measure.  If you need to trig
 ![Looped playback](/assets/img/volumio_looped.png "play the test signal on repeat")
 {: .app-portrait }
 
-HouseCurve will automatically average measurements as they are collected.  To get a realistic measurement of your [listening area](../usage/listening_area.md), it is important to average measurements from several locations.  For a desk (near field), try measuring from 2-3 locations. For a living room, try 3-5 locations.
+HouseCurve will automatically average measurements as they are collected.  To get a realistic measurement of your [listening area](../usage/measuring.md#listening-area), it is important to average measurements from several locations.  For a desk (near field), try measuring from 2-3 locations. For a living room, try 3-5 locations.
 
 ![averaged measurements](/assets/img/volumio_average.png "average measurements to capture listening area")
 

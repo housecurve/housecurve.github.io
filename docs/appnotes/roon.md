@@ -74,7 +74,7 @@ To measure with external stimulus, first tap <img src="/assets/img/measure.png" 
 
 Note - HouseCurve must remain in the foreground to measure.  If you need to trigger playback with the same device, start a looped playback, then switch back to HouseCurve to start the measurement.  HouseCurve will only collect one measurement at a time.
 
-HouseCurve will automatically average measurements as they are collected.  To get a realistic measurement of your [listening area](../usage/listening_area.md), it is important to average measurements from several locations.  For a desk (near field), try measuring from 2-3 locations. For a living room, try 3-5 locations.
+HouseCurve will automatically average measurements as they are collected.  To get a realistic measurement of your [listening area](../usage/measuring.md#listening-area), it is important to average measurements from several locations.  For a desk (near field), try measuring from 2-3 locations. For a living room, try 3-5 locations.
 
 ![averaged measurements](/assets/img/roon_average.png "average measurements to capture listening area")
 
