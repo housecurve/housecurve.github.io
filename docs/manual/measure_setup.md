@@ -19,7 +19,7 @@ Control which channels are used to play stimulus.  The Sweep and Real Time tools
 The "chirp" and "sweep" sounds of the test signal can be played on different channels (see [measurement process](../usage/measurement_process.md)).  This is mainly used for [subwoofer measurements](../usage/subwoofer.md).
 
 ### Real Time
-Then channel used to play pink noise, defaults to "all".
+The channel used to play pink noise, defaults to "all".
 
 ## External Stimulus
 When enabled, HouseCurve will not attempt to play the test signal, it will only listen when measure is tapped.  Use this when connection to the audio system isn't possible, or wireless methods are not working correctly.
