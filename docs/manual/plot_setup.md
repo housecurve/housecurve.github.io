@@ -35,7 +35,7 @@ When automatic fitting is disabled, the curve can be manually positioned by sett
 Smoothing can be applied to measurements to make it easier to see trends.  To remove smoothing, select None.
 
 ## Coherence Blanking
-Coherence blanking hides portions of the measurement that are [low quality](../usage/measurement_quality.md) and should not be used for tuning.  
+Sweep measurements use coherence blanking to hide portions of a measurement that are [low quality](../usage/measurement_quality.md) and should not be used for tuning.  
 
 Blanking occurs wherever the measurement falls below the selected signal to noise ratio (blanking threshold).  To disable blanking, select Off.
 
