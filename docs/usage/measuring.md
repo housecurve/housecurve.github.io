@@ -3,7 +3,7 @@ layout: default
 
 title: Measuring
 parent: Usage
-nav_order: 3
+nav_order: 6
 ---
 
 # Measuring

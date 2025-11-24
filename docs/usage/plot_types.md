@@ -3,7 +3,7 @@ layout: default
 
 title: Plot Types
 parent: Usage
-nav_order: 6
+nav_order: 5
 ---
 
 

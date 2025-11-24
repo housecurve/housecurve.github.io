@@ -3,12 +3,16 @@ layout: default
 
 title: Measurement Process
 parent: Usage
-nav_order: 4
+nav_order: 3
 ---
 
 
 # Measurement process
-The measurement process starts when [<img src="/assets/img/measure.png" alt="Measure" class="app-icon">](../manual/sweep_tool.md#measure) is tapped.  HouseCurve listens to the audio system play a test signal.  This signal consists of a “chirp” sound followed by a “sweep” sound.  The chirp is a timing reference that tells HouseCurve when to expect the sweep sound.  The sweep sound is used to measure the audio system.
+The measurement process starts when <img src="/assets/img/measure.png" alt="Measure" class="app-icon"> is tapped.  HouseCurve will listen for the audio system to play the test signal.
+
+The [Sweep](../manual/sweep.md) tool uses a test signal that consists of a “chirp” sound followed by a “sweep” sound.  The chirp is a timing reference that that signals when to expect the sweep.  If the tool doesn't hear the chirp, it will not measure the audio system.
+
+The [Real Time](../manual/realtime.md) tool uses a pink noise test signal. There is no timing chirp because the tool only measures magnitude.  It will begin measurement immediately.
 
 The stages of the measurement process are displayed in the [Measurement Status](../manual/plots.md#measurement-status) area at the top of the screen.
 
