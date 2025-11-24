@@ -10,9 +10,9 @@ nav_order: 3
 # Measurement process
 The measurement process starts when <img src="/assets/img/measure.png" alt="Measure" class="app-icon"> is tapped.  HouseCurve will listen for the audio system to play the test signal.
 
-The [Sweep](../manual/sweep.md) tool uses a test signal that consists of a “chirp” sound followed by a “sweep” sound.  The chirp is a timing reference that that signals when to expect the sweep.  If the tool doesn't hear the chirp, it will not measure the audio system.
+The [Sweep](../manual/sweep_tool.md) tool uses a test signal that consists of a “chirp” sound followed by a “sweep” sound.  The chirp is a timing reference that that signals when to expect the sweep.  If the tool doesn't hear the chirp, it will not measure the audio system.
 
-The [Real Time](../manual/realtime.md) tool uses a pink noise test signal. There is no timing chirp because the tool only measures magnitude.  It will begin measurement immediately.
+The [Real Time](../manual/realtime_tool.md) tool uses a pink noise test signal. There is no timing chirp because the tool only measures magnitude.  It will begin measurement immediately.
 
 The stages of the measurement process are displayed in the [Measurement Status](../manual/plots.md#measurement-status) area at the top of the screen.
 
@@ -36,7 +36,7 @@ If HouseCurve is unable to detect the [chirp](#measurement-process) signal after
 * Try [external stimulus](https://housecurve.com/docs/usage/connecting.html#external-stimulus) instead of wireless/wired connections.  Playing the test signal on repeat may help with buffering issues.
 
 ## Low measurement coherence
-After the chirp is detected, HouseCurve records the [sweep](#measurement-process) as it is played by the audio system.  If the recorded sweep has a very low signal to noise ratio, HouseCurve will abort the measurement.  If this happens, check the following:
+After the chirp is detected, HouseCurve records the sweep sound as it is played by the audio system.  If the recorded sweep has a very low signal to noise ratio, HouseCurve will abort the measurement.  If this happens, check the following:
 
 * Ensure the audio system or iPhone/iPad volume is set to a normal listening level.  You should be able to clearly hear the sweep, but it does not need to be loud.
 * Take steps to reduce background noise.  HouseCurve works best when measurements are taken from a quiet listening area.
