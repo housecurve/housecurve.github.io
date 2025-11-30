@@ -15,4 +15,9 @@ This video demonstrates the process of measuring room acoustics and applying EQ 
 
 [Tuning DM NAX® AoIP Zones with HouseCurve](https://www.youtube.com/watch?v=HviegkHagYk)
 
+The same process is described in this Crestron knowledge guide:
+
+[DM NAX® Amplifiers and Preamplifiers: HouseCurve Room Tuning](https://community.crestron.com/s/article/3254)
+
+
 
