@@ -21,9 +21,9 @@ Connections established using the iOS Control Center or Apple Music are not reco
 
 Some implementations of AirPlay and Bluetooth struggle with short segments of audio and will not work with HouseCurve.  This can be compounded by long playback delay/buffering, for example, running a convolution engine (FIR filters).
 
-**Note - AirPlay v1 was broken in iOS-18.4.x, this prevented HouseCurve from connecting to AirPlay devices.  This issue was resolved in iOS 18.5**
-
 If you encounter problems with wireless connections, try a wired connection or external stimulus.
+
+**Note - AirPlay v1 was broken in iOS-18.4.x, this prevented HouseCurve from connecting to AirPlay devices.  This issue was resolved in iOS 18.5**
 
 
 ## Wired
@@ -44,6 +44,8 @@ HouseCurve must stay in the foreground when taking measurements (iOS restriction
 It is not possible to measure audio streamed from an app running on the same iOS device, ex: to adjust the Spotify equalizer.  In this situation, use a separate iOS device running HouseCurve to measure.
 
 When external stimulus is enabled, wired connections are ignored and the AirPlay button will be disabled.
+
+**Note - Use new test signal files.  Old test signal files may not be compatible with the latest version of HouseCurve, leading to measurement issues.**
 
 
 ## HouseCurve on macOS
