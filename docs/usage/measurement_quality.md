@@ -15,5 +15,5 @@ For example, the measurement below was taken in the presence of external noise (
 
 Signal to noise issues are typically resolved by removing sources of noise or increasing the volume of the audio system.  In rare situations the microphone may be faulty.
 
-
+**Note - There was an issue with test signal files from HouseCurve-6.0 and 6.0.1 that causes low coherence measurements.  This can be fixed by simply exporting a fresh test signal file.**
 
