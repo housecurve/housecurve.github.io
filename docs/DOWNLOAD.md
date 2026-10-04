@@ -29,5 +29,7 @@ The Tuning Bundle is an in-app purchase that provides the following features:
 
 The Tuning Bundle can be purchased for one year (non-renewable subscription) or a lifetime unlock.  
 
+To purchase the Tuning Bundle, or check status, open the app and go to [Help](manual/menu.md#help).
+
 Note - users that purchased the Tuning Bundle prior to HouseCurve version 6.0 automatically receive a lifetime unlock.  Thank you for your support 🙂
 
