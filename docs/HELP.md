@@ -24,7 +24,7 @@ title: Quick Start
 1. Average measurements by tapping <img src="/assets/img/measure.png" alt="Measure" class="app-icon"> again (with [Tuning Bundle](DOWNLOAD.md#tuning-bundle) in-app purchase).
 1. Remove the most recent measurement by tapping <img src="/assets/img/undo.png" alt="Undo" class="app-icon">
 1. Clear all measurements by tapping <img src="/assets/img/reset.png" alt="Reset" class="app-icon">
-1. Switch between plot types tapping <img src="/assets/img/pageleft.png" alt="Page Left" class="app-icon"> or <img src="/assets/img/pageright.png" alt="Page Right" class="app-icon"> or swipe left/right from the edge of the screen.
+1. Switch between plot types tapping <img src="/assets/img/pageleft.png" alt="Page Left" class="app-icon"> or <img src="/assets/img/pageright.png" alt="Page Right" class="app-icon">
 1. Tap plot to show cursor, move with single finger, tap again to hide.
 1. Pinch plot to zoom.  Use two fingers to scroll plot left/right.
 

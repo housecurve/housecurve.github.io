@@ -23,7 +23,7 @@ The Sweep tool displays sweep measurements on top of the selected target curve a
 Tap <img src="/assets/img/airplay.png" alt="AirPlay" class="app-icon"> to select from available AirPlay and Bluetooth audio outputs.  The analog (wired) output is automatically selected when something is plugged into the iPhone/iPad headphone connector.  See [connecting to an audio system](../usage/connecting.md).
 
 ## Page Control
-Tap <img src="/assets/img/pageleft.png" alt="Page Left" class="app-icon"> or <img src="/assets/img/pageright.png" alt="Page Right" class="app-icon"> to move between [magnitude, phase and group delay plots](../usage/plot_types.md) plots.  Alternatively, swipe from the left or right edge of the screen to change plots.
+Tap <img src="/assets/img/pageleft.png" alt="Page Left" class="app-icon"> or <img src="/assets/img/pageright.png" alt="Page Right" class="app-icon"> to move between [magnitude, phase and group delay plots](../usage/plot_types.md) plots.
 
 ## Measure
 Tap <img src="/assets/img/measure.png" alt="Measure" class="app-icon"> to start [measurement process](../usage/measurement_process.md).  Tap again to to stop.  This button is disabled when not connected to an audio system.
