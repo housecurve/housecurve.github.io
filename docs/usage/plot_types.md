@@ -30,4 +30,25 @@ The group delay plot shows “when” the sound at a given frequency arrives at 
 ![group delay plot](/assets/img/measurement_delay.png "Group delay plot")
 
 
+## Impulse Plot
+The impulse plot shows how an audio system and room respond to an impulse of energy over time.  This is the equivalent of firing a gun or popping a balloon in the room.  These plots are useful for time alignment and planning out room treatments.
+
+The initial spike on the left of the plot represents sound that travelled directly from speaker to microphone (aka "the direct sound").  Moving towards the right, smaller spikes represent sound that first bounced off surfaces of your room before reaching the microphone (aka "early reflections").  The long tail represents the reverberant response of the room.
+
+![impulse plot](/assets/img/measurement_impulse.png "Impulse plot")
+
+
+## Envelope Plot
+The envelope plot (aka "envelope time curve" or ETC) is very similar to the impulse plot.  It shows how sound energy decays over time in decibels.  The envelope plot can be used to make decisions about room treatements, ex: identifying early reflections worth treating.
+
+![envelope plot](/assets/img/measurement_envelope.png "Envelope plot")
+
+## Step Plot
+The step plot is the integral of the impulse plot (running sum).  It shows how the audio system would resond to a sudden change in input, aka a "step".  The step plot can be used to evaluate time alignment, speaker driver handoffs and transient behavior.
+
+![step plot](/assets/img/measurement_step.png "Step plot")
+
+
+
+
 
